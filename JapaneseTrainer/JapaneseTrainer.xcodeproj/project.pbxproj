@@ -188,9 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				D3CCA44D1CF2AE470022D752 /* Delegate */,
-				D3CCA44C1CF2AE270022D752 /* AFNetworking */,
-				D3CCA44E1CF2AE540022D752 /* iToast */,
-				D3CCA44F1CF2AE590022D752 /* MBProgressHUD */,
+				D3F665751CF2B24C001A7F71 /* ThirdLibrary */,
 				D3CCA3F81CF2ADC80022D752 /* Controller */,
 				D3CCA3F71CF2ADC20022D752 /* Config */,
 				D3CCA3E91CF2ADAB0022D752 /* AppDelegate */,
@@ -383,6 +381,16 @@
 				D3CCA4B31CF2B0660022D752 /* SNLoading.m */,
 			);
 			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		D3F665751CF2B24C001A7F71 /* ThirdLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				D3CCA44C1CF2AE270022D752 /* AFNetworking */,
+				D3CCA44E1CF2AE540022D752 /* iToast */,
+				D3CCA44F1CF2AE590022D752 /* MBProgressHUD */,
+			);
+			name = ThirdLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -776,6 +784,7 @@
 				D3CCA3D01CF2ACAC0022D752 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3CCA3D11CF2ACAC0022D752 /* Build configuration list for PBXNativeTarget "JapaneseTrainerTests" */ = {
 			isa = XCConfigurationList;
@@ -784,6 +793,7 @@
 				D3CCA3D31CF2ACAC0022D752 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3CCA3D41CF2ACAC0022D752 /* Build configuration list for PBXNativeTarget "JapaneseTrainerUITests" */ = {
 			isa = XCConfigurationList;
@@ -792,6 +802,7 @@
 				D3CCA3D61CF2ACAC0022D752 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
