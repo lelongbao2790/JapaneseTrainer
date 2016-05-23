@@ -38,6 +38,8 @@
 		D3CCA49E1CF2AFB50022D752 /* VocabularyController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA49D1CF2AFB50022D752 /* VocabularyController.m */; };
 		D3CCA4AE1CF2AFD10022D752 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA4AD1CF2AFD10022D752 /* AppDelegate.m */; };
 		D3CCA4B41CF2B0660022D752 /* SNLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA4B31CF2B0660022D752 /* SNLoading.m */; };
+		D3F665791CF2E0EE001A7F71 /* ListContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F665781CF2E0EE001A7F71 /* ListContentController.m */; };
+		D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +139,9 @@
 		D3CCA4AD1CF2AFD10022D752 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppDelegate/AppDelegate.m; sourceTree = "<group>"; };
 		D3CCA4B21CF2B0660022D752 /* SNLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNLoading.h; sourceTree = "<group>"; };
 		D3CCA4B31CF2B0660022D752 /* SNLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNLoading.m; sourceTree = "<group>"; };
+		D3F665771CF2E0EE001A7F71 /* ListContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListContentController.h; path = Controller/ListContentController.h; sourceTree = "<group>"; };
+		D3F665781CF2E0EE001A7F71 /* ListContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListContentController.m; path = Controller/ListContentController.m; sourceTree = "<group>"; };
+		D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = listcontent.plist; path = Resource/listcontent.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +195,7 @@
 				D3CCA44D1CF2AE470022D752 /* Delegate */,
 				D3F665751CF2B24C001A7F71 /* ThirdLibrary */,
 				D3CCA3F81CF2ADC80022D752 /* Controller */,
+				D3F6657C1CF2E2F4001A7F71 /* Resource */,
 				D3CCA3F71CF2ADC20022D752 /* Config */,
 				D3CCA3E91CF2ADAB0022D752 /* AppDelegate */,
 				D3CCA3D71CF2ACCB0022D752 /* Storyboard */,
@@ -267,6 +273,7 @@
 		D3CCA3F81CF2ADC80022D752 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D3F665761CF2E0C4001A7F71 /* ListContent */,
 				D3CCA4051CF2ADEF0022D752 /* Alphabet */,
 				D3CCA4061CF2ADF50022D752 /* Grammar */,
 				D3CCA4071CF2ADFB0022D752 /* Listening */,
@@ -393,6 +400,23 @@
 			name = ThirdLibrary;
 			sourceTree = "<group>";
 		};
+		D3F665761CF2E0C4001A7F71 /* ListContent */ = {
+			isa = PBXGroup;
+			children = (
+				D3F665771CF2E0EE001A7F71 /* ListContentController.h */,
+				D3F665781CF2E0EE001A7F71 /* ListContentController.m */,
+			);
+			name = ListContent;
+			sourceTree = "<group>";
+		};
+		D3F6657C1CF2E2F4001A7F71 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -498,6 +522,7 @@
 			files = (
 				D3CCA3B41CF2ACAC0022D752 /* LaunchScreen.storyboard in Resources */,
 				D3CCA3B11CF2ACAC0022D752 /* Assets.xcassets in Resources */,
+				D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */,
 				D3CCA3AF1CF2ACAC0022D752 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +551,7 @@
 				D3CCA47E1CF2AF5F0022D752 /* AFURLConnectionOperation.m in Sources */,
 				D3CCA4AE1CF2AFD10022D752 /* AppDelegate.m in Sources */,
 				D3CCA49E1CF2AFB50022D752 /* VocabularyController.m in Sources */,
+				D3F665791CF2E0EE001A7F71 /* ListContentController.m in Sources */,
 				D3CCA4B41CF2B0660022D752 /* SNLoading.m in Sources */,
 				D3CCA47D1CF2AF5F0022D752 /* AFSecurityPolicy.m in Sources */,
 				D3CCA4781CF2AF5F0022D752 /* AFHTTPRequestOperation.m in Sources */,

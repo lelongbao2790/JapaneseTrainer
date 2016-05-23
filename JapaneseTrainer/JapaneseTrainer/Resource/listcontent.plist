@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Objects</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>grammar</string>
+			<key>Objects</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>JLPT Level N5 Grammar</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>JLPT Level N4 Grammar</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>JLPT Level N3 Grammar</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>JLPT Level N2 Grammar</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>JLPT Level N1 Grammar</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>vocabulary</string>
+			<key>Objects</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>JLPT Level N5 Vocabulary</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>JLPT Level N4 Vocabulary</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>JLPT Level N3 Vocabulary</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>JLPT Level N2 Vocabulary</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>JLPT Level N1 Vocabulary</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>listening</string>
+			<key>Objects</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>JLPT Level N5 Listening</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>JLPT Level N4 Listening</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>JLPT Level N3 Listening</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>JLPT Level N2 Listening</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>JLPT Level N1 Listening</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>writing</string>
+			<key>Objects</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>Kanji</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>Hiragana</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>Katakana</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

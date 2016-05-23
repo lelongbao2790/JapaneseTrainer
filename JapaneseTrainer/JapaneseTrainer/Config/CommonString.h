@@ -9,6 +9,18 @@
 #ifndef CommonString_h
 #define CommonString_h
 
+// List Content
+#define kContentCellIdentifier @"ContentCellIdentifier"
+
+// PLIST
+#define kObjects @"Objects"
+#define kName @"Name"
+#define kGrammar @"grammar"
+#define kVocabulary @"vocabulary"
+#define kListening @"listening"
+#define kWriting @"writing"
+#define kNamePlist @"listcontent"
+#define kPlist @"plist"
 
 // Fixed auto layout for multiple device
 #define kFixAutoLayoutForIp4 @"fixAutolayoutFor35"

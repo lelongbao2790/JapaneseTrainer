@@ -8,10 +8,10 @@
 
 #ifndef Enumeration_h
 #define Enumeration_h
-
-typedef NS_ENUM(NSInteger, Example) {
-
-};
+//
+//typedef NS_ENUM(NSInteger, Example) {
+//
+//};
 
 
 #endif /* Enumeration_h */

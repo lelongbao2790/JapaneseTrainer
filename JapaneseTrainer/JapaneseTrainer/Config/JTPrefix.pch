@@ -12,6 +12,10 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
-
+#import "Config.h"
+#import "AlphabetController.h"
+#import "GrammarController.h"
+#import "ListeningController.h"
+#import "VocabularyController.h"
 
 #endif /* JTPrefix_pch */
