@@ -40,6 +40,34 @@
 		D3CCA4B41CF2B0660022D752 /* SNLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA4B31CF2B0660022D752 /* SNLoading.m */; };
 		D3F665791CF2E0EE001A7F71 /* ListContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F665781CF2E0EE001A7F71 /* ListContentController.m */; };
 		D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */; };
+		D3FA253E1CF691EF00CD24BF /* NSObject+TLYSwizzlingHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25371CF691EF00CD24BF /* NSObject+TLYSwizzlingHelpers.m */; };
+		D3FA253F1CF691EF00CD24BF /* TLYDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25391CF691EF00CD24BF /* TLYDelegateProxy.m */; };
+		D3FA25401CF691EF00CD24BF /* UIScrollView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA253B1CF691EF00CD24BF /* UIScrollView+Helpers.m */; };
+		D3FA25411CF691EF00CD24BF /* UIViewController+BetterLayoutGuides.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA253D1CF691EF00CD24BF /* UIViewController+BetterLayoutGuides.m */; };
+		D3FA25461CF691FA00CD24BF /* TLYShyNavBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25451CF691FA00CD24BF /* TLYShyNavBarManager.m */; };
+		D3FA254F1CF6920C00CD24BF /* TLYShyScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA254A1CF6920C00CD24BF /* TLYShyScrollViewController.m */; };
+		D3FA25501CF6920C00CD24BF /* TLYShyStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA254C1CF6920C00CD24BF /* TLYShyStatusBarController.m */; };
+		D3FA25511CF6920C00CD24BF /* TLYShyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA254E1CF6920C00CD24BF /* TLYShyViewController.m */; };
+		D3FA255B1CF6C71A00CD24BF /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25561CF6C71A00CD24BF /* GTMNSString+HTML.m */; };
+		D3FA255C1CF6C71A00CD24BF /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25581CF6C71A00CD24BF /* NSString+HTML.m */; };
+		D3FA255D1CF6C71A00CD24BF /* NSString+XMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA255A1CF6C71A00CD24BF /* NSString+XMLEntities.m */; };
+		D3FA25661CF6DB5B00CD24BF /* NSMutableAttributedString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25651CF6DB5B00CD24BF /* NSMutableAttributedString+Color.m */; };
+		D3FA25691CF6EE1300CD24BF /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25681CF6EE1300CD24BF /* Sound.m */; };
+		D3FA256B1CF6EF2500CD24BF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FA256A1CF6EF2500CD24BF /* AudioToolbox.framework */; };
+		D3FA256D1CF6F9E700CD24BF /* sound_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FA256C1CF6F9E700CD24BF /* sound_icon.png */; };
+		D3FD92E41CF542B80039FB14 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD92DF1CF542B80039FB14 /* TFHpple.m */; };
+		D3FD92E51CF542B80039FB14 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD92E11CF542B80039FB14 /* TFHppleElement.m */; };
+		D3FD92E61CF542B80039FB14 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD92E31CF542B80039FB14 /* XPathQuery.m */; };
+		D3FD92F21CF54A6B0039FB14 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FD92EC1CF5492E0039FB14 /* libxml2.2.dylib */; };
+		D3FD92F51CF54B760039FB14 /* ListGrammarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD92F41CF54B760039FB14 /* ListGrammarController.m */; };
+		D3FD92F81CF54C680039FB14 /* DBAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FD92F71CF54C680039FB14 /* DBAccess.framework */; };
+		D3FD92FC1CF54C860039FB14 /* Grammar.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD92FB1CF54C860039FB14 /* Grammar.m */; };
+		D3FD93001CF54EF40039FB14 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD92FF1CF54EF40039FB14 /* Utilities.m */; };
+		D3FD93031CF551D70039FB14 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD93021CF551D70039FB14 /* DataManager.m */; };
+		D3FD93061CF56E040039FB14 /* DetailGrammarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD93051CF56E040039FB14 /* DetailGrammarController.m */; };
+		D3FD93091CF5992E0039FB14 /* VocabularCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD93081CF5992E0039FB14 /* VocabularCell.m */; };
+		D3FD930C1CF599920039FB14 /* Vocabulary.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD930B1CF599920039FB14 /* Vocabulary.m */; };
+		D3FD930E1CF5B6310039FB14 /* hiragana1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3FD930D1CF5B6310039FB14 /* hiragana1.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +170,62 @@
 		D3F665771CF2E0EE001A7F71 /* ListContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListContentController.h; path = Controller/ListContentController.h; sourceTree = "<group>"; };
 		D3F665781CF2E0EE001A7F71 /* ListContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListContentController.m; path = Controller/ListContentController.m; sourceTree = "<group>"; };
 		D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = listcontent.plist; path = Resource/listcontent.plist; sourceTree = "<group>"; };
+		D3FA25361CF691EF00CD24BF /* NSObject+TLYSwizzlingHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TLYSwizzlingHelpers.h"; sourceTree = "<group>"; };
+		D3FA25371CF691EF00CD24BF /* NSObject+TLYSwizzlingHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TLYSwizzlingHelpers.m"; sourceTree = "<group>"; };
+		D3FA25381CF691EF00CD24BF /* TLYDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYDelegateProxy.h; sourceTree = "<group>"; };
+		D3FA25391CF691EF00CD24BF /* TLYDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLYDelegateProxy.m; sourceTree = "<group>"; };
+		D3FA253A1CF691EF00CD24BF /* UIScrollView+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Helpers.h"; sourceTree = "<group>"; };
+		D3FA253B1CF691EF00CD24BF /* UIScrollView+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Helpers.m"; sourceTree = "<group>"; };
+		D3FA253C1CF691EF00CD24BF /* UIViewController+BetterLayoutGuides.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BetterLayoutGuides.h"; sourceTree = "<group>"; };
+		D3FA253D1CF691EF00CD24BF /* UIViewController+BetterLayoutGuides.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BetterLayoutGuides.m"; sourceTree = "<group>"; };
+		D3FA25421CF691FA00CD24BF /* TLYShyNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYShyNavBar.h; sourceTree = "<group>"; };
+		D3FA25431CF691FA00CD24BF /* TLYShyNavBarFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYShyNavBarFade.h; sourceTree = "<group>"; };
+		D3FA25441CF691FA00CD24BF /* TLYShyNavBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYShyNavBarManager.h; sourceTree = "<group>"; };
+		D3FA25451CF691FA00CD24BF /* TLYShyNavBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLYShyNavBarManager.m; sourceTree = "<group>"; };
+		D3FA25471CF6920C00CD24BF /* TLYShyChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYShyChild.h; sourceTree = "<group>"; };
+		D3FA25481CF6920C00CD24BF /* TLYShyParent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYShyParent.h; sourceTree = "<group>"; };
+		D3FA25491CF6920C00CD24BF /* TLYShyScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYShyScrollViewController.h; sourceTree = "<group>"; };
+		D3FA254A1CF6920C00CD24BF /* TLYShyScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLYShyScrollViewController.m; sourceTree = "<group>"; };
+		D3FA254B1CF6920C00CD24BF /* TLYShyStatusBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYShyStatusBarController.h; sourceTree = "<group>"; };
+		D3FA254C1CF6920C00CD24BF /* TLYShyStatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLYShyStatusBarController.m; sourceTree = "<group>"; };
+		D3FA254D1CF6920C00CD24BF /* TLYShyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYShyViewController.h; sourceTree = "<group>"; };
+		D3FA254E1CF6920C00CD24BF /* TLYShyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLYShyViewController.m; sourceTree = "<group>"; };
+		D3FA25551CF6C71A00CD24BF /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		D3FA25561CF6C71A00CD24BF /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		D3FA25571CF6C71A00CD24BF /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		D3FA25581CF6C71A00CD24BF /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		D3FA25591CF6C71A00CD24BF /* NSString+XMLEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XMLEntities.h"; sourceTree = "<group>"; };
+		D3FA255A1CF6C71A00CD24BF /* NSString+XMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMLEntities.m"; sourceTree = "<group>"; };
+		D3FA25641CF6DB5B00CD24BF /* NSMutableAttributedString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Color.h"; sourceTree = "<group>"; };
+		D3FA25651CF6DB5B00CD24BF /* NSMutableAttributedString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Color.m"; sourceTree = "<group>"; };
+		D3FA25671CF6EE1300CD24BF /* Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sound.h; path = Modal/Sound.h; sourceTree = "<group>"; };
+		D3FA25681CF6EE1300CD24BF /* Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sound.m; path = Modal/Sound.m; sourceTree = "<group>"; };
+		D3FA256A1CF6EF2500CD24BF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D3FA256C1CF6F9E700CD24BF /* sound_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound_icon.png; sourceTree = "<group>"; };
+		D3FD92DE1CF542B80039FB14 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHpple.h; path = TFHppleElement/TFHpple.h; sourceTree = "<group>"; };
+		D3FD92DF1CF542B80039FB14 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHpple.m; path = TFHppleElement/TFHpple.m; sourceTree = "<group>"; };
+		D3FD92E01CF542B80039FB14 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHppleElement.h; path = TFHppleElement/TFHppleElement.h; sourceTree = "<group>"; };
+		D3FD92E11CF542B80039FB14 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHppleElement.m; path = TFHppleElement/TFHppleElement.m; sourceTree = "<group>"; };
+		D3FD92E21CF542B80039FB14 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPathQuery.h; path = TFHppleElement/XPathQuery.h; sourceTree = "<group>"; };
+		D3FD92E31CF542B80039FB14 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPathQuery.m; path = TFHppleElement/XPathQuery.m; sourceTree = "<group>"; };
+		D3FD92EC1CF5492E0039FB14 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = /usr/lib/libxml2.2.dylib; sourceTree = "<absolute>"; };
+		D3FD92F01CF549AF0039FB14 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		D3FD92F31CF54B760039FB14 /* ListGrammarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListGrammarController.h; path = Controller/ListGrammarController.h; sourceTree = "<group>"; };
+		D3FD92F41CF54B760039FB14 /* ListGrammarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListGrammarController.m; path = Controller/ListGrammarController.m; sourceTree = "<group>"; };
+		D3FD92F71CF54C680039FB14 /* DBAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DBAccess.framework; sourceTree = "<group>"; };
+		D3FD92FA1CF54C860039FB14 /* Grammar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Grammar.h; path = Modal/Grammar.h; sourceTree = "<group>"; };
+		D3FD92FB1CF54C860039FB14 /* Grammar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Grammar.m; path = Modal/Grammar.m; sourceTree = "<group>"; };
+		D3FD92FE1CF54EF40039FB14 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = Utilities/Utilities.h; sourceTree = "<group>"; };
+		D3FD92FF1CF54EF40039FB14 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = Utilities/Utilities.m; sourceTree = "<group>"; };
+		D3FD93011CF551D70039FB14 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = Modal/DataManager.h; sourceTree = "<group>"; };
+		D3FD93021CF551D70039FB14 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = Modal/DataManager.m; sourceTree = "<group>"; };
+		D3FD93041CF56E040039FB14 /* DetailGrammarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailGrammarController.h; path = Controller/DetailGrammarController.h; sourceTree = "<group>"; };
+		D3FD93051CF56E040039FB14 /* DetailGrammarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailGrammarController.m; path = Controller/DetailGrammarController.m; sourceTree = "<group>"; };
+		D3FD93071CF5992E0039FB14 /* VocabularCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VocabularCell.h; path = Controller/VocabularCell.h; sourceTree = "<group>"; };
+		D3FD93081CF5992E0039FB14 /* VocabularCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VocabularCell.m; path = Controller/VocabularCell.m; sourceTree = "<group>"; };
+		D3FD930A1CF599920039FB14 /* Vocabulary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vocabulary.h; path = Modal/Vocabulary.h; sourceTree = "<group>"; };
+		D3FD930B1CF599920039FB14 /* Vocabulary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vocabulary.m; path = Modal/Vocabulary.m; sourceTree = "<group>"; };
+		D3FD930D1CF5B6310039FB14 /* hiragana1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana1.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +233,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3FA256B1CF6EF2500CD24BF /* AudioToolbox.framework in Frameworks */,
+				D3FD92F81CF54C680039FB14 /* DBAccess.framework in Frameworks */,
+				D3FD92F21CF54A6B0039FB14 /* libxml2.2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +259,8 @@
 		D3CCA3951CF2ACAC0022D752 = {
 			isa = PBXGroup;
 			children = (
+				D3FA256A1CF6EF2500CD24BF /* AudioToolbox.framework */,
+				D3FD92F01CF549AF0039FB14 /* libxml2.2.tbd */,
 				D3CCA3A01CF2ACAC0022D752 /* JapaneseTrainer */,
 				D3CCA3BD1CF2ACAC0022D752 /* JapaneseTrainerTests */,
 				D3CCA3C81CF2ACAC0022D752 /* JapaneseTrainerUITests */,
@@ -192,6 +281,9 @@
 		D3CCA3A01CF2ACAC0022D752 /* JapaneseTrainer */ = {
 			isa = PBXGroup;
 			children = (
+				D3FD92EC1CF5492E0039FB14 /* libxml2.2.dylib */,
+				D3FD92FD1CF54ED90039FB14 /* Utilities */,
+				D3FD92F61CF54C240039FB14 /* Modal */,
 				D3CCA44D1CF2AE470022D752 /* Delegate */,
 				D3F665751CF2B24C001A7F71 /* ThirdLibrary */,
 				D3CCA3F81CF2ADC80022D752 /* Controller */,
@@ -296,6 +388,10 @@
 			children = (
 				D3CCA4961CF2AF9A0022D752 /* GrammarController.h */,
 				D3CCA4971CF2AF9A0022D752 /* GrammarController.m */,
+				D3FD92F31CF54B760039FB14 /* ListGrammarController.h */,
+				D3FD92F41CF54B760039FB14 /* ListGrammarController.m */,
+				D3FD93041CF56E040039FB14 /* DetailGrammarController.h */,
+				D3FD93051CF56E040039FB14 /* DetailGrammarController.m */,
 			);
 			name = Grammar;
 			sourceTree = "<group>";
@@ -314,6 +410,8 @@
 			children = (
 				D3CCA49C1CF2AFB50022D752 /* VocabularyController.h */,
 				D3CCA49D1CF2AFB50022D752 /* VocabularyController.m */,
+				D3FD93071CF5992E0039FB14 /* VocabularCell.h */,
+				D3FD93081CF5992E0039FB14 /* VocabularCell.m */,
 			);
 			name = Vocabulary;
 			sourceTree = "<group>";
@@ -393,6 +491,10 @@
 		D3F665751CF2B24C001A7F71 /* ThirdLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				D3FA25541CF6C70700CD24BF /* NSString_HTML */,
+				D3FA25331CF6911B00CD24BF /* TLYShyNavBar */,
+				D3FD92F91CF54C6B0039FB14 /* DBAccess */,
+				D3FD92E71CF542C30039FB14 /* TFHpple */,
 				D3CCA44C1CF2AE270022D752 /* AFNetworking */,
 				D3CCA44E1CF2AE540022D752 /* iToast */,
 				D3CCA44F1CF2AE590022D752 /* MBProgressHUD */,
@@ -412,9 +514,114 @@
 		D3F6657C1CF2E2F4001A7F71 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D3FA256C1CF6F9E700CD24BF /* sound_icon.png */,
+				D3FD930D1CF5B6310039FB14 /* hiragana1.gif */,
 				D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */,
 			);
 			name = Resource;
+			sourceTree = "<group>";
+		};
+		D3FA25331CF6911B00CD24BF /* TLYShyNavBar */ = {
+			isa = PBXGroup;
+			children = (
+				D3FA25421CF691FA00CD24BF /* TLYShyNavBar.h */,
+				D3FA25431CF691FA00CD24BF /* TLYShyNavBarFade.h */,
+				D3FA25441CF691FA00CD24BF /* TLYShyNavBarManager.h */,
+				D3FA25451CF691FA00CD24BF /* TLYShyNavBarManager.m */,
+				D3FA25351CF6913C00CD24BF /* ShyControllers */,
+				D3FA25341CF6913200CD24BF /* Categories */,
+			);
+			name = TLYShyNavBar;
+			sourceTree = "<group>";
+		};
+		D3FA25341CF6913200CD24BF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D3FA25361CF691EF00CD24BF /* NSObject+TLYSwizzlingHelpers.h */,
+				D3FA25371CF691EF00CD24BF /* NSObject+TLYSwizzlingHelpers.m */,
+				D3FA25381CF691EF00CD24BF /* TLYDelegateProxy.h */,
+				D3FA25391CF691EF00CD24BF /* TLYDelegateProxy.m */,
+				D3FA253A1CF691EF00CD24BF /* UIScrollView+Helpers.h */,
+				D3FA253B1CF691EF00CD24BF /* UIScrollView+Helpers.m */,
+				D3FA253C1CF691EF00CD24BF /* UIViewController+BetterLayoutGuides.h */,
+				D3FA253D1CF691EF00CD24BF /* UIViewController+BetterLayoutGuides.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		D3FA25351CF6913C00CD24BF /* ShyControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D3FA25471CF6920C00CD24BF /* TLYShyChild.h */,
+				D3FA25481CF6920C00CD24BF /* TLYShyParent.h */,
+				D3FA25491CF6920C00CD24BF /* TLYShyScrollViewController.h */,
+				D3FA254A1CF6920C00CD24BF /* TLYShyScrollViewController.m */,
+				D3FA254B1CF6920C00CD24BF /* TLYShyStatusBarController.h */,
+				D3FA254C1CF6920C00CD24BF /* TLYShyStatusBarController.m */,
+				D3FA254D1CF6920C00CD24BF /* TLYShyViewController.h */,
+				D3FA254E1CF6920C00CD24BF /* TLYShyViewController.m */,
+			);
+			name = ShyControllers;
+			sourceTree = "<group>";
+		};
+		D3FA25541CF6C70700CD24BF /* NSString_HTML */ = {
+			isa = PBXGroup;
+			children = (
+				D3FA25551CF6C71A00CD24BF /* GTMNSString+HTML.h */,
+				D3FA25561CF6C71A00CD24BF /* GTMNSString+HTML.m */,
+				D3FA25571CF6C71A00CD24BF /* NSString+HTML.h */,
+				D3FA25581CF6C71A00CD24BF /* NSString+HTML.m */,
+				D3FA25591CF6C71A00CD24BF /* NSString+XMLEntities.h */,
+				D3FA255A1CF6C71A00CD24BF /* NSString+XMLEntities.m */,
+				D3FA25641CF6DB5B00CD24BF /* NSMutableAttributedString+Color.h */,
+				D3FA25651CF6DB5B00CD24BF /* NSMutableAttributedString+Color.m */,
+			);
+			name = NSString_HTML;
+			sourceTree = "<group>";
+		};
+		D3FD92E71CF542C30039FB14 /* TFHpple */ = {
+			isa = PBXGroup;
+			children = (
+				D3FD92DE1CF542B80039FB14 /* TFHpple.h */,
+				D3FD92DF1CF542B80039FB14 /* TFHpple.m */,
+				D3FD92E01CF542B80039FB14 /* TFHppleElement.h */,
+				D3FD92E11CF542B80039FB14 /* TFHppleElement.m */,
+				D3FD92E21CF542B80039FB14 /* XPathQuery.h */,
+				D3FD92E31CF542B80039FB14 /* XPathQuery.m */,
+			);
+			name = TFHpple;
+			sourceTree = "<group>";
+		};
+		D3FD92F61CF54C240039FB14 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				D3FD92FA1CF54C860039FB14 /* Grammar.h */,
+				D3FD92FB1CF54C860039FB14 /* Grammar.m */,
+				D3FD93011CF551D70039FB14 /* DataManager.h */,
+				D3FD93021CF551D70039FB14 /* DataManager.m */,
+				D3FD930A1CF599920039FB14 /* Vocabulary.h */,
+				D3FD930B1CF599920039FB14 /* Vocabulary.m */,
+				D3FA25671CF6EE1300CD24BF /* Sound.h */,
+				D3FA25681CF6EE1300CD24BF /* Sound.m */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		D3FD92F91CF54C6B0039FB14 /* DBAccess */ = {
+			isa = PBXGroup;
+			children = (
+				D3FD92F71CF54C680039FB14 /* DBAccess.framework */,
+			);
+			name = DBAccess;
+			sourceTree = "<group>";
+		};
+		D3FD92FD1CF54ED90039FB14 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D3FD92FE1CF54EF40039FB14 /* Utilities.h */,
+				D3FD92FF1CF54EF40039FB14 /* Utilities.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -521,8 +728,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3CCA3B41CF2ACAC0022D752 /* LaunchScreen.storyboard in Resources */,
+				D3FD930E1CF5B6310039FB14 /* hiragana1.gif in Resources */,
 				D3CCA3B11CF2ACAC0022D752 /* Assets.xcassets in Resources */,
 				D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */,
+				D3FA256D1CF6F9E700CD24BF /* sound_icon.png in Resources */,
 				D3CCA3AF1CF2ACAC0022D752 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,12 +760,22 @@
 				D3CCA47E1CF2AF5F0022D752 /* AFURLConnectionOperation.m in Sources */,
 				D3CCA4AE1CF2AFD10022D752 /* AppDelegate.m in Sources */,
 				D3CCA49E1CF2AFB50022D752 /* VocabularyController.m in Sources */,
+				D3FA254F1CF6920C00CD24BF /* TLYShyScrollViewController.m in Sources */,
+				D3FD92E41CF542B80039FB14 /* TFHpple.m in Sources */,
+				D3FA25461CF691FA00CD24BF /* TLYShyNavBarManager.m in Sources */,
 				D3F665791CF2E0EE001A7F71 /* ListContentController.m in Sources */,
+				D3FD93091CF5992E0039FB14 /* VocabularCell.m in Sources */,
 				D3CCA4B41CF2B0660022D752 /* SNLoading.m in Sources */,
+				D3FD930C1CF599920039FB14 /* Vocabulary.m in Sources */,
+				D3FD93001CF54EF40039FB14 /* Utilities.m in Sources */,
+				D3FD92E51CF542B80039FB14 /* TFHppleElement.m in Sources */,
 				D3CCA47D1CF2AF5F0022D752 /* AFSecurityPolicy.m in Sources */,
 				D3CCA4781CF2AF5F0022D752 /* AFHTTPRequestOperation.m in Sources */,
 				D3CCA4851CF2AF5F0022D752 /* UIImageView+AFNetworking.m in Sources */,
 				D3CCA47A1CF2AF5F0022D752 /* AFHTTPSessionManager.m in Sources */,
+				D3FA25501CF6920C00CD24BF /* TLYShyStatusBarController.m in Sources */,
+				D3FA253F1CF691EF00CD24BF /* TLYDelegateProxy.m in Sources */,
+				D3FD92FC1CF54C860039FB14 /* Grammar.m in Sources */,
 				D3CCA4821CF2AF5F0022D752 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				D3CCA4911CF2AF7D0022D752 /* MBProgressHUD.m in Sources */,
 				D3CCA49B1CF2AFA80022D752 /* ListeningController.m in Sources */,
@@ -565,16 +784,29 @@
 				D3CCA4891CF2AF5F0022D752 /* UIWebView+AFNetworking.m in Sources */,
 				D3CCA4831CF2AF5F0022D752 /* UIAlertView+AFNetworking.m in Sources */,
 				D3CCA4791CF2AF5F0022D752 /* AFHTTPRequestOperationManager.m in Sources */,
+				D3FA255C1CF6C71A00CD24BF /* NSString+HTML.m in Sources */,
+				D3FA253E1CF691EF00CD24BF /* NSObject+TLYSwizzlingHelpers.m in Sources */,
+				D3FD93031CF551D70039FB14 /* DataManager.m in Sources */,
+				D3FD92F51CF54B760039FB14 /* ListGrammarController.m in Sources */,
 				D3CCA4811CF2AF5F0022D752 /* AFURLSessionManager.m in Sources */,
 				D3CCA4801CF2AF5F0022D752 /* AFURLResponseSerialization.m in Sources */,
+				D3FA25691CF6EE1300CD24BF /* Sound.m in Sources */,
 				D3CCA3A31CF2ACAC0022D752 /* main.m in Sources */,
+				D3FD92E61CF542B80039FB14 /* XPathQuery.m in Sources */,
 				D3CCA4981CF2AF9A0022D752 /* GrammarController.m in Sources */,
+				D3FA25661CF6DB5B00CD24BF /* NSMutableAttributedString+Color.m in Sources */,
+				D3FA25411CF691EF00CD24BF /* UIViewController+BetterLayoutGuides.m in Sources */,
+				D3FA25511CF6920C00CD24BF /* TLYShyViewController.m in Sources */,
 				D3CCA4861CF2AF5F0022D752 /* UIProgressView+AFNetworking.m in Sources */,
+				D3FD93061CF56E040039FB14 /* DetailGrammarController.m in Sources */,
 				D3CCA47B1CF2AF5F0022D752 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				D3CCA4841CF2AF5F0022D752 /* UIButton+AFNetworking.m in Sources */,
+				D3FA255D1CF6C71A00CD24BF /* NSString+XMLEntities.m in Sources */,
 				D3CCA47F1CF2AF5F0022D752 /* AFURLRequestSerialization.m in Sources */,
 				D3CCA47C1CF2AF5F0022D752 /* AFNetworkReachabilityManager.m in Sources */,
 				D3CCA4871CF2AF5F0022D752 /* UIRefreshControl+AFNetworking.m in Sources */,
+				D3FA25401CF691EF00CD24BF /* UIScrollView+Helpers.m in Sources */,
+				D3FA255B1CF6C71A00CD24BF /* GTMNSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -721,11 +953,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JapaneseTrainer",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/JapaneseTrainer/Config/JTPrefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = JapaneseTrainer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JapaneseTrainer",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = LongBao.JapaneseTrainer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -735,11 +977,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JapaneseTrainer",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/JapaneseTrainer/Config/JTPrefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = JapaneseTrainer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JapaneseTrainer",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = LongBao.JapaneseTrainer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

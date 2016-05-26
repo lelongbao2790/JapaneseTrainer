@@ -17,5 +17,14 @@
 #import "GrammarController.h"
 #import "ListeningController.h"
 #import "VocabularyController.h"
-
+#import "TFHpple.h"
+#import "DetailGrammarController.h"
+#import "Vocabulary.h"
+#import "VocabularCell.h"
+#import "TLYShyNavBarManager.h"
+#import "NSString+HTML.h"
+#import <AVFoundation/AVAudioPlayer.h>
+#import <AVFoundation/AVAudioSession.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import "Sound.h"
 #endif /* JTPrefix_pch */

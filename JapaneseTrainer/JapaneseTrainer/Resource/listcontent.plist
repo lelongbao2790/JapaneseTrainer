@@ -11,23 +11,33 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string>JLPT Level N5 Grammar</string>
+					<string>JLPT N5 Grammar</string>
+					<key>Link</key>
+					<string>http://www.tanos.co.uk/jlpt/jlpt5/grammar/</string>
 				</dict>
 				<dict>
 					<key>Name</key>
-					<string>JLPT Level N4 Grammar</string>
+					<string>JLPT N4 Grammar</string>
+					<key>Link</key>
+					<string>http://www.tanos.co.uk/jlpt/jlpt4/grammar/</string>
 				</dict>
 				<dict>
 					<key>Name</key>
-					<string>JLPT Level N3 Grammar</string>
+					<string>JLPT N3 Grammar</string>
+					<key>Link</key>
+					<string>http://www.tanos.co.uk/jlpt/jlpt3/grammar/</string>
 				</dict>
 				<dict>
 					<key>Name</key>
-					<string>JLPT Level N2 Grammar</string>
+					<string>JLPT N2 Grammar</string>
+					<key>Link</key>
+					<string>http://www.tanos.co.uk/jlpt/jlpt2/grammar/</string>
 				</dict>
 				<dict>
 					<key>Name</key>
-					<string>JLPT Level N1 Grammar</string>
+					<string>JLPT N1 Grammar</string>
+					<key>Link</key>
+					<string>http://www.tanos.co.uk/jlpt/jlpt1/grammar/</string>
 				</dict>
 			</array>
 		</dict>
@@ -38,23 +48,33 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string>JLPT Level N5 Vocabulary</string>
+					<string>JLPT Level N5</string>
+					<key>Link</key>
+					<string>http://www.tanos.co.uk/jlpt/jlpt5/vocab/</string>
 				</dict>
 				<dict>
 					<key>Name</key>
-					<string>JLPT Level N4 Vocabulary</string>
+					<string>JLPT Level N4</string>
+					<key>Link</key>
+					<string>http://www.tanos.co.uk/jlpt/jlpt4/vocab/</string>
 				</dict>
 				<dict>
 					<key>Name</key>
-					<string>JLPT Level N3 Vocabulary</string>
+					<string>JLPT Level N3</string>
+					<key>Link</key>
+					<string>http://www.tanos.co.uk/jlpt/jlpt3/vocab/</string>
 				</dict>
 				<dict>
 					<key>Name</key>
-					<string>JLPT Level N2 Vocabulary</string>
+					<string>JLPT Level N2</string>
+					<key>Link</key>
+					<string>http://www.tanos.co.uk/jlpt/jlpt2/vocab/</string>
 				</dict>
 				<dict>
 					<key>Name</key>
-					<string>JLPT Level N1 Vocabulary</string>
+					<string>JLPT Level N1</string>
+					<key>Link</key>
+					<string>http://www.tanos.co.uk/jlpt/jlpt1/vocab/</string>
 				</dict>
 			</array>
 		</dict>
@@ -65,23 +85,23 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string>JLPT Level N5 Listening</string>
+					<string>JLPT Level N5</string>
 				</dict>
 				<dict>
 					<key>Name</key>
-					<string>JLPT Level N4 Listening</string>
+					<string>JLPT Level N4</string>
 				</dict>
 				<dict>
 					<key>Name</key>
-					<string>JLPT Level N3 Listening</string>
+					<string>JLPT Level N3</string>
 				</dict>
 				<dict>
 					<key>Name</key>
-					<string>JLPT Level N2 Listening</string>
+					<string>JLPT Level N2</string>
 				</dict>
 				<dict>
 					<key>Name</key>
-					<string>JLPT Level N1 Listening</string>
+					<string>JLPT Level N1</string>
 				</dict>
 			</array>
 		</dict>

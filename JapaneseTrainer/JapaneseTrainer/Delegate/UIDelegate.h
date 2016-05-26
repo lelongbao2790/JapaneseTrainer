@@ -11,66 +11,39 @@
 #import <Foundation/Foundation.h>
 
 /*
- * Login Delegate
+ * Request Get List Grammar Delegate
  */
-@protocol LoginDelegate
+@protocol GetListGrammarDelegate
 @optional
--(void) loginAPISuccess:(NSString *)accessToken;
--(void) loginAPIFail:(NSString *)resultMessage;
+-(void) getListGrammarAPISuccess:(NSData *)response;
+-(void) getListGrammarAPIFail:(NSString *)resultMessage;
 @end
 
 /*
- * Get Movie Delegate
+ * Request Get Detail Grammar Delegate
  */
-@protocol GetMovieDelegate
+@protocol GetDetailGrammarDelegate
 @optional
--(void) getMovieAPISuccess:(NSDictionary *)response;
--(void) getMovieAPIFail:(NSString *)resultMessage;
+-(void) getDetailGrammarAPISuccess:(NSData *)response;
+-(void) getDetailGrammarAPIFail:(NSString *)resultMessage;
 @end
 
 /*
- * Search Movie Delegate
+ * Request Get Vocabulary Delegate
  */
-@protocol SearchMovieDelegate
+@protocol GetVocabularyDelegate
 @optional
--(void) searchMovieAPISuccess:(NSArray *)response;
--(void) searchMovieAPIFail:(NSString *)resultMessage;
+-(void) getVocabularyAPISuccess:(NSData *)response;
+-(void) getVocabularyAPIFail:(NSString *)resultMessage;
 @end
 
 /*
- * Get Real ID Movie Delegate
+ * Request Search Vocabulary Delegate
  */
-@protocol GetIDMovieDelegate
+@protocol SearchWordDelegate
 @optional
--(void) getIDMovieAPISuccess:(NSArray *)response;
--(void) getIdMovieAPIFail:(NSString *)resultMessage;
-@end
-
-/*
- * Get Link Play Movie Delegate
- */
-@protocol GetLinkPlayMovieDelegate
-@optional
--(void) getLinkPlayMovieAPISuccess:(NSArray *)response;
--(void) getLinkPlayMovieAPIFail:(NSString *)resultMessage;
-@end
-
-/*
- * Get List Category Delegate
- */
-@protocol GetListCategoryDelegate
-@optional
--(void) getListCategoryAPISuccess:(NSArray *)response;
--(void) getListCategoryAPIFail:(NSString *)resultMessage;
-@end
-
-/*
- * Get List New Delegate
- */
-@protocol GetListNewDelegate
-@optional
--(void) getListNewAPISuccess:(NSArray *)response withCurrentPage:(NSInteger)current;
--(void) getListNewAPIFail:(NSString *)resultMessage;
+-(void) searchWordAPISuccess:(NSData *)response;
+-(void) searchWordAPIFail:(NSString *)resultMessage;
 @end
 
 #endif /* UIDelegate_h */

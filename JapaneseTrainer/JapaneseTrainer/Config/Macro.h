@@ -29,8 +29,11 @@
 #define kDeviceIsPhoneSmallerOrEqual47 (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone && MAX(UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height) <= 667.0)
 #define kDeviceIsPhoneSmallerOrEqual55 (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone && MAX(UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height) <= 1104.0)
 #define kDeviceIpad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-
+#define iOSVersion [[[UIDevice currentDevice] systemVersion] floatValue]
 // Error
 #define errorString(value) [[error localizedDescription] isEqualToString:value]
+#define kHTMLFontSize15 [NSString stringWithFormat:@"<style>body{font-family: '%@'; font-size:%fpx;}</style>", @"Helvetica Neue",15.0]
+#define kHTMLFontSize17 [NSString stringWithFormat:@"<style>body{font-family: '%@'; font-size:%fpx;}</style>", @"Helvetica Neue",17.0]
+#define getRegex(value) [NSRegularExpression regularExpressionWithPattern:value options:0 error:nil]
 
 #endif /* Macro_h */

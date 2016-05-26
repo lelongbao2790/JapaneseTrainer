@@ -17,6 +17,8 @@
 
 @implementation ListContentController
 
+# pragma mark Life Cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -61,7 +63,6 @@
         [self getListItem:listTmp withKey:kWriting];
         
     }
-    
 }
 
 - (void)getListItem:(NSArray *)list withKey:(NSString *)key {

@@ -23,5 +23,7 @@
 #define kDetailCinemaControllerStoryBoardID @"DetailCinemaController"
 #define kCinemaCellIdentifier @"CinemaCellIdentifier"
 #define kHeaderMovieResuse @"HeaderMovieView"
+#define kListGrammarLevelStoryBoardID @"ListGrammarController"
+#define kDetailGrammarStoryBoardID @"DetailGrammarController"
 
 #endif /* StoryBoardID_h */
