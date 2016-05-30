@@ -24,4 +24,10 @@ typedef NS_ENUM(NSInteger, DetailViewText) {
     kHeightConstantVocabulary = 95,
 };
 
+typedef NS_ENUM(NSInteger, WritingSeg) {
+    
+    kHiraganaSeg = 0,
+    kKataganaSeg = 1,
+};
+
 #endif /* Enumeration_h */

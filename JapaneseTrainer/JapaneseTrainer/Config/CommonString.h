@@ -37,7 +37,10 @@ static NSString *kLink = @"Link";
 static NSString *kLoading = @"Loading";
 static NSString *kEmpty = @"";
 static NSString *kStringEmpty = @"emptyString";
-
+static NSString *kHiragana = @"Hiragana";
+static NSString *kKatagana = @"Katagana";
+static NSString *kHiraganaKey = @"hiragana";
+static NSString *kRomanjiKey = @"romanji";
 
 // Fixed auto layout for multiple device
 static NSString *kFixAutoLayoutForIp4 = @"fixAutolayoutFor35";
@@ -53,7 +56,8 @@ static NSString *kQueryListVocabulary = @"//a[@class='nounderline']";
 static NSString *kQueryDetailGrammar = @"//div[@id='contentright']/ul/li";
 static NSString *kTagTdEmpty = @"<td></td>";
 static NSString *kTagTdReplace = @"<td><a class=\"nounderline\" href=\"/jlpt/skills/vocab/sentences/?vocabid=77206\">emptyString</a></td>";
-static NSString *kQuerySearch = @"//a[@class='btn btn-link entry-menu']";
+//static NSString *kQuerySearch = @"//a[@class='btn btn-link entry-menu']";
+static NSString *kQuerySearch = @"//div[@class='entry']";
 static NSString *kFirstRawSearchReplace = @"<a class=\"btn btn-link entry-menu\" onclick=\"entryMenu(this,{";
 static NSString *kSecondRawSearchReplace = @"},&#10;&#9;&#9;this);\"><i class=\"icon-plus-sign\"/></a>";
 static NSString *kUnknownCharater1 = @"\n\t\t";

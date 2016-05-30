@@ -15,5 +15,6 @@
 @property (strong, nonatomic) NSString *nameEnglish;
 @property (strong, nonatomic) NSString *read;
 @property (strong, nonatomic) NSString *href;
-
+@property (strong, nonatomic) NSString *rawExample;
+@property (strong, nonatomic) NSString *contentExample;
 @end

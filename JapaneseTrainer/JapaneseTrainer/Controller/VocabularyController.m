@@ -64,7 +64,6 @@
     self.searchController.searchBar.scopeButtonTitles = [NSArray array];
     self.searchController.searchBar.tintColor = [UIColor whiteColor];
     self.tbvVocabulary.tableHeaderView = self.searchController.searchBar;
-//    self.searchController.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
     self.definesPresentationContext = YES;
     [self.searchController.searchBar sizeToFit];
 }
@@ -167,12 +166,10 @@
     if ([Utilities isSearchController:self.searchController]) {
         
         wordAtIndex = self.listSearch[indexPath.row];
-//        [[Sound shared] playSoundWithText:wordAtIndex.nameHiragana];
         
     } else {
         
         wordAtIndex = self.listVocabulary[indexPath.row];
-//        [[Sound shared] playSoundWithText:wordAtIndex.nameHiragana];
     }
     
     detailGrammar.aVocabulary = wordAtIndex;
@@ -226,19 +223,30 @@
     NSArray *searchNode = [tutorialsParser searchWithXPathQuery:kQuerySearch];
     NSMutableArray *listWordSearch = [[NSMutableArray alloc] initWithCapacity:0];
     for (TFHppleElement *element in searchNode) {
-        NSString *raw = element.raw;
-        NSDictionary *dictResponse = [Utilities parseRawSearchToDict:raw];
         
-        if (dictResponse.count > 0) {
-            Vocabulary *newVoca = [Vocabulary new];
-            newVoca.nameKanji = [Utilities convertString:[dictResponse objectForKey:kW]];
-            newVoca.nameHiragana = [Utilities convertString:[dictResponse objectForKey:kK]];
-            newVoca.nameEnglish = [Utilities convertString:[dictResponse objectForKey:kM]];
-            newVoca.read = [Utilities convertString:[dictResponse objectForKey:kR]];
-            [listWordSearch addObject:newVoca];
+        Vocabulary *newVoca = [Vocabulary new];
+        for (TFHppleElement *childElement  in element.children) {
+            
+            if ([[childElement tagName] isEqualToString:@"dd"]) {
+                NSString *rawD = [childElement raw];
+//                NSString *content = [childElement content];
+                newVoca.rawExample = rawD;
+            }
+            if ([[childElement tagName] isEqualToString:@"a"]) {
+                NSString *rawA = [childElement raw];
+                NSDictionary *dictResponse = [Utilities parseRawSearchToDict:rawA];
+                
+                if (dictResponse.count > 0) {
+                    newVoca.nameKanji = [Utilities convertString:[dictResponse objectForKey:kW]];
+                    newVoca.nameHiragana = [Utilities convertString:[dictResponse objectForKey:kK]];
+                    newVoca.nameEnglish = [Utilities convertString:[dictResponse objectForKey:kM]];
+                    newVoca.read = [Utilities convertString:[dictResponse objectForKey:kR]];
+                }
+            }
+            NSLog(@"%@", childElement);
         }
         
-        NSLog(@"%@", dictResponse);
+        [listWordSearch addObject:newVoca];
         
     }
     
@@ -253,15 +261,16 @@
 
 #pragma mark - Search Method
 - (void)searchWord:(NSString *)word {
+    ProgressBarShowLoading(kLoading);
     [self.listSearch removeAllObjects];
     [self.tbvVocabulary reloadData];
-    ProgressBarShowLoading(kLoading);
+    
     NSString *searchUrl = [NSString stringWithFormat:@"%@%@",kSearchUrl,word];
     [[DataManager shared] searchVocabularyWithUrl:searchUrl];
-    
-    // Load more
-    NSString *searchMoreUrl = [NSString stringWithFormat:kSearchMoreResult,word];
-    [[DataManager shared] searchVocabularyWithUrl:searchMoreUrl];
+//    
+//    // Load more
+//    NSString *searchMoreUrl = [NSString stringWithFormat:kSearchMoreResult,word];
+//    [[DataManager shared] searchVocabularyWithUrl:searchMoreUrl];
 }
 
 #pragma mark - UISearchBarDelegate

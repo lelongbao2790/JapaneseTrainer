@@ -55,6 +55,8 @@
 		D3FA25691CF6EE1300CD24BF /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25681CF6EE1300CD24BF /* Sound.m */; };
 		D3FA256B1CF6EF2500CD24BF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FA256A1CF6EF2500CD24BF /* AudioToolbox.framework */; };
 		D3FA256D1CF6F9E700CD24BF /* sound_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FA256C1CF6F9E700CD24BF /* sound_icon.png */; };
+		D3FA25701CF843D100CD24BF /* WritingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA256F1CF843D100CD24BF /* WritingCell.m */; };
+		D3FA25731CF849F400CD24BF /* CustomWritingLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25721CF849F400CD24BF /* CustomWritingLayout.m */; };
 		D3FD92E41CF542B80039FB14 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD92DF1CF542B80039FB14 /* TFHpple.m */; };
 		D3FD92E51CF542B80039FB14 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD92E11CF542B80039FB14 /* TFHppleElement.m */; };
 		D3FD92E61CF542B80039FB14 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD92E31CF542B80039FB14 /* XPathQuery.m */; };
@@ -202,6 +204,10 @@
 		D3FA25681CF6EE1300CD24BF /* Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sound.m; path = Modal/Sound.m; sourceTree = "<group>"; };
 		D3FA256A1CF6EF2500CD24BF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D3FA256C1CF6F9E700CD24BF /* sound_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound_icon.png; sourceTree = "<group>"; };
+		D3FA256E1CF843D100CD24BF /* WritingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WritingCell.h; path = Controller/WritingCell.h; sourceTree = "<group>"; };
+		D3FA256F1CF843D100CD24BF /* WritingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WritingCell.m; path = Controller/WritingCell.m; sourceTree = "<group>"; };
+		D3FA25711CF849F400CD24BF /* CustomWritingLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomWritingLayout.h; path = Controller/CustomWritingLayout.h; sourceTree = "<group>"; };
+		D3FA25721CF849F400CD24BF /* CustomWritingLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomWritingLayout.m; path = Controller/CustomWritingLayout.m; sourceTree = "<group>"; };
 		D3FD92DE1CF542B80039FB14 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHpple.h; path = TFHppleElement/TFHpple.h; sourceTree = "<group>"; };
 		D3FD92DF1CF542B80039FB14 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHpple.m; path = TFHppleElement/TFHpple.m; sourceTree = "<group>"; };
 		D3FD92E01CF542B80039FB14 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHppleElement.h; path = TFHppleElement/TFHppleElement.h; sourceTree = "<group>"; };
@@ -379,6 +385,10 @@
 			children = (
 				D3CCA4931CF2AF8E0022D752 /* AlphabetController.h */,
 				D3CCA4941CF2AF8E0022D752 /* AlphabetController.m */,
+				D3FA256E1CF843D100CD24BF /* WritingCell.h */,
+				D3FA256F1CF843D100CD24BF /* WritingCell.m */,
+				D3FA25711CF849F400CD24BF /* CustomWritingLayout.h */,
+				D3FA25721CF849F400CD24BF /* CustomWritingLayout.m */,
 			);
 			name = Alphabet;
 			sourceTree = "<group>";
@@ -775,6 +785,7 @@
 				D3CCA47A1CF2AF5F0022D752 /* AFHTTPSessionManager.m in Sources */,
 				D3FA25501CF6920C00CD24BF /* TLYShyStatusBarController.m in Sources */,
 				D3FA253F1CF691EF00CD24BF /* TLYDelegateProxy.m in Sources */,
+				D3FA25701CF843D100CD24BF /* WritingCell.m in Sources */,
 				D3FD92FC1CF54C860039FB14 /* Grammar.m in Sources */,
 				D3CCA4821CF2AF5F0022D752 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				D3CCA4911CF2AF7D0022D752 /* MBProgressHUD.m in Sources */,
@@ -789,6 +800,7 @@
 				D3FD93031CF551D70039FB14 /* DataManager.m in Sources */,
 				D3FD92F51CF54B760039FB14 /* ListGrammarController.m in Sources */,
 				D3CCA4811CF2AF5F0022D752 /* AFURLSessionManager.m in Sources */,
+				D3FA25731CF849F400CD24BF /* CustomWritingLayout.m in Sources */,
 				D3CCA4801CF2AF5F0022D752 /* AFURLResponseSerialization.m in Sources */,
 				D3FA25691CF6EE1300CD24BF /* Sound.m in Sources */,
 				D3CCA3A31CF2ACAC0022D752 /* main.m in Sources */,

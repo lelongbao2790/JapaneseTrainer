@@ -25,5 +25,7 @@
 #define kHeaderMovieResuse @"HeaderMovieView"
 #define kListGrammarLevelStoryBoardID @"ListGrammarController"
 #define kDetailGrammarStoryBoardID @"DetailGrammarController"
+#define kWritingCellIdentifier @"WritingIdentifier"
+#define kWritingCell @"WritingCell"
 
 #endif /* StoryBoardID_h */

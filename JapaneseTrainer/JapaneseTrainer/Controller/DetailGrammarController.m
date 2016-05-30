@@ -49,16 +49,27 @@
     } else if (self.aVocabulary) {
         self.lbWord.text = self.aVocabulary.nameHiragana;
         self.lbKanji.text = [NSString stringWithFormat:@"Kanji: %@",self.aVocabulary.nameKanji];
-        // Show meaning html
-        NSString *english = [NSString stringWithFormat:@"Meaning: %@", [self.aVocabulary.nameEnglish stringByAppendingString:kHTMLFontSize15]];
         
-        NSMutableAttributedString *englishHtml = [[NSMutableAttributedString alloc] initWithData:[english dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
-        [englishHtml addAttribute:NSForegroundColorAttributeName value:[UIColor darkGrayColor] range:NSMakeRange(0, englishHtml.length)];
-        self.tvDetail.attributedText = englishHtml;
+        // Show meaning html
+        if (self.aVocabulary.rawExample.length > 0) {
+            self.aVocabulary.rawExample = [self.aVocabulary.rawExample stringByAppendingString:kHTMLFontSize15];
+            NSAttributedString *attributedString = [[NSAttributedString alloc] initWithData:[self.aVocabulary.rawExample
+                                                                                             dataUsingEncoding:NSUnicodeStringEncoding]
+                                                                                    options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
+                                                                         documentAttributes:nil error:nil];
+            self.tvDetail.attributedText = attributedString;
+
+        } else {
+            // Show meaning html
+            NSString *english = [NSString stringWithFormat:@"Meaning: %@", [self.aVocabulary.nameEnglish stringByAppendingString:kHTMLFontSize15]];
+            
+            NSMutableAttributedString *englishHtml = [[NSMutableAttributedString alloc] initWithData:[english dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
+            [englishHtml addAttribute:NSForegroundColorAttributeName value:[UIColor darkGrayColor] range:NSMakeRange(0, englishHtml.length)];
+            self.tvDetail.attributedText = englishHtml;
+        }
+        
         self.csHeightTopView.constant = kHeightConstantVocabulary;
     }
-    
-    self.title = @"Information";
 }
 
 - (IBAction)btnSound:(id)sender {
@@ -84,9 +95,9 @@
         TFHppleElement *element = grammarNode[i];
         
         if ([finalString isEqualToString:kEmpty]) {
-            finalString = [NSString stringWithFormat:@"<b style='color:red'>Example<br/><br/></b><b>%d</b><br/> %@ <br/>",i+1, [element raw]];
+            finalString = [NSString stringWithFormat:kRedHTML,i+1, [element raw]];
         } else {
-            NSString *raw = [NSString stringWithFormat:@"\n <b>%d</b><br/> %@<br/>",i+1, [element raw]];
+            NSString *raw = [NSString stringWithFormat:kBoldNumberHTML,i+1, [element raw]];
             finalString = [finalString stringByAppendingString:raw];
         }
         finalString = [finalString stringByAppendingString:kHTMLFontSize17];

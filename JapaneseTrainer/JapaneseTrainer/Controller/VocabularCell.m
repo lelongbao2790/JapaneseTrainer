@@ -28,7 +28,13 @@
         self.lbHiragana.text = [NSString stringWithFormat:@"Read: %@", [self.aVocabulary.read lowercaseString]];
         
         // Show kanji string
-        NSMutableAttributedString *kanjiString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@【 %@ 】", self.aVocabulary.nameHiragana, self.aVocabulary.nameKanji] ];
+        NSMutableAttributedString *kanjiString;
+        if (self.aVocabulary.nameKanji.length > 0) {
+            kanjiString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@【 %@ 】", self.aVocabulary.nameHiragana, self.aVocabulary.nameKanji]];
+        } else {
+            kanjiString = [[NSMutableAttributedString alloc] initWithString:self.aVocabulary.nameHiragana];
+        }
+        
         [kanjiString setColorForText:self.aVocabulary.nameKanji withColor:kBrownColor];
         self.lbKanji.attributedText = kanjiString;
         
