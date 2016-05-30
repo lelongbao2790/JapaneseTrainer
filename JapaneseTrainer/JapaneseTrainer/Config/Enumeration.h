@@ -28,6 +28,10 @@ typedef NS_ENUM(NSInteger, WritingSeg) {
     
     kHiraganaSeg = 0,
     kKataganaSeg = 1,
+    kKanjiSeg = 2,
+    kTopConstantCollectionDefault = 0,
+    kTopConstantCollectionKanji = 37,
+
 };
 
 #endif /* Enumeration_h */

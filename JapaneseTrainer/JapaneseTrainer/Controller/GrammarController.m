@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) NSMutableArray *listGrammar;
 @property (weak, nonatomic) IBOutlet UITableView *tbvGrammar;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *btnSegLevel;
 
 @end
 
@@ -31,7 +32,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    
+    [DataManager shared].getListGrammarDelegate = self;
 }
 
 # pragma mark Helper Method
@@ -40,21 +41,70 @@
     
     self.listGrammar = [[NSMutableArray alloc] init];
     [Utilities removeBlankFooterTableView:self.tbvGrammar];
-    [self handleContent];
+    [self btnGrammar:nil];
 }
 
-- (void)handleContent {
+- (IBAction)btnGrammar:(id)sender {
+    
     [self.listGrammar removeAllObjects];
+    [self.tbvGrammar reloadData];
+    
     NSDictionary *dTmp = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:kNamePlist ofType:kPlist]];
     NSArray *listTmp = [dTmp valueForKey:kObjects];
+    NSMutableArray *listObjects = [[NSMutableArray alloc] init];
+    
     for (NSDictionary *dictItem in listTmp) {
         if ([[dictItem objectForKey:kName] isEqualToString:kGrammar]) {
-            [self.listGrammar addObjectsFromArray:[dictItem valueForKey:kObjects]];
+            [listObjects addObjectsFromArray:[dictItem valueForKey:kObjects]];
             break;
         }
     }
+    
+    // Switch level
+    switch (self.btnSegLevel.selectedSegmentIndex) {
+            
+        case kSegLevelN1: {
+            [self requestGetVocabulary:listObjects andLevel:kVocabularyLevelN2];
+        }
+            break;
+            
+        case kSegLevelN2: {
+            [self requestGetVocabulary:listObjects andLevel:kVocabularyLevelN2];
+        }
+            break;
+            
+        case kSegLevelN3: {
+            [self requestGetVocabulary:listObjects andLevel:kVocabularyLevelN3];
+        }
+            break;
+            
+        case kSegLevelN4: {
+            [self requestGetVocabulary:listObjects andLevel:kVocabularyLevelN4];
+        }
+            break;
+            
+        case kSegLevelN5: {
+            [self requestGetVocabulary:listObjects andLevel:kVocabularyLevelN5];
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (void)requestGetVocabulary:(NSArray *)listVoca andLevel:(NSString *)level {
+    [self.listGrammar removeAllObjects];
     [self.tbvGrammar reloadData];
-        
+    for (NSDictionary *dictVoca in listVoca) {
+        NSString *name = [dictVoca objectForKey:kName];
+        NSString *link = [dictVoca objectForKey:kLink];
+        if ([name isEqualToString:level]) {
+            ProgressBarShowLoading(kLoading);
+            [[DataManager shared] getGrammarWithUrl:link];
+            break;
+        }
+    }
 }
 
 #pragma mark - Table view data source
@@ -69,18 +119,45 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kIdentifierGrammar forIndexPath:indexPath];
-    cell.textLabel.text = [self.listGrammar[indexPath.row] objectForKey:kName];
+    Grammar *aGrammar = self.listGrammar[indexPath.row];
+    cell.textLabel.text = aGrammar.name;
+    cell.textLabel.font = [UIFont systemFontOfSize:19.0];
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
- 
-    ListGrammarController *listGrammarController = InitStoryBoardWithIdentifier(kListGrammarLevelStoryBoardID);
-    listGrammarController.linkLevel = [self.listGrammar[indexPath.row] objectForKey:kLink];
-    listGrammarController.title = [self.listGrammar[indexPath.row] objectForKey:kName];
-    [self.navigationController pushViewController:listGrammarController animated:YES];
+    DetailGrammarController *detailGrammar = InitStoryBoardWithIdentifier(kDetailGrammarStoryBoardID);
+    Grammar *aGrammar = self.listGrammar[indexPath.row];
+    detailGrammar.aGrammar = aGrammar;
+    ProgressBarShowLoading(kLoading);
+    [[DataManager shared] getDetailGrammarWithUrl:aGrammar.href];
+    [self.navigationController pushViewController:detailGrammar animated:YES];
     
+}
+
+# pragma mark Get List Grammar
+- (void)getListGrammarAPISuccess:(NSData *)response {
+    ProgressBarDismissLoading(kEmpty);
+    
+    // Parse Data from HTML
+    TFHpple *tutorialsParser = [TFHpple hppleWithHTMLData:response];
+    NSArray *grammarNode = [tutorialsParser searchWithXPathQuery:kQueryListGrammar];
+    NSMutableArray *newTutorials = [[NSMutableArray alloc] initWithCapacity:0];
+    for (TFHppleElement *element in grammarNode) {
+        Grammar *newGrammar = [Grammar new];
+        newGrammar.name = [Utilities removeAlphabeFromJapaneseString:[[element firstChild] content]];
+        newGrammar.href = [element objectForKey:kHref];
+        [newTutorials addObject:newGrammar];
+        NSLog(@"%@",newGrammar.name);
+    }
+    
+    self.listGrammar = [newTutorials mutableCopy];
+    [self.tbvGrammar reloadData];
+}
+
+- (void)getListGrammarAPIFail:(NSString *)resultMessage {
+    ProgressBarDismissLoading(kEmpty);
 }
 
 

@@ -46,4 +46,22 @@
 -(void) searchWordAPIFail:(NSString *)resultMessage;
 @end
 
+/*
+ * Kanji Delegate
+ */
+@protocol KanjiDelegate
+@optional
+-(void) getKanjiAPISuccess:(NSData *)response;
+-(void) getKanjiAPIFail:(NSString *)resultMessage;
+@end
+
+/*
+ * Kanji Meaning Delegate
+ */
+@protocol KanjiMeaningDelegate
+@optional
+-(void) getKanjiMeaningAPISuccess:(NSData *)response;
+-(void) getKanjiMeaningAPIFail:(NSString *)resultMessage;
+@end
+
 #endif /* UIDelegate_h */

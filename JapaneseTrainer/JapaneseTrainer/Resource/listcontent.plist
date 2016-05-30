@@ -977,31 +977,31 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string>JLPT N5 Grammar</string>
+					<string>JLPT Level N5</string>
 					<key>Link</key>
 					<string>http://www.tanos.co.uk/jlpt/jlpt5/grammar/</string>
 				</dict>
 				<dict>
 					<key>Name</key>
-					<string>JLPT N4 Grammar</string>
+					<string>JLPT Level N4</string>
 					<key>Link</key>
 					<string>http://www.tanos.co.uk/jlpt/jlpt4/grammar/</string>
 				</dict>
 				<dict>
 					<key>Name</key>
-					<string>JLPT N3 Grammar</string>
+					<string>JLPT Level N3</string>
 					<key>Link</key>
 					<string>http://www.tanos.co.uk/jlpt/jlpt3/grammar/</string>
 				</dict>
 				<dict>
 					<key>Name</key>
-					<string>JLPT N2 Grammar</string>
+					<string>JLPT Level N2</string>
 					<key>Link</key>
 					<string>http://www.tanos.co.uk/jlpt/jlpt2/grammar/</string>
 				</dict>
 				<dict>
 					<key>Name</key>
-					<string>JLPT N1 Grammar</string>
+					<string>JLPT Level N1</string>
 					<key>Link</key>
 					<string>http://www.tanos.co.uk/jlpt/jlpt1/grammar/</string>
 				</dict>

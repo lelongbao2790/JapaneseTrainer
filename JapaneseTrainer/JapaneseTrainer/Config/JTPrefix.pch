@@ -28,5 +28,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import "Sound.h"
 #import "WritingCell.h"
+#import "Kanji.h"
+#import "KanjiController.h"
 
 #endif /* JTPrefix_pch */

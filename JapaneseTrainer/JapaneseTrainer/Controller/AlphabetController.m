@@ -9,10 +9,12 @@
 #import "AlphabetController.h"
 #import "CustomWritingLayout.h"
 
-@interface AlphabetController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface AlphabetController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, KanjiDelegate>
 @property (strong, nonatomic) NSMutableArray *listWriting;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segWriting;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionWriting;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *btnSegLevel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *csTopCollection;
 @end
 
 @implementation AlphabetController
@@ -31,7 +33,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self handleContent:kHiragana];
+    [DataManager shared].kanjiDelegate = self;
 }
 
 # pragma mark  Helper Method
@@ -41,9 +43,13 @@
     self.collectionWriting.collectionViewLayout = [[CustomWritingLayout alloc] init];
     [self.collectionWriting registerClass:[WritingCell class] forCellWithReuseIdentifier:kWritingCell];
     [self.collectionWriting reloadData];
+    self.csTopCollection.constant = kTopConstantCollectionDefault;
+    [self handleContent:kHiragana];
 }
 
 - (void)handleContent:(NSString *)key {
+    self.csTopCollection.constant = kTopConstantCollectionDefault;
+    self.btnSegLevel.hidden = YES;
     [self.listWriting removeAllObjects];
     NSDictionary *dTmp = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:kNamePlist ofType:kPlist]];
     NSArray *listTmp = [dTmp valueForKey:key];
@@ -68,11 +74,59 @@
         case kKataganaSeg:
           [self handleContent:kKatagana];
           break;
+        
+        case kKanjiSeg: {
+            [self requestKanjiWord:kUrlKanjiN5];
+        }
+            break;
             
         default:
             [self handleContent:kHiragana];
             break;
     }
+    
+}
+- (IBAction)btnSegLevel:(id)sender {
+    // Switch level
+    switch (self.btnSegLevel.selectedSegmentIndex) {
+            
+        case kSegLevelN1: {
+            [self requestKanjiWord:kUrlKanjiN1];
+        }
+            break;
+            
+        case kSegLevelN2: {
+            [self requestKanjiWord:kUrlKanjiN2];
+        }
+            break;
+            
+        case kSegLevelN3: {
+            [self requestKanjiWord:kUrlKanjiN3];
+        }
+            break;
+            
+        case kSegLevelN4: {
+            [self requestKanjiWord:kUrlKanjiN4];
+        }
+            break;
+            
+        case kSegLevelN5: {
+            [self requestKanjiWord:kUrlKanjiN5];
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (void)requestKanjiWord:(NSString *)urlKanjiLevel {
+    self.csTopCollection.constant = kTopConstantCollectionKanji;
+    self.btnSegLevel.hidden = NO;
+    [self.listWriting removeAllObjects];
+    [self.collectionWriting reloadData];
+    ProgressBarShowLoading(kLoading);
+    [[DataManager shared] getKanjiWithUrl:urlKanjiLevel];
     
 }
 
@@ -90,29 +144,75 @@
     // Configure the cell
     WritingCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kWritingCellIdentifier forIndexPath:indexPath];
     
-    NSDictionary *dictCell = self.listWriting[indexPath.row];
-    
-    NSString *hiraganaText = [dictCell objectForKey:kHiraganaKey];
-    
-    if (![hiraganaText isEqualToString:kStringEmpty]) {
-        cell.lbTitle.text = hiraganaText;
-        cell.lbRomanji.text = [dictCell objectForKey:kRomanjiKey];
+    if (self.btnSegLevel.hidden) {
+        NSDictionary *dictCell = self.listWriting[indexPath.row];
+        NSString *hiraganaText = [dictCell objectForKey:kHiraganaKey];
+        
+        if (![hiraganaText isEqualToString:kStringEmpty]) {
+            cell.lbTitle.text = hiraganaText;
+            cell.lbRomanji.text = [dictCell objectForKey:kRomanjiKey];
+        } else {
+            cell.lbTitle.text = kEmpty;
+            cell.lbRomanji.text = kEmpty;
+        }
     } else {
-        cell.lbTitle.text = kEmpty;
+        Kanji *aKanji = self.listWriting[indexPath.row];
+        cell.lbTitle.text = aKanji.kanjiWord;
         cell.lbRomanji.text = kEmpty;
     }
-    
+   
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *dictCell = self.listWriting[indexPath.row];
-    NSString *hiraganaText = [dictCell objectForKey:kHiraganaKey];
     
-    if (![hiraganaText isEqualToString:kStringEmpty]) {
-        [[Sound shared] playSoundWithText:[dictCell objectForKey:kHiraganaKey]];
+    if (self.btnSegLevel.hidden) {
+        NSDictionary *dictCell = self.listWriting[indexPath.row];
+        NSString *hiraganaText = [dictCell objectForKey:kHiraganaKey];
+        
+        if (![hiraganaText isEqualToString:kStringEmpty]) {
+            [[Sound shared] playSoundWithText:[dictCell objectForKey:kHiraganaKey]];
+        }
+    }
+    else {
+        KanjiController *kanjiController = InitStoryBoardWithIdentifier(kKanjiController);
+        kanjiController.word = self.listWriting[indexPath.row];
+        [self.tabBarController presentViewController:kanjiController animated:YES completion:nil];
+    }
+}
+
+# pragma mark  Kanji Delegate
+- (void)getKanjiAPISuccess:(NSData *)response {
+    ProgressBarDismissLoading(kEmpty);
+    
+    // Parse Data from HTML
+    TFHpple *tutorialsParser = [TFHpple hppleWithHTMLData:response];
+    NSArray *kanjiNode = [tutorialsParser searchWithXPathQuery:kQueryListVocabulary];
+    NSMutableArray *newListKanji = [[NSMutableArray alloc] initWithCapacity:0];
+    
+    for (int i = 0; i < kanjiNode.count - 4; i = i+4) {
+        NSLog(@"%d",i);
+        TFHppleElement *element1 = kanjiNode[i];
+        TFHppleElement *element2 = kanjiNode[i+1];
+        TFHppleElement *element3 = kanjiNode[i+2];
+        TFHppleElement *element4 = kanjiNode[i+3];
+        Kanji *newKanji = [Kanji new];
+        newKanji.kanjiWord = [[element1 firstChild] content];
+        newKanji.onyomi = [Utilities convertString:[[element2 firstChild] content]];
+        newKanji.kunyomi = [Utilities convertString:[[element3 firstChild] content]];
+        newKanji.englishMeaning = [Utilities convertString:[[element4 firstChild] content]];
+        [newListKanji addObject:newKanji];
+        NSLog(@"%@",newKanji.kanjiWord);
+        
     }
     
+    self.listWriting = [newListKanji mutableCopy];
+    [self.collectionWriting reloadData];
 }
+
+- (void)getKanjiAPIFail:(NSString *)resultMessage {
+    ProgressBarDismissLoading(kEmpty);
+}
+
 
 @end

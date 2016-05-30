@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3775A9F1CFC1463009A4FEA /* Kanji.m in Sources */ = {isa = PBXBuildFile; fileRef = D3775A9E1CFC1463009A4FEA /* Kanji.m */; };
+		D3775AA21CFC203D009A4FEA /* KanjiController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3775AA11CFC203D009A4FEA /* KanjiController.m */; };
+		D3775AA81CFC2E37009A4FEA /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = D3775AA71CFC2E37009A4FEA /* delete.png */; };
+		D3775AAC1CFC4492009A4FEA /* delete_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3775AAB1CFC4492009A4FEA /* delete_icon.png */; };
 		D3CCA3A31CF2ACAC0022D752 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA3A21CF2ACAC0022D752 /* main.m */; };
 		D3CCA3AF1CF2ACAC0022D752 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CCA3AD1CF2ACAC0022D752 /* Main.storyboard */; };
 		D3CCA3B11CF2ACAC0022D752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CCA3B01CF2ACAC0022D752 /* Assets.xcassets */; };
@@ -61,7 +65,6 @@
 		D3FD92E51CF542B80039FB14 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD92E11CF542B80039FB14 /* TFHppleElement.m */; };
 		D3FD92E61CF542B80039FB14 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD92E31CF542B80039FB14 /* XPathQuery.m */; };
 		D3FD92F21CF54A6B0039FB14 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FD92EC1CF5492E0039FB14 /* libxml2.2.dylib */; };
-		D3FD92F51CF54B760039FB14 /* ListGrammarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD92F41CF54B760039FB14 /* ListGrammarController.m */; };
 		D3FD92F81CF54C680039FB14 /* DBAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FD92F71CF54C680039FB14 /* DBAccess.framework */; };
 		D3FD92FC1CF54C860039FB14 /* Grammar.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD92FB1CF54C860039FB14 /* Grammar.m */; };
 		D3FD93001CF54EF40039FB14 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD92FF1CF54EF40039FB14 /* Utilities.m */; };
@@ -90,6 +93,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3775A9D1CFC1463009A4FEA /* Kanji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Kanji.h; path = Modal/Kanji.h; sourceTree = "<group>"; };
+		D3775A9E1CFC1463009A4FEA /* Kanji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Kanji.m; path = Modal/Kanji.m; sourceTree = "<group>"; };
+		D3775AA01CFC203D009A4FEA /* KanjiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KanjiController.h; path = Controller/KanjiController.h; sourceTree = "<group>"; };
+		D3775AA11CFC203D009A4FEA /* KanjiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanjiController.m; path = Controller/KanjiController.m; sourceTree = "<group>"; };
+		D3775AA71CFC2E37009A4FEA /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		D3775AAB1CFC4492009A4FEA /* delete_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete_icon.png; sourceTree = "<group>"; };
 		D3CCA39E1CF2ACAC0022D752 /* JapaneseTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CCA3A21CF2ACAC0022D752 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3CCA3AE1CF2ACAC0022D752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -216,8 +225,6 @@
 		D3FD92E31CF542B80039FB14 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPathQuery.m; path = TFHppleElement/XPathQuery.m; sourceTree = "<group>"; };
 		D3FD92EC1CF5492E0039FB14 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = /usr/lib/libxml2.2.dylib; sourceTree = "<absolute>"; };
 		D3FD92F01CF549AF0039FB14 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
-		D3FD92F31CF54B760039FB14 /* ListGrammarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListGrammarController.h; path = Controller/ListGrammarController.h; sourceTree = "<group>"; };
-		D3FD92F41CF54B760039FB14 /* ListGrammarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListGrammarController.m; path = Controller/ListGrammarController.m; sourceTree = "<group>"; };
 		D3FD92F71CF54C680039FB14 /* DBAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DBAccess.framework; sourceTree = "<group>"; };
 		D3FD92FA1CF54C860039FB14 /* Grammar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Grammar.h; path = Modal/Grammar.h; sourceTree = "<group>"; };
 		D3FD92FB1CF54C860039FB14 /* Grammar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Grammar.m; path = Modal/Grammar.m; sourceTree = "<group>"; };
@@ -389,6 +396,8 @@
 				D3FA256F1CF843D100CD24BF /* WritingCell.m */,
 				D3FA25711CF849F400CD24BF /* CustomWritingLayout.h */,
 				D3FA25721CF849F400CD24BF /* CustomWritingLayout.m */,
+				D3775AA01CFC203D009A4FEA /* KanjiController.h */,
+				D3775AA11CFC203D009A4FEA /* KanjiController.m */,
 			);
 			name = Alphabet;
 			sourceTree = "<group>";
@@ -398,8 +407,6 @@
 			children = (
 				D3CCA4961CF2AF9A0022D752 /* GrammarController.h */,
 				D3CCA4971CF2AF9A0022D752 /* GrammarController.m */,
-				D3FD92F31CF54B760039FB14 /* ListGrammarController.h */,
-				D3FD92F41CF54B760039FB14 /* ListGrammarController.m */,
 				D3FD93041CF56E040039FB14 /* DetailGrammarController.h */,
 				D3FD93051CF56E040039FB14 /* DetailGrammarController.m */,
 			);
@@ -524,6 +531,8 @@
 		D3F6657C1CF2E2F4001A7F71 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D3775AAB1CFC4492009A4FEA /* delete_icon.png */,
+				D3775AA71CFC2E37009A4FEA /* delete.png */,
 				D3FA256C1CF6F9E700CD24BF /* sound_icon.png */,
 				D3FD930D1CF5B6310039FB14 /* hiragana1.gif */,
 				D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */,
@@ -613,6 +622,8 @@
 				D3FD930B1CF599920039FB14 /* Vocabulary.m */,
 				D3FA25671CF6EE1300CD24BF /* Sound.h */,
 				D3FA25681CF6EE1300CD24BF /* Sound.m */,
+				D3775A9D1CFC1463009A4FEA /* Kanji.h */,
+				D3775A9E1CFC1463009A4FEA /* Kanji.m */,
 			);
 			name = Modal;
 			sourceTree = "<group>";
@@ -741,6 +752,8 @@
 				D3FD930E1CF5B6310039FB14 /* hiragana1.gif in Resources */,
 				D3CCA3B11CF2ACAC0022D752 /* Assets.xcassets in Resources */,
 				D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */,
+				D3775AA81CFC2E37009A4FEA /* delete.png in Resources */,
+				D3775AAC1CFC4492009A4FEA /* delete_icon.png in Resources */,
 				D3FA256D1CF6F9E700CD24BF /* sound_icon.png in Resources */,
 				D3CCA3AF1CF2ACAC0022D752 /* Main.storyboard in Resources */,
 			);
@@ -770,6 +783,7 @@
 				D3CCA47E1CF2AF5F0022D752 /* AFURLConnectionOperation.m in Sources */,
 				D3CCA4AE1CF2AFD10022D752 /* AppDelegate.m in Sources */,
 				D3CCA49E1CF2AFB50022D752 /* VocabularyController.m in Sources */,
+				D3775AA21CFC203D009A4FEA /* KanjiController.m in Sources */,
 				D3FA254F1CF6920C00CD24BF /* TLYShyScrollViewController.m in Sources */,
 				D3FD92E41CF542B80039FB14 /* TFHpple.m in Sources */,
 				D3FA25461CF691FA00CD24BF /* TLYShyNavBarManager.m in Sources */,
@@ -793,12 +807,12 @@
 				D3CCA4951CF2AF8E0022D752 /* AlphabetController.m in Sources */,
 				D3CCA48C1CF2AF6F0022D752 /* iToast.m in Sources */,
 				D3CCA4891CF2AF5F0022D752 /* UIWebView+AFNetworking.m in Sources */,
+				D3775A9F1CFC1463009A4FEA /* Kanji.m in Sources */,
 				D3CCA4831CF2AF5F0022D752 /* UIAlertView+AFNetworking.m in Sources */,
 				D3CCA4791CF2AF5F0022D752 /* AFHTTPRequestOperationManager.m in Sources */,
 				D3FA255C1CF6C71A00CD24BF /* NSString+HTML.m in Sources */,
 				D3FA253E1CF691EF00CD24BF /* NSObject+TLYSwizzlingHelpers.m in Sources */,
 				D3FD93031CF551D70039FB14 /* DataManager.m in Sources */,
-				D3FD92F51CF54B760039FB14 /* ListGrammarController.m in Sources */,
 				D3CCA4811CF2AF5F0022D752 /* AFURLSessionManager.m in Sources */,
 				D3FA25731CF849F400CD24BF /* CustomWritingLayout.m in Sources */,
 				D3CCA4801CF2AF5F0022D752 /* AFURLResponseSerialization.m in Sources */,

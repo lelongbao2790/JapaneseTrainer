@@ -9,7 +9,7 @@
 #import "DataManager.h"
 
 @implementation DataManager
-@synthesize getListGrammarDelegate, getDetailDelegate, getVocabularyDelegate, searchWordDelegate;
+@synthesize getListGrammarDelegate, getDetailDelegate, getVocabularyDelegate, searchWordDelegate, kanjiDelegate, kanjiMeaningDelegate;
 
 //*****************************************************************************
 #pragma mark -
@@ -99,6 +99,33 @@
         [searchWordDelegate searchWordAPISuccess:(NSData *)responseObject];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         [searchWordDelegate searchWordAPIFail:[error localizedDescription]];
+    }];
+}
+
+/*
+ * GET KANJI
+ *
+ * @param strUrl url string request
+ */
+- (void)getKanjiWithUrl:(NSString *)strUrl {
+    [self.manager GET:strUrl parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [kanjiDelegate getKanjiAPISuccess:(NSData *)responseObject];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [kanjiDelegate getKanjiAPIFail:[error localizedDescription]];
+    }];
+}
+
+/*
+ * GET KANJI MEANING
+ *
+ * @param strUrl url string request
+ */
+- (void)getKanjiMeaningWithUrl:(NSString *)strUrl {
+    strUrl = [strUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    [self.manager GET:strUrl parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [kanjiMeaningDelegate getKanjiMeaningAPISuccess:(NSData *)responseObject];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [kanjiMeaningDelegate getKanjiMeaningAPIFail:[error localizedDescription]];
     }];
 }
 

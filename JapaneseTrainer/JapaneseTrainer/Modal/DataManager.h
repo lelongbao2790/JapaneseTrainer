@@ -13,6 +13,8 @@
     NSObject<GetDetailGrammarDelegate> *getDetailDelegate;
     NSObject<GetVocabularyDelegate> *getVocabularyDelegate;
     NSObject<SearchWordDelegate> *searchWordDelegate;
+    NSObject<KanjiDelegate> *kanjiDelegate;
+    NSObject<KanjiMeaningDelegate> *kanjiMeaningDelegate;
 }
 
 // Init request operation manager
@@ -21,6 +23,8 @@
 @property (strong, nonatomic) NSObject *getDetailDelegate;
 @property (strong, nonatomic) NSObject *getVocabularyDelegate;
 @property (strong, nonatomic) NSObject *searchWordDelegate;
+@property (strong, nonatomic) NSObject *kanjiDelegate;
+@property (strong, nonatomic) NSObject *kanjiMeaningDelegate;
 
 //*****************************************************************************
 #pragma mark -
@@ -59,5 +63,18 @@
  */
 - (void)searchVocabularyWithUrl:(NSString *)strUrl;
 
+/*
+ * GET KANJI
+ *
+ * @param strUrl url string request
+ */
+- (void)getKanjiWithUrl:(NSString *)strUrl;
+
+/*
+ * GET KANJI MEANING
+ *
+ * @param strUrl url string request
+ */
+- (void)getKanjiMeaningWithUrl:(NSString *)strUrl;
 
 @end

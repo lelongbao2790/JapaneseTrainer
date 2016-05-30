@@ -34,6 +34,7 @@
 #define errorString(value) [[error localizedDescription] isEqualToString:value]
 #define kHTMLFontSize15 [NSString stringWithFormat:@"<style>body{font-family: '%@'; font-size:%fpx;}</style>", @"Helvetica Neue",15.0]
 #define kHTMLFontSize17 [NSString stringWithFormat:@"<style>body{font-family: '%@'; font-size:%fpx;}</style>", @"Helvetica Neue",17.0]
+#define kHTMLFontSize20 [NSString stringWithFormat:@"<style>body{font-family: '%@'; font-size:%fpx;}</style>", @"Helvetica Neue",20.0]
 #define getRegex(value) [NSRegularExpression regularExpressionWithPattern:value options:0 error:nil]
 #define kRedHTML @"<b style='color:red'>Example<br/><br/></b><b>%d</b><br/> %@ <br/>"
 #define kBoldNumberHTML @"\n <b>%d</b><br/> %@<br/>"

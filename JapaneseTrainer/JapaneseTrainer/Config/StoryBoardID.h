@@ -27,5 +27,6 @@
 #define kDetailGrammarStoryBoardID @"DetailGrammarController"
 #define kWritingCellIdentifier @"WritingIdentifier"
 #define kWritingCell @"WritingCell"
+#define kKanjiController @"KanjiController"
 
 #endif /* StoryBoardID_h */
