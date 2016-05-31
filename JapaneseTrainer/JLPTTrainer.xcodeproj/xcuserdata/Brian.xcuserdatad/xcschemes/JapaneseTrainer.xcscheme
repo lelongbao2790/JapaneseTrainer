@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D3CCA39D1CF2ACAC0022D752"
-               BuildableName = "JapaneseTrainer.app"
-               BlueprintName = "JapaneseTrainer"
-               ReferencedContainer = "container:JapaneseTrainer.xcodeproj">
+               BuildableName = "JLPTTrainer.app"
+               BlueprintName = "JLPTTrainer"
+               ReferencedContainer = "container:JLPTTrainer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D3CCA3B91CF2ACAC0022D752"
-               BuildableName = "JapaneseTrainerTests.xctest"
-               BlueprintName = "JapaneseTrainerTests"
-               ReferencedContainer = "container:JapaneseTrainer.xcodeproj">
+               BuildableName = "JLPTTrainer.xctest"
+               BlueprintName = "JLPTTrainerTests"
+               ReferencedContainer = "container:JLPTTrainer.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D3CCA3C41CF2ACAC0022D752"
-               BuildableName = "JapaneseTrainerUITests.xctest"
-               BlueprintName = "JapaneseTrainerUITests"
-               ReferencedContainer = "container:JapaneseTrainer.xcodeproj">
+               BuildableName = "JLPTTrainer.xctest"
+               BlueprintName = "JLPTTrainerUITests"
+               ReferencedContainer = "container:JLPTTrainer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D3CCA39D1CF2ACAC0022D752"
-            BuildableName = "JapaneseTrainer.app"
-            BlueprintName = "JapaneseTrainer"
-            ReferencedContainer = "container:JapaneseTrainer.xcodeproj">
+            BuildableName = "JLPTTrainer.app"
+            BlueprintName = "JLPTTrainer"
+            ReferencedContainer = "container:JLPTTrainer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D3CCA39D1CF2ACAC0022D752"
-            BuildableName = "JapaneseTrainer.app"
-            BlueprintName = "JapaneseTrainer"
-            ReferencedContainer = "container:JapaneseTrainer.xcodeproj">
+            BuildableName = "JLPTTrainer.app"
+            BlueprintName = "JLPTTrainer"
+            ReferencedContainer = "container:JLPTTrainer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D3CCA39D1CF2ACAC0022D752"
-            BuildableName = "JapaneseTrainer.app"
-            BlueprintName = "JapaneseTrainer"
-            ReferencedContainer = "container:JapaneseTrainer.xcodeproj">
+            BuildableName = "JLPTTrainer.app"
+            BlueprintName = "JLPTTrainer"
+            ReferencedContainer = "container:JLPTTrainer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

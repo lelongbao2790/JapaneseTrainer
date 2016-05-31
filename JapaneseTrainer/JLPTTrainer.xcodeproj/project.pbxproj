@@ -99,16 +99,16 @@
 		D3775AA11CFC203D009A4FEA /* KanjiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanjiController.m; path = Controller/KanjiController.m; sourceTree = "<group>"; };
 		D3775AA71CFC2E37009A4FEA /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		D3775AAB1CFC4492009A4FEA /* delete_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete_icon.png; sourceTree = "<group>"; };
-		D3CCA39E1CF2ACAC0022D752 /* JapaneseTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CCA39E1CF2ACAC0022D752 /* JLPTTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLPTTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CCA3A21CF2ACAC0022D752 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3CCA3AE1CF2ACAC0022D752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3CCA3B01CF2ACAC0022D752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3CCA3B31CF2ACAC0022D752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3CCA3B51CF2ACAC0022D752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3CCA3BA1CF2ACAC0022D752 /* JapaneseTrainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapaneseTrainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CCA3BA1CF2ACAC0022D752 /* JLPTTrainer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLPTTrainer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CCA3BE1CF2ACAC0022D752 /* JapaneseTrainerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JapaneseTrainerTests.m; sourceTree = "<group>"; };
 		D3CCA3C01CF2ACAC0022D752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3CCA3C51CF2ACAC0022D752 /* JapaneseTrainerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapaneseTrainerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CCA3C51CF2ACAC0022D752 /* JLPTTrainer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLPTTrainer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CCA3C91CF2ACAC0022D752 /* JapaneseTrainerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JapaneseTrainerUITests.m; sourceTree = "<group>"; };
 		D3CCA3CB1CF2ACAC0022D752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3CCA4501CF2AF500022D752 /* FixAutoLayoutDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FixAutoLayoutDelegate.h; path = Delegate/FixAutoLayoutDelegate.h; sourceTree = "<group>"; };
@@ -284,9 +284,9 @@
 		D3CCA39F1CF2ACAC0022D752 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D3CCA39E1CF2ACAC0022D752 /* JapaneseTrainer.app */,
-				D3CCA3BA1CF2ACAC0022D752 /* JapaneseTrainerTests.xctest */,
-				D3CCA3C51CF2ACAC0022D752 /* JapaneseTrainerUITests.xctest */,
+				D3CCA39E1CF2ACAC0022D752 /* JLPTTrainer.app */,
+				D3CCA3BA1CF2ACAC0022D752 /* JLPTTrainer.xctest */,
+				D3CCA3C51CF2ACAC0022D752 /* JLPTTrainer.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -648,9 +648,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D3CCA39D1CF2ACAC0022D752 /* JapaneseTrainer */ = {
+		D3CCA39D1CF2ACAC0022D752 /* JLPTTrainer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3CCA3CE1CF2ACAC0022D752 /* Build configuration list for PBXNativeTarget "JapaneseTrainer" */;
+			buildConfigurationList = D3CCA3CE1CF2ACAC0022D752 /* Build configuration list for PBXNativeTarget "JLPTTrainer" */;
 			buildPhases = (
 				D3CCA39A1CF2ACAC0022D752 /* Sources */,
 				D3CCA39B1CF2ACAC0022D752 /* Frameworks */,
@@ -660,14 +660,14 @@
 			);
 			dependencies = (
 			);
-			name = JapaneseTrainer;
+			name = JLPTTrainer;
 			productName = JapaneseTrainer;
-			productReference = D3CCA39E1CF2ACAC0022D752 /* JapaneseTrainer.app */;
+			productReference = D3CCA39E1CF2ACAC0022D752 /* JLPTTrainer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D3CCA3B91CF2ACAC0022D752 /* JapaneseTrainerTests */ = {
+		D3CCA3B91CF2ACAC0022D752 /* JLPTTrainerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3CCA3D11CF2ACAC0022D752 /* Build configuration list for PBXNativeTarget "JapaneseTrainerTests" */;
+			buildConfigurationList = D3CCA3D11CF2ACAC0022D752 /* Build configuration list for PBXNativeTarget "JLPTTrainerTests" */;
 			buildPhases = (
 				D3CCA3B61CF2ACAC0022D752 /* Sources */,
 				D3CCA3B71CF2ACAC0022D752 /* Frameworks */,
@@ -678,14 +678,14 @@
 			dependencies = (
 				D3CCA3BC1CF2ACAC0022D752 /* PBXTargetDependency */,
 			);
-			name = JapaneseTrainerTests;
+			name = JLPTTrainerTests;
 			productName = JapaneseTrainerTests;
-			productReference = D3CCA3BA1CF2ACAC0022D752 /* JapaneseTrainerTests.xctest */;
+			productReference = D3CCA3BA1CF2ACAC0022D752 /* JLPTTrainer.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D3CCA3C41CF2ACAC0022D752 /* JapaneseTrainerUITests */ = {
+		D3CCA3C41CF2ACAC0022D752 /* JLPTTrainerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3CCA3D41CF2ACAC0022D752 /* Build configuration list for PBXNativeTarget "JapaneseTrainerUITests" */;
+			buildConfigurationList = D3CCA3D41CF2ACAC0022D752 /* Build configuration list for PBXNativeTarget "JLPTTrainerUITests" */;
 			buildPhases = (
 				D3CCA3C11CF2ACAC0022D752 /* Sources */,
 				D3CCA3C21CF2ACAC0022D752 /* Frameworks */,
@@ -696,9 +696,9 @@
 			dependencies = (
 				D3CCA3C71CF2ACAC0022D752 /* PBXTargetDependency */,
 			);
-			name = JapaneseTrainerUITests;
+			name = JLPTTrainerUITests;
 			productName = JapaneseTrainerUITests;
-			productReference = D3CCA3C51CF2ACAC0022D752 /* JapaneseTrainerUITests.xctest */;
+			productReference = D3CCA3C51CF2ACAC0022D752 /* JLPTTrainer.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -723,7 +723,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D3CCA3991CF2ACAC0022D752 /* Build configuration list for PBXProject "JapaneseTrainer" */;
+			buildConfigurationList = D3CCA3991CF2ACAC0022D752 /* Build configuration list for PBXProject "JLPTTrainer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -736,9 +736,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D3CCA39D1CF2ACAC0022D752 /* JapaneseTrainer */,
-				D3CCA3B91CF2ACAC0022D752 /* JapaneseTrainerTests */,
-				D3CCA3C41CF2ACAC0022D752 /* JapaneseTrainerUITests */,
+				D3CCA39D1CF2ACAC0022D752 /* JLPTTrainer */,
+				D3CCA3B91CF2ACAC0022D752 /* JLPTTrainerTests */,
+				D3CCA3C41CF2ACAC0022D752 /* JLPTTrainerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -857,12 +857,12 @@
 /* Begin PBXTargetDependency section */
 		D3CCA3BC1CF2ACAC0022D752 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D3CCA39D1CF2ACAC0022D752 /* JapaneseTrainer */;
+			target = D3CCA39D1CF2ACAC0022D752 /* JLPTTrainer */;
 			targetProxy = D3CCA3BB1CF2ACAC0022D752 /* PBXContainerItemProxy */;
 		};
 		D3CCA3C71CF2ACAC0022D752 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D3CCA39D1CF2ACAC0022D752 /* JapaneseTrainer */;
+			target = D3CCA39D1CF2ACAC0022D752 /* JLPTTrainer */;
 			targetProxy = D3CCA3C61CF2ACAC0022D752 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -926,7 +926,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -967,7 +967,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -988,14 +988,14 @@
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/JapaneseTrainer/Config/JTPrefix.pch";
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = JapaneseTrainer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JapaneseTrainer",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LongBao.JapaneseTrainer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = LongBao.JLPTTrainer;
+				PRODUCT_NAME = JLPTTrainer;
 			};
 			name = Debug;
 		};
@@ -1012,14 +1012,14 @@
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/JapaneseTrainer/Config/JTPrefix.pch";
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = JapaneseTrainer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JapaneseTrainer",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LongBao.JapaneseTrainer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = LongBao.JLPTTrainer;
+				PRODUCT_NAME = JLPTTrainer;
 			};
 			name = Release;
 		};
@@ -1030,8 +1030,8 @@
 				INFOPLIST_FILE = JapaneseTrainerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LongBao.JapaneseTrainerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseTrainer.app/JapaneseTrainer";
+				PRODUCT_NAME = JLPTTrainer;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JLPTTrainer.app/JLPTTrainer";
 			};
 			name = Debug;
 		};
@@ -1042,8 +1042,8 @@
 				INFOPLIST_FILE = JapaneseTrainerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LongBao.JapaneseTrainerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseTrainer.app/JapaneseTrainer";
+				PRODUCT_NAME = JLPTTrainer;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JLPTTrainer.app/JLPTTrainer";
 			};
 			name = Release;
 		};
@@ -1053,7 +1053,7 @@
 				INFOPLIST_FILE = JapaneseTrainerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LongBao.JapaneseTrainerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = JLPTTrainer;
 				TEST_TARGET_NAME = JapaneseTrainer;
 			};
 			name = Debug;
@@ -1064,7 +1064,7 @@
 				INFOPLIST_FILE = JapaneseTrainerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LongBao.JapaneseTrainerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = JLPTTrainer;
 				TEST_TARGET_NAME = JapaneseTrainer;
 			};
 			name = Release;
@@ -1072,7 +1072,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D3CCA3991CF2ACAC0022D752 /* Build configuration list for PBXProject "JapaneseTrainer" */ = {
+		D3CCA3991CF2ACAC0022D752 /* Build configuration list for PBXProject "JLPTTrainer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3CCA3CC1CF2ACAC0022D752 /* Debug */,
@@ -1081,7 +1081,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3CCA3CE1CF2ACAC0022D752 /* Build configuration list for PBXNativeTarget "JapaneseTrainer" */ = {
+		D3CCA3CE1CF2ACAC0022D752 /* Build configuration list for PBXNativeTarget "JLPTTrainer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3CCA3CF1CF2ACAC0022D752 /* Debug */,
@@ -1090,7 +1090,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3CCA3D11CF2ACAC0022D752 /* Build configuration list for PBXNativeTarget "JapaneseTrainerTests" */ = {
+		D3CCA3D11CF2ACAC0022D752 /* Build configuration list for PBXNativeTarget "JLPTTrainerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3CCA3D21CF2ACAC0022D752 /* Debug */,
@@ -1099,7 +1099,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3CCA3D41CF2ACAC0022D752 /* Build configuration list for PBXNativeTarget "JapaneseTrainerUITests" */ = {
+		D3CCA3D41CF2ACAC0022D752 /* Build configuration list for PBXNativeTarget "JLPTTrainerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3CCA3D51CF2ACAC0022D752 /* Debug */,
