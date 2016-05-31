@@ -267,10 +267,10 @@
     
     NSString *searchUrl = [NSString stringWithFormat:@"%@%@",kSearchUrl,word];
     [[DataManager shared] searchVocabularyWithUrl:searchUrl];
-//    
-//    // Load more
-//    NSString *searchMoreUrl = [NSString stringWithFormat:kSearchMoreResult,word];
-//    [[DataManager shared] searchVocabularyWithUrl:searchMoreUrl];
+    
+    // Load more
+    NSString *searchMoreUrl = [NSString stringWithFormat:kSearchMoreResult,word];
+    [[DataManager shared] searchVocabularyWithUrl:searchMoreUrl];
 }
 
 #pragma mark - UISearchBarDelegate
