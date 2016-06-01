@@ -14,4 +14,5 @@
 @property (strong, nonatomic) NSString *onyomi;
 @property (strong, nonatomic) NSString *kunyomi;
 @property (strong, nonatomic) NSString *englishMeaning;
+@property (assign, nonatomic) NSInteger level;
 @end

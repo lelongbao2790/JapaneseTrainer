@@ -9,5 +9,5 @@
 #import "Vocabulary.h"
 
 @implementation Vocabulary
-@dynamic nameHiragana, nameKanji, nameEnglish, href, read;
+@dynamic nameHiragana, nameKanji, nameEnglish, href, read, level;
 @end

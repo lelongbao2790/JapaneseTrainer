@@ -39,13 +39,21 @@
 - (void)requestGetVocabulary:(NSArray *)listVoca andLevel:(NSString *)level {
     [self.listVocabulary removeAllObjects];
     [self.tbvVocabulary reloadData];
-    for (NSDictionary *dictVoca in listVoca) {
-        NSString *name = [dictVoca objectForKey:kName];
-        NSString *link = [dictVoca objectForKey:kLink];
-        if ([name isEqualToString:level]) {
-            ProgressBarShowLoading(kLoading);
-            [[DataManager shared] getVocabularyWithUrl:link];
-            break;
+    
+    NSArray *listVocabularyLocal = [[NSArray alloc] init];
+    listVocabularyLocal = [[DataAccess shared] listVocabularyByLevel:self.segLevel.selectedSegmentIndex];
+    if (listVocabularyLocal.count > 0) {
+        self.listVocabulary = [listVocabularyLocal mutableCopy];
+        [self.tbvVocabulary reloadData];
+    } else {
+        for (NSDictionary *dictVoca in listVoca) {
+            NSString *name = [dictVoca objectForKey:kName];
+            NSString *link = [dictVoca objectForKey:kLink];
+            if ([name isEqualToString:level]) {
+                ProgressBarShowLoading(kLoading);
+                [[DataManager shared] getVocabularyWithUrl:link];
+                break;
+            }
         }
     }
 }
@@ -200,6 +208,8 @@
         newVoca.nameEnglish = [Utilities removeAlphabeFromJapaneseString:[[element3 firstChild] content]];
         newVoca.nameKanji = [Utilities removeAlphabeFromJapaneseString:[[element1 firstChild] content]];
         newVoca.href = [element1 objectForKey:kHref];
+        newVoca.level = self.segLevel.selectedSegmentIndex;
+        [newVoca commit];
         [newTutorials addObject:newVoca];
         NSLog(@"%@",newVoca.nameHiragana);
 
@@ -229,7 +239,6 @@
             
             if ([[childElement tagName] isEqualToString:@"dd"]) {
                 NSString *rawD = [childElement raw];
-//                NSString *content = [childElement content];
                 newVoca.rawExample = rawD;
             }
             if ([[childElement tagName] isEqualToString:@"a"]) {
@@ -245,9 +254,7 @@
             }
             NSLog(@"%@", childElement);
         }
-        
         [listWordSearch addObject:newVoca];
-        
     }
     
     [self.listSearch addObjectsFromArray: listWordSearch];
@@ -267,10 +274,10 @@
     
     NSString *searchUrl = [NSString stringWithFormat:@"%@%@",kSearchUrl,word];
     [[DataManager shared] searchVocabularyWithUrl:searchUrl];
-//    
-//    // Load more
-//    NSString *searchMoreUrl = [NSString stringWithFormat:kSearchMoreResult,word];
-//    [[DataManager shared] searchVocabularyWithUrl:searchMoreUrl];
+    
+    // Load more
+    NSString *searchMoreUrl = [NSString stringWithFormat:kSearchMoreResult,word];
+    [[DataManager shared] searchVocabularyWithUrl:searchMoreUrl];
 }
 
 #pragma mark - UISearchBarDelegate

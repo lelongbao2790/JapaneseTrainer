@@ -29,6 +29,7 @@
 #import "Sound.h"
 #import "WritingCell.h"
 #import "Kanji.h"
+#import "DataAccess.h"
 #import "KanjiController.h"
 
 #endif /* JTPrefix_pch */

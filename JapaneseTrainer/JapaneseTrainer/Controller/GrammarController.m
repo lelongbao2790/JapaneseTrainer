@@ -96,13 +96,21 @@
 - (void)requestGetVocabulary:(NSArray *)listVoca andLevel:(NSString *)level {
     [self.listGrammar removeAllObjects];
     [self.tbvGrammar reloadData];
-    for (NSDictionary *dictVoca in listVoca) {
-        NSString *name = [dictVoca objectForKey:kName];
-        NSString *link = [dictVoca objectForKey:kLink];
-        if ([name isEqualToString:level]) {
-            ProgressBarShowLoading(kLoading);
-            [[DataManager shared] getGrammarWithUrl:link];
-            break;
+    
+    NSArray *listVocabularyLocal = [[NSArray alloc] init];
+    listVocabularyLocal = [[DataAccess shared] listGrammarByLevel:self.btnSegLevel.selectedSegmentIndex];
+    if (listVocabularyLocal.count > 0) {
+        self.listGrammar = [listVocabularyLocal mutableCopy];
+        [self.tbvGrammar reloadData];
+    } else {
+        for (NSDictionary *dictVoca in listVoca) {
+            NSString *name = [dictVoca objectForKey:kName];
+            NSString *link = [dictVoca objectForKey:kLink];
+            if ([name isEqualToString:level]) {
+                ProgressBarShowLoading(kLoading);
+                [[DataManager shared] getGrammarWithUrl:link];
+                break;
+            }
         }
     }
 }
@@ -130,8 +138,11 @@
     DetailGrammarController *detailGrammar = InitStoryBoardWithIdentifier(kDetailGrammarStoryBoardID);
     Grammar *aGrammar = self.listGrammar[indexPath.row];
     detailGrammar.aGrammar = aGrammar;
-    ProgressBarShowLoading(kLoading);
-    [[DataManager shared] getDetailGrammarWithUrl:aGrammar.href];
+    if (aGrammar.rawExample.length < 1) {
+        ProgressBarShowLoading(kLoading);
+        [[DataManager shared] getDetailGrammarWithUrl:aGrammar.href];
+    } 
+    
     [self.navigationController pushViewController:detailGrammar animated:YES];
     
 }
@@ -148,6 +159,8 @@
         Grammar *newGrammar = [Grammar new];
         newGrammar.name = [Utilities removeAlphabeFromJapaneseString:[[element firstChild] content]];
         newGrammar.href = [element objectForKey:kHref];
+        newGrammar.level = self.btnSegLevel.selectedSegmentIndex;
+        [newGrammar commit];
         [newTutorials addObject:newGrammar];
         NSLog(@"%@",newGrammar.name);
     }

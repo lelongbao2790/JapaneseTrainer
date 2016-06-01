@@ -125,8 +125,17 @@
     self.btnSegLevel.hidden = NO;
     [self.listWriting removeAllObjects];
     [self.collectionWriting reloadData];
-    ProgressBarShowLoading(kLoading);
-    [[DataManager shared] getKanjiWithUrl:urlKanjiLevel];
+    
+    NSArray *listKanjiLocal = [[NSArray alloc] init];
+    listKanjiLocal = [[DataAccess shared] listKanjiByLevel:self.btnSegLevel.selectedSegmentIndex];
+    if (listKanjiLocal.count > 0) {
+        self.listWriting = [listKanjiLocal mutableCopy];
+        [self.collectionWriting reloadData];
+    } else {
+        ProgressBarShowLoading(kLoading);
+        [[DataManager shared] getKanjiWithUrl:urlKanjiLevel];
+    }
+    
     
 }
 
@@ -201,6 +210,8 @@
         newKanji.onyomi = [Utilities convertString:[[element2 firstChild] content]];
         newKanji.kunyomi = [Utilities convertString:[[element3 firstChild] content]];
         newKanji.englishMeaning = [Utilities convertString:[[element4 firstChild] content]];
+        newKanji.level = self.btnSegLevel.selectedSegmentIndex;
+        [newKanji commit];
         [newListKanji addObject:newKanji];
         NSLog(@"%@",newKanji.kanjiWord);
         

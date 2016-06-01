@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *href;
+@property (assign, nonatomic) NSInteger level;
+@property (strong, nonatomic) NSString *rawExample;
 @end

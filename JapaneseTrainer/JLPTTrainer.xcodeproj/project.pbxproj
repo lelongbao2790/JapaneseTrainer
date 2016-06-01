@@ -11,6 +11,7 @@
 		D3775AA21CFC203D009A4FEA /* KanjiController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3775AA11CFC203D009A4FEA /* KanjiController.m */; };
 		D3775AA81CFC2E37009A4FEA /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = D3775AA71CFC2E37009A4FEA /* delete.png */; };
 		D3775AAC1CFC4492009A4FEA /* delete_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3775AAB1CFC4492009A4FEA /* delete_icon.png */; };
+		D3AC9A861CFD8123003D1D08 /* DataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AC9A851CFD8123003D1D08 /* DataAccess.m */; };
 		D3CCA3A31CF2ACAC0022D752 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA3A21CF2ACAC0022D752 /* main.m */; };
 		D3CCA3AF1CF2ACAC0022D752 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CCA3AD1CF2ACAC0022D752 /* Main.storyboard */; };
 		D3CCA3B11CF2ACAC0022D752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CCA3B01CF2ACAC0022D752 /* Assets.xcassets */; };
@@ -99,6 +100,8 @@
 		D3775AA11CFC203D009A4FEA /* KanjiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanjiController.m; path = Controller/KanjiController.m; sourceTree = "<group>"; };
 		D3775AA71CFC2E37009A4FEA /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		D3775AAB1CFC4492009A4FEA /* delete_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete_icon.png; sourceTree = "<group>"; };
+		D3AC9A841CFD8123003D1D08 /* DataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataAccess.h; path = Modal/DataAccess.h; sourceTree = "<group>"; };
+		D3AC9A851CFD8123003D1D08 /* DataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataAccess.m; path = Modal/DataAccess.m; sourceTree = "<group>"; };
 		D3CCA39E1CF2ACAC0022D752 /* JLPTTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLPTTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CCA3A21CF2ACAC0022D752 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3CCA3AE1CF2ACAC0022D752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -624,6 +627,8 @@
 				D3FA25681CF6EE1300CD24BF /* Sound.m */,
 				D3775A9D1CFC1463009A4FEA /* Kanji.h */,
 				D3775A9E1CFC1463009A4FEA /* Kanji.m */,
+				D3AC9A841CFD8123003D1D08 /* DataAccess.h */,
+				D3AC9A851CFD8123003D1D08 /* DataAccess.m */,
 			);
 			name = Modal;
 			sourceTree = "<group>";
@@ -789,6 +794,7 @@
 				D3FA25461CF691FA00CD24BF /* TLYShyNavBarManager.m in Sources */,
 				D3F665791CF2E0EE001A7F71 /* ListContentController.m in Sources */,
 				D3FD93091CF5992E0039FB14 /* VocabularCell.m in Sources */,
+				D3AC9A861CFD8123003D1D08 /* DataAccess.m in Sources */,
 				D3CCA4B41CF2B0660022D752 /* SNLoading.m in Sources */,
 				D3FD930C1CF599920039FB14 /* Vocabulary.m in Sources */,
 				D3FD93001CF54EF40039FB14 /* Utilities.m in Sources */,

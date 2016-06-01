@@ -9,5 +9,5 @@
 #import "Kanji.h"
 
 @implementation Kanji
-@dynamic kanjiWord,onyomi,kunyomi,englishMeaning;
+@dynamic kanjiWord,onyomi,kunyomi,englishMeaning, level;
 @end
