@@ -34,4 +34,12 @@ typedef NS_ENUM(NSInteger, WritingSeg) {
 
 };
 
+typedef NS_ENUM(NSInteger, KanjiControllerTag) {
+    
+    kSegInforKanji = 0,
+    kSegHowToWrite = 1,
+    kConstantSubViewHiragana = 140,
+    kConstantSubViewKanji = 15,
+};
+
 #endif /* Enumeration_h */

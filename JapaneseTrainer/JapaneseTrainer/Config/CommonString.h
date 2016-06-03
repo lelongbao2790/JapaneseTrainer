@@ -41,6 +41,7 @@ static NSString *kHiragana = @"Hiragana";
 static NSString *kKatagana = @"Katagana";
 static NSString *kHiraganaKey = @"hiragana";
 static NSString *kRomanjiKey = @"romanji";
+static NSString *kImageKey = @"image";
 
 // Fixed auto layout for multiple device
 static NSString *kFixAutoLayoutForIp4 = @"fixAutolayoutFor35";

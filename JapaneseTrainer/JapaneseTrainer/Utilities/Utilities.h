@@ -23,5 +23,7 @@
 + (nonnull NSString *)convertString:(nonnull NSString *)strWord;
 
 + (nonnull NSDictionary *)parseRawSearchToDict:(nonnull NSString *)original;
-+ (void)circleButton:(UIButton *)btn;
++ (void)circleButton:(UIView *)btn;
+
++ (NSAttributedString *)convertStringToNSAttributeString:(NSString *)original;
 @end

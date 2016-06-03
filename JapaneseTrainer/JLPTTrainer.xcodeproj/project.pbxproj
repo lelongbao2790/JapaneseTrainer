@@ -7,10 +7,107 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D35391331D01465200025CB3 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D353912C1D01465200025CB3 /* GTMNSString+HTML.m */; };
+		D35391341D01465200025CB3 /* NSMutableAttributedString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D353912E1D01465200025CB3 /* NSMutableAttributedString+Color.m */; };
+		D35391351D01465200025CB3 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D35391301D01465200025CB3 /* NSString+HTML.m */; };
+		D35391361D01465200025CB3 /* NSString+XMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = D35391321D01465200025CB3 /* NSString+XMLEntities.m */; };
+		D35391391D01467F00025CB3 /* delete_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D35391371D01467F00025CB3 /* delete_icon.png */; };
+		D353913A1D01467F00025CB3 /* sound_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D35391381D01467F00025CB3 /* sound_icon.png */; };
+		D353913D1D0146B200025CB3 /* SNLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = D353913C1D0146B200025CB3 /* SNLoading.m */; };
+		D353916C1D01491700025CB3 /* hiragana_a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353913E1D01491700025CB3 /* hiragana_a.jpg */; };
+		D353916D1D01491700025CB3 /* hiragana_chi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353913F1D01491700025CB3 /* hiragana_chi.jpg */; };
+		D353916E1D01491700025CB3 /* hiragana_e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391401D01491700025CB3 /* hiragana_e.jpg */; };
+		D353916F1D01491700025CB3 /* hiragana_ha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391411D01491700025CB3 /* hiragana_ha.jpg */; };
+		D35391701D01491700025CB3 /* hiragana_he.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391421D01491700025CB3 /* hiragana_he.jpg */; };
+		D35391711D01491700025CB3 /* hiragana_hi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391431D01491700025CB3 /* hiragana_hi.jpg */; };
+		D35391721D01491700025CB3 /* hiragana_ho.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391441D01491700025CB3 /* hiragana_ho.jpg */; };
+		D35391731D01491700025CB3 /* hiragana_hu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391451D01491700025CB3 /* hiragana_hu.jpg */; };
+		D35391741D01491700025CB3 /* hiragana_i.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391461D01491700025CB3 /* hiragana_i.jpg */; };
+		D35391751D01491700025CB3 /* hiragana_ka.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391471D01491700025CB3 /* hiragana_ka.jpg */; };
+		D35391761D01491700025CB3 /* hiragana_ke.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391481D01491700025CB3 /* hiragana_ke.jpg */; };
+		D35391771D01491700025CB3 /* hiragana_ki.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391491D01491700025CB3 /* hiragana_ki.jpg */; };
+		D35391781D01491700025CB3 /* hiragana_ko.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353914A1D01491700025CB3 /* hiragana_ko.jpg */; };
+		D35391791D01491700025CB3 /* hiragana_ku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353914B1D01491700025CB3 /* hiragana_ku.jpg */; };
+		D353917A1D01491700025CB3 /* hiragana_ma.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353914C1D01491700025CB3 /* hiragana_ma.jpg */; };
+		D353917B1D01491700025CB3 /* hiragana_me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353914D1D01491700025CB3 /* hiragana_me.jpg */; };
+		D353917C1D01491700025CB3 /* hiragana_mi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353914E1D01491700025CB3 /* hiragana_mi.jpg */; };
+		D353917D1D01491700025CB3 /* hiragana_mo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353914F1D01491700025CB3 /* hiragana_mo.jpg */; };
+		D353917E1D01491700025CB3 /* hiragana_mu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391501D01491700025CB3 /* hiragana_mu.jpg */; };
+		D353917F1D01491700025CB3 /* hiragana_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391511D01491700025CB3 /* hiragana_n.jpg */; };
+		D35391801D01491700025CB3 /* hiragana_na.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391521D01491700025CB3 /* hiragana_na.jpg */; };
+		D35391811D01491700025CB3 /* hiragana_ne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391531D01491700025CB3 /* hiragana_ne.jpg */; };
+		D35391821D01491700025CB3 /* hiragana_ni.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391541D01491700025CB3 /* hiragana_ni.jpg */; };
+		D35391831D01491700025CB3 /* hiragana_no.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391551D01491700025CB3 /* hiragana_no.jpg */; };
+		D35391841D01491700025CB3 /* hiragana_nu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391561D01491700025CB3 /* hiragana_nu.jpg */; };
+		D35391851D01491700025CB3 /* hiragana_o.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391571D01491700025CB3 /* hiragana_o.jpg */; };
+		D35391861D01491700025CB3 /* hiragana_ra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391581D01491700025CB3 /* hiragana_ra.jpg */; };
+		D35391871D01491700025CB3 /* hiragana_re.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391591D01491700025CB3 /* hiragana_re.jpg */; };
+		D35391881D01491700025CB3 /* hiragana_ri.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353915A1D01491700025CB3 /* hiragana_ri.jpg */; };
+		D35391891D01491700025CB3 /* hiragana_ro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353915B1D01491700025CB3 /* hiragana_ro.jpg */; };
+		D353918A1D01491700025CB3 /* hiragana_ru.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353915C1D01491700025CB3 /* hiragana_ru.jpg */; };
+		D353918B1D01491700025CB3 /* hiragana_sa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353915D1D01491700025CB3 /* hiragana_sa.jpg */; };
+		D353918C1D01491700025CB3 /* hiragana_se.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353915E1D01491700025CB3 /* hiragana_se.jpg */; };
+		D353918D1D01491700025CB3 /* hiragana_shi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353915F1D01491700025CB3 /* hiragana_shi.jpg */; };
+		D353918E1D01491700025CB3 /* hiragana_so.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391601D01491700025CB3 /* hiragana_so.jpg */; };
+		D353918F1D01491700025CB3 /* hiragana_su.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391611D01491700025CB3 /* hiragana_su.jpg */; };
+		D35391901D01491700025CB3 /* hiragana_ta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391621D01491700025CB3 /* hiragana_ta.jpg */; };
+		D35391911D01491700025CB3 /* hiragana_te.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391631D01491700025CB3 /* hiragana_te.jpg */; };
+		D35391921D01491700025CB3 /* hiragana_to.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391641D01491700025CB3 /* hiragana_to.jpg */; };
+		D35391931D01491700025CB3 /* hiragana_tsu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391651D01491700025CB3 /* hiragana_tsu.jpg */; };
+		D35391941D01491700025CB3 /* hiragana_u.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391661D01491700025CB3 /* hiragana_u.jpg */; };
+		D35391951D01491700025CB3 /* hiragana_wa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391671D01491700025CB3 /* hiragana_wa.jpg */; };
+		D35391961D01491700025CB3 /* hiragana_wo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391681D01491700025CB3 /* hiragana_wo.jpg */; };
+		D35391971D01491700025CB3 /* hiragana_ya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391691D01491700025CB3 /* hiragana_ya.jpg */; };
+		D35391981D01491700025CB3 /* hiragana_yo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353916A1D01491700025CB3 /* hiragana_yo.jpg */; };
+		D35391991D01491700025CB3 /* hiragana_yu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353916B1D01491700025CB3 /* hiragana_yu.jpg */; };
+		D35391C71D015A0A00025CB3 /* katakana_a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353919A1D015A0A00025CB3 /* katakana_a.jpg */; };
+		D35391C81D015A0A00025CB3 /* katakana_chi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353919B1D015A0A00025CB3 /* katakana_chi.jpg */; };
+		D35391C91D015A0A00025CB3 /* katakana_e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353919C1D015A0A00025CB3 /* katakana_e.jpg */; };
+		D35391CA1D015A0A00025CB3 /* katakana_ha1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353919D1D015A0A00025CB3 /* katakana_ha1.jpg */; };
+		D35391CB1D015A0A00025CB3 /* katakana_hi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353919E1D015A0A00025CB3 /* katakana_hi.jpg */; };
+		D35391CC1D015A0A00025CB3 /* katakana_ho.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D353919F1D015A0A00025CB3 /* katakana_ho.jpg */; };
+		D35391CD1D015A0A00025CB3 /* katakana_hu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391A01D015A0A00025CB3 /* katakana_hu.jpg */; };
+		D35391CE1D015A0A00025CB3 /* katakana_i.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391A11D015A0A00025CB3 /* katakana_i.jpg */; };
+		D35391CF1D015A0A00025CB3 /* katakana_ka.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391A21D015A0A00025CB3 /* katakana_ka.jpg */; };
+		D35391D01D015A0A00025CB3 /* katakana_ke.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391A31D015A0A00025CB3 /* katakana_ke.jpg */; };
+		D35391D11D015A0A00025CB3 /* katakana_ki.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391A41D015A0A00025CB3 /* katakana_ki.jpg */; };
+		D35391D21D015A0A00025CB3 /* katakana_ko.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391A51D015A0A00025CB3 /* katakana_ko.jpg */; };
+		D35391D31D015A0A00025CB3 /* katakana_ku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391A61D015A0A00025CB3 /* katakana_ku.jpg */; };
+		D35391D41D015A0A00025CB3 /* katakana_ma.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391A71D015A0A00025CB3 /* katakana_ma.jpg */; };
+		D35391D51D015A0A00025CB3 /* katakana_me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391A81D015A0A00025CB3 /* katakana_me.jpg */; };
+		D35391D61D015A0A00025CB3 /* katakana_mi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391A91D015A0A00025CB3 /* katakana_mi.jpg */; };
+		D35391D71D015A0A00025CB3 /* katakana_mo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391AA1D015A0A00025CB3 /* katakana_mo.jpg */; };
+		D35391D81D015A0A00025CB3 /* katakana_mu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391AB1D015A0A00025CB3 /* katakana_mu.jpg */; };
+		D35391D91D015A0A00025CB3 /* katakana_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391AC1D015A0A00025CB3 /* katakana_n.jpg */; };
+		D35391DA1D015A0A00025CB3 /* katakana_na.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391AD1D015A0A00025CB3 /* katakana_na.jpg */; };
+		D35391DB1D015A0A00025CB3 /* katakana_ne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391AE1D015A0A00025CB3 /* katakana_ne.jpg */; };
+		D35391DC1D015A0A00025CB3 /* katakana_ni.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391AF1D015A0A00025CB3 /* katakana_ni.jpg */; };
+		D35391DD1D015A0A00025CB3 /* katakana_no.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391B01D015A0A00025CB3 /* katakana_no.jpg */; };
+		D35391DE1D015A0A00025CB3 /* katakana_nu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391B11D015A0A00025CB3 /* katakana_nu.jpg */; };
+		D35391DF1D015A0A00025CB3 /* katakana_o.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391B21D015A0A00025CB3 /* katakana_o.jpg */; };
+		D35391E01D015A0A00025CB3 /* katakana_ra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391B31D015A0A00025CB3 /* katakana_ra.jpg */; };
+		D35391E11D015A0A00025CB3 /* katakana_re.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391B41D015A0A00025CB3 /* katakana_re.jpg */; };
+		D35391E21D015A0A00025CB3 /* katakana_ri.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391B51D015A0A00025CB3 /* katakana_ri.jpg */; };
+		D35391E31D015A0A00025CB3 /* katakana_ro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391B61D015A0A00025CB3 /* katakana_ro.jpg */; };
+		D35391E41D015A0A00025CB3 /* katakana_ru.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391B71D015A0A00025CB3 /* katakana_ru.jpg */; };
+		D35391E51D015A0A00025CB3 /* katakana_sa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391B81D015A0A00025CB3 /* katakana_sa.jpg */; };
+		D35391E61D015A0A00025CB3 /* katakana_se.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391B91D015A0A00025CB3 /* katakana_se.jpg */; };
+		D35391E71D015A0A00025CB3 /* katakana_shi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391BA1D015A0A00025CB3 /* katakana_shi.jpg */; };
+		D35391E81D015A0A00025CB3 /* katakana_so.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391BB1D015A0A00025CB3 /* katakana_so.jpg */; };
+		D35391E91D015A0A00025CB3 /* katakana_su.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391BC1D015A0A00025CB3 /* katakana_su.jpg */; };
+		D35391EA1D015A0A00025CB3 /* katakana_ta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391BD1D015A0A00025CB3 /* katakana_ta.jpg */; };
+		D35391EB1D015A0A00025CB3 /* katakana_te.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391BE1D015A0A00025CB3 /* katakana_te.jpg */; };
+		D35391EC1D015A0A00025CB3 /* katakana_to.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391BF1D015A0A00025CB3 /* katakana_to.jpg */; };
+		D35391ED1D015A0A00025CB3 /* katakana_tsu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391C01D015A0A00025CB3 /* katakana_tsu.jpg */; };
+		D35391EE1D015A0A00025CB3 /* katakana_u.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391C11D015A0A00025CB3 /* katakana_u.jpg */; };
+		D35391EF1D015A0A00025CB3 /* katakana_wa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391C21D015A0A00025CB3 /* katakana_wa.jpg */; };
+		D35391F01D015A0A00025CB3 /* katakana_wo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391C31D015A0A00025CB3 /* katakana_wo.jpg */; };
+		D35391F11D015A0A00025CB3 /* katakana_ya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391C41D015A0A00025CB3 /* katakana_ya.jpg */; };
+		D35391F21D015A0A00025CB3 /* katakana_yo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391C51D015A0A00025CB3 /* katakana_yo.jpg */; };
+		D35391F31D015A0A00025CB3 /* katakana_yu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35391C61D015A0A00025CB3 /* katakana_yu.jpg */; };
+		D35391F51D016A5000025CB3 /* delete_icon_white.png in Resources */ = {isa = PBXBuildFile; fileRef = D35391F41D016A5000025CB3 /* delete_icon_white.png */; };
 		D3775A9F1CFC1463009A4FEA /* Kanji.m in Sources */ = {isa = PBXBuildFile; fileRef = D3775A9E1CFC1463009A4FEA /* Kanji.m */; };
 		D3775AA21CFC203D009A4FEA /* KanjiController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3775AA11CFC203D009A4FEA /* KanjiController.m */; };
-		D3775AA81CFC2E37009A4FEA /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = D3775AA71CFC2E37009A4FEA /* delete.png */; };
-		D3775AAC1CFC4492009A4FEA /* delete_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3775AAB1CFC4492009A4FEA /* delete_icon.png */; };
 		D3AC9A861CFD8123003D1D08 /* DataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AC9A851CFD8123003D1D08 /* DataAccess.m */; };
 		D3CCA3A31CF2ACAC0022D752 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA3A21CF2ACAC0022D752 /* main.m */; };
 		D3CCA3AF1CF2ACAC0022D752 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CCA3AD1CF2ACAC0022D752 /* Main.storyboard */; };
@@ -42,24 +139,10 @@
 		D3CCA49B1CF2AFA80022D752 /* ListeningController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA49A1CF2AFA80022D752 /* ListeningController.m */; };
 		D3CCA49E1CF2AFB50022D752 /* VocabularyController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA49D1CF2AFB50022D752 /* VocabularyController.m */; };
 		D3CCA4AE1CF2AFD10022D752 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA4AD1CF2AFD10022D752 /* AppDelegate.m */; };
-		D3CCA4B41CF2B0660022D752 /* SNLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA4B31CF2B0660022D752 /* SNLoading.m */; };
 		D3F665791CF2E0EE001A7F71 /* ListContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F665781CF2E0EE001A7F71 /* ListContentController.m */; };
 		D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */; };
-		D3FA253E1CF691EF00CD24BF /* NSObject+TLYSwizzlingHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25371CF691EF00CD24BF /* NSObject+TLYSwizzlingHelpers.m */; };
-		D3FA253F1CF691EF00CD24BF /* TLYDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25391CF691EF00CD24BF /* TLYDelegateProxy.m */; };
-		D3FA25401CF691EF00CD24BF /* UIScrollView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA253B1CF691EF00CD24BF /* UIScrollView+Helpers.m */; };
-		D3FA25411CF691EF00CD24BF /* UIViewController+BetterLayoutGuides.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA253D1CF691EF00CD24BF /* UIViewController+BetterLayoutGuides.m */; };
-		D3FA25461CF691FA00CD24BF /* TLYShyNavBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25451CF691FA00CD24BF /* TLYShyNavBarManager.m */; };
-		D3FA254F1CF6920C00CD24BF /* TLYShyScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA254A1CF6920C00CD24BF /* TLYShyScrollViewController.m */; };
-		D3FA25501CF6920C00CD24BF /* TLYShyStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA254C1CF6920C00CD24BF /* TLYShyStatusBarController.m */; };
-		D3FA25511CF6920C00CD24BF /* TLYShyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA254E1CF6920C00CD24BF /* TLYShyViewController.m */; };
-		D3FA255B1CF6C71A00CD24BF /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25561CF6C71A00CD24BF /* GTMNSString+HTML.m */; };
-		D3FA255C1CF6C71A00CD24BF /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25581CF6C71A00CD24BF /* NSString+HTML.m */; };
-		D3FA255D1CF6C71A00CD24BF /* NSString+XMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA255A1CF6C71A00CD24BF /* NSString+XMLEntities.m */; };
-		D3FA25661CF6DB5B00CD24BF /* NSMutableAttributedString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25651CF6DB5B00CD24BF /* NSMutableAttributedString+Color.m */; };
 		D3FA25691CF6EE1300CD24BF /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25681CF6EE1300CD24BF /* Sound.m */; };
 		D3FA256B1CF6EF2500CD24BF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FA256A1CF6EF2500CD24BF /* AudioToolbox.framework */; };
-		D3FA256D1CF6F9E700CD24BF /* sound_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FA256C1CF6F9E700CD24BF /* sound_icon.png */; };
 		D3FA25701CF843D100CD24BF /* WritingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA256F1CF843D100CD24BF /* WritingCell.m */; };
 		D3FA25731CF849F400CD24BF /* CustomWritingLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25721CF849F400CD24BF /* CustomWritingLayout.m */; };
 		D3FD92E41CF542B80039FB14 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD92DF1CF542B80039FB14 /* TFHpple.m */; };
@@ -73,7 +156,6 @@
 		D3FD93061CF56E040039FB14 /* DetailGrammarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD93051CF56E040039FB14 /* DetailGrammarController.m */; };
 		D3FD93091CF5992E0039FB14 /* VocabularCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD93081CF5992E0039FB14 /* VocabularCell.m */; };
 		D3FD930C1CF599920039FB14 /* Vocabulary.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FD930B1CF599920039FB14 /* Vocabulary.m */; };
-		D3FD930E1CF5B6310039FB14 /* hiragana1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D3FD930D1CF5B6310039FB14 /* hiragana1.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,12 +176,114 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D353912B1D01465200025CB3 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+HTML.h"; path = "ThirdLibrary/NSString_HTML/GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		D353912C1D01465200025CB3 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+HTML.m"; path = "ThirdLibrary/NSString_HTML/GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		D353912D1D01465200025CB3 /* NSMutableAttributedString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+Color.h"; path = "ThirdLibrary/NSString_HTML/NSMutableAttributedString+Color.h"; sourceTree = "<group>"; };
+		D353912E1D01465200025CB3 /* NSMutableAttributedString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+Color.m"; path = "ThirdLibrary/NSString_HTML/NSMutableAttributedString+Color.m"; sourceTree = "<group>"; };
+		D353912F1D01465200025CB3 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+HTML.h"; path = "ThirdLibrary/NSString_HTML/NSString+HTML.h"; sourceTree = "<group>"; };
+		D35391301D01465200025CB3 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+HTML.m"; path = "ThirdLibrary/NSString_HTML/NSString+HTML.m"; sourceTree = "<group>"; };
+		D35391311D01465200025CB3 /* NSString+XMLEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+XMLEntities.h"; path = "ThirdLibrary/NSString_HTML/NSString+XMLEntities.h"; sourceTree = "<group>"; };
+		D35391321D01465200025CB3 /* NSString+XMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+XMLEntities.m"; path = "ThirdLibrary/NSString_HTML/NSString+XMLEntities.m"; sourceTree = "<group>"; };
+		D35391371D01467F00025CB3 /* delete_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = delete_icon.png; path = Resource/delete_icon.png; sourceTree = "<group>"; };
+		D35391381D01467F00025CB3 /* sound_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sound_icon.png; path = Resource/sound_icon.png; sourceTree = "<group>"; };
+		D353913B1D0146B200025CB3 /* SNLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNLoading.h; path = ThirdLibrary/SNLoading.h; sourceTree = "<group>"; };
+		D353913C1D0146B200025CB3 /* SNLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNLoading.m; path = ThirdLibrary/SNLoading.m; sourceTree = "<group>"; };
+		D353913E1D01491700025CB3 /* hiragana_a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_a.jpg; path = Resource/hiragana/hiragana_a.jpg; sourceTree = "<group>"; };
+		D353913F1D01491700025CB3 /* hiragana_chi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_chi.jpg; path = Resource/hiragana/hiragana_chi.jpg; sourceTree = "<group>"; };
+		D35391401D01491700025CB3 /* hiragana_e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_e.jpg; path = Resource/hiragana/hiragana_e.jpg; sourceTree = "<group>"; };
+		D35391411D01491700025CB3 /* hiragana_ha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_ha.jpg; path = Resource/hiragana/hiragana_ha.jpg; sourceTree = "<group>"; };
+		D35391421D01491700025CB3 /* hiragana_he.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_he.jpg; path = Resource/hiragana/hiragana_he.jpg; sourceTree = "<group>"; };
+		D35391431D01491700025CB3 /* hiragana_hi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_hi.jpg; path = Resource/hiragana/hiragana_hi.jpg; sourceTree = "<group>"; };
+		D35391441D01491700025CB3 /* hiragana_ho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_ho.jpg; path = Resource/hiragana/hiragana_ho.jpg; sourceTree = "<group>"; };
+		D35391451D01491700025CB3 /* hiragana_hu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_hu.jpg; path = Resource/hiragana/hiragana_hu.jpg; sourceTree = "<group>"; };
+		D35391461D01491700025CB3 /* hiragana_i.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_i.jpg; path = Resource/hiragana/hiragana_i.jpg; sourceTree = "<group>"; };
+		D35391471D01491700025CB3 /* hiragana_ka.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_ka.jpg; path = Resource/hiragana/hiragana_ka.jpg; sourceTree = "<group>"; };
+		D35391481D01491700025CB3 /* hiragana_ke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_ke.jpg; path = Resource/hiragana/hiragana_ke.jpg; sourceTree = "<group>"; };
+		D35391491D01491700025CB3 /* hiragana_ki.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_ki.jpg; path = Resource/hiragana/hiragana_ki.jpg; sourceTree = "<group>"; };
+		D353914A1D01491700025CB3 /* hiragana_ko.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_ko.jpg; path = Resource/hiragana/hiragana_ko.jpg; sourceTree = "<group>"; };
+		D353914B1D01491700025CB3 /* hiragana_ku.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_ku.jpg; path = Resource/hiragana/hiragana_ku.jpg; sourceTree = "<group>"; };
+		D353914C1D01491700025CB3 /* hiragana_ma.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_ma.jpg; path = Resource/hiragana/hiragana_ma.jpg; sourceTree = "<group>"; };
+		D353914D1D01491700025CB3 /* hiragana_me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_me.jpg; path = Resource/hiragana/hiragana_me.jpg; sourceTree = "<group>"; };
+		D353914E1D01491700025CB3 /* hiragana_mi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_mi.jpg; path = Resource/hiragana/hiragana_mi.jpg; sourceTree = "<group>"; };
+		D353914F1D01491700025CB3 /* hiragana_mo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_mo.jpg; path = Resource/hiragana/hiragana_mo.jpg; sourceTree = "<group>"; };
+		D35391501D01491700025CB3 /* hiragana_mu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_mu.jpg; path = Resource/hiragana/hiragana_mu.jpg; sourceTree = "<group>"; };
+		D35391511D01491700025CB3 /* hiragana_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_n.jpg; path = Resource/hiragana/hiragana_n.jpg; sourceTree = "<group>"; };
+		D35391521D01491700025CB3 /* hiragana_na.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_na.jpg; path = Resource/hiragana/hiragana_na.jpg; sourceTree = "<group>"; };
+		D35391531D01491700025CB3 /* hiragana_ne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_ne.jpg; path = Resource/hiragana/hiragana_ne.jpg; sourceTree = "<group>"; };
+		D35391541D01491700025CB3 /* hiragana_ni.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_ni.jpg; path = Resource/hiragana/hiragana_ni.jpg; sourceTree = "<group>"; };
+		D35391551D01491700025CB3 /* hiragana_no.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_no.jpg; path = Resource/hiragana/hiragana_no.jpg; sourceTree = "<group>"; };
+		D35391561D01491700025CB3 /* hiragana_nu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_nu.jpg; path = Resource/hiragana/hiragana_nu.jpg; sourceTree = "<group>"; };
+		D35391571D01491700025CB3 /* hiragana_o.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_o.jpg; path = Resource/hiragana/hiragana_o.jpg; sourceTree = "<group>"; };
+		D35391581D01491700025CB3 /* hiragana_ra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_ra.jpg; path = Resource/hiragana/hiragana_ra.jpg; sourceTree = "<group>"; };
+		D35391591D01491700025CB3 /* hiragana_re.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_re.jpg; path = Resource/hiragana/hiragana_re.jpg; sourceTree = "<group>"; };
+		D353915A1D01491700025CB3 /* hiragana_ri.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_ri.jpg; path = Resource/hiragana/hiragana_ri.jpg; sourceTree = "<group>"; };
+		D353915B1D01491700025CB3 /* hiragana_ro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_ro.jpg; path = Resource/hiragana/hiragana_ro.jpg; sourceTree = "<group>"; };
+		D353915C1D01491700025CB3 /* hiragana_ru.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_ru.jpg; path = Resource/hiragana/hiragana_ru.jpg; sourceTree = "<group>"; };
+		D353915D1D01491700025CB3 /* hiragana_sa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_sa.jpg; path = Resource/hiragana/hiragana_sa.jpg; sourceTree = "<group>"; };
+		D353915E1D01491700025CB3 /* hiragana_se.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_se.jpg; path = Resource/hiragana/hiragana_se.jpg; sourceTree = "<group>"; };
+		D353915F1D01491700025CB3 /* hiragana_shi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_shi.jpg; path = Resource/hiragana/hiragana_shi.jpg; sourceTree = "<group>"; };
+		D35391601D01491700025CB3 /* hiragana_so.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_so.jpg; path = Resource/hiragana/hiragana_so.jpg; sourceTree = "<group>"; };
+		D35391611D01491700025CB3 /* hiragana_su.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_su.jpg; path = Resource/hiragana/hiragana_su.jpg; sourceTree = "<group>"; };
+		D35391621D01491700025CB3 /* hiragana_ta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_ta.jpg; path = Resource/hiragana/hiragana_ta.jpg; sourceTree = "<group>"; };
+		D35391631D01491700025CB3 /* hiragana_te.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_te.jpg; path = Resource/hiragana/hiragana_te.jpg; sourceTree = "<group>"; };
+		D35391641D01491700025CB3 /* hiragana_to.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_to.jpg; path = Resource/hiragana/hiragana_to.jpg; sourceTree = "<group>"; };
+		D35391651D01491700025CB3 /* hiragana_tsu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_tsu.jpg; path = Resource/hiragana/hiragana_tsu.jpg; sourceTree = "<group>"; };
+		D35391661D01491700025CB3 /* hiragana_u.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_u.jpg; path = Resource/hiragana/hiragana_u.jpg; sourceTree = "<group>"; };
+		D35391671D01491700025CB3 /* hiragana_wa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_wa.jpg; path = Resource/hiragana/hiragana_wa.jpg; sourceTree = "<group>"; };
+		D35391681D01491700025CB3 /* hiragana_wo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_wo.jpg; path = Resource/hiragana/hiragana_wo.jpg; sourceTree = "<group>"; };
+		D35391691D01491700025CB3 /* hiragana_ya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_ya.jpg; path = Resource/hiragana/hiragana_ya.jpg; sourceTree = "<group>"; };
+		D353916A1D01491700025CB3 /* hiragana_yo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_yo.jpg; path = Resource/hiragana/hiragana_yo.jpg; sourceTree = "<group>"; };
+		D353916B1D01491700025CB3 /* hiragana_yu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiragana_yu.jpg; path = Resource/hiragana/hiragana_yu.jpg; sourceTree = "<group>"; };
+		D353919A1D015A0A00025CB3 /* katakana_a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_a.jpg; path = Resource/katakana/katakana_a.jpg; sourceTree = "<group>"; };
+		D353919B1D015A0A00025CB3 /* katakana_chi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_chi.jpg; path = Resource/katakana/katakana_chi.jpg; sourceTree = "<group>"; };
+		D353919C1D015A0A00025CB3 /* katakana_e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_e.jpg; path = Resource/katakana/katakana_e.jpg; sourceTree = "<group>"; };
+		D353919D1D015A0A00025CB3 /* katakana_ha1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_ha1.jpg; path = Resource/katakana/katakana_ha1.jpg; sourceTree = "<group>"; };
+		D353919E1D015A0A00025CB3 /* katakana_hi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_hi.jpg; path = Resource/katakana/katakana_hi.jpg; sourceTree = "<group>"; };
+		D353919F1D015A0A00025CB3 /* katakana_ho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_ho.jpg; path = Resource/katakana/katakana_ho.jpg; sourceTree = "<group>"; };
+		D35391A01D015A0A00025CB3 /* katakana_hu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_hu.jpg; path = Resource/katakana/katakana_hu.jpg; sourceTree = "<group>"; };
+		D35391A11D015A0A00025CB3 /* katakana_i.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_i.jpg; path = Resource/katakana/katakana_i.jpg; sourceTree = "<group>"; };
+		D35391A21D015A0A00025CB3 /* katakana_ka.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_ka.jpg; path = Resource/katakana/katakana_ka.jpg; sourceTree = "<group>"; };
+		D35391A31D015A0A00025CB3 /* katakana_ke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_ke.jpg; path = Resource/katakana/katakana_ke.jpg; sourceTree = "<group>"; };
+		D35391A41D015A0A00025CB3 /* katakana_ki.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_ki.jpg; path = Resource/katakana/katakana_ki.jpg; sourceTree = "<group>"; };
+		D35391A51D015A0A00025CB3 /* katakana_ko.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_ko.jpg; path = Resource/katakana/katakana_ko.jpg; sourceTree = "<group>"; };
+		D35391A61D015A0A00025CB3 /* katakana_ku.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_ku.jpg; path = Resource/katakana/katakana_ku.jpg; sourceTree = "<group>"; };
+		D35391A71D015A0A00025CB3 /* katakana_ma.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_ma.jpg; path = Resource/katakana/katakana_ma.jpg; sourceTree = "<group>"; };
+		D35391A81D015A0A00025CB3 /* katakana_me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_me.jpg; path = Resource/katakana/katakana_me.jpg; sourceTree = "<group>"; };
+		D35391A91D015A0A00025CB3 /* katakana_mi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_mi.jpg; path = Resource/katakana/katakana_mi.jpg; sourceTree = "<group>"; };
+		D35391AA1D015A0A00025CB3 /* katakana_mo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_mo.jpg; path = Resource/katakana/katakana_mo.jpg; sourceTree = "<group>"; };
+		D35391AB1D015A0A00025CB3 /* katakana_mu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_mu.jpg; path = Resource/katakana/katakana_mu.jpg; sourceTree = "<group>"; };
+		D35391AC1D015A0A00025CB3 /* katakana_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_n.jpg; path = Resource/katakana/katakana_n.jpg; sourceTree = "<group>"; };
+		D35391AD1D015A0A00025CB3 /* katakana_na.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_na.jpg; path = Resource/katakana/katakana_na.jpg; sourceTree = "<group>"; };
+		D35391AE1D015A0A00025CB3 /* katakana_ne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_ne.jpg; path = Resource/katakana/katakana_ne.jpg; sourceTree = "<group>"; };
+		D35391AF1D015A0A00025CB3 /* katakana_ni.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_ni.jpg; path = Resource/katakana/katakana_ni.jpg; sourceTree = "<group>"; };
+		D35391B01D015A0A00025CB3 /* katakana_no.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_no.jpg; path = Resource/katakana/katakana_no.jpg; sourceTree = "<group>"; };
+		D35391B11D015A0A00025CB3 /* katakana_nu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_nu.jpg; path = Resource/katakana/katakana_nu.jpg; sourceTree = "<group>"; };
+		D35391B21D015A0A00025CB3 /* katakana_o.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_o.jpg; path = Resource/katakana/katakana_o.jpg; sourceTree = "<group>"; };
+		D35391B31D015A0A00025CB3 /* katakana_ra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_ra.jpg; path = Resource/katakana/katakana_ra.jpg; sourceTree = "<group>"; };
+		D35391B41D015A0A00025CB3 /* katakana_re.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_re.jpg; path = Resource/katakana/katakana_re.jpg; sourceTree = "<group>"; };
+		D35391B51D015A0A00025CB3 /* katakana_ri.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_ri.jpg; path = Resource/katakana/katakana_ri.jpg; sourceTree = "<group>"; };
+		D35391B61D015A0A00025CB3 /* katakana_ro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_ro.jpg; path = Resource/katakana/katakana_ro.jpg; sourceTree = "<group>"; };
+		D35391B71D015A0A00025CB3 /* katakana_ru.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_ru.jpg; path = Resource/katakana/katakana_ru.jpg; sourceTree = "<group>"; };
+		D35391B81D015A0A00025CB3 /* katakana_sa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_sa.jpg; path = Resource/katakana/katakana_sa.jpg; sourceTree = "<group>"; };
+		D35391B91D015A0A00025CB3 /* katakana_se.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_se.jpg; path = Resource/katakana/katakana_se.jpg; sourceTree = "<group>"; };
+		D35391BA1D015A0A00025CB3 /* katakana_shi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_shi.jpg; path = Resource/katakana/katakana_shi.jpg; sourceTree = "<group>"; };
+		D35391BB1D015A0A00025CB3 /* katakana_so.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_so.jpg; path = Resource/katakana/katakana_so.jpg; sourceTree = "<group>"; };
+		D35391BC1D015A0A00025CB3 /* katakana_su.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_su.jpg; path = Resource/katakana/katakana_su.jpg; sourceTree = "<group>"; };
+		D35391BD1D015A0A00025CB3 /* katakana_ta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_ta.jpg; path = Resource/katakana/katakana_ta.jpg; sourceTree = "<group>"; };
+		D35391BE1D015A0A00025CB3 /* katakana_te.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_te.jpg; path = Resource/katakana/katakana_te.jpg; sourceTree = "<group>"; };
+		D35391BF1D015A0A00025CB3 /* katakana_to.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_to.jpg; path = Resource/katakana/katakana_to.jpg; sourceTree = "<group>"; };
+		D35391C01D015A0A00025CB3 /* katakana_tsu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_tsu.jpg; path = Resource/katakana/katakana_tsu.jpg; sourceTree = "<group>"; };
+		D35391C11D015A0A00025CB3 /* katakana_u.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_u.jpg; path = Resource/katakana/katakana_u.jpg; sourceTree = "<group>"; };
+		D35391C21D015A0A00025CB3 /* katakana_wa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_wa.jpg; path = Resource/katakana/katakana_wa.jpg; sourceTree = "<group>"; };
+		D35391C31D015A0A00025CB3 /* katakana_wo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_wo.jpg; path = Resource/katakana/katakana_wo.jpg; sourceTree = "<group>"; };
+		D35391C41D015A0A00025CB3 /* katakana_ya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_ya.jpg; path = Resource/katakana/katakana_ya.jpg; sourceTree = "<group>"; };
+		D35391C51D015A0A00025CB3 /* katakana_yo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_yo.jpg; path = Resource/katakana/katakana_yo.jpg; sourceTree = "<group>"; };
+		D35391C61D015A0A00025CB3 /* katakana_yu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katakana_yu.jpg; path = Resource/katakana/katakana_yu.jpg; sourceTree = "<group>"; };
+		D35391F41D016A5000025CB3 /* delete_icon_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = delete_icon_white.png; path = Resource/delete_icon_white.png; sourceTree = "<group>"; };
 		D3775A9D1CFC1463009A4FEA /* Kanji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Kanji.h; path = Modal/Kanji.h; sourceTree = "<group>"; };
 		D3775A9E1CFC1463009A4FEA /* Kanji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Kanji.m; path = Modal/Kanji.m; sourceTree = "<group>"; };
 		D3775AA01CFC203D009A4FEA /* KanjiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KanjiController.h; path = Controller/KanjiController.h; sourceTree = "<group>"; };
 		D3775AA11CFC203D009A4FEA /* KanjiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanjiController.m; path = Controller/KanjiController.m; sourceTree = "<group>"; };
-		D3775AA71CFC2E37009A4FEA /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
-		D3775AAB1CFC4492009A4FEA /* delete_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete_icon.png; sourceTree = "<group>"; };
 		D3AC9A841CFD8123003D1D08 /* DataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataAccess.h; path = Modal/DataAccess.h; sourceTree = "<group>"; };
 		D3AC9A851CFD8123003D1D08 /* DataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataAccess.m; path = Modal/DataAccess.m; sourceTree = "<group>"; };
 		D3CCA39E1CF2ACAC0022D752 /* JLPTTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLPTTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,43 +363,12 @@
 		D3CCA4AB1CF2AFC30022D752 /* StoryBoardID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryBoardID.h; path = Config/StoryBoardID.h; sourceTree = "<group>"; };
 		D3CCA4AC1CF2AFD10022D752 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppDelegate/AppDelegate.h; sourceTree = "<group>"; };
 		D3CCA4AD1CF2AFD10022D752 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppDelegate/AppDelegate.m; sourceTree = "<group>"; };
-		D3CCA4B21CF2B0660022D752 /* SNLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNLoading.h; sourceTree = "<group>"; };
-		D3CCA4B31CF2B0660022D752 /* SNLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNLoading.m; sourceTree = "<group>"; };
 		D3F665771CF2E0EE001A7F71 /* ListContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListContentController.h; path = Controller/ListContentController.h; sourceTree = "<group>"; };
 		D3F665781CF2E0EE001A7F71 /* ListContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListContentController.m; path = Controller/ListContentController.m; sourceTree = "<group>"; };
 		D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = listcontent.plist; path = Resource/listcontent.plist; sourceTree = "<group>"; };
-		D3FA25361CF691EF00CD24BF /* NSObject+TLYSwizzlingHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TLYSwizzlingHelpers.h"; sourceTree = "<group>"; };
-		D3FA25371CF691EF00CD24BF /* NSObject+TLYSwizzlingHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TLYSwizzlingHelpers.m"; sourceTree = "<group>"; };
-		D3FA25381CF691EF00CD24BF /* TLYDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYDelegateProxy.h; sourceTree = "<group>"; };
-		D3FA25391CF691EF00CD24BF /* TLYDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLYDelegateProxy.m; sourceTree = "<group>"; };
-		D3FA253A1CF691EF00CD24BF /* UIScrollView+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Helpers.h"; sourceTree = "<group>"; };
-		D3FA253B1CF691EF00CD24BF /* UIScrollView+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Helpers.m"; sourceTree = "<group>"; };
-		D3FA253C1CF691EF00CD24BF /* UIViewController+BetterLayoutGuides.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BetterLayoutGuides.h"; sourceTree = "<group>"; };
-		D3FA253D1CF691EF00CD24BF /* UIViewController+BetterLayoutGuides.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BetterLayoutGuides.m"; sourceTree = "<group>"; };
-		D3FA25421CF691FA00CD24BF /* TLYShyNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYShyNavBar.h; sourceTree = "<group>"; };
-		D3FA25431CF691FA00CD24BF /* TLYShyNavBarFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYShyNavBarFade.h; sourceTree = "<group>"; };
-		D3FA25441CF691FA00CD24BF /* TLYShyNavBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYShyNavBarManager.h; sourceTree = "<group>"; };
-		D3FA25451CF691FA00CD24BF /* TLYShyNavBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLYShyNavBarManager.m; sourceTree = "<group>"; };
-		D3FA25471CF6920C00CD24BF /* TLYShyChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYShyChild.h; sourceTree = "<group>"; };
-		D3FA25481CF6920C00CD24BF /* TLYShyParent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYShyParent.h; sourceTree = "<group>"; };
-		D3FA25491CF6920C00CD24BF /* TLYShyScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYShyScrollViewController.h; sourceTree = "<group>"; };
-		D3FA254A1CF6920C00CD24BF /* TLYShyScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLYShyScrollViewController.m; sourceTree = "<group>"; };
-		D3FA254B1CF6920C00CD24BF /* TLYShyStatusBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYShyStatusBarController.h; sourceTree = "<group>"; };
-		D3FA254C1CF6920C00CD24BF /* TLYShyStatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLYShyStatusBarController.m; sourceTree = "<group>"; };
-		D3FA254D1CF6920C00CD24BF /* TLYShyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLYShyViewController.h; sourceTree = "<group>"; };
-		D3FA254E1CF6920C00CD24BF /* TLYShyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLYShyViewController.m; sourceTree = "<group>"; };
-		D3FA25551CF6C71A00CD24BF /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
-		D3FA25561CF6C71A00CD24BF /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
-		D3FA25571CF6C71A00CD24BF /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
-		D3FA25581CF6C71A00CD24BF /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
-		D3FA25591CF6C71A00CD24BF /* NSString+XMLEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XMLEntities.h"; sourceTree = "<group>"; };
-		D3FA255A1CF6C71A00CD24BF /* NSString+XMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMLEntities.m"; sourceTree = "<group>"; };
-		D3FA25641CF6DB5B00CD24BF /* NSMutableAttributedString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Color.h"; sourceTree = "<group>"; };
-		D3FA25651CF6DB5B00CD24BF /* NSMutableAttributedString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Color.m"; sourceTree = "<group>"; };
 		D3FA25671CF6EE1300CD24BF /* Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sound.h; path = Modal/Sound.h; sourceTree = "<group>"; };
 		D3FA25681CF6EE1300CD24BF /* Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sound.m; path = Modal/Sound.m; sourceTree = "<group>"; };
 		D3FA256A1CF6EF2500CD24BF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		D3FA256C1CF6F9E700CD24BF /* sound_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound_icon.png; sourceTree = "<group>"; };
 		D3FA256E1CF843D100CD24BF /* WritingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WritingCell.h; path = Controller/WritingCell.h; sourceTree = "<group>"; };
 		D3FA256F1CF843D100CD24BF /* WritingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WritingCell.m; path = Controller/WritingCell.m; sourceTree = "<group>"; };
 		D3FA25711CF849F400CD24BF /* CustomWritingLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomWritingLayout.h; path = Controller/CustomWritingLayout.h; sourceTree = "<group>"; };
@@ -241,7 +394,6 @@
 		D3FD93081CF5992E0039FB14 /* VocabularCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VocabularCell.m; path = Controller/VocabularCell.m; sourceTree = "<group>"; };
 		D3FD930A1CF599920039FB14 /* Vocabulary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vocabulary.h; path = Modal/Vocabulary.h; sourceTree = "<group>"; };
 		D3FD930B1CF599920039FB14 /* Vocabulary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vocabulary.m; path = Modal/Vocabulary.m; sourceTree = "<group>"; };
-		D3FD930D1CF5B6310039FB14 /* hiragana1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana1.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +424,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D35391281D01366900025CB3 /* hiragana */ = {
+			isa = PBXGroup;
+			children = (
+				D353913E1D01491700025CB3 /* hiragana_a.jpg */,
+				D353913F1D01491700025CB3 /* hiragana_chi.jpg */,
+				D35391401D01491700025CB3 /* hiragana_e.jpg */,
+				D35391411D01491700025CB3 /* hiragana_ha.jpg */,
+				D35391421D01491700025CB3 /* hiragana_he.jpg */,
+				D35391431D01491700025CB3 /* hiragana_hi.jpg */,
+				D35391441D01491700025CB3 /* hiragana_ho.jpg */,
+				D35391451D01491700025CB3 /* hiragana_hu.jpg */,
+				D35391461D01491700025CB3 /* hiragana_i.jpg */,
+				D35391471D01491700025CB3 /* hiragana_ka.jpg */,
+				D35391481D01491700025CB3 /* hiragana_ke.jpg */,
+				D35391491D01491700025CB3 /* hiragana_ki.jpg */,
+				D353914A1D01491700025CB3 /* hiragana_ko.jpg */,
+				D353914B1D01491700025CB3 /* hiragana_ku.jpg */,
+				D353914C1D01491700025CB3 /* hiragana_ma.jpg */,
+				D353914D1D01491700025CB3 /* hiragana_me.jpg */,
+				D353914E1D01491700025CB3 /* hiragana_mi.jpg */,
+				D353914F1D01491700025CB3 /* hiragana_mo.jpg */,
+				D35391501D01491700025CB3 /* hiragana_mu.jpg */,
+				D35391511D01491700025CB3 /* hiragana_n.jpg */,
+				D35391521D01491700025CB3 /* hiragana_na.jpg */,
+				D35391531D01491700025CB3 /* hiragana_ne.jpg */,
+				D35391541D01491700025CB3 /* hiragana_ni.jpg */,
+				D35391551D01491700025CB3 /* hiragana_no.jpg */,
+				D35391561D01491700025CB3 /* hiragana_nu.jpg */,
+				D35391571D01491700025CB3 /* hiragana_o.jpg */,
+				D35391581D01491700025CB3 /* hiragana_ra.jpg */,
+				D35391591D01491700025CB3 /* hiragana_re.jpg */,
+				D353915A1D01491700025CB3 /* hiragana_ri.jpg */,
+				D353915B1D01491700025CB3 /* hiragana_ro.jpg */,
+				D353915C1D01491700025CB3 /* hiragana_ru.jpg */,
+				D353915D1D01491700025CB3 /* hiragana_sa.jpg */,
+				D353915E1D01491700025CB3 /* hiragana_se.jpg */,
+				D353915F1D01491700025CB3 /* hiragana_shi.jpg */,
+				D35391601D01491700025CB3 /* hiragana_so.jpg */,
+				D35391611D01491700025CB3 /* hiragana_su.jpg */,
+				D35391621D01491700025CB3 /* hiragana_ta.jpg */,
+				D35391631D01491700025CB3 /* hiragana_te.jpg */,
+				D35391641D01491700025CB3 /* hiragana_to.jpg */,
+				D35391651D01491700025CB3 /* hiragana_tsu.jpg */,
+				D35391661D01491700025CB3 /* hiragana_u.jpg */,
+				D35391671D01491700025CB3 /* hiragana_wa.jpg */,
+				D35391681D01491700025CB3 /* hiragana_wo.jpg */,
+				D35391691D01491700025CB3 /* hiragana_ya.jpg */,
+				D353916A1D01491700025CB3 /* hiragana_yo.jpg */,
+				D353916B1D01491700025CB3 /* hiragana_yu.jpg */,
+			);
+			name = hiragana;
+			sourceTree = "<group>";
+		};
+		D353912A1D01367900025CB3 /* katakana */ = {
+			isa = PBXGroup;
+			children = (
+				D353919A1D015A0A00025CB3 /* katakana_a.jpg */,
+				D353919B1D015A0A00025CB3 /* katakana_chi.jpg */,
+				D353919C1D015A0A00025CB3 /* katakana_e.jpg */,
+				D353919D1D015A0A00025CB3 /* katakana_ha1.jpg */,
+				D353919E1D015A0A00025CB3 /* katakana_hi.jpg */,
+				D353919F1D015A0A00025CB3 /* katakana_ho.jpg */,
+				D35391A01D015A0A00025CB3 /* katakana_hu.jpg */,
+				D35391A11D015A0A00025CB3 /* katakana_i.jpg */,
+				D35391A21D015A0A00025CB3 /* katakana_ka.jpg */,
+				D35391A31D015A0A00025CB3 /* katakana_ke.jpg */,
+				D35391A41D015A0A00025CB3 /* katakana_ki.jpg */,
+				D35391A51D015A0A00025CB3 /* katakana_ko.jpg */,
+				D35391A61D015A0A00025CB3 /* katakana_ku.jpg */,
+				D35391A71D015A0A00025CB3 /* katakana_ma.jpg */,
+				D35391A81D015A0A00025CB3 /* katakana_me.jpg */,
+				D35391A91D015A0A00025CB3 /* katakana_mi.jpg */,
+				D35391AA1D015A0A00025CB3 /* katakana_mo.jpg */,
+				D35391AB1D015A0A00025CB3 /* katakana_mu.jpg */,
+				D35391AC1D015A0A00025CB3 /* katakana_n.jpg */,
+				D35391AD1D015A0A00025CB3 /* katakana_na.jpg */,
+				D35391AE1D015A0A00025CB3 /* katakana_ne.jpg */,
+				D35391AF1D015A0A00025CB3 /* katakana_ni.jpg */,
+				D35391B01D015A0A00025CB3 /* katakana_no.jpg */,
+				D35391B11D015A0A00025CB3 /* katakana_nu.jpg */,
+				D35391B21D015A0A00025CB3 /* katakana_o.jpg */,
+				D35391B31D015A0A00025CB3 /* katakana_ra.jpg */,
+				D35391B41D015A0A00025CB3 /* katakana_re.jpg */,
+				D35391B51D015A0A00025CB3 /* katakana_ri.jpg */,
+				D35391B61D015A0A00025CB3 /* katakana_ro.jpg */,
+				D35391B71D015A0A00025CB3 /* katakana_ru.jpg */,
+				D35391B81D015A0A00025CB3 /* katakana_sa.jpg */,
+				D35391B91D015A0A00025CB3 /* katakana_se.jpg */,
+				D35391BA1D015A0A00025CB3 /* katakana_shi.jpg */,
+				D35391BB1D015A0A00025CB3 /* katakana_so.jpg */,
+				D35391BC1D015A0A00025CB3 /* katakana_su.jpg */,
+				D35391BD1D015A0A00025CB3 /* katakana_ta.jpg */,
+				D35391BE1D015A0A00025CB3 /* katakana_te.jpg */,
+				D35391BF1D015A0A00025CB3 /* katakana_to.jpg */,
+				D35391C01D015A0A00025CB3 /* katakana_tsu.jpg */,
+				D35391C11D015A0A00025CB3 /* katakana_u.jpg */,
+				D35391C21D015A0A00025CB3 /* katakana_wa.jpg */,
+				D35391C31D015A0A00025CB3 /* katakana_wo.jpg */,
+				D35391C41D015A0A00025CB3 /* katakana_ya.jpg */,
+				D35391C51D015A0A00025CB3 /* katakana_yo.jpg */,
+				D35391C61D015A0A00025CB3 /* katakana_yu.jpg */,
+			);
+			name = katakana;
+			sourceTree = "<group>";
+		};
 		D3CCA3951CF2ACAC0022D752 = {
 			isa = PBXGroup;
 			children = (
@@ -500,10 +757,10 @@
 		D3CCA44F1CF2AE590022D752 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
+				D353913B1D0146B200025CB3 /* SNLoading.h */,
+				D353913C1D0146B200025CB3 /* SNLoading.m */,
 				D3CCA48D1CF2AF7D0022D752 /* MBProgressHUD.h */,
 				D3CCA48E1CF2AF7D0022D752 /* MBProgressHUD.m */,
-				D3CCA4B21CF2B0660022D752 /* SNLoading.h */,
-				D3CCA4B31CF2B0660022D752 /* SNLoading.m */,
 			);
 			name = MBProgressHUD;
 			sourceTree = "<group>";
@@ -512,7 +769,6 @@
 			isa = PBXGroup;
 			children = (
 				D3FA25541CF6C70700CD24BF /* NSString_HTML */,
-				D3FA25331CF6911B00CD24BF /* TLYShyNavBar */,
 				D3FD92F91CF54C6B0039FB14 /* DBAccess */,
 				D3FD92E71CF542C30039FB14 /* TFHpple */,
 				D3CCA44C1CF2AE270022D752 /* AFNetworking */,
@@ -534,69 +790,27 @@
 		D3F6657C1CF2E2F4001A7F71 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				D3775AAB1CFC4492009A4FEA /* delete_icon.png */,
-				D3775AA71CFC2E37009A4FEA /* delete.png */,
-				D3FA256C1CF6F9E700CD24BF /* sound_icon.png */,
-				D3FD930D1CF5B6310039FB14 /* hiragana1.gif */,
+				D35391F41D016A5000025CB3 /* delete_icon_white.png */,
+				D35391371D01467F00025CB3 /* delete_icon.png */,
+				D35391381D01467F00025CB3 /* sound_icon.png */,
+				D353912A1D01367900025CB3 /* katakana */,
+				D35391281D01366900025CB3 /* hiragana */,
 				D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
 		};
-		D3FA25331CF6911B00CD24BF /* TLYShyNavBar */ = {
-			isa = PBXGroup;
-			children = (
-				D3FA25421CF691FA00CD24BF /* TLYShyNavBar.h */,
-				D3FA25431CF691FA00CD24BF /* TLYShyNavBarFade.h */,
-				D3FA25441CF691FA00CD24BF /* TLYShyNavBarManager.h */,
-				D3FA25451CF691FA00CD24BF /* TLYShyNavBarManager.m */,
-				D3FA25351CF6913C00CD24BF /* ShyControllers */,
-				D3FA25341CF6913200CD24BF /* Categories */,
-			);
-			name = TLYShyNavBar;
-			sourceTree = "<group>";
-		};
-		D3FA25341CF6913200CD24BF /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				D3FA25361CF691EF00CD24BF /* NSObject+TLYSwizzlingHelpers.h */,
-				D3FA25371CF691EF00CD24BF /* NSObject+TLYSwizzlingHelpers.m */,
-				D3FA25381CF691EF00CD24BF /* TLYDelegateProxy.h */,
-				D3FA25391CF691EF00CD24BF /* TLYDelegateProxy.m */,
-				D3FA253A1CF691EF00CD24BF /* UIScrollView+Helpers.h */,
-				D3FA253B1CF691EF00CD24BF /* UIScrollView+Helpers.m */,
-				D3FA253C1CF691EF00CD24BF /* UIViewController+BetterLayoutGuides.h */,
-				D3FA253D1CF691EF00CD24BF /* UIViewController+BetterLayoutGuides.m */,
-			);
-			name = Categories;
-			sourceTree = "<group>";
-		};
-		D3FA25351CF6913C00CD24BF /* ShyControllers */ = {
-			isa = PBXGroup;
-			children = (
-				D3FA25471CF6920C00CD24BF /* TLYShyChild.h */,
-				D3FA25481CF6920C00CD24BF /* TLYShyParent.h */,
-				D3FA25491CF6920C00CD24BF /* TLYShyScrollViewController.h */,
-				D3FA254A1CF6920C00CD24BF /* TLYShyScrollViewController.m */,
-				D3FA254B1CF6920C00CD24BF /* TLYShyStatusBarController.h */,
-				D3FA254C1CF6920C00CD24BF /* TLYShyStatusBarController.m */,
-				D3FA254D1CF6920C00CD24BF /* TLYShyViewController.h */,
-				D3FA254E1CF6920C00CD24BF /* TLYShyViewController.m */,
-			);
-			name = ShyControllers;
-			sourceTree = "<group>";
-		};
 		D3FA25541CF6C70700CD24BF /* NSString_HTML */ = {
 			isa = PBXGroup;
 			children = (
-				D3FA25551CF6C71A00CD24BF /* GTMNSString+HTML.h */,
-				D3FA25561CF6C71A00CD24BF /* GTMNSString+HTML.m */,
-				D3FA25571CF6C71A00CD24BF /* NSString+HTML.h */,
-				D3FA25581CF6C71A00CD24BF /* NSString+HTML.m */,
-				D3FA25591CF6C71A00CD24BF /* NSString+XMLEntities.h */,
-				D3FA255A1CF6C71A00CD24BF /* NSString+XMLEntities.m */,
-				D3FA25641CF6DB5B00CD24BF /* NSMutableAttributedString+Color.h */,
-				D3FA25651CF6DB5B00CD24BF /* NSMutableAttributedString+Color.m */,
+				D353912B1D01465200025CB3 /* GTMNSString+HTML.h */,
+				D353912C1D01465200025CB3 /* GTMNSString+HTML.m */,
+				D353912D1D01465200025CB3 /* NSMutableAttributedString+Color.h */,
+				D353912E1D01465200025CB3 /* NSMutableAttributedString+Color.m */,
+				D353912F1D01465200025CB3 /* NSString+HTML.h */,
+				D35391301D01465200025CB3 /* NSString+HTML.m */,
+				D35391311D01465200025CB3 /* NSString+XMLEntities.h */,
+				D35391321D01465200025CB3 /* NSString+XMLEntities.m */,
 			);
 			name = NSString_HTML;
 			sourceTree = "<group>";
@@ -753,14 +967,104 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D35391951D01491700025CB3 /* hiragana_wa.jpg in Resources */,
+				D35391F21D015A0A00025CB3 /* katakana_yo.jpg in Resources */,
+				D35391E61D015A0A00025CB3 /* katakana_se.jpg in Resources */,
+				D35391C71D015A0A00025CB3 /* katakana_a.jpg in Resources */,
+				D353916E1D01491700025CB3 /* hiragana_e.jpg in Resources */,
+				D35391EC1D015A0A00025CB3 /* katakana_to.jpg in Resources */,
+				D35391391D01467F00025CB3 /* delete_icon.png in Resources */,
+				D35391E21D015A0A00025CB3 /* katakana_ri.jpg in Resources */,
+				D35391D11D015A0A00025CB3 /* katakana_ki.jpg in Resources */,
+				D353917B1D01491700025CB3 /* hiragana_me.jpg in Resources */,
+				D35391871D01491700025CB3 /* hiragana_re.jpg in Resources */,
+				D35391CD1D015A0A00025CB3 /* katakana_hu.jpg in Resources */,
+				D35391741D01491700025CB3 /* hiragana_i.jpg in Resources */,
+				D35391F31D015A0A00025CB3 /* katakana_yu.jpg in Resources */,
+				D35391931D01491700025CB3 /* hiragana_tsu.jpg in Resources */,
+				D35391F01D015A0A00025CB3 /* katakana_wo.jpg in Resources */,
+				D35391701D01491700025CB3 /* hiragana_he.jpg in Resources */,
+				D35391791D01491700025CB3 /* hiragana_ku.jpg in Resources */,
+				D35391EA1D015A0A00025CB3 /* katakana_ta.jpg in Resources */,
+				D35391851D01491700025CB3 /* hiragana_o.jpg in Resources */,
+				D35391F11D015A0A00025CB3 /* katakana_ya.jpg in Resources */,
+				D35391751D01491700025CB3 /* hiragana_ka.jpg in Resources */,
 				D3CCA3B41CF2ACAC0022D752 /* LaunchScreen.storyboard in Resources */,
-				D3FD930E1CF5B6310039FB14 /* hiragana1.gif in Resources */,
+				D35391771D01491700025CB3 /* hiragana_ki.jpg in Resources */,
+				D35391941D01491700025CB3 /* hiragana_u.jpg in Resources */,
+				D35391831D01491700025CB3 /* hiragana_no.jpg in Resources */,
+				D35391EB1D015A0A00025CB3 /* katakana_te.jpg in Resources */,
 				D3CCA3B11CF2ACAC0022D752 /* Assets.xcassets in Resources */,
+				D35391911D01491700025CB3 /* hiragana_te.jpg in Resources */,
+				D35391ED1D015A0A00025CB3 /* katakana_tsu.jpg in Resources */,
+				D353918A1D01491700025CB3 /* hiragana_ru.jpg in Resources */,
+				D35391D31D015A0A00025CB3 /* katakana_ku.jpg in Resources */,
+				D35391981D01491700025CB3 /* hiragana_yo.jpg in Resources */,
+				D35391CE1D015A0A00025CB3 /* katakana_i.jpg in Resources */,
+				D35391761D01491700025CB3 /* hiragana_ke.jpg in Resources */,
+				D35391D41D015A0A00025CB3 /* katakana_ma.jpg in Resources */,
 				D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */,
-				D3775AA81CFC2E37009A4FEA /* delete.png in Resources */,
-				D3775AAC1CFC4492009A4FEA /* delete_icon.png in Resources */,
-				D3FA256D1CF6F9E700CD24BF /* sound_icon.png in Resources */,
+				D353917D1D01491700025CB3 /* hiragana_mo.jpg in Resources */,
+				D35391EF1D015A0A00025CB3 /* katakana_wa.jpg in Resources */,
+				D35391DE1D015A0A00025CB3 /* katakana_nu.jpg in Resources */,
+				D353916F1D01491700025CB3 /* hiragana_ha.jpg in Resources */,
+				D35391E31D015A0A00025CB3 /* katakana_ro.jpg in Resources */,
+				D35391E11D015A0A00025CB3 /* katakana_re.jpg in Resources */,
+				D353918C1D01491700025CB3 /* hiragana_se.jpg in Resources */,
+				D353917A1D01491700025CB3 /* hiragana_ma.jpg in Resources */,
+				D35391801D01491700025CB3 /* hiragana_na.jpg in Resources */,
+				D353918D1D01491700025CB3 /* hiragana_shi.jpg in Resources */,
+				D353913A1D01467F00025CB3 /* sound_icon.png in Resources */,
+				D353916D1D01491700025CB3 /* hiragana_chi.jpg in Resources */,
+				D35391CC1D015A0A00025CB3 /* katakana_ho.jpg in Resources */,
+				D35391721D01491700025CB3 /* hiragana_ho.jpg in Resources */,
+				D35391841D01491700025CB3 /* hiragana_nu.jpg in Resources */,
+				D35391E91D015A0A00025CB3 /* katakana_su.jpg in Resources */,
+				D35391821D01491700025CB3 /* hiragana_ni.jpg in Resources */,
+				D353918E1D01491700025CB3 /* hiragana_so.jpg in Resources */,
+				D35391DC1D015A0A00025CB3 /* katakana_ni.jpg in Resources */,
+				D35391DA1D015A0A00025CB3 /* katakana_na.jpg in Resources */,
+				D35391E81D015A0A00025CB3 /* katakana_so.jpg in Resources */,
+				D353917C1D01491700025CB3 /* hiragana_mi.jpg in Resources */,
+				D35391861D01491700025CB3 /* hiragana_ra.jpg in Resources */,
+				D35391CA1D015A0A00025CB3 /* katakana_ha1.jpg in Resources */,
+				D35391D71D015A0A00025CB3 /* katakana_mo.jpg in Resources */,
+				D35391DD1D015A0A00025CB3 /* katakana_no.jpg in Resources */,
+				D353918F1D01491700025CB3 /* hiragana_su.jpg in Resources */,
+				D353917F1D01491700025CB3 /* hiragana_n.jpg in Resources */,
+				D35391971D01491700025CB3 /* hiragana_ya.jpg in Resources */,
+				D35391711D01491700025CB3 /* hiragana_hi.jpg in Resources */,
+				D35391961D01491700025CB3 /* hiragana_wo.jpg in Resources */,
+				D35391C91D015A0A00025CB3 /* katakana_e.jpg in Resources */,
+				D353917E1D01491700025CB3 /* hiragana_mu.jpg in Resources */,
+				D35391901D01491700025CB3 /* hiragana_ta.jpg in Resources */,
+				D35391DF1D015A0A00025CB3 /* katakana_o.jpg in Resources */,
+				D35391991D01491700025CB3 /* hiragana_yu.jpg in Resources */,
+				D35391E51D015A0A00025CB3 /* katakana_sa.jpg in Resources */,
+				D35391E71D015A0A00025CB3 /* katakana_shi.jpg in Resources */,
+				D35391E01D015A0A00025CB3 /* katakana_ra.jpg in Resources */,
+				D35391C81D015A0A00025CB3 /* katakana_chi.jpg in Resources */,
+				D35391D21D015A0A00025CB3 /* katakana_ko.jpg in Resources */,
+				D35391D91D015A0A00025CB3 /* katakana_n.jpg in Resources */,
 				D3CCA3AF1CF2ACAC0022D752 /* Main.storyboard in Resources */,
+				D353916C1D01491700025CB3 /* hiragana_a.jpg in Resources */,
+				D35391D81D015A0A00025CB3 /* katakana_mu.jpg in Resources */,
+				D35391EE1D015A0A00025CB3 /* katakana_u.jpg in Resources */,
+				D35391731D01491700025CB3 /* hiragana_hu.jpg in Resources */,
+				D35391881D01491700025CB3 /* hiragana_ri.jpg in Resources */,
+				D35391891D01491700025CB3 /* hiragana_ro.jpg in Resources */,
+				D35391CF1D015A0A00025CB3 /* katakana_ka.jpg in Resources */,
+				D35391781D01491700025CB3 /* hiragana_ko.jpg in Resources */,
+				D35391921D01491700025CB3 /* hiragana_to.jpg in Resources */,
+				D353918B1D01491700025CB3 /* hiragana_sa.jpg in Resources */,
+				D35391D01D015A0A00025CB3 /* katakana_ke.jpg in Resources */,
+				D35391E41D015A0A00025CB3 /* katakana_ru.jpg in Resources */,
+				D35391CB1D015A0A00025CB3 /* katakana_hi.jpg in Resources */,
+				D35391F51D016A5000025CB3 /* delete_icon_white.png in Resources */,
+				D35391811D01491700025CB3 /* hiragana_ne.jpg in Resources */,
+				D35391D51D015A0A00025CB3 /* katakana_me.jpg in Resources */,
+				D35391D61D015A0A00025CB3 /* katakana_mi.jpg in Resources */,
+				D35391DB1D015A0A00025CB3 /* katakana_ne.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -789,22 +1093,19 @@
 				D3CCA4AE1CF2AFD10022D752 /* AppDelegate.m in Sources */,
 				D3CCA49E1CF2AFB50022D752 /* VocabularyController.m in Sources */,
 				D3775AA21CFC203D009A4FEA /* KanjiController.m in Sources */,
-				D3FA254F1CF6920C00CD24BF /* TLYShyScrollViewController.m in Sources */,
 				D3FD92E41CF542B80039FB14 /* TFHpple.m in Sources */,
-				D3FA25461CF691FA00CD24BF /* TLYShyNavBarManager.m in Sources */,
 				D3F665791CF2E0EE001A7F71 /* ListContentController.m in Sources */,
 				D3FD93091CF5992E0039FB14 /* VocabularCell.m in Sources */,
 				D3AC9A861CFD8123003D1D08 /* DataAccess.m in Sources */,
-				D3CCA4B41CF2B0660022D752 /* SNLoading.m in Sources */,
+				D35391351D01465200025CB3 /* NSString+HTML.m in Sources */,
 				D3FD930C1CF599920039FB14 /* Vocabulary.m in Sources */,
+				D35391341D01465200025CB3 /* NSMutableAttributedString+Color.m in Sources */,
 				D3FD93001CF54EF40039FB14 /* Utilities.m in Sources */,
 				D3FD92E51CF542B80039FB14 /* TFHppleElement.m in Sources */,
 				D3CCA47D1CF2AF5F0022D752 /* AFSecurityPolicy.m in Sources */,
 				D3CCA4781CF2AF5F0022D752 /* AFHTTPRequestOperation.m in Sources */,
 				D3CCA4851CF2AF5F0022D752 /* UIImageView+AFNetworking.m in Sources */,
 				D3CCA47A1CF2AF5F0022D752 /* AFHTTPSessionManager.m in Sources */,
-				D3FA25501CF6920C00CD24BF /* TLYShyStatusBarController.m in Sources */,
-				D3FA253F1CF691EF00CD24BF /* TLYDelegateProxy.m in Sources */,
 				D3FA25701CF843D100CD24BF /* WritingCell.m in Sources */,
 				D3FD92FC1CF54C860039FB14 /* Grammar.m in Sources */,
 				D3CCA4821CF2AF5F0022D752 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
@@ -813,11 +1114,10 @@
 				D3CCA4951CF2AF8E0022D752 /* AlphabetController.m in Sources */,
 				D3CCA48C1CF2AF6F0022D752 /* iToast.m in Sources */,
 				D3CCA4891CF2AF5F0022D752 /* UIWebView+AFNetworking.m in Sources */,
+				D35391361D01465200025CB3 /* NSString+XMLEntities.m in Sources */,
 				D3775A9F1CFC1463009A4FEA /* Kanji.m in Sources */,
 				D3CCA4831CF2AF5F0022D752 /* UIAlertView+AFNetworking.m in Sources */,
 				D3CCA4791CF2AF5F0022D752 /* AFHTTPRequestOperationManager.m in Sources */,
-				D3FA255C1CF6C71A00CD24BF /* NSString+HTML.m in Sources */,
-				D3FA253E1CF691EF00CD24BF /* NSObject+TLYSwizzlingHelpers.m in Sources */,
 				D3FD93031CF551D70039FB14 /* DataManager.m in Sources */,
 				D3CCA4811CF2AF5F0022D752 /* AFURLSessionManager.m in Sources */,
 				D3FA25731CF849F400CD24BF /* CustomWritingLayout.m in Sources */,
@@ -826,19 +1126,15 @@
 				D3CCA3A31CF2ACAC0022D752 /* main.m in Sources */,
 				D3FD92E61CF542B80039FB14 /* XPathQuery.m in Sources */,
 				D3CCA4981CF2AF9A0022D752 /* GrammarController.m in Sources */,
-				D3FA25661CF6DB5B00CD24BF /* NSMutableAttributedString+Color.m in Sources */,
-				D3FA25411CF691EF00CD24BF /* UIViewController+BetterLayoutGuides.m in Sources */,
-				D3FA25511CF6920C00CD24BF /* TLYShyViewController.m in Sources */,
+				D35391331D01465200025CB3 /* GTMNSString+HTML.m in Sources */,
 				D3CCA4861CF2AF5F0022D752 /* UIProgressView+AFNetworking.m in Sources */,
 				D3FD93061CF56E040039FB14 /* DetailGrammarController.m in Sources */,
 				D3CCA47B1CF2AF5F0022D752 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				D353913D1D0146B200025CB3 /* SNLoading.m in Sources */,
 				D3CCA4841CF2AF5F0022D752 /* UIButton+AFNetworking.m in Sources */,
-				D3FA255D1CF6C71A00CD24BF /* NSString+XMLEntities.m in Sources */,
 				D3CCA47F1CF2AF5F0022D752 /* AFURLRequestSerialization.m in Sources */,
 				D3CCA47C1CF2AF5F0022D752 /* AFNetworkReachabilityManager.m in Sources */,
 				D3CCA4871CF2AF5F0022D752 /* UIRefreshControl+AFNetworking.m in Sources */,
-				D3FA25401CF691EF00CD24BF /* UIScrollView+Helpers.m in Sources */,
-				D3FA255B1CF6C71A00CD24BF /* GTMNSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

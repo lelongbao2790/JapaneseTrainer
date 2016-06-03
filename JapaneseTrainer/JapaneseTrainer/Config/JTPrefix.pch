@@ -21,7 +21,6 @@
 #import "DetailGrammarController.h"
 #import "Vocabulary.h"
 #import "VocabularCell.h"
-#import "TLYShyNavBarManager.h"
 #import "NSString+HTML.h"
 #import <AVFoundation/AVAudioPlayer.h>
 #import <AVFoundation/AVAudioSession.h>

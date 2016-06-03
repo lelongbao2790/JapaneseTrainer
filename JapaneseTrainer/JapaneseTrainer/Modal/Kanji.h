@@ -11,6 +11,10 @@
 @interface Kanji : DBObject
 
 @property (strong, nonatomic) NSString *kanjiWord;
+@property (strong, nonatomic) NSString *kanjiReading;
+@property (strong, nonatomic) NSString *kanjiMeaning;
+@property (strong, nonatomic) NSString *kanjiExample;
+@property (strong, nonatomic) NSString *kanjiDrawing;
 @property (strong, nonatomic) NSString *onyomi;
 @property (strong, nonatomic) NSString *kunyomi;
 @property (strong, nonatomic) NSString *englishMeaning;

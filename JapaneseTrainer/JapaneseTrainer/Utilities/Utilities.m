@@ -68,11 +68,19 @@
     return dictResponse;
 }
 
-+ (void)circleButton:(UIButton *)btn {
++ (void)circleButton:(UIView *)btn {
     btn.layer.cornerRadius = btn.frame.size.height / 2;
     btn.layer.masksToBounds = YES;
     btn.layer.borderColor = [UIColor lightGrayColor].CGColor;
     btn.layer.borderWidth = 1.0;
+}
+
++ (NSAttributedString *)convertStringToNSAttributeString:(NSString *)original {
+    NSAttributedString *attributedString = [[NSAttributedString alloc] initWithData:[original
+                                                                                     dataUsingEncoding:NSUnicodeStringEncoding]
+                                                                            options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
+                                                                 documentAttributes:nil error:nil];
+    return attributedString;
 }
 
 @end
