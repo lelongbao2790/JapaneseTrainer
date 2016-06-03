@@ -60,22 +60,29 @@
 - (void)requestMeaningKanji {
     
     if (self.word.kanjiReading.length > 0) {
-        // Reading
-        self.lbReading.attributedText = [Utilities convertStringToNSAttributeString:self.word.kanjiReading];
-        
-        // Meaning
-        self.lbMeaning.attributedText = [Utilities convertStringToNSAttributeString:self.word.kanjiMeaning];
-        
-        // Example
-        self.tvExample.attributedText = [Utilities convertStringToNSAttributeString:self.word.kanjiExample];
-        
-        [self.webviewWritingKanji loadHTMLString:self.word.kanjiDrawing baseURL:nil];
+        [self loadInformationFromData];
         
     } else {
         ProgressBarShowLoading(kLoading);
         NSString *url = [NSString stringWithFormat:kKanjiTangori,self.word.kanjiWord];
         [[DataManager shared] getKanjiMeaningWithUrl:url];
     }
+}
+
+- (void)loadInformationFromData {
+    // Reading
+    self.lbReading.attributedText = [Utilities convertStringToNSAttributeString:self.word.kanjiReading];
+    
+    // Meaning
+    self.lbMeaning.attributedText = [Utilities convertStringToNSAttributeString:self.word.kanjiMeaning];
+    
+    // Example
+    NSMutableAttributedString *englishHtml = [[NSMutableAttributedString alloc] initWithData:[self.word.kanjiExample dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
+    [englishHtml addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor] range:NSMakeRange(0, englishHtml.length)];
+    [englishHtml addAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:15.0]} range:NSMakeRange(0, englishHtml.length)];
+    self.tvExample.attributedText = englishHtml;
+    
+    [self.webviewWritingKanji loadHTMLString:self.word.kanjiDrawing baseURL:nil];
 }
 
 - (IBAction)btnDelete:(id)sender {
@@ -149,21 +156,17 @@
         NSString *kanjiReading = [elementReading content];
         kanjiReading = [kanjiReading stringByAppendingString:kHTMLFontSize15];
         self.word.kanjiReading = kanjiReading;
-        self.lbReading.attributedText = [Utilities convertStringToNSAttributeString:kanjiReading];
         break;
     }
     for (TFHppleElement *elementMeaning in kanjiMeaningNode) {
         NSString *kanjiMeaning = [elementMeaning content];
         kanjiMeaning = [kanjiMeaning stringByAppendingString:kHTMLFontSize15];
         self.word.kanjiMeaning = kanjiMeaning;
-        self.lbMeaning.attributedText = [Utilities convertStringToNSAttributeString:kanjiMeaning];
         break;
     }
     for (TFHppleElement *elementExample in kanjiExampleNode) {
         NSString *kanjiExample = [elementExample raw];
-        kanjiExample = [kanjiExample stringByAppendingString:kHTMLFontSize20];
         self.word.kanjiExample = kanjiExample;
-        self.tvExample.attributedText = [Utilities convertStringToNSAttributeString:kanjiExample];
         break;
     }
     
@@ -172,11 +175,12 @@
         [kanjiSVG stringByReplacingOccurrencesOfString:@"&gt;" withString:@">"];
         [kanjiSVG stringByReplacingOccurrencesOfString:@"&lt;" withString:@"<"];
         self.word.kanjiDrawing = kanjiSVG;
-        [self.webviewWritingKanji loadHTMLString:kanjiSVG baseURL:nil];
         break;
     }
     
     [self.word commit];
+    
+    [self loadInformationFromData];
 }
 
 - (void)getKanjiMeaningAPIFail:(NSString *)resultMessage {
