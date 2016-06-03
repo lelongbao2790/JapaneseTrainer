@@ -149,30 +149,21 @@
         NSString *kanjiReading = [elementReading content];
         kanjiReading = [kanjiReading stringByAppendingString:kHTMLFontSize15];
         self.word.kanjiReading = kanjiReading;
-        NSAttributedString *attributedString = [[NSAttributedString alloc] initWithData:[kanjiReading
-                                                                                         dataUsingEncoding:NSUnicodeStringEncoding]
-                                                                                options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
-                                                                     documentAttributes:nil error:nil];
-        self.lbReading.attributedText = attributedString;
+        self.lbReading.attributedText = [Utilities convertStringToNSAttributeString:kanjiReading];
         break;
     }
     for (TFHppleElement *elementMeaning in kanjiMeaningNode) {
         NSString *kanjiMeaning = [elementMeaning content];
         kanjiMeaning = [kanjiMeaning stringByAppendingString:kHTMLFontSize15];
         self.word.kanjiMeaning = kanjiMeaning;
-        NSAttributedString *attributedString = [[NSAttributedString alloc] initWithData:[kanjiMeaning
-                                                                                         dataUsingEncoding:NSUnicodeStringEncoding]
-                                                                                options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
-                                                                     documentAttributes:nil error:nil];
-        self.lbMeaning.attributedText = attributedString;
+        self.lbMeaning.attributedText = [Utilities convertStringToNSAttributeString:kanjiMeaning];
         break;
     }
     for (TFHppleElement *elementExample in kanjiExampleNode) {
         NSString *kanjiExample = [elementExample raw];
         kanjiExample = [kanjiExample stringByAppendingString:kHTMLFontSize20];
         self.word.kanjiExample = kanjiExample;
-        NSMutableAttributedString *englishHtml = [[NSMutableAttributedString alloc] initWithData:[kanjiExample dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
-        self.tvExample.attributedText = englishHtml;
+        self.tvExample.attributedText = [Utilities convertStringToNSAttributeString:kanjiExample];
         break;
     }
     

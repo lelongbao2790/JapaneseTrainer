@@ -46,8 +46,7 @@
     if (self.aGrammar) {
         self.lbWord.text = self.aGrammar.name;
         self.csHeightTopView.constant = kHeightConstantGrammar;
-        NSAttributedString *attributedString = [[NSAttributedString alloc] initWithData:[self.aGrammar.rawExample dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
-        self.tvDetail.attributedText = attributedString;
+        self.tvDetail.attributedText = [Utilities convertStringToNSAttributeString:self.aVocabulary.rawExample];;
     } else if (self.aVocabulary) {
         self.lbWord.text = self.aVocabulary.nameHiragana;
         self.lbKanji.text = [NSString stringWithFormat:@"Kanji: %@",self.aVocabulary.nameKanji];
@@ -55,11 +54,7 @@
         // Show meaning html
         if (self.aVocabulary.rawExample.length > 0) {
             self.aVocabulary.rawExample = [self.aVocabulary.rawExample stringByAppendingString:kHTMLFontSize15];
-            NSAttributedString *attributedString = [[NSAttributedString alloc] initWithData:[self.aVocabulary.rawExample
-                                                                                             dataUsingEncoding:NSUnicodeStringEncoding]
-                                                                                    options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
-                                                                         documentAttributes:nil error:nil];
-            self.tvDetail.attributedText = attributedString;
+            self.tvDetail.attributedText = [Utilities convertStringToNSAttributeString:self.aVocabulary.rawExample];
 
         } else {
             // Show meaning html
