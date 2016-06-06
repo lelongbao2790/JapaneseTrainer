@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Kanji.h"
 @interface WritingCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *lbRomanji;
 @property (weak, nonatomic) IBOutlet UILabel *lbTitle;
+
+- (void)setInformationCell:(BOOL)isHidden atIndexPath:(NSIndexPath *)indexPath andList:(NSArray *)list;
+
 @end

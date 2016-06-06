@@ -71,8 +71,15 @@
 + (void)circleButton:(UIView *)btn {
     btn.layer.cornerRadius = btn.frame.size.height / 2;
     btn.layer.masksToBounds = YES;
-    btn.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    btn.layer.borderColor = [UIColor whiteColor].CGColor;
     btn.layer.borderWidth = 1.0;
+}
+
++ (void)borderView:(UIView *)btn {
+    btn.layer.cornerRadius = 5;
+    btn.layer.masksToBounds = YES;
+//    btn.layer.borderColor = [UIColor lightGrayColor].CGColor;
+//    btn.layer.borderWidth = 1.0;
 }
 
 + (NSAttributedString *)convertStringToNSAttributeString:(NSString *)original {

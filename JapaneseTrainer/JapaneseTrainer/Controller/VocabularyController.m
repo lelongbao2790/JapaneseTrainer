@@ -71,6 +71,7 @@
     self.searchController.searchBar.placeholder = kSearchWord;
     self.searchController.searchBar.scopeButtonTitles = [NSArray array];
     self.searchController.searchBar.tintColor = [UIColor whiteColor];
+    self.searchController.searchBar.barTintColor = k11132201Color;
     self.tbvVocabulary.tableHeaderView = self.searchController.searchBar;
     self.definesPresentationContext = YES;
     [self.searchController.searchBar sizeToFit];

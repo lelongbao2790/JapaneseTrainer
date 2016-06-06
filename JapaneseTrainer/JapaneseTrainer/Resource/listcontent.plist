@@ -386,7 +386,7 @@
 			<key>romanji</key>
 			<string>wu</string>
 			<key>image</key>
-			<string>hiragana_wu.jpg</string>
+			<string>emptyString</string>
 		</dict>
 		<dict>
 			<key>hiragana</key>

@@ -32,5 +32,6 @@
 #import "Grammar.h"
 #import "DataManager.h"
 #import "Vocabulary.h"
+#import "CommonColor.h"
 
 #endif /* Config_h */

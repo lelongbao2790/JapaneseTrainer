@@ -153,22 +153,7 @@
     // Configure the cell
     WritingCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kWritingCellIdentifier forIndexPath:indexPath];
     
-    if (self.btnSegLevel.hidden) {
-        NSDictionary *dictCell = self.listWriting[indexPath.row];
-        NSString *hiraganaText = [dictCell objectForKey:kHiraganaKey];
-        
-        if (![hiraganaText isEqualToString:kStringEmpty]) {
-            cell.lbTitle.text = hiraganaText;
-            cell.lbRomanji.text = [dictCell objectForKey:kRomanjiKey];
-        } else {
-            cell.lbTitle.text = kEmpty;
-            cell.lbRomanji.text = kEmpty;
-        }
-    } else {
-        Kanji *aKanji = self.listWriting[indexPath.row];
-        cell.lbTitle.text = aKanji.kanjiWord;
-        cell.lbRomanji.text = kEmpty;
-    }
+    [cell setInformationCell:self.btnSegLevel.hidden atIndexPath:indexPath andList:self.listWriting];
    
     return cell;
 }

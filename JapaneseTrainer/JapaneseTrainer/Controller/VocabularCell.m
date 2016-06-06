@@ -14,7 +14,12 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    [Utilities circleButton:self.btnSound];
+    self.subView.layer.cornerRadius = 5.0;
+    self.subView.layer.masksToBounds = NO;
+    self.subView.layer.shadowColor = [UIColor lightGrayColor].CGColor;
+    self.subView.layer.shadowOffset = CGSizeMake(3, 3);
+    self.subView.layer.shadowOpacity = 1;
+    self.subView.layer.shadowRadius = 1.0;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -39,7 +44,7 @@
         self.lbKanji.attributedText = kanjiString;
         
         // Show meaning html
-        NSString *english = [NSString stringWithFormat:@"Meaning: %@", [self.aVocabulary.nameEnglish stringByAppendingString:kHTMLFontSize15]];
+        NSString *english = [NSString stringWithFormat:@"Meaning: %@", [self.aVocabulary.nameEnglish stringByAppendingString:kHTMLFontSize18]];
         
         NSMutableAttributedString *englishHtml = [[NSMutableAttributedString alloc] initWithData:[english dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
         [englishHtml addAttribute:NSForegroundColorAttributeName value:[UIColor darkGrayColor] range:NSMakeRange(0, englishHtml.length)];

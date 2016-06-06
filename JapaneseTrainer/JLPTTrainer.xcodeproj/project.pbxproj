@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D321D5D81D0528E6002B187D /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D5D71D0528E6002B187D /* bookmark.png */; };
+		D321D5DA1D053F0B002B187D /* sound_icon_white.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D5D91D053F0B002B187D /* sound_icon_white.png */; };
 		D35391331D01465200025CB3 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D353912C1D01465200025CB3 /* GTMNSString+HTML.m */; };
 		D35391341D01465200025CB3 /* NSMutableAttributedString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D353912E1D01465200025CB3 /* NSMutableAttributedString+Color.m */; };
 		D35391351D01465200025CB3 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D35391301D01465200025CB3 /* NSString+HTML.m */; };
@@ -176,6 +178,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D321D5D71D0528E6002B187D /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark.png; sourceTree = "<group>"; };
+		D321D5D91D053F0B002B187D /* sound_icon_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sound_icon_white.png; path = Resource/sound_icon_white.png; sourceTree = "<group>"; };
 		D353912B1D01465200025CB3 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+HTML.h"; path = "ThirdLibrary/NSString_HTML/GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		D353912C1D01465200025CB3 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+HTML.m"; path = "ThirdLibrary/NSString_HTML/GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		D353912D1D01465200025CB3 /* NSMutableAttributedString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+Color.h"; path = "ThirdLibrary/NSString_HTML/NSMutableAttributedString+Color.h"; sourceTree = "<group>"; };
@@ -790,6 +794,8 @@
 		D3F6657C1CF2E2F4001A7F71 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D321D5D91D053F0B002B187D /* sound_icon_white.png */,
+				D321D5D71D0528E6002B187D /* bookmark.png */,
 				D35391F41D016A5000025CB3 /* delete_icon_white.png */,
 				D35391371D01467F00025CB3 /* delete_icon.png */,
 				D35391381D01467F00025CB3 /* sound_icon.png */,
@@ -1033,6 +1039,7 @@
 				D353918F1D01491700025CB3 /* hiragana_su.jpg in Resources */,
 				D353917F1D01491700025CB3 /* hiragana_n.jpg in Resources */,
 				D35391971D01491700025CB3 /* hiragana_ya.jpg in Resources */,
+				D321D5D81D0528E6002B187D /* bookmark.png in Resources */,
 				D35391711D01491700025CB3 /* hiragana_hi.jpg in Resources */,
 				D35391961D01491700025CB3 /* hiragana_wo.jpg in Resources */,
 				D35391C91D015A0A00025CB3 /* katakana_e.jpg in Resources */,
@@ -1042,6 +1049,7 @@
 				D35391991D01491700025CB3 /* hiragana_yu.jpg in Resources */,
 				D35391E51D015A0A00025CB3 /* katakana_sa.jpg in Resources */,
 				D35391E71D015A0A00025CB3 /* katakana_shi.jpg in Resources */,
+				D321D5DA1D053F0B002B187D /* sound_icon_white.png in Resources */,
 				D35391E01D015A0A00025CB3 /* katakana_ra.jpg in Resources */,
 				D35391C81D015A0A00025CB3 /* katakana_chi.jpg in Resources */,
 				D35391D21D015A0A00025CB3 /* katakana_ko.jpg in Resources */,

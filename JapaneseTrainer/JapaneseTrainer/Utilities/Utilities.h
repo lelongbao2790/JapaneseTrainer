@@ -25,5 +25,7 @@
 + (nonnull NSDictionary *)parseRawSearchToDict:(nonnull NSString *)original;
 + (void)circleButton:(UIView *)btn;
 
++ (void)borderView:(UIView *)btn;
+
 + (NSAttributedString *)convertStringToNSAttributeString:(NSString *)original;
 @end

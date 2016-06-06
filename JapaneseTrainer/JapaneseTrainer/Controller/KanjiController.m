@@ -21,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgWriting;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *csTopSubView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *csBottomSubView;
+@property (weak, nonatomic) IBOutlet UIView *subViewTop;
+@property (weak, nonatomic) IBOutlet UIButton *btnBookmark;
 
 @end
 
@@ -44,6 +46,10 @@
     [self setInformation];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [self.tvExample scrollRectToVisible:CGRectMake(0,0,1,1) animated:YES];
+}
+
 #pragma mark Helper Method
 
 - (void)config {
@@ -55,6 +61,8 @@
     self.webviewWritingKanji.scrollView.scrollEnabled = NO;
     self.webviewWritingKanji.scrollView.bounces = NO;
     [Utilities circleButton:self.btnSound];
+    [Utilities borderView:self.subViewTop];
+    [Utilities borderView:self.tvExample];
 }
 
 - (void)requestMeaningKanji {
@@ -72,16 +80,17 @@
 - (void)loadInformationFromData {
     // Reading
     self.lbReading.attributedText = [Utilities convertStringToNSAttributeString:self.word.kanjiReading];
-    
+//    self.lbReading.text = [NSString stringWithFormat:@"%@\n%@", self.word.onyomi, self.word.kunyomi];
     // Meaning
-    self.lbMeaning.attributedText = [Utilities convertStringToNSAttributeString:self.word.kanjiMeaning];
+//    self.lbMeaning.attributedText = [Utilities convertStringToNSAttributeString:self.word.kanjiMeaning];
+    self.lbMeaning.text = self.word.englishMeaning;
     
     // Example
     NSMutableAttributedString *englishHtml = [[NSMutableAttributedString alloc] initWithData:[self.word.kanjiExample dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
     [englishHtml addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor] range:NSMakeRange(0, englishHtml.length)];
     [englishHtml addAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:15.0]} range:NSMakeRange(0, englishHtml.length)];
-    self.tvExample.attributedText = englishHtml;
     
+    self.tvExample.attributedText = englishHtml;
     [self.webviewWritingKanji loadHTMLString:self.word.kanjiDrawing baseURL:nil];
 }
 
@@ -92,10 +101,10 @@
 - (void)setInformation {
     if (self.word) {
         // Kanji
-        self.btnSound.hidden = YES;
         self.imgWriting.hidden = YES;
         self.btnSeg.hidden = NO;
         self.viewInformation.hidden = NO;
+        self.lbKanji.hidden = NO;
         [self requestMeaningKanji];
         
         self.csTopSubView.constant = kConstantSubViewKanji;
@@ -103,11 +112,10 @@
         
     } else {
         // Not kanji
-        self.btnSound.hidden = NO;
         self.imgWriting.hidden = NO;
         self.btnSeg.hidden = YES;
         self.viewInformation.hidden = YES;
-        self.lbKanji.text = [self.dictPlist objectForKey:kHiraganaKey];
+        self.lbKanji.hidden = YES;
         
         NSString *imageText = [self.dictPlist objectForKey:kImageKey];
         if (imageText.length > 0) {
@@ -137,7 +145,7 @@
     
 }
 - (IBAction)btnSound:(id)sender {
-     [[Sound shared] playSoundWithText:[self.dictPlist objectForKey:kHiraganaKey]];
+     [[Sound shared] playSoundWithText:self.lbKanji.text];
 }
 
 #pragma mark Kanji Meaning Delegate
@@ -155,6 +163,7 @@
     for (TFHppleElement *elementReading in kanjiReadingNode) {
         NSString *kanjiReading = [elementReading content];
         kanjiReading = [kanjiReading stringByAppendingString:kHTMLFontSize15];
+        kanjiReading = [kanjiReading stringByReplacingOccurrencesOfString:@"/    " withString:@"<br>"];
         self.word.kanjiReading = kanjiReading;
         break;
     }

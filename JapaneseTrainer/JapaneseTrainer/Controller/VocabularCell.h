@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lbEnglish;
 @property (weak, nonatomic) IBOutlet UIButton *btnSound;
 @property (strong, nonatomic) Vocabulary *aVocabulary;
+@property (weak, nonatomic) IBOutlet UIView *subView;
 
 - (void)loadInformation:(BOOL)isSearch;
 
