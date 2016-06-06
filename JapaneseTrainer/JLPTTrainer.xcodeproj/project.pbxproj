@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		D321D5D81D0528E6002B187D /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D5D71D0528E6002B187D /* bookmark.png */; };
 		D321D5DA1D053F0B002B187D /* sound_icon_white.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D5D91D053F0B002B187D /* sound_icon_white.png */; };
+		D321D5DD1D055892002B187D /* hiragana_icon_white.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D5DB1D055892002B187D /* hiragana_icon_white.png */; };
+		D321D5DE1D055892002B187D /* hiragana_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D5DC1D055892002B187D /* hiragana_icon.png */; };
+		D321D5E01D055CDD002B187D /* arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D5DF1D055CDD002B187D /* arrow_right.png */; };
+		D321D5E31D055D29002B187D /* GrammarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D321D5E21D055D29002B187D /* GrammarCell.m */; };
 		D35391331D01465200025CB3 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D353912C1D01465200025CB3 /* GTMNSString+HTML.m */; };
 		D35391341D01465200025CB3 /* NSMutableAttributedString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D353912E1D01465200025CB3 /* NSMutableAttributedString+Color.m */; };
 		D35391351D01465200025CB3 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D35391301D01465200025CB3 /* NSString+HTML.m */; };
@@ -141,7 +145,6 @@
 		D3CCA49B1CF2AFA80022D752 /* ListeningController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA49A1CF2AFA80022D752 /* ListeningController.m */; };
 		D3CCA49E1CF2AFB50022D752 /* VocabularyController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA49D1CF2AFB50022D752 /* VocabularyController.m */; };
 		D3CCA4AE1CF2AFD10022D752 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA4AD1CF2AFD10022D752 /* AppDelegate.m */; };
-		D3F665791CF2E0EE001A7F71 /* ListContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F665781CF2E0EE001A7F71 /* ListContentController.m */; };
 		D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */; };
 		D3FA25691CF6EE1300CD24BF /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25681CF6EE1300CD24BF /* Sound.m */; };
 		D3FA256B1CF6EF2500CD24BF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FA256A1CF6EF2500CD24BF /* AudioToolbox.framework */; };
@@ -180,6 +183,11 @@
 /* Begin PBXFileReference section */
 		D321D5D71D0528E6002B187D /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark.png; sourceTree = "<group>"; };
 		D321D5D91D053F0B002B187D /* sound_icon_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sound_icon_white.png; path = Resource/sound_icon_white.png; sourceTree = "<group>"; };
+		D321D5DB1D055892002B187D /* hiragana_icon_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hiragana_icon_white.png; path = Resource/hiragana_icon_white.png; sourceTree = "<group>"; };
+		D321D5DC1D055892002B187D /* hiragana_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hiragana_icon.png; path = Resource/hiragana_icon.png; sourceTree = "<group>"; };
+		D321D5DF1D055CDD002B187D /* arrow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_right.png; path = Resource/arrow_right.png; sourceTree = "<group>"; };
+		D321D5E11D055D29002B187D /* GrammarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrammarCell.h; path = Controller/GrammarCell.h; sourceTree = "<group>"; };
+		D321D5E21D055D29002B187D /* GrammarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrammarCell.m; path = Controller/GrammarCell.m; sourceTree = "<group>"; };
 		D353912B1D01465200025CB3 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+HTML.h"; path = "ThirdLibrary/NSString_HTML/GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		D353912C1D01465200025CB3 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+HTML.m"; path = "ThirdLibrary/NSString_HTML/GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		D353912D1D01465200025CB3 /* NSMutableAttributedString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+Color.h"; path = "ThirdLibrary/NSString_HTML/NSMutableAttributedString+Color.h"; sourceTree = "<group>"; };
@@ -367,8 +375,6 @@
 		D3CCA4AB1CF2AFC30022D752 /* StoryBoardID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryBoardID.h; path = Config/StoryBoardID.h; sourceTree = "<group>"; };
 		D3CCA4AC1CF2AFD10022D752 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppDelegate/AppDelegate.h; sourceTree = "<group>"; };
 		D3CCA4AD1CF2AFD10022D752 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppDelegate/AppDelegate.m; sourceTree = "<group>"; };
-		D3F665771CF2E0EE001A7F71 /* ListContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListContentController.h; path = Controller/ListContentController.h; sourceTree = "<group>"; };
-		D3F665781CF2E0EE001A7F71 /* ListContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListContentController.m; path = Controller/ListContentController.m; sourceTree = "<group>"; };
 		D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = listcontent.plist; path = Resource/listcontent.plist; sourceTree = "<group>"; };
 		D3FA25671CF6EE1300CD24BF /* Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sound.h; path = Modal/Sound.h; sourceTree = "<group>"; };
 		D3FA25681CF6EE1300CD24BF /* Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sound.m; path = Modal/Sound.m; sourceTree = "<group>"; };
@@ -642,7 +648,6 @@
 		D3CCA3F81CF2ADC80022D752 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D3F665761CF2E0C4001A7F71 /* ListContent */,
 				D3CCA4051CF2ADEF0022D752 /* Alphabet */,
 				D3CCA4061CF2ADF50022D752 /* Grammar */,
 				D3CCA4071CF2ADFB0022D752 /* Listening */,
@@ -673,6 +678,8 @@
 				D3CCA4971CF2AF9A0022D752 /* GrammarController.m */,
 				D3FD93041CF56E040039FB14 /* DetailGrammarController.h */,
 				D3FD93051CF56E040039FB14 /* DetailGrammarController.m */,
+				D321D5E11D055D29002B187D /* GrammarCell.h */,
+				D321D5E21D055D29002B187D /* GrammarCell.m */,
 			);
 			name = Grammar;
 			sourceTree = "<group>";
@@ -782,18 +789,12 @@
 			name = ThirdLibrary;
 			sourceTree = "<group>";
 		};
-		D3F665761CF2E0C4001A7F71 /* ListContent */ = {
-			isa = PBXGroup;
-			children = (
-				D3F665771CF2E0EE001A7F71 /* ListContentController.h */,
-				D3F665781CF2E0EE001A7F71 /* ListContentController.m */,
-			);
-			name = ListContent;
-			sourceTree = "<group>";
-		};
 		D3F6657C1CF2E2F4001A7F71 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D321D5DF1D055CDD002B187D /* arrow_right.png */,
+				D321D5DB1D055892002B187D /* hiragana_icon_white.png */,
+				D321D5DC1D055892002B187D /* hiragana_icon.png */,
 				D321D5D91D053F0B002B187D /* sound_icon_white.png */,
 				D321D5D71D0528E6002B187D /* bookmark.png */,
 				D35391F41D016A5000025CB3 /* delete_icon_white.png */,
@@ -1018,6 +1019,7 @@
 				D35391E11D015A0A00025CB3 /* katakana_re.jpg in Resources */,
 				D353918C1D01491700025CB3 /* hiragana_se.jpg in Resources */,
 				D353917A1D01491700025CB3 /* hiragana_ma.jpg in Resources */,
+				D321D5DE1D055892002B187D /* hiragana_icon.png in Resources */,
 				D35391801D01491700025CB3 /* hiragana_na.jpg in Resources */,
 				D353918D1D01491700025CB3 /* hiragana_shi.jpg in Resources */,
 				D353913A1D01467F00025CB3 /* sound_icon.png in Resources */,
@@ -1029,6 +1031,7 @@
 				D35391821D01491700025CB3 /* hiragana_ni.jpg in Resources */,
 				D353918E1D01491700025CB3 /* hiragana_so.jpg in Resources */,
 				D35391DC1D015A0A00025CB3 /* katakana_ni.jpg in Resources */,
+				D321D5E01D055CDD002B187D /* arrow_right.png in Resources */,
 				D35391DA1D015A0A00025CB3 /* katakana_na.jpg in Resources */,
 				D35391E81D015A0A00025CB3 /* katakana_so.jpg in Resources */,
 				D353917C1D01491700025CB3 /* hiragana_mi.jpg in Resources */,
@@ -1048,6 +1051,7 @@
 				D35391DF1D015A0A00025CB3 /* katakana_o.jpg in Resources */,
 				D35391991D01491700025CB3 /* hiragana_yu.jpg in Resources */,
 				D35391E51D015A0A00025CB3 /* katakana_sa.jpg in Resources */,
+				D321D5DD1D055892002B187D /* hiragana_icon_white.png in Resources */,
 				D35391E71D015A0A00025CB3 /* katakana_shi.jpg in Resources */,
 				D321D5DA1D053F0B002B187D /* sound_icon_white.png in Resources */,
 				D35391E01D015A0A00025CB3 /* katakana_ra.jpg in Resources */,
@@ -1102,8 +1106,8 @@
 				D3CCA49E1CF2AFB50022D752 /* VocabularyController.m in Sources */,
 				D3775AA21CFC203D009A4FEA /* KanjiController.m in Sources */,
 				D3FD92E41CF542B80039FB14 /* TFHpple.m in Sources */,
-				D3F665791CF2E0EE001A7F71 /* ListContentController.m in Sources */,
 				D3FD93091CF5992E0039FB14 /* VocabularCell.m in Sources */,
+				D321D5E31D055D29002B187D /* GrammarCell.m in Sources */,
 				D3AC9A861CFD8123003D1D08 /* DataAccess.m in Sources */,
 				D35391351D01465200025CB3 /* NSString+HTML.m in Sources */,
 				D3FD930C1CF599920039FB14 /* Vocabulary.m in Sources */,

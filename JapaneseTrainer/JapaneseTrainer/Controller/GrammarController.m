@@ -7,6 +7,7 @@
 //
 
 #import "GrammarController.h"
+#import "GrammarCell.h"
 
 @interface GrammarController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -126,10 +127,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kIdentifierGrammar forIndexPath:indexPath];
+    GrammarCell *cell = [tableView dequeueReusableCellWithIdentifier:kIdentifierGrammar forIndexPath:indexPath];
+    if(!cell) { cell = [[GrammarCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kIdentifierGrammar];}
     Grammar *aGrammar = self.listGrammar[indexPath.row];
-    cell.textLabel.text = aGrammar.name;
-    cell.textLabel.font = [UIFont systemFontOfSize:19.0];
+    cell.lbNameGrammar.text = aGrammar.name;
     
     return cell;
 }
@@ -138,12 +139,20 @@
     DetailGrammarController *detailGrammar = InitStoryBoardWithIdentifier(kDetailGrammarStoryBoardID);
     Grammar *aGrammar = self.listGrammar[indexPath.row];
     detailGrammar.aGrammar = aGrammar;
-    if (aGrammar.rawExample.length < 1) {
-        ProgressBarShowLoading(kLoading);
-        [[DataManager shared] getDetailGrammarWithUrl:aGrammar.href];
-    } 
     
     [self.navigationController pushViewController:detailGrammar animated:YES];
+    
+}
+
+- (void)tableView: (UITableView*)tableView willDisplayCell: (GrammarCell*)cell forRowAtIndexPath: (NSIndexPath*)indexPath
+{
+    
+    if(indexPath.row % 2 == 0) {
+        cell.backgroundColor = k195232251Color;
+    }
+    else {
+        cell.backgroundColor = [UIColor whiteColor];
+    }
     
 }
 

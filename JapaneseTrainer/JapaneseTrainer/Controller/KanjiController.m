@@ -63,6 +63,7 @@
     [Utilities circleButton:self.btnSound];
     [Utilities borderView:self.subViewTop];
     [Utilities borderView:self.tvExample];
+    
 }
 
 - (void)requestMeaningKanji {
@@ -80,16 +81,12 @@
 - (void)loadInformationFromData {
     // Reading
     self.lbReading.attributedText = [Utilities convertStringToNSAttributeString:self.word.kanjiReading];
-//    self.lbReading.text = [NSString stringWithFormat:@"%@\n%@", self.word.onyomi, self.word.kunyomi];
-    // Meaning
-//    self.lbMeaning.attributedText = [Utilities convertStringToNSAttributeString:self.word.kanjiMeaning];
     self.lbMeaning.text = self.word.englishMeaning;
     
     // Example
     NSMutableAttributedString *englishHtml = [[NSMutableAttributedString alloc] initWithData:[self.word.kanjiExample dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
     [englishHtml addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor] range:NSMakeRange(0, englishHtml.length)];
     [englishHtml addAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:15.0]} range:NSMakeRange(0, englishHtml.length)];
-    
     self.tvExample.attributedText = englishHtml;
     [self.webviewWritingKanji loadHTMLString:self.word.kanjiDrawing baseURL:nil];
 }

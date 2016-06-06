@@ -46,7 +46,14 @@
     if (self.aGrammar) {
         self.lbWord.text = self.aGrammar.name;
         self.csHeightTopView.constant = kHeightConstantGrammar;
-        self.tvDetail.attributedText = [Utilities convertStringToNSAttributeString:self.aVocabulary.rawExample];;
+        if (self.aGrammar.rawExample.length > 0) {
+            NSLog(@"%@", self.aGrammar.rawExample);
+            self.tvDetail.attributedText = [Utilities convertStringToNSAttributeString:self.aVocabulary.rawExample];
+        } else {
+            ProgressBarShowLoading(kLoading);
+            [[DataManager shared] getDetailGrammarWithUrl:self.aGrammar.href];
+        }
+        
     } else if (self.aVocabulary) {
         self.lbWord.text = self.aVocabulary.nameHiragana;
         self.lbKanji.text = [NSString stringWithFormat:@"Kanji: %@",self.aVocabulary.nameKanji];
