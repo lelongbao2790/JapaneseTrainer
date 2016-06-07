@@ -356,9 +356,9 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="139" sectionHeaderHeight="44" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aEW-s4-xSl">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
-                                <color key="backgroundColor" red="0.80000000000000004" green="0.80784313730000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="separatorColor" red="0.80000000000000004" green="0.80784313730000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="sectionIndexBackgroundColor" red="0.80000000000000004" green="0.80784313730000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VocabularCellIdentifier" rowHeight="140" id="lmR-hF-Oea" customClass="VocabularCell">
                                         <rect key="frame" x="0.0" y="44" width="600" height="140"/>
@@ -431,7 +431,7 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.80000000000000004" green="0.80784313730000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="8aH-Uy-ysc" firstAttribute="top" secondItem="3mq-xO-6Qr" secondAttribute="top" constant="4" id="7y2-dU-ynH"/>
                                                 <constraint firstItem="8aH-Uy-ysc" firstAttribute="leading" secondItem="3mq-xO-6Qr" secondAttribute="leading" constant="8" id="GLS-Ye-XhJ"/>

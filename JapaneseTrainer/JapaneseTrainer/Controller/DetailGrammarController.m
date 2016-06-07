@@ -229,7 +229,7 @@
     
     dispatch_async(dispatch_get_main_queue(), ^{ // 2
         ProgressBarDismissLoading(kEmpty);
-        [self.tbvGrammar reloadData];
+        [self reloadSectionDU:kSectionExample withRowAnimation:UITableViewRowAnimationNone];
     });
     
 }
@@ -285,7 +285,7 @@
     
     dispatch_async(dispatch_get_main_queue(), ^{ // 2
         [self.listMeaning addObjectsFromArray: listWordSearch];
-        [self.tbvGrammar reloadData];
+        [self reloadSectionDU:kSectionMeaning withRowAnimation:UITableViewRowAnimationNone];
         ProgressBarDismissLoading(kEmpty);
         
     });
@@ -334,6 +334,8 @@
         }
     });
     
+    [self reloadSectionDU:kSectionExample withRowAnimation:UITableViewRowAnimationNone];
+    
 }
 
 /*
@@ -360,6 +362,8 @@
             [self requestMeaning:self.aVocabulary.nameHiragana];
         }
     });
+    
+    [self reloadSectionDU:kSectionMeaning withRowAnimation:UITableViewRowAnimationNone];
 }
 
 /*
@@ -384,14 +388,14 @@
     } else {
         
     }
+    
+    [self reloadSectionDU:kSectionNote withRowAnimation:UITableViewRowAnimationNone];
 }
 
 #pragma mark Note Controller Delegate
 - (void)dismissNote:(UIViewController *)controller {
     [controller dismissViewControllerAnimated:YES completion:nil];
     [self handleNote];
-    
-    [self reloadSectionDU:kSectionNote withRowAnimation:UITableViewRowAnimationNone];
 }
 
 - (void) reloadSectionDU:(NSInteger)section withRowAnimation:(UITableViewRowAnimation)rowAnimation {

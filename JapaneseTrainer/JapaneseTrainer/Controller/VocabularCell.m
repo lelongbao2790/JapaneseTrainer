@@ -16,6 +16,10 @@
     // Initialization code
     self.subView.layer.cornerRadius = 5.0;
     self.subView.layer.masksToBounds = NO;
+    self.subView.layer.shadowColor = [UIColor lightGrayColor].CGColor;
+    self.subView.layer.shadowOffset = CGSizeMake(3, 3);
+    self.subView.layer.shadowOpacity = 1;
+    self.subView.layer.shadowRadius = 1.0;
     [Utilities circleButton:self.btnSound];
 }
 
