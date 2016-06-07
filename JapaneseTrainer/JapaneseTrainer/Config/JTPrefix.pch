@@ -33,5 +33,6 @@
 #import "ExampleCell.h"
 #import "NoteCell.h"
 #import "MeaningCell.h"
+#import "KanjiCell.h"
 
 #endif /* JTPrefix_pch */

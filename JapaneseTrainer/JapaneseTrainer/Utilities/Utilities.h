@@ -32,5 +32,10 @@
 /*
  * Get frame from string
  */
-+ (CGRect)getRectFromString:(nonnull NSAttributedString *)message;
++ (CGRect)getRectFromAttributedString:(nonnull NSAttributedString *)message withWidth:(CGFloat)width;
+
+/*
+ * Get frame from string
+ */
++ (CGRect)getRectFromString:(nonnull NSString *)string;
 @end

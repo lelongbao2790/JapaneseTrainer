@@ -20,6 +20,7 @@ static NSString *kVocabularyIdentifier = @"VocabularCellIdentifier";
 static NSString *kMeaningCellIdentifier = @"MeaningCellIdentifier";
 static NSString *kExampleCellIdentifier = @"ExampleCellIdentifier";
 static NSString *kNoteIdentifier = @"NoteIdentifier";
+static NSString *kKanjiCellIdentifier = @"KanjiCellIdentifier";
 
 // Vocabulary
 static NSString *kVocabularyLevelN5 = @"JLPT Level N5";
@@ -73,8 +74,9 @@ static NSString *kTagTdReplace = @"<td><a class=\"nounderline\" href=\"/jlpt/ski
 static NSString *kMeaningKanjiTag = @"//p[@class='k-meaning']";
 static NSString *kReadingKanjiTag = @"//p[@class='k-readings']";
 static NSString *kDrawKanjiTag = @"//div[@class='k-sod']";
-static NSString *kExampleKanjiTag = @"//table[@class='k-compounds-table']";
+static NSString *kExampleKanjiTag = @"//table[@class='k-compounds-table']/tbody/tr";
 static NSString *kListDetailGrammarTag = @"//a[@class='btn btn-link entry-menu'";
+static NSString *kKanjiSpanKana = @"//span[@class='kana']/b";
 
 //static NSString *kQuerySearch = @"//a[@class='btn btn-link entry-menu']";
 static NSString *kQuerySearch = @"//div[@class='entry']";

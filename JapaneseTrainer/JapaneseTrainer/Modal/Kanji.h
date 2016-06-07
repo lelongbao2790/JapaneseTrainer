@@ -19,4 +19,6 @@
 @property (strong, nonatomic) NSString *kunyomi;
 @property (strong, nonatomic) NSString *englishMeaning;
 @property (assign, nonatomic) NSInteger level;
+@property (strong, nonatomic) NSString *example;
+@property (strong, nonatomic) NSString *nameKanjiRelated;
 @end

@@ -50,6 +50,7 @@ typedef NS_ENUM(NSInteger, DetailGrammarTag) {
     kNumberOfSectionDetailGrammar = 3,
     kConstantBetweenTwoTextMeaning = 23,
     kConstantBetweenTwoTextExample = 10,
+    kWidthImage = 30,
 };
 
 

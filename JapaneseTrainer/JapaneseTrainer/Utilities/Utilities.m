@@ -93,11 +93,26 @@
 /*
  * Get frame from string
  */
-+ (CGRect)getRectFromString:(nonnull NSAttributedString *)message {
++ (CGRect)getRectFromAttributedString:(nonnull NSAttributedString *)message withWidth:(CGFloat)width {
     CGRect rect = CGRectMake(0,0,0,0);
-    rect = [message boundingRectWithSize:CGSizeMake([[UIScreen mainScreen] bounds].size.width, 9999)
+    rect = [message boundingRectWithSize:CGSizeMake(width, 9999)
                                         options:NSStringDrawingUsesLineFragmentOrigin
                                         context:nil];
+    return rect;
+}
+
+/*
+ * Get frame from string
+ */
++ (CGRect)getRectFromString:(nonnull NSString *)string {
+    CGRect rect = CGRectMake(0,0,0,0);
+    NSAttributedString *attributedText =
+    [[NSAttributedString alloc] initWithString:string
+                                    attributes:@{NSFontAttributeName: fontMessage}];
+
+    rect = [attributedText boundingRectWithSize:CGSizeMake([[UIScreen mainScreen] bounds].size.width, 9999)
+                                 options:NSStringDrawingUsesLineFragmentOrigin
+                                 context:nil];
     return rect;
 }
 

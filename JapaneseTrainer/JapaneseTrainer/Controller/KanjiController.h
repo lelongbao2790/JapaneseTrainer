@@ -11,6 +11,5 @@
 @interface KanjiController : UIViewController
 
 @property (strong, nonatomic) Kanji *word;
-@property (strong, nonatomic) NSDictionary *dictPlist;
 
 @end

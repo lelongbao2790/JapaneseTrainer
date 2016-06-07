@@ -79,7 +79,8 @@
             MeaningCell  *meaningCell = [tableView dequeueReusableCellWithIdentifier:kMeaningCellIdentifier];
             Vocabulary *voca = self.listMeaning[indexPath.row];
             NSAttributedString *attributeString = [Utilities convertStringToNSAttributeString:[voca.nameEnglish stringByAppendingString:kHTMLFontSize17]];
-            CGRect rectMeaning= [Utilities getRectFromString:attributeString];
+            CGRect rectMeaning= [Utilities getRectFromAttributedString:attributeString
+                                                             withWidth:[[UIScreen mainScreen] bounds].size.width];
             
             return rectMeaning.size.height + meaningCell.lbStatus.frame.size.height + meaningCell.lbHiragana.frame.size.height + kConstantBetweenTwoTextMeaning;
         }
@@ -87,7 +88,8 @@
             
         case kSectionExample: {
             Grammar *objGrammar = self.listExamples[indexPath.row];
-            CGRect rectCell = [Utilities getRectFromString:[Utilities convertStringToNSAttributeString:objGrammar.rawExample]];
+            CGRect rectCell = [Utilities getRectFromAttributedString:[Utilities convertStringToNSAttributeString:objGrammar.rawExample]
+                                                           withWidth:[[UIScreen mainScreen] bounds].size.width];
             return rectCell.size.height + kConstantBetweenTwoTextExample;
         }
             break;

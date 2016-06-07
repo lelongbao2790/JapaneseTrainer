@@ -164,18 +164,7 @@
     
     if (self.btnSegLevel.hidden) {
         NSDictionary *dictCell = self.listWriting[indexPath.row];
-        NSString *hiraganaText = [dictCell objectForKey:kHiraganaKey];
-        NSString *imageText = [dictCell objectForKey:kImageKey];
-        if (![hiraganaText isEqualToString:kStringEmpty]) {
-            
-            if(![imageText isEqualToString:kStringEmpty]) {
-                kanjiController.dictPlist = dictCell;
-                [self.tabBarController presentViewController:kanjiController animated:YES completion:nil];
-                
-            } else {
-                [[Sound shared] playSoundWithText:[dictCell objectForKey:kHiraganaKey]];
-            }
-        }
+        [[Sound shared] playSoundWithText:[dictCell objectForKey:kHiraganaKey]];
     }
     else {
         

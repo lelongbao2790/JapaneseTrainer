@@ -21,6 +21,8 @@
 
 - (NSArray *)listGrammarRelated:(NSString *)nameRelated;
 
+- (NSArray *)listKanjiRelated:(NSString *)nameRelated;
+
 - (NSArray *)listGrammarByLevel:(NSInteger)level;
 
 - (NSArray *)listKanjiByLevel:(NSInteger)level;
