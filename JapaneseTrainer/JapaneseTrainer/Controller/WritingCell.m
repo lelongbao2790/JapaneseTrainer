@@ -10,6 +10,11 @@
 
 @implementation WritingCell
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+}
+
 - (void)setInformationCell:(BOOL)isHidden atIndexPath:(NSIndexPath *)indexPath andList:(NSArray *)list {
     if (isHidden) {
         NSDictionary *dict = list[indexPath.row];

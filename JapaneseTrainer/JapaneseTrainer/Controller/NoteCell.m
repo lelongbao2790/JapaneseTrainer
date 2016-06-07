@@ -21,4 +21,29 @@
     // Configure the view for the selected state
 }
 
+- (void)loadInformation{
+    self.lbAddnote.text = self.aNote.noteMessage;
+    
+    if ([self.aNote.noteMessage isEqualToString:kAddNote]) {
+        [self.btnAdd setImage:[UIImage imageNamed:kAddImage] forState:UIControlStateNormal];
+    } else {
+        [self.btnAdd setImage:[UIImage imageNamed:kTrashImage] forState:UIControlStateNormal];
+    }
+}
+
+- (IBAction)btnAdd:(id)sender {
+    
+    if ([self.aNote.noteMessage isEqualToString:kAddNote]) {
+        
+        if ([self.delegate respondsToSelector:@selector(addNote)]) {
+            [self.delegate addNote];
+        }
+        
+    } else {
+        if ([self.delegate respondsToSelector:@selector(removeNote:)]) {
+            [self.delegate removeNote:self.aNote];
+        }
+    }
+}
+
 @end

@@ -15,4 +15,6 @@
 #define kPhimBoMenuIcon @"phimbo_icon.png"
 #define kLoadingAnimate @"loading2.png"
 #define kBannerImage @"banner.png"
+#define kTrashImage @"trash.png"
+#define kAddImage @"add.png"
 #endif /* Resource_h */

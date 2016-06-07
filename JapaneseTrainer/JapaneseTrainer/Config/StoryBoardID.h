@@ -28,5 +28,6 @@
 #define kWritingCellIdentifier @"WritingIdentifier"
 #define kWritingCell @"WritingCell"
 #define kKanjiController @"KanjiController"
+#define kNoteControllerStoryBoarID @"NoteController"
 
 #endif /* StoryBoardID_h */

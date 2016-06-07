@@ -49,7 +49,9 @@ static NSString *kKatagana = @"Katagana";
 static NSString *kHiraganaKey = @"hiragana";
 static NSString *kRomanjiKey = @"romanji";
 static NSString *kImageKey = @"image";
-
+static NSString *kAddNote = @"Add note";
+static NSString *kErrorInputNote = @"Please input notes";
+static NSString *kNoteSuccess = @"Your note has been successfully saved";
 // Detail grammar
 static NSString *kMeaningTitle = @"MEANING";
 static NSString *kNoteTitle = @"NOTES";

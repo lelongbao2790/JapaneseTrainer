@@ -33,6 +33,7 @@
 // Error
 #define errorString(value) [[error localizedDescription] isEqualToString:value]
 #define kHTMLFontSize15 [NSString stringWithFormat:@"<style>body{font-family: '%@'; font-size:%fpx;}</style>", @"Helvetica Neue",15.0]
+#define kHTMLFontSize16 [NSString stringWithFormat:@"<style>body{font-family: '%@'; font-size:%fpx;}</style>", @"Helvetica Neue",16.0]
 #define kHTMLFontSize18 [NSString stringWithFormat:@"<style>body{font-family: '%@'; font-size:%fpx;}</style>", @"Helvetica Neue",18.0]
 #define kHTMLFontSize20 [NSString stringWithFormat:@"<style>body{font-family: '%@'; font-size:%fpx;}</style>", @"Helvetica Neue",20.0]
 #define kHTMLFontSize17 [NSString stringWithFormat:@"<style>body{font-family: '%@'; font-size:%fpx;}</style>", @"Helvetica Neue",17.0]

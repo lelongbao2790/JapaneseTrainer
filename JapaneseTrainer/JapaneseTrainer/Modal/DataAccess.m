@@ -70,6 +70,18 @@
         return nil;
 }
 
+- (NSArray *)listNoteRelated:(NSString *)nameRelated {
+    DBResultSet* r = [[[Note query]
+                       whereWithFormat:@"nameRelate = %@", nameRelated]
+                      fetch];
+    
+    if (r.count > 0) {
+        return r;
+    }
+    else
+        return nil;
+}
+
 - (NSArray *)listGrammarByLevel:(NSInteger)level {
     DBResultSet* r = [[[Grammar query]
                        whereWithFormat:@"level = %d", (int)level]

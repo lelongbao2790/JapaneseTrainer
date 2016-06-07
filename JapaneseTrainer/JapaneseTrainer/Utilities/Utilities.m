@@ -78,8 +78,8 @@
 + (void)borderView:(UIView *)btn {
     btn.layer.cornerRadius = 5;
     btn.layer.masksToBounds = YES;
-//    btn.layer.borderColor = [UIColor lightGrayColor].CGColor;
-//    btn.layer.borderWidth = 1.0;
+    btn.layer.borderColor = k11132201Color.CGColor;
+    btn.layer.borderWidth = 1.0;
 }
 
 + (nonnull NSAttributedString *)convertStringToNSAttributeString:(nonnull NSString *)original {
@@ -115,5 +115,23 @@
                                  context:nil];
     return rect;
 }
+
+/**
+ * Show iToast message for informing.
+ * @param message
+ */
++ (void)showiToastMessage:(nonnull NSString *)message {
+    iToastSettings *theSettings = [iToastSettings getSharedSettings];
+    theSettings.duration = 300;
+    
+    // Prevent crash with null string
+    if (message == (id)[NSNull null]) {
+        message = kEmpty;
+    }
+    
+    [[[[iToast makeText:message]
+       setGravity:iToastGravityBottom] setDuration:iToastDurationNormal] show];
+}
+
 
 @end

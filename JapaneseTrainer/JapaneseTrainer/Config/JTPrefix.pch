@@ -34,5 +34,7 @@
 #import "NoteCell.h"
 #import "MeaningCell.h"
 #import "KanjiCell.h"
+#import "Note.h"
+#import "NoteController.h"
 
 #endif /* JTPrefix_pch */

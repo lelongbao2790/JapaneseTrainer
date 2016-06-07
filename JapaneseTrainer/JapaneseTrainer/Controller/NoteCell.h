@@ -7,7 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Note.h"
+
+@protocol NoteCellDelegate;
 
 @interface NoteCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *lbAddnote;
+@property (weak, nonatomic) IBOutlet UIButton *btnAdd;
+@property (strong, nonatomic) Note *aNote;
+@property (weak, nonatomic) id<NoteCellDelegate> delegate;
+
+- (void)loadInformation;
+
+@end
+
+
+@protocol NoteCellDelegate<NSObject>
+
+- (void)addNote;
+- (void)removeNote:(Note *)noteRemove;
 
 @end

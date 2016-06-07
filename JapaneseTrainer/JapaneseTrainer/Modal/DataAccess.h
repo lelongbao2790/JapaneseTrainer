@@ -23,6 +23,8 @@
 
 - (NSArray *)listKanjiRelated:(NSString *)nameRelated;
 
+- (NSArray *)listNoteRelated:(NSString *)nameRelated;
+
 - (NSArray *)listGrammarByLevel:(NSInteger)level;
 
 - (NSArray *)listKanjiByLevel:(NSInteger)level;

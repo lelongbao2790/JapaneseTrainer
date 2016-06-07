@@ -38,4 +38,10 @@
  * Get frame from string
  */
 + (CGRect)getRectFromString:(nonnull NSString *)string;
+
+/**
+ * Show iToast message for informing.
+ * @param message
+ */
++ (void)showiToastMessage:(nonnull NSString *)message;
 @end

@@ -8,7 +8,7 @@
 
 #import "DetailGrammarController.h"
 
-@interface DetailGrammarController ()<GetDetailGrammarDelegate, UITableViewDelegate,  UITableViewDataSource, SearchWordDelegate>
+@interface DetailGrammarController ()<GetDetailGrammarDelegate, UITableViewDelegate,  UITableViewDataSource, SearchWordDelegate, NoteControllerDelegate, NoteCellDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *lbWord;
 @property (weak, nonatomic) IBOutlet UILabel *lbKanji;
 @property (weak, nonatomic) IBOutlet UIButton *btnSound;
@@ -16,7 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tbvGrammar;
 @property (strong, nonatomic) NSMutableArray *listMeaning;
 @property (strong, nonatomic) NSMutableArray *listExamples;
-
+@property (strong, nonatomic) NSMutableArray *listNote;
 @end
 
 @implementation DetailGrammarController
@@ -45,9 +45,13 @@
     
     self.listExamples = [[NSMutableArray alloc] init];
     self.listMeaning = [[NSMutableArray alloc] init];
+    self.listNote = [[NSMutableArray alloc] init];
     
     // set layer
     [Utilities circleButton:self.btnSound];
+    
+    [self handleNote];
+    
     if (self.aGrammar) {
         [self handleGrammar];
     } else if (self.aVocabulary) {
@@ -119,8 +123,13 @@
             return self.listExamples.count;
             break;
         
-        case kSectionNote:
-            return 1;
+        case kSectionNote: {
+            if (self.listNote.count > 0) {
+                return self.listNote.count;
+            } else {
+                return 1;
+            }
+        }
             break;
             
         default:
@@ -175,7 +184,21 @@
             
         case kSectionNote: {
             NoteCell  *noteCell = [tableView dequeueReusableCellWithIdentifier:kNoteIdentifier];
+            noteCell.delegate = self;
+            
             if(!noteCell) { noteCell = [[NoteCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kNoteIdentifier];}
+            
+            if (self.listNote.count > 0) {
+                Note *notes = self.listNote[indexPath.row];
+                noteCell.aNote = notes;
+                [noteCell loadInformation];
+            } else {
+                Note *notes = [Note new];
+                notes.noteMessage = kAddNote;
+                noteCell.aNote = notes;
+                [noteCell loadInformation];
+            }
+            
             cell = noteCell;
         }
             break;
@@ -187,7 +210,6 @@
 # pragma mark Get Detail Delegate
 
 - (void)getDetailGrammarAPISuccess:(NSData *)response {
-    
     
     // Parse Data from HTML
     TFHpple *tutorialsParser = [TFHpple hppleWithHTMLData:response];
@@ -338,7 +360,65 @@
             [self requestMeaning:self.aVocabulary.nameHiragana];
         }
     });
+}
+
+/*
+ *  Did select note
+ */
+- (void)handleNote {
+    [self.listNote removeAllObjects];
+    NSArray *listNoteLocal = [[NSArray alloc] init];
+    if (self.aGrammar) {
+        listNoteLocal = [[DataAccess shared] listNoteRelated:self.aGrammar.name];
+    } else if (self.aVocabulary) {
+        listNoteLocal = [[DataAccess shared] listNoteRelated:self.aVocabulary.nameHiragana];
+    }
+
+    if (listNoteLocal.count > 0) {
+        
+        Note *note = [Note new];
+        note.noteMessage = kAddNote;
+        
+        self.listNote = [listNoteLocal mutableCopy];
+        [self.listNote addObject:note];
+    } else {
+        
+    }
+}
+
+#pragma mark Note Controller Delegate
+- (void)dismissNote:(UIViewController *)controller {
+    [controller dismissViewControllerAnimated:YES completion:nil];
+    [self handleNote];
     
+    [self reloadSectionDU:kSectionNote withRowAnimation:UITableViewRowAnimationNone];
+}
+
+- (void) reloadSectionDU:(NSInteger)section withRowAnimation:(UITableViewRowAnimation)rowAnimation {
+    NSRange range = NSMakeRange(section, 1);
+    NSIndexSet *sectionToReload = [NSIndexSet indexSetWithIndexesInRange:range];
+    [self.tbvGrammar reloadSections:sectionToReload withRowAnimation:rowAnimation];
+}
+
+#pragma mark Note Cell Delegate
+- (void)addNote {
+    NoteController *noteController = InitStoryBoardWithIdentifier(kNoteControllerStoryBoarID);
+    noteController.delegate = self;
+    
+    if (self.aGrammar) {
+        noteController.nameRelate = self.aGrammar.name;
+    } else if (self.aVocabulary) {
+        noteController.nameRelate = self.aVocabulary.nameHiragana;
+    }
+    
+    [self.tabBarController presentViewController:noteController animated:YES completion:nil];
+}
+
+- (void)removeNote:(Note *)noteRemove {
+    
+    [self.listNote removeObject:noteRemove];
+    [noteRemove remove];
+    [self reloadSectionDU:kSectionNote withRowAnimation:UITableViewRowAnimationNone];
 }
 
 @end

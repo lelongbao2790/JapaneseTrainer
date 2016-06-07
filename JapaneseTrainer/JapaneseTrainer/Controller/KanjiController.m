@@ -52,6 +52,7 @@
 - (void)config {
     self.listExampleKanji = [[NSMutableArray alloc] init];
     self.lbKanji.text = self.word.kanjiWord;
+    [Utilities borderView:self.lbKanji];
     
     // Border subview layer
     self.subView.layer.cornerRadius = 5.0;
@@ -76,7 +77,13 @@
 
 - (void)loadInformationFromData {
     // Reading
-    self.lbReading.attributedText = [Utilities convertStringToNSAttributeString:self.word.kanjiReading];
+    
+    // Show meaning html
+    NSMutableAttributedString *kanjiHtml = [[NSMutableAttributedString alloc] initWithData:[[self.word.kanjiReading stringByAppendingString:kHTMLFontSize16] dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
+    [kanjiHtml addAttribute:NSForegroundColorAttributeName value:[UIColor darkGrayColor] range:NSMakeRange(0, kanjiHtml.length)];
+
+    self.lbReading.attributedText = kanjiHtml;
+    
     self.lbMeaning.text = self.word.englishMeaning;
     
     // Example

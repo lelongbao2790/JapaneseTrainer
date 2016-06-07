@@ -22,6 +22,10 @@
 		D321D5F81D05858D002B187D /* approved.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D5F71D05858D002B187D /* approved.png */; };
 		D321D5FB1D068E33002B187D /* KanjiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D321D5FA1D068E33002B187D /* KanjiCell.m */; };
 		D321D6031D06A18C002B187D /* point_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D6021D06A18C002B187D /* point_icon.png */; };
+		D321D6051D06A97A002B187D /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D6041D06A97A002B187D /* add.png */; };
+		D321D6091D06ACD2002B187D /* NoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = D321D6081D06ACD2002B187D /* NoteController.m */; };
+		D321D60C1D06AE40002B187D /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = D321D60B1D06AE40002B187D /* Note.m */; };
+		D321D60E1D06BC94002B187D /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D60D1D06BC94002B187D /* trash.png */; };
 		D35391331D01465200025CB3 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D353912C1D01465200025CB3 /* GTMNSString+HTML.m */; };
 		D35391341D01465200025CB3 /* NSMutableAttributedString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D353912E1D01465200025CB3 /* NSMutableAttributedString+Color.m */; };
 		D35391351D01465200025CB3 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D35391301D01465200025CB3 /* NSString+HTML.m */; };
@@ -210,6 +214,12 @@
 		D321D5F91D068E33002B187D /* KanjiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KanjiCell.h; path = Controller/KanjiCell.h; sourceTree = "<group>"; };
 		D321D5FA1D068E33002B187D /* KanjiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanjiCell.m; path = Controller/KanjiCell.m; sourceTree = "<group>"; };
 		D321D6021D06A18C002B187D /* point_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point_icon.png; sourceTree = "<group>"; };
+		D321D6041D06A97A002B187D /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add.png; path = Resource/add.png; sourceTree = "<group>"; };
+		D321D6071D06ACD2002B187D /* NoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteController.h; path = Controller/NoteController.h; sourceTree = "<group>"; };
+		D321D6081D06ACD2002B187D /* NoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteController.m; path = Controller/NoteController.m; sourceTree = "<group>"; };
+		D321D60A1D06AE40002B187D /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = Modal/Note.h; sourceTree = "<group>"; };
+		D321D60B1D06AE40002B187D /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = Modal/Note.m; sourceTree = "<group>"; };
+		D321D60D1D06BC94002B187D /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trash.png; path = Resource/trash.png; sourceTree = "<group>"; };
 		D353912B1D01465200025CB3 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+HTML.h"; path = "ThirdLibrary/NSString_HTML/GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		D353912C1D01465200025CB3 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+HTML.m"; path = "ThirdLibrary/NSString_HTML/GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		D353912D1D01465200025CB3 /* NSMutableAttributedString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+Color.h"; path = "ThirdLibrary/NSString_HTML/NSMutableAttributedString+Color.h"; sourceTree = "<group>"; };
@@ -456,6 +466,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D321D6061D06ACB3002B187D /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				D321D6071D06ACD2002B187D /* NoteController.h */,
+				D321D6081D06ACD2002B187D /* NoteController.m */,
+			);
+			name = Note;
+			sourceTree = "<group>";
+		};
 		D35391281D01366900025CB3 /* hiragana */ = {
 			isa = PBXGroup;
 			children = (
@@ -670,6 +689,7 @@
 		D3CCA3F81CF2ADC80022D752 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D321D6061D06ACB3002B187D /* Note */,
 				D3CCA4051CF2ADEF0022D752 /* Alphabet */,
 				D3CCA4061CF2ADF50022D752 /* Grammar */,
 				D3CCA4071CF2ADFB0022D752 /* Listening */,
@@ -822,6 +842,8 @@
 		D3F6657C1CF2E2F4001A7F71 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D321D60D1D06BC94002B187D /* trash.png */,
+				D321D6041D06A97A002B187D /* add.png */,
 				D321D6021D06A18C002B187D /* point_icon.png */,
 				D321D5F71D05858D002B187D /* approved.png */,
 				D321D5EC1D0577D9002B187D /* edit_icon.png */,
@@ -885,6 +907,8 @@
 				D3775A9E1CFC1463009A4FEA /* Kanji.m */,
 				D3AC9A841CFD8123003D1D08 /* DataAccess.h */,
 				D3AC9A851CFD8123003D1D08 /* DataAccess.m */,
+				D321D60A1D06AE40002B187D /* Note.h */,
+				D321D60B1D06AE40002B187D /* Note.m */,
 			);
 			name = Modal;
 			sourceTree = "<group>";
@@ -1017,6 +1041,7 @@
 				D35391EC1D015A0A00025CB3 /* katakana_to.jpg in Resources */,
 				D35391391D01467F00025CB3 /* delete_icon.png in Resources */,
 				D35391E21D015A0A00025CB3 /* katakana_ri.jpg in Resources */,
+				D321D60E1D06BC94002B187D /* trash.png in Resources */,
 				D35391D11D015A0A00025CB3 /* katakana_ki.jpg in Resources */,
 				D353917B1D01491700025CB3 /* hiragana_me.jpg in Resources */,
 				D35391871D01491700025CB3 /* hiragana_re.jpg in Resources */,
@@ -1033,6 +1058,7 @@
 				D35391751D01491700025CB3 /* hiragana_ka.jpg in Resources */,
 				D3CCA3B41CF2ACAC0022D752 /* LaunchScreen.storyboard in Resources */,
 				D35391771D01491700025CB3 /* hiragana_ki.jpg in Resources */,
+				D321D6051D06A97A002B187D /* add.png in Resources */,
 				D35391941D01491700025CB3 /* hiragana_u.jpg in Resources */,
 				D35391831D01491700025CB3 /* hiragana_no.jpg in Resources */,
 				D35391EB1D015A0A00025CB3 /* katakana_te.jpg in Resources */,
@@ -1147,6 +1173,7 @@
 				D3775AA21CFC203D009A4FEA /* KanjiController.m in Sources */,
 				D3FD92E41CF542B80039FB14 /* TFHpple.m in Sources */,
 				D3FD93091CF5992E0039FB14 /* VocabularCell.m in Sources */,
+				D321D6091D06ACD2002B187D /* NoteController.m in Sources */,
 				D321D5E31D055D29002B187D /* GrammarCell.m in Sources */,
 				D3AC9A861CFD8123003D1D08 /* DataAccess.m in Sources */,
 				D35391351D01465200025CB3 /* NSString+HTML.m in Sources */,
@@ -1179,6 +1206,7 @@
 				D3CCA4801CF2AF5F0022D752 /* AFURLResponseSerialization.m in Sources */,
 				D3FA25691CF6EE1300CD24BF /* Sound.m in Sources */,
 				D3CCA3A31CF2ACAC0022D752 /* main.m in Sources */,
+				D321D60C1D06AE40002B187D /* Note.m in Sources */,
 				D3FD92E61CF542B80039FB14 /* XPathQuery.m in Sources */,
 				D3CCA4981CF2AF9A0022D752 /* GrammarController.m in Sources */,
 				D35391331D01465200025CB3 /* GTMNSString+HTML.m in Sources */,
