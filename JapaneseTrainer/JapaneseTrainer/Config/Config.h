@@ -33,5 +33,5 @@
 #import "DataManager.h"
 #import "Vocabulary.h"
 #import "CommonColor.h"
-
+#import "CommonSize.h"
 #endif /* Config_h */

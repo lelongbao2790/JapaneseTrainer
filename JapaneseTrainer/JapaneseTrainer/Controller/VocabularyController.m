@@ -182,6 +182,7 @@
     }
     
     detailGrammar.aVocabulary = wordAtIndex;
+    
     [self.navigationController pushViewController:detailGrammar animated:YES];
 
 }

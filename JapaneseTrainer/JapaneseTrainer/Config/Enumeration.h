@@ -42,4 +42,15 @@ typedef NS_ENUM(NSInteger, KanjiControllerTag) {
     kConstantSubViewKanji = 15,
 };
 
+typedef NS_ENUM(NSInteger, DetailGrammarTag) {
+    
+    kSectionMeaning = 0,
+    kSectionExample = 2,
+    kSectionNote = 1,
+    kNumberOfSectionDetailGrammar = 3,
+    kConstantBetweenTwoTextMeaning = 23,
+    kConstantBetweenTwoTextExample = 10,
+};
+
+
 #endif /* Enumeration_h */

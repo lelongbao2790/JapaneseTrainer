@@ -30,5 +30,8 @@
 #import "Kanji.h"
 #import "DataAccess.h"
 #import "KanjiController.h"
+#import "ExampleCell.h"
+#import "NoteCell.h"
+#import "MeaningCell.h"
 
 #endif /* JTPrefix_pch */

@@ -13,6 +13,13 @@
 		D321D5DE1D055892002B187D /* hiragana_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D5DC1D055892002B187D /* hiragana_icon.png */; };
 		D321D5E01D055CDD002B187D /* arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D5DF1D055CDD002B187D /* arrow_right.png */; };
 		D321D5E31D055D29002B187D /* GrammarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D321D5E21D055D29002B187D /* GrammarCell.m */; };
+		D321D5E71D0571CC002B187D /* jp_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D5E61D0571CC002B187D /* jp_icon.png */; };
+		D321D5EB1D057647002B187D /* delete_icon_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D5EA1D057647002B187D /* delete_icon_blue.png */; };
+		D321D5ED1D0577D9002B187D /* edit_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D5EC1D0577D9002B187D /* edit_icon.png */; };
+		D321D5F01D0578A8002B187D /* MeaningCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D321D5EF1D0578A8002B187D /* MeaningCell.m */; };
+		D321D5F31D0578BC002B187D /* ExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D321D5F21D0578BC002B187D /* ExampleCell.m */; };
+		D321D5F61D057C58002B187D /* NoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D321D5F51D057C58002B187D /* NoteCell.m */; };
+		D321D5F81D05858D002B187D /* approved.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D5F71D05858D002B187D /* approved.png */; };
 		D35391331D01465200025CB3 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D353912C1D01465200025CB3 /* GTMNSString+HTML.m */; };
 		D35391341D01465200025CB3 /* NSMutableAttributedString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D353912E1D01465200025CB3 /* NSMutableAttributedString+Color.m */; };
 		D35391351D01465200025CB3 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D35391301D01465200025CB3 /* NSString+HTML.m */; };
@@ -188,6 +195,16 @@
 		D321D5DF1D055CDD002B187D /* arrow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_right.png; path = Resource/arrow_right.png; sourceTree = "<group>"; };
 		D321D5E11D055D29002B187D /* GrammarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrammarCell.h; path = Controller/GrammarCell.h; sourceTree = "<group>"; };
 		D321D5E21D055D29002B187D /* GrammarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrammarCell.m; path = Controller/GrammarCell.m; sourceTree = "<group>"; };
+		D321D5E61D0571CC002B187D /* jp_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jp_icon.png; path = Resource/jp_icon.png; sourceTree = "<group>"; };
+		D321D5EA1D057647002B187D /* delete_icon_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = delete_icon_blue.png; path = Resource/delete_icon_blue.png; sourceTree = "<group>"; };
+		D321D5EC1D0577D9002B187D /* edit_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = edit_icon.png; path = Resource/edit_icon.png; sourceTree = "<group>"; };
+		D321D5EE1D0578A8002B187D /* MeaningCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeaningCell.h; path = Controller/MeaningCell.h; sourceTree = "<group>"; };
+		D321D5EF1D0578A8002B187D /* MeaningCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeaningCell.m; path = Controller/MeaningCell.m; sourceTree = "<group>"; };
+		D321D5F11D0578BC002B187D /* ExampleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleCell.h; sourceTree = "<group>"; };
+		D321D5F21D0578BC002B187D /* ExampleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleCell.m; sourceTree = "<group>"; };
+		D321D5F41D057C58002B187D /* NoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteCell.h; path = Controller/NoteCell.h; sourceTree = "<group>"; };
+		D321D5F51D057C58002B187D /* NoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteCell.m; path = Controller/NoteCell.m; sourceTree = "<group>"; };
+		D321D5F71D05858D002B187D /* approved.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = approved.png; sourceTree = "<group>"; };
 		D353912B1D01465200025CB3 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+HTML.h"; path = "ThirdLibrary/NSString_HTML/GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		D353912C1D01465200025CB3 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+HTML.m"; path = "ThirdLibrary/NSString_HTML/GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		D353912D1D01465200025CB3 /* NSMutableAttributedString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+Color.h"; path = "ThirdLibrary/NSString_HTML/NSMutableAttributedString+Color.h"; sourceTree = "<group>"; };
@@ -680,6 +697,12 @@
 				D3FD93051CF56E040039FB14 /* DetailGrammarController.m */,
 				D321D5E11D055D29002B187D /* GrammarCell.h */,
 				D321D5E21D055D29002B187D /* GrammarCell.m */,
+				D321D5EE1D0578A8002B187D /* MeaningCell.h */,
+				D321D5EF1D0578A8002B187D /* MeaningCell.m */,
+				D321D5F11D0578BC002B187D /* ExampleCell.h */,
+				D321D5F21D0578BC002B187D /* ExampleCell.m */,
+				D321D5F41D057C58002B187D /* NoteCell.h */,
+				D321D5F51D057C58002B187D /* NoteCell.m */,
 			);
 			name = Grammar;
 			sourceTree = "<group>";
@@ -792,6 +815,10 @@
 		D3F6657C1CF2E2F4001A7F71 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D321D5F71D05858D002B187D /* approved.png */,
+				D321D5EC1D0577D9002B187D /* edit_icon.png */,
+				D321D5EA1D057647002B187D /* delete_icon_blue.png */,
+				D321D5E61D0571CC002B187D /* jp_icon.png */,
 				D321D5DF1D055CDD002B187D /* arrow_right.png */,
 				D321D5DB1D055892002B187D /* hiragana_icon_white.png */,
 				D321D5DC1D055892002B187D /* hiragana_icon.png */,
@@ -1007,8 +1034,10 @@
 				D353918A1D01491700025CB3 /* hiragana_ru.jpg in Resources */,
 				D35391D31D015A0A00025CB3 /* katakana_ku.jpg in Resources */,
 				D35391981D01491700025CB3 /* hiragana_yo.jpg in Resources */,
+				D321D5EB1D057647002B187D /* delete_icon_blue.png in Resources */,
 				D35391CE1D015A0A00025CB3 /* katakana_i.jpg in Resources */,
 				D35391761D01491700025CB3 /* hiragana_ke.jpg in Resources */,
+				D321D5ED1D0577D9002B187D /* edit_icon.png in Resources */,
 				D35391D41D015A0A00025CB3 /* katakana_ma.jpg in Resources */,
 				D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */,
 				D353917D1D01491700025CB3 /* hiragana_mo.jpg in Resources */,
@@ -1022,6 +1051,7 @@
 				D321D5DE1D055892002B187D /* hiragana_icon.png in Resources */,
 				D35391801D01491700025CB3 /* hiragana_na.jpg in Resources */,
 				D353918D1D01491700025CB3 /* hiragana_shi.jpg in Resources */,
+				D321D5E71D0571CC002B187D /* jp_icon.png in Resources */,
 				D353913A1D01467F00025CB3 /* sound_icon.png in Resources */,
 				D353916D1D01491700025CB3 /* hiragana_chi.jpg in Resources */,
 				D35391CC1D015A0A00025CB3 /* katakana_ho.jpg in Resources */,
@@ -1039,6 +1069,7 @@
 				D35391CA1D015A0A00025CB3 /* katakana_ha1.jpg in Resources */,
 				D35391D71D015A0A00025CB3 /* katakana_mo.jpg in Resources */,
 				D35391DD1D015A0A00025CB3 /* katakana_no.jpg in Resources */,
+				D321D5F81D05858D002B187D /* approved.png in Resources */,
 				D353918F1D01491700025CB3 /* hiragana_su.jpg in Resources */,
 				D353917F1D01491700025CB3 /* hiragana_n.jpg in Resources */,
 				D35391971D01491700025CB3 /* hiragana_ya.jpg in Resources */,
@@ -1121,7 +1152,9 @@
 				D3FA25701CF843D100CD24BF /* WritingCell.m in Sources */,
 				D3FD92FC1CF54C860039FB14 /* Grammar.m in Sources */,
 				D3CCA4821CF2AF5F0022D752 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				D321D5F31D0578BC002B187D /* ExampleCell.m in Sources */,
 				D3CCA4911CF2AF7D0022D752 /* MBProgressHUD.m in Sources */,
+				D321D5F61D057C58002B187D /* NoteCell.m in Sources */,
 				D3CCA49B1CF2AFA80022D752 /* ListeningController.m in Sources */,
 				D3CCA4951CF2AF8E0022D752 /* AlphabetController.m in Sources */,
 				D3CCA48C1CF2AF6F0022D752 /* iToast.m in Sources */,
@@ -1139,6 +1172,7 @@
 				D3FD92E61CF542B80039FB14 /* XPathQuery.m in Sources */,
 				D3CCA4981CF2AF9A0022D752 /* GrammarController.m in Sources */,
 				D35391331D01465200025CB3 /* GTMNSString+HTML.m in Sources */,
+				D321D5F01D0578A8002B187D /* MeaningCell.m in Sources */,
 				D3CCA4861CF2AF5F0022D752 /* UIProgressView+AFNetworking.m in Sources */,
 				D3FD93061CF56E040039FB14 /* DetailGrammarController.m in Sources */,
 				D3CCA47B1CF2AF5F0022D752 /* AFNetworkActivityIndicatorManager.m in Sources */,

@@ -14,4 +14,5 @@
 @property (strong, nonatomic) NSString *href;
 @property (assign, nonatomic) NSInteger level;
 @property (strong, nonatomic) NSString *rawExample;
+@property (strong, nonatomic) NSString *nameGrammarRelated;
 @end

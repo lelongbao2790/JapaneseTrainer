@@ -18,4 +18,6 @@
 @property (strong, nonatomic) NSString *rawExample;
 @property (strong, nonatomic) NSString *contentExample;
 @property (assign, nonatomic) NSInteger level;
+@property (strong, nonatomic) NSString *statusWord;
+@property (strong, nonatomic) NSString *nameVocabularyRelated;
 @end

@@ -9,11 +9,17 @@
 #ifndef CommonString_h
 #define CommonString_h
 
+// Font
+#define fontMessage [UIFont fontWithName:@"Helvetica" size:17]
+
 // List Content
 static NSString *kContentCellIdentifier = @"ContentCellIdentifier";
 static NSString *kIdentifierGrammar = @"grammarIdentifier";
 static NSString *kIdentifierListGrammar = @"listGrammarIdentifier";
 static NSString *kVocabularyIdentifier = @"VocabularCellIdentifier";
+static NSString *kMeaningCellIdentifier = @"MeaningCellIdentifier";
+static NSString *kExampleCellIdentifier = @"ExampleCellIdentifier";
+static NSString *kNoteIdentifier = @"NoteIdentifier";
 
 // Vocabulary
 static NSString *kVocabularyLevelN5 = @"JLPT Level N5";
@@ -43,6 +49,11 @@ static NSString *kHiraganaKey = @"hiragana";
 static NSString *kRomanjiKey = @"romanji";
 static NSString *kImageKey = @"image";
 
+// Detail grammar
+static NSString *kMeaningTitle = @"MEANING";
+static NSString *kNoteTitle = @"NOTES";
+static NSString *kExampleTitle = @"EXAMPLES";
+
 // Fixed auto layout for multiple device
 static NSString *kFixAutoLayoutForIp4 = @"fixAutolayoutFor35";
 static NSString *kFixAutoLayoutForIp5 = @"fixAutolayoutFor40";
@@ -58,13 +69,16 @@ static NSString *kQueryDetailGrammar = @"//div[@id='contentright']/ul/li";
 static NSString *kTagTdEmpty = @"<td></td>";
 static NSString *kTagTdReplace = @"<td><a class=\"nounderline\" href=\"/jlpt/skills/vocab/sentences/?vocabid=77206\">emptyString</a></td>";
 
+
 static NSString *kMeaningKanjiTag = @"//p[@class='k-meaning']";
 static NSString *kReadingKanjiTag = @"//p[@class='k-readings']";
 static NSString *kDrawKanjiTag = @"//div[@class='k-sod']";
 static NSString *kExampleKanjiTag = @"//table[@class='k-compounds-table']";
+static NSString *kListDetailGrammarTag = @"//a[@class='btn btn-link entry-menu'";
 
 //static NSString *kQuerySearch = @"//a[@class='btn btn-link entry-menu']";
 static NSString *kQuerySearch = @"//div[@class='entry']";
+static NSString *kSpanPos = @"//span[@class='pos']";
 static NSString *kFirstRawSearchReplace = @"<a class=\"btn btn-link entry-menu\" onclick=\"entryMenu(this,{";
 static NSString *kSecondRawSearchReplace = @"},&#10;&#9;&#9;this);\"><i class=\"icon-plus-sign\"/></a>";
 static NSString *kUnknownCharater1 = @"\n\t\t";
@@ -78,5 +92,7 @@ static NSString *kW = @"w";
 static NSString *kK = @"k";
 static NSString *kM = @"m";
 static NSString *kR = @"r";
+static NSString *kDD =  @"dd";
+static NSString *kA =  @"a";
 
 #endif /* CommonString_h */

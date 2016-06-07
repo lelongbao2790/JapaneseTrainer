@@ -68,10 +68,10 @@
     return dictResponse;
 }
 
-+ (void)circleButton:(UIView *)btn {
++ (void)circleButton:(nonnull UIView *)btn {
     btn.layer.cornerRadius = btn.frame.size.height / 2;
     btn.layer.masksToBounds = YES;
-    btn.layer.borderColor = [UIColor whiteColor].CGColor;
+    btn.layer.borderColor = k11132201Color.CGColor;
     btn.layer.borderWidth = 1.0;
 }
 
@@ -82,12 +82,23 @@
 //    btn.layer.borderWidth = 1.0;
 }
 
-+ (NSAttributedString *)convertStringToNSAttributeString:(NSString *)original {
++ (nonnull NSAttributedString *)convertStringToNSAttributeString:(nonnull NSString *)original {
     NSAttributedString *attributedString = [[NSAttributedString alloc] initWithData:[original
                                                                                      dataUsingEncoding:NSUnicodeStringEncoding]
                                                                             options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
                                                                  documentAttributes:nil error:nil];
     return attributedString;
+}
+
+/*
+ * Get frame from string
+ */
++ (CGRect)getRectFromString:(nonnull NSAttributedString *)message {
+    CGRect rect = CGRectMake(0,0,0,0);
+    rect = [message boundingRectWithSize:CGSizeMake([[UIScreen mainScreen] bounds].size.width, 9999)
+                                        options:NSStringDrawingUsesLineFragmentOrigin
+                                        context:nil];
+    return rect;
 }
 
 @end

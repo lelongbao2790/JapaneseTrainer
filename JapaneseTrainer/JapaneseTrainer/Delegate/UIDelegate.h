@@ -9,7 +9,6 @@
 #ifndef UIDelegate_h
 #define UIDelegate_h
 #import <Foundation/Foundation.h>
-
 /*
  * Request Get List Grammar Delegate
  */
@@ -63,5 +62,6 @@
 -(void) getKanjiMeaningAPISuccess:(NSData *)response;
 -(void) getKanjiMeaningAPIFail:(NSString *)resultMessage;
 @end
+
 
 #endif /* UIDelegate_h */

@@ -9,6 +9,6 @@
 #import "Grammar.h"
 
 @implementation Grammar
-@dynamic name, href, level, rawExample;
+@dynamic name, href, level, rawExample, nameGrammarRelated;
 
 @end

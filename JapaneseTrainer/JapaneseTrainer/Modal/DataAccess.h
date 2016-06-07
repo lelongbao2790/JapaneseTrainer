@@ -17,6 +17,10 @@
 
 - (NSArray *)listVocabularyByLevel:(NSInteger)level;
 
+- (NSArray *)listVocabularyRelated:(NSString *)nameRelated;
+
+- (NSArray *)listGrammarRelated:(NSString *)nameRelated;
+
 - (NSArray *)listGrammarByLevel:(NSInteger)level;
 
 - (NSArray *)listKanjiByLevel:(NSInteger)level;

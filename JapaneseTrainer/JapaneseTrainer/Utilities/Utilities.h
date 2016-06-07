@@ -23,9 +23,14 @@
 + (nonnull NSString *)convertString:(nonnull NSString *)strWord;
 
 + (nonnull NSDictionary *)parseRawSearchToDict:(nonnull NSString *)original;
-+ (void)circleButton:(UIView *)btn;
++ (void)circleButton:(nonnull UIView *)btn;
 
-+ (void)borderView:(UIView *)btn;
++ (void)borderView:(nonnull UIView *)btn;
 
-+ (NSAttributedString *)convertStringToNSAttributeString:(NSString *)original;
++ (nonnull NSAttributedString *)convertStringToNSAttributeString:(nonnull NSString *)original;
+
+/*
+ * Get frame from string
+ */
++ (CGRect)getRectFromString:(nonnull NSAttributedString *)message;
 @end

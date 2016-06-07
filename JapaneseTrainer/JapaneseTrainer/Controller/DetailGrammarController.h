@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface DetailGrammarController : UIViewController
 
 @property (strong, nonatomic) Grammar *aGrammar;
 @property (strong, nonatomic) Vocabulary *aVocabulary;
 
 @end
+
+
