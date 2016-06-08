@@ -34,6 +34,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [DataManager shared].getListGrammarDelegate = self;
+    [self btnGrammar:nil];
 }
 
 # pragma mark Helper Method
@@ -42,7 +43,7 @@
     
     self.listGrammar = [[NSMutableArray alloc] init];
     [Utilities removeBlankFooterTableView:self.tbvGrammar];
-    [self btnGrammar:nil];
+    
 }
 
 - (IBAction)btnGrammar:(id)sender {
@@ -138,9 +139,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     DetailGrammarController *detailGrammar = InitStoryBoardWithIdentifier(kDetailGrammarStoryBoardID);
+    detailGrammar.title = [self.btnSegLevel titleForSegmentAtIndex:self.btnSegLevel.selectedSegmentIndex];
     Grammar *aGrammar = self.listGrammar[indexPath.row];
     detailGrammar.aGrammar = aGrammar;
-    
     [self.navigationController pushViewController:detailGrammar animated:YES];
     
 }

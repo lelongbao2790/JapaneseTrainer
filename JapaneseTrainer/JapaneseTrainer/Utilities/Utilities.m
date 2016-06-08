@@ -133,5 +133,10 @@
        setGravity:iToastGravityBottom] setDuration:iToastDurationNormal] show];
 }
 
++ (void) reloadSectionDU:(NSInteger)section withRowAnimation:(UITableViewRowAnimation)rowAnimation tableView:(UITableView *)tableView {
+    NSRange range = NSMakeRange(section, 1);
+    NSIndexSet *sectionToReload = [NSIndexSet indexSetWithIndexesInRange:range];
+    [tableView reloadSections:sectionToReload withRowAnimation:rowAnimation];
+}
 
 @end

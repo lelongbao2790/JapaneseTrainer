@@ -17,6 +17,8 @@
 @property (strong, nonatomic) NSMutableArray *listMeaning;
 @property (strong, nonatomic) NSMutableArray *listExamples;
 @property (strong, nonatomic) NSMutableArray *listNote;
+@property (strong, nonatomic) UIButton *bookMark;
+@property (strong, nonatomic) UIBarButtonItem *btnBookmark;
 @end
 
 @implementation DetailGrammarController
@@ -32,6 +34,8 @@
 - (void)viewWillAppear:(BOOL)animated {
     [DataManager shared].getDetailDelegate = self;
     [DataManager shared].searchWordDelegate = self;
+    
+    [self createBookMarkBarButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,13 +63,78 @@
     }
 }
 
+- (void)createBookMarkBarButton {
+    
+    self.bookMark = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    if (self.aGrammar) {
+        [self setImageForBookmark:self.aGrammar.isBookmark withButton:self.bookMark];
+    } else if (self.aVocabulary) {
+       [self setImageForBookmark:self.aVocabulary.isBookmark withButton:self.bookMark];
+    }
+    
+    [self.bookMark setFrame:CGRectMake(10, 0, 40, 40)];
+    self.bookMark.imageEdgeInsets = UIEdgeInsetsMake(6.5,5,5,5);
+    self.bookMark.layer.borderWidth = 1.0f;
+    self.bookMark.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.bookMark.layer.cornerRadius = self.bookMark.frame.size.width / 2;
+    [self.bookMark addTarget:self action:@selector(bookMarkData) forControlEvents:UIControlEventTouchUpInside];
+    self.btnBookmark = [[UIBarButtonItem alloc] initWithCustomView:self.bookMark];
+    self.navigationItem.rightBarButtonItem = self.btnBookmark;
+}
+
+- (void)setImageForBookmark:(NSInteger)value withButton:(UIButton *)bookMark {
+    if (value == kValueBookMark1) {
+        
+        [bookMark setImage:[UIImage imageNamed:kHeartIconNavSelected] forState:UIControlStateNormal];
+        
+    } else {
+        [bookMark setImage:[UIImage imageNamed:kHeartIconNotSelected] forState:UIControlStateNormal];
+    }
+}
+
+- (void)bookMarkData {
+    
+    if (self.aGrammar) {
+        
+        if (self.aGrammar.isBookmark == kValueBookMark1) {
+            self.aGrammar.isBookmark = kValueBookMark0;
+            
+            [Utilities showiToastMessage:kBookMarknotSaved];
+            
+        } else {
+            self.aGrammar.isBookmark = kValueBookMark1;
+            [Utilities showiToastMessage:kBookMarkSaved];
+        }
+        [self.aGrammar commit];
+        
+        [self setImageForBookmark:self.aGrammar.isBookmark withButton:self.bookMark];
+        
+        
+    } else if (self.aVocabulary) {
+        
+        if (self.aVocabulary.isBookmark == kValueBookMark1) {
+            self.aVocabulary.isBookmark = kValueBookMark0;
+            [Utilities showiToastMessage:kBookMarknotSaved];
+        } else {
+            self.aVocabulary.isBookmark = kValueBookMark1;
+            [Utilities showiToastMessage:kBookMarkSaved];
+        }
+        
+        [self.aVocabulary commit];
+        [self setImageForBookmark:self.aVocabulary.isBookmark withButton:self.bookMark];
+    }
+
+    self.btnBookmark.customView = self.bookMark;
+    self.navigationItem.rightBarButtonItem = self.btnBookmark;
+}
+
 - (IBAction)btnSound:(id)sender {
     if (self.aGrammar) {
         [[Sound shared] playSoundWithText:self.aGrammar.name];
     } else if (self.aVocabulary) {
         [[Sound shared] playSoundWithText:self.aVocabulary.nameHiragana];
     }
-    
 }
 
 - (void)requestMeaning:(NSString *)name {
@@ -140,12 +209,22 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     switch (section) {
-        case kSectionMeaning:
-            return kMeaningTitle;
+        case kSectionMeaning: {
+            if (self.listMeaning.count > 0) {
+                return kMeaningTitle;
+            } else {
+                return kEmpty;
+            }
+        }
             break;
             
-        case kSectionExample:
-            return kExampleTitle;
+        case kSectionExample: {
+            if (self.listExamples.count > 0) {
+                return kExampleTitle;
+            } else {
+                return kEmpty;
+            }
+        }
             break;
             
         case kSectionNote:
@@ -229,7 +308,7 @@
     
     dispatch_async(dispatch_get_main_queue(), ^{ // 2
         ProgressBarDismissLoading(kEmpty);
-        [self reloadSectionDU:kSectionExample withRowAnimation:UITableViewRowAnimationNone];
+        [Utilities reloadSectionDU:kSectionExample withRowAnimation:UITableViewRowAnimationNone tableView:self.tbvGrammar];
     });
     
 }
@@ -285,7 +364,7 @@
     
     dispatch_async(dispatch_get_main_queue(), ^{ // 2
         [self.listMeaning addObjectsFromArray: listWordSearch];
-        [self reloadSectionDU:kSectionMeaning withRowAnimation:UITableViewRowAnimationNone];
+        [Utilities reloadSectionDU:kSectionMeaning withRowAnimation:UITableViewRowAnimationNone tableView:self.tbvGrammar];
         ProgressBarDismissLoading(kEmpty);
         
     });
@@ -313,7 +392,7 @@
         if (listVocaLocal.count > 0) {
             dispatch_async(dispatch_get_main_queue(), ^{ // 2
                 self.listMeaning = [listVocaLocal mutableCopy];
-                [self.tbvGrammar reloadData];
+                [Utilities reloadSectionDU:kSectionMeaning withRowAnimation:UITableViewRowAnimationNone tableView:self.tbvGrammar];
             });
             
         } else {
@@ -325,7 +404,7 @@
         if (listExampleLocal.count > 0) {
             dispatch_async(dispatch_get_main_queue(), ^{ // 2
                 self.listExamples = [listExampleLocal mutableCopy];
-                [self.tbvGrammar reloadData];
+                [Utilities reloadSectionDU:kSectionExample withRowAnimation:UITableViewRowAnimationNone tableView:self.tbvGrammar];
             });
             
         } else {
@@ -333,8 +412,6 @@
             [[DataManager shared] getDetailGrammarWithUrl:self.aGrammar.href];
         }
     });
-    
-    [self reloadSectionDU:kSectionExample withRowAnimation:UITableViewRowAnimationNone];
     
 }
 
@@ -354,7 +431,7 @@
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.listMeaning = [listVocaLocal mutableCopy];
-                [self.tbvGrammar reloadData];
+                [Utilities reloadSectionDU:kSectionMeaning withRowAnimation:UITableViewRowAnimationNone tableView:self.tbvGrammar];
             });
             
         } else {
@@ -363,7 +440,6 @@
         }
     });
     
-    [self reloadSectionDU:kSectionMeaning withRowAnimation:UITableViewRowAnimationNone];
 }
 
 /*
@@ -389,19 +465,13 @@
         
     }
     
-    [self reloadSectionDU:kSectionNote withRowAnimation:UITableViewRowAnimationNone];
+    [Utilities reloadSectionDU:kSectionNote withRowAnimation:UITableViewRowAnimationNone tableView:self.tbvGrammar];
 }
 
 #pragma mark Note Controller Delegate
 - (void)dismissNote:(UIViewController *)controller {
     [controller dismissViewControllerAnimated:YES completion:nil];
     [self handleNote];
-}
-
-- (void) reloadSectionDU:(NSInteger)section withRowAnimation:(UITableViewRowAnimation)rowAnimation {
-    NSRange range = NSMakeRange(section, 1);
-    NSIndexSet *sectionToReload = [NSIndexSet indexSetWithIndexesInRange:range];
-    [self.tbvGrammar reloadSections:sectionToReload withRowAnimation:rowAnimation];
 }
 
 #pragma mark Note Cell Delegate
@@ -422,7 +492,7 @@
     
     [self.listNote removeObject:noteRemove];
     [noteRemove remove];
-    [self reloadSectionDU:kSectionNote withRowAnimation:UITableViewRowAnimationNone];
+    [Utilities reloadSectionDU:kSectionNote withRowAnimation:UITableViewRowAnimationNone tableView:self.tbvGrammar];
 }
 
 - (void)editNote:(Note *)noteEdit {

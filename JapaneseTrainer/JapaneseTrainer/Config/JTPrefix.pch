@@ -15,7 +15,6 @@
 #import "Config.h"
 #import "AlphabetController.h"
 #import "GrammarController.h"
-#import "ListeningController.h"
 #import "VocabularyController.h"
 #import "TFHpple.h"
 #import "DetailGrammarController.h"
@@ -36,5 +35,7 @@
 #import "KanjiCell.h"
 #import "Note.h"
 #import "NoteController.h"
+#import "BookmarkController.h"
+#import "BookMarkCell.h"
 
 #endif /* JTPrefix_pch */

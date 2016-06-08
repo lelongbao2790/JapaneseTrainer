@@ -9,12 +9,21 @@
 #ifndef Resource_h
 #define Resource_h
 
-#define kImageDefault @"default.png"
-#define kLeftMenuIcon @"left_icon.png"
-#define kPhimBoMenuIconSelected @"phimbo_select_icon.png"
-#define kPhimBoMenuIcon @"phimbo_icon.png"
-#define kLoadingAnimate @"loading2.png"
-#define kBannerImage @"banner.png"
-#define kTrashImage @"trash.png"
-#define kAddImage @"add.png"
+static NSString *kImageDefault = @"default.png";
+static NSString *kLeftMenuIcon = @"left_icon.png";
+static NSString *kPhimBoMenuIconSelected = @"phimbo_select_icon.png";
+static NSString *kPhimBoMenuIcon = @"phimbo_icon.png";
+static NSString *kLoadingAnimate = @"loading2.png";
+static NSString *kBannerImage = @"banner.png";
+static NSString *kTrashImage = @"trash.png";
+static NSString *kAddImage = @"add.png";
+
+static NSString *kHeartIconNavSelected = @"bm_heart_selected_nav.png";
+static NSString *kHeartIconNotSelected = @"bm_heart.png";
+static NSString *kHeartIconSelected = @"bm_heart_selected.png";
+
+static NSString *kImageVocabulary = @"orange_bookmark.png";
+static NSString *kImageGrammar = @"blue_bookmark.png";
+static NSString *kImageKanji = @"red_bookmark.png";
+
 #endif /* Resource_h */

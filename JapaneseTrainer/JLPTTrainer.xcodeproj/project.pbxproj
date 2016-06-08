@@ -128,6 +128,14 @@
 		D3775A9F1CFC1463009A4FEA /* Kanji.m in Sources */ = {isa = PBXBuildFile; fileRef = D3775A9E1CFC1463009A4FEA /* Kanji.m */; };
 		D3775AA21CFC203D009A4FEA /* KanjiController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3775AA11CFC203D009A4FEA /* KanjiController.m */; };
 		D3AC9A861CFD8123003D1D08 /* DataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AC9A851CFD8123003D1D08 /* DataAccess.m */; };
+		D3B849C81D07BDE900A2D967 /* bm_heart_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B849C61D07BDE900A2D967 /* bm_heart_selected.png */; };
+		D3B849D31D07CA3A00A2D967 /* bm_heart.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B849D21D07CA3A00A2D967 /* bm_heart.png */; };
+		D3B849D51D07D17E00A2D967 /* bm_heart_selected_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B849D41D07D17E00A2D967 /* bm_heart_selected_nav.png */; };
+		D3B849DB1D07EF4800A2D967 /* BookmarkController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B849DA1D07EF4800A2D967 /* BookmarkController.m */; };
+		D3B849DF1D07F19E00A2D967 /* blue_bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B849DC1D07F19E00A2D967 /* blue_bookmark.png */; };
+		D3B849E01D07F19E00A2D967 /* orange_bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B849DD1D07F19E00A2D967 /* orange_bookmark.png */; };
+		D3B849E11D07F19E00A2D967 /* red_bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B849DE1D07F19E00A2D967 /* red_bookmark.png */; };
+		D3B849E41D07F56200A2D967 /* BookMarkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B849E31D07F56200A2D967 /* BookMarkCell.m */; };
 		D3CCA3A31CF2ACAC0022D752 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA3A21CF2ACAC0022D752 /* main.m */; };
 		D3CCA3AF1CF2ACAC0022D752 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CCA3AD1CF2ACAC0022D752 /* Main.storyboard */; };
 		D3CCA3B11CF2ACAC0022D752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CCA3B01CF2ACAC0022D752 /* Assets.xcassets */; };
@@ -155,7 +163,6 @@
 		D3CCA4911CF2AF7D0022D752 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA48E1CF2AF7D0022D752 /* MBProgressHUD.m */; };
 		D3CCA4951CF2AF8E0022D752 /* AlphabetController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA4941CF2AF8E0022D752 /* AlphabetController.m */; };
 		D3CCA4981CF2AF9A0022D752 /* GrammarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA4971CF2AF9A0022D752 /* GrammarController.m */; };
-		D3CCA49B1CF2AFA80022D752 /* ListeningController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA49A1CF2AFA80022D752 /* ListeningController.m */; };
 		D3CCA49E1CF2AFB50022D752 /* VocabularyController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA49D1CF2AFB50022D752 /* VocabularyController.m */; };
 		D3CCA4AE1CF2AFD10022D752 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA4AD1CF2AFD10022D752 /* AppDelegate.m */; };
 		D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */; };
@@ -330,6 +337,16 @@
 		D3775AA11CFC203D009A4FEA /* KanjiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanjiController.m; path = Controller/KanjiController.m; sourceTree = "<group>"; };
 		D3AC9A841CFD8123003D1D08 /* DataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataAccess.h; path = Modal/DataAccess.h; sourceTree = "<group>"; };
 		D3AC9A851CFD8123003D1D08 /* DataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataAccess.m; path = Modal/DataAccess.m; sourceTree = "<group>"; };
+		D3B849C61D07BDE900A2D967 /* bm_heart_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bm_heart_selected.png; sourceTree = "<group>"; };
+		D3B849D21D07CA3A00A2D967 /* bm_heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bm_heart.png; path = Resource/bm_heart.png; sourceTree = "<group>"; };
+		D3B849D41D07D17E00A2D967 /* bm_heart_selected_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bm_heart_selected_nav.png; path = Resource/bm_heart_selected_nav.png; sourceTree = "<group>"; };
+		D3B849D91D07EF4800A2D967 /* BookmarkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookmarkController.h; path = Controller/BookmarkController.h; sourceTree = "<group>"; };
+		D3B849DA1D07EF4800A2D967 /* BookmarkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookmarkController.m; path = Controller/BookmarkController.m; sourceTree = "<group>"; };
+		D3B849DC1D07F19E00A2D967 /* blue_bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue_bookmark.png; path = Resource/blue_bookmark.png; sourceTree = "<group>"; };
+		D3B849DD1D07F19E00A2D967 /* orange_bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orange_bookmark.png; path = Resource/orange_bookmark.png; sourceTree = "<group>"; };
+		D3B849DE1D07F19E00A2D967 /* red_bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red_bookmark.png; path = Resource/red_bookmark.png; sourceTree = "<group>"; };
+		D3B849E21D07F56200A2D967 /* BookMarkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookMarkCell.h; path = Controller/BookMarkCell.h; sourceTree = "<group>"; };
+		D3B849E31D07F56200A2D967 /* BookMarkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookMarkCell.m; path = Controller/BookMarkCell.m; sourceTree = "<group>"; };
 		D3CCA39E1CF2ACAC0022D752 /* JLPTTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLPTTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CCA3A21CF2ACAC0022D752 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3CCA3AE1CF2ACAC0022D752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -388,8 +405,6 @@
 		D3CCA4941CF2AF8E0022D752 /* AlphabetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlphabetController.m; path = Controller/AlphabetController.m; sourceTree = "<group>"; };
 		D3CCA4961CF2AF9A0022D752 /* GrammarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrammarController.h; path = Controller/GrammarController.h; sourceTree = "<group>"; };
 		D3CCA4971CF2AF9A0022D752 /* GrammarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrammarController.m; path = Controller/GrammarController.m; sourceTree = "<group>"; };
-		D3CCA4991CF2AFA80022D752 /* ListeningController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListeningController.h; path = Controller/ListeningController.h; sourceTree = "<group>"; };
-		D3CCA49A1CF2AFA80022D752 /* ListeningController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListeningController.m; path = Controller/ListeningController.m; sourceTree = "<group>"; };
 		D3CCA49C1CF2AFB50022D752 /* VocabularyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VocabularyController.h; path = Controller/VocabularyController.h; sourceTree = "<group>"; };
 		D3CCA49D1CF2AFB50022D752 /* VocabularyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VocabularyController.m; path = Controller/VocabularyController.m; sourceTree = "<group>"; };
 		D3CCA49F1CF2AFC30022D752 /* BaseUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseUrl.h; path = Config/BaseUrl.h; sourceTree = "<group>"; };
@@ -580,6 +595,17 @@
 			name = katakana;
 			sourceTree = "<group>";
 		};
+		D3B849D81D07EF2D00A2D967 /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				D3B849D91D07EF4800A2D967 /* BookmarkController.h */,
+				D3B849DA1D07EF4800A2D967 /* BookmarkController.m */,
+				D3B849E21D07F56200A2D967 /* BookMarkCell.h */,
+				D3B849E31D07F56200A2D967 /* BookMarkCell.m */,
+			);
+			name = Bookmark;
+			sourceTree = "<group>";
+		};
 		D3CCA3951CF2ACAC0022D752 = {
 			isa = PBXGroup;
 			children = (
@@ -689,10 +715,10 @@
 		D3CCA3F81CF2ADC80022D752 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D3B849D81D07EF2D00A2D967 /* Bookmark */,
 				D321D6061D06ACB3002B187D /* Note */,
 				D3CCA4051CF2ADEF0022D752 /* Alphabet */,
 				D3CCA4061CF2ADF50022D752 /* Grammar */,
-				D3CCA4071CF2ADFB0022D752 /* Listening */,
 				D3CCA4081CF2AE010022D752 /* Vocabulary */,
 			);
 			name = Controller;
@@ -732,15 +758,6 @@
 				D321D5F51D057C58002B187D /* NoteCell.m */,
 			);
 			name = Grammar;
-			sourceTree = "<group>";
-		};
-		D3CCA4071CF2ADFB0022D752 /* Listening */ = {
-			isa = PBXGroup;
-			children = (
-				D3CCA4991CF2AFA80022D752 /* ListeningController.h */,
-				D3CCA49A1CF2AFA80022D752 /* ListeningController.m */,
-			);
-			name = Listening;
 			sourceTree = "<group>";
 		};
 		D3CCA4081CF2AE010022D752 /* Vocabulary */ = {
@@ -842,6 +859,12 @@
 		D3F6657C1CF2E2F4001A7F71 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D3B849DC1D07F19E00A2D967 /* blue_bookmark.png */,
+				D3B849DD1D07F19E00A2D967 /* orange_bookmark.png */,
+				D3B849DE1D07F19E00A2D967 /* red_bookmark.png */,
+				D3B849D41D07D17E00A2D967 /* bm_heart_selected_nav.png */,
+				D3B849D21D07CA3A00A2D967 /* bm_heart.png */,
+				D3B849C61D07BDE900A2D967 /* bm_heart_selected.png */,
 				D321D60D1D06BC94002B187D /* trash.png */,
 				D321D6041D06A97A002B187D /* add.png */,
 				D321D6021D06A18C002B187D /* point_icon.png */,
@@ -1042,6 +1065,7 @@
 				D35391391D01467F00025CB3 /* delete_icon.png in Resources */,
 				D35391E21D015A0A00025CB3 /* katakana_ri.jpg in Resources */,
 				D321D60E1D06BC94002B187D /* trash.png in Resources */,
+				D3B849D51D07D17E00A2D967 /* bm_heart_selected_nav.png in Resources */,
 				D35391D11D015A0A00025CB3 /* katakana_ki.jpg in Resources */,
 				D353917B1D01491700025CB3 /* hiragana_me.jpg in Resources */,
 				D35391871D01491700025CB3 /* hiragana_re.jpg in Resources */,
@@ -1063,6 +1087,7 @@
 				D35391831D01491700025CB3 /* hiragana_no.jpg in Resources */,
 				D35391EB1D015A0A00025CB3 /* katakana_te.jpg in Resources */,
 				D3CCA3B11CF2ACAC0022D752 /* Assets.xcassets in Resources */,
+				D3B849C81D07BDE900A2D967 /* bm_heart_selected.png in Resources */,
 				D35391911D01491700025CB3 /* hiragana_te.jpg in Resources */,
 				D35391ED1D015A0A00025CB3 /* katakana_tsu.jpg in Resources */,
 				D353918A1D01491700025CB3 /* hiragana_ru.jpg in Resources */,
@@ -1072,16 +1097,19 @@
 				D35391CE1D015A0A00025CB3 /* katakana_i.jpg in Resources */,
 				D35391761D01491700025CB3 /* hiragana_ke.jpg in Resources */,
 				D321D5ED1D0577D9002B187D /* edit_icon.png in Resources */,
+				D3B849E01D07F19E00A2D967 /* orange_bookmark.png in Resources */,
 				D35391D41D015A0A00025CB3 /* katakana_ma.jpg in Resources */,
 				D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */,
 				D353917D1D01491700025CB3 /* hiragana_mo.jpg in Resources */,
 				D35391EF1D015A0A00025CB3 /* katakana_wa.jpg in Resources */,
+				D3B849DF1D07F19E00A2D967 /* blue_bookmark.png in Resources */,
 				D35391DE1D015A0A00025CB3 /* katakana_nu.jpg in Resources */,
 				D353916F1D01491700025CB3 /* hiragana_ha.jpg in Resources */,
 				D35391E31D015A0A00025CB3 /* katakana_ro.jpg in Resources */,
 				D35391E11D015A0A00025CB3 /* katakana_re.jpg in Resources */,
 				D353918C1D01491700025CB3 /* hiragana_se.jpg in Resources */,
 				D353917A1D01491700025CB3 /* hiragana_ma.jpg in Resources */,
+				D3B849D31D07CA3A00A2D967 /* bm_heart.png in Resources */,
 				D321D5DE1D055892002B187D /* hiragana_icon.png in Resources */,
 				D35391801D01491700025CB3 /* hiragana_na.jpg in Resources */,
 				D353918D1D01491700025CB3 /* hiragana_shi.jpg in Resources */,
@@ -1107,6 +1135,7 @@
 				D321D5F81D05858D002B187D /* approved.png in Resources */,
 				D353918F1D01491700025CB3 /* hiragana_su.jpg in Resources */,
 				D353917F1D01491700025CB3 /* hiragana_n.jpg in Resources */,
+				D3B849E11D07F19E00A2D967 /* red_bookmark.png in Resources */,
 				D35391971D01491700025CB3 /* hiragana_ya.jpg in Resources */,
 				D321D5D81D0528E6002B187D /* bookmark.png in Resources */,
 				D35391711D01491700025CB3 /* hiragana_hi.jpg in Resources */,
@@ -1178,10 +1207,12 @@
 				D3AC9A861CFD8123003D1D08 /* DataAccess.m in Sources */,
 				D35391351D01465200025CB3 /* NSString+HTML.m in Sources */,
 				D3FD930C1CF599920039FB14 /* Vocabulary.m in Sources */,
+				D3B849E41D07F56200A2D967 /* BookMarkCell.m in Sources */,
 				D35391341D01465200025CB3 /* NSMutableAttributedString+Color.m in Sources */,
 				D3FD93001CF54EF40039FB14 /* Utilities.m in Sources */,
 				D3FD92E51CF542B80039FB14 /* TFHppleElement.m in Sources */,
 				D3CCA47D1CF2AF5F0022D752 /* AFSecurityPolicy.m in Sources */,
+				D3B849DB1D07EF4800A2D967 /* BookmarkController.m in Sources */,
 				D3CCA4781CF2AF5F0022D752 /* AFHTTPRequestOperation.m in Sources */,
 				D3CCA4851CF2AF5F0022D752 /* UIImageView+AFNetworking.m in Sources */,
 				D3CCA47A1CF2AF5F0022D752 /* AFHTTPSessionManager.m in Sources */,
@@ -1192,7 +1223,6 @@
 				D321D5F31D0578BC002B187D /* ExampleCell.m in Sources */,
 				D3CCA4911CF2AF7D0022D752 /* MBProgressHUD.m in Sources */,
 				D321D5F61D057C58002B187D /* NoteCell.m in Sources */,
-				D3CCA49B1CF2AFA80022D752 /* ListeningController.m in Sources */,
 				D3CCA4951CF2AF8E0022D752 /* AlphabetController.m in Sources */,
 				D3CCA48C1CF2AF6F0022D752 /* iToast.m in Sources */,
 				D3CCA4891CF2AF5F0022D752 /* UIWebView+AFNetworking.m in Sources */,

@@ -25,7 +25,6 @@
 
 
 @protocol NoteCellDelegate<NSObject>
-
 - (void)addNote;
 - (void)removeNote:(Note *)noteRemove;
 - (void)editNote:(Note *)noteEdit;

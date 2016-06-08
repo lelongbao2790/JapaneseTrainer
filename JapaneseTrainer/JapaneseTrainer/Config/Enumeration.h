@@ -54,5 +54,12 @@ typedef NS_ENUM(NSInteger, DetailGrammarTag) {
     kLeadingConstantNote = 10,
 };
 
+typedef NS_ENUM(NSInteger, BookMarkTag) {
+    kValueBookMark1 = 1,
+    kValueBookMark0 = 0,
+    kSectionVoca = 0,
+    kSectionGrammar = 2,
+    kSectionKanji = 1,
+};
 
 #endif /* Enumeration_h */

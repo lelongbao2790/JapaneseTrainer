@@ -25,7 +25,10 @@
 
 - (void)loadInformation:(Kanji *)kanji {
     self.lbKunyomi.text = kanji.kunyomi;
-    self.lbExample.attributedText = [Utilities convertStringToNSAttributeString:[kanji.example stringByAppendingString:kHTMLFontSize15]];
+    
+    NSMutableAttributedString *englishHtml = [[NSMutableAttributedString alloc] initWithData:[[kanji.example stringByAppendingString:kHTMLFontSize15] dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
+    [englishHtml addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:15.0/255.0 green:15.0/255.0 blue:15.0/255.0 alpha:1.0] range:NSMakeRange(0, englishHtml.length)];
+    self.lbExample.attributedText = englishHtml;
 }
 
 @end

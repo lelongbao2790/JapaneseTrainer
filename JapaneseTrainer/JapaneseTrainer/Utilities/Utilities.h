@@ -44,4 +44,6 @@
  * @param message
  */
 + (void)showiToastMessage:(nonnull NSString *)message;
+
++ (void) reloadSectionDU:(NSInteger)section withRowAnimation:(UITableViewRowAnimation)rowAnimation tableView:(UITableView *)tableView;
 @end

@@ -29,5 +29,6 @@
 #define kWritingCell @"WritingCell"
 #define kKanjiController @"KanjiController"
 #define kNoteControllerStoryBoarID @"NoteController"
+#define kBookmarkControllerStoryBoardID @"BookmarkController"
 
 #endif /* StoryBoardID_h */

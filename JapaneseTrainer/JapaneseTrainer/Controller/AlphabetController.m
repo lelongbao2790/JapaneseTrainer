@@ -34,6 +34,8 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [DataManager shared].kanjiDelegate = self;
+    
+    [self btnSeg:nil];
 }
 
 # pragma mark  Helper Method
@@ -44,7 +46,6 @@
     [self.collectionWriting registerClass:[WritingCell class] forCellWithReuseIdentifier:kWritingCell];
     [self.collectionWriting reloadData];
     self.csTopCollection.constant = kTopConstantCollectionDefault;
-    [self handleContent:kHiragana];
 }
 
 - (void)handleContent:(NSString *)key {
@@ -167,7 +168,6 @@
         [[Sound shared] playSoundWithText:[dictCell objectForKey:kHiraganaKey]];
     }
     else {
-        
         kanjiController.word = self.listWriting[indexPath.row];
         [self.tabBarController presentViewController:kanjiController animated:YES completion:nil];
     }

@@ -25,6 +25,12 @@
 
 - (NSArray *)listNoteRelated:(NSString *)nameRelated;
 
+- (NSArray *)listBookMarkVocabulary;
+
+- (NSArray *)listBookMarkGrammar;
+
+- (NSArray *)listBookMarkKanji;
+
 - (NSArray *)listGrammarByLevel:(NSInteger)level;
 
 - (NSArray *)listKanjiByLevel:(NSInteger)level;

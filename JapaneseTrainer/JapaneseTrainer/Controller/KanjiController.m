@@ -22,6 +22,7 @@
 @property (strong, nonatomic) NSMutableArray *listExampleKanji;
 @property (weak, nonatomic) IBOutlet UITableView *tbvExample;
 
+@property (weak, nonatomic) IBOutlet UIButton *btnBookmark;
 @end
 
 @implementation KanjiController
@@ -52,6 +53,11 @@
 - (void)config {
     self.listExampleKanji = [[NSMutableArray alloc] init];
     self.lbKanji.text = self.word.kanjiWord;
+    
+    // Kanji
+    self.btnSeg.hidden = NO;
+    self.viewInformation.hidden = NO;
+    self.lbKanji.hidden = NO;
     [Utilities borderView:self.lbKanji];
     
     // Border subview layer
@@ -61,6 +67,15 @@
     self.webviewWritingKanji.scrollView.bounces = NO;
     [Utilities circleButton:self.btnSound];
     [Utilities removeBlankFooterTableView:self.tbvExample];
+}
+
+- (void)changeBookmark {
+    if (self.word.isBookmark == kValueBookMark1) {
+        [self.btnBookmark setImage:[UIImage imageNamed:kHeartIconSelected] forState:UIControlStateNormal];
+        
+    } else {
+        [self.btnBookmark setImage:[UIImage imageNamed:kHeartIconNotSelected] forState:UIControlStateNormal];
+    }
 }
 
 - (void)requestMeaningKanji {
@@ -83,7 +98,6 @@
     [kanjiHtml addAttribute:NSForegroundColorAttributeName value:[UIColor darkGrayColor] range:NSMakeRange(0, kanjiHtml.length)];
 
     self.lbReading.attributedText = kanjiHtml;
-    
     self.lbMeaning.text = self.word.englishMeaning;
     
     // Example
@@ -98,11 +112,10 @@
 }
 
 - (void)setInformation {
-    // Kanji
-    self.btnSeg.hidden = NO;
-    self.viewInformation.hidden = NO;
-    self.lbKanji.hidden = NO;
     [self requestMeaningKanji];
+    
+    // Set button bookmark
+    [self changeBookmark];
 }
 
 - (IBAction)btnSeg:(id)sender {
@@ -124,6 +137,18 @@
 }
 - (IBAction)btnSound:(id)sender {
      [[Sound shared] playSoundWithText:self.lbKanji.text];
+}
+
+- (IBAction)btnBookmark:(id)sender {
+    if (self.word.isBookmark == kValueBookMark1) {
+        self.word.isBookmark = kValueBookMark0;
+        [self.btnBookmark setImage:[UIImage imageNamed:kHeartIconNotSelected] forState:UIControlStateNormal];
+        
+    } else {
+        self.word.isBookmark = kValueBookMark1;
+        [self.btnBookmark setImage:[UIImage imageNamed:kHeartIconSelected] forState:UIControlStateNormal];
+    }
+    [self.word commit];
 }
 
 #pragma mark Table View Delegate

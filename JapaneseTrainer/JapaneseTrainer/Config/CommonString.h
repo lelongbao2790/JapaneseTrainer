@@ -21,6 +21,7 @@ static NSString *kMeaningCellIdentifier = @"MeaningCellIdentifier";
 static NSString *kExampleCellIdentifier = @"ExampleCellIdentifier";
 static NSString *kNoteIdentifier = @"NoteIdentifier";
 static NSString *kKanjiCellIdentifier = @"KanjiCellIdentifier";
+static NSString *kBookMarkIdentifier = @"BookMarkCellIdentifier";
 
 // Vocabulary
 static NSString *kVocabularyLevelN5 = @"JLPT Level N5";
@@ -29,6 +30,11 @@ static NSString *kVocabularyLevelN3 = @"JLPT Level N3";
 static NSString *kVocabularyLevelN2 = @"JLPT Level N2";
 static NSString *kVocabularyLevelN1 = @"JLPT Level N1";
 static NSString *kSearchWord = @"Search word";
+static NSString *kBookMarkSaved = @"Bookmarks have saved";
+static NSString *kBookMarknotSaved = @"Bookmarks have removed";
+static NSString *kVocabularyTitle = @"VOCABULARY";
+static NSString *kGrammarTitle = @"GRAMMAR";
+static NSString *kKanjiTitle = @"KANJI";
 
 // PLIST
 static NSString *kObjects = @"Objects";

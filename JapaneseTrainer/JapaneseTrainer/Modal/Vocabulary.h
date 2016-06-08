@@ -20,4 +20,6 @@
 @property (assign, nonatomic) NSInteger level;
 @property (strong, nonatomic) NSString *statusWord;
 @property (strong, nonatomic) NSString *nameVocabularyRelated;
+@property (assign, nonatomic) NSInteger isBookmark;
+
 @end

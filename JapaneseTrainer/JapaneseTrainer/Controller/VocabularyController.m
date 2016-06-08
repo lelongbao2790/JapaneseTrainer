@@ -34,6 +34,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [DataManager shared].getVocabularyDelegate = self;
     [DataManager shared].searchWordDelegate = self;
+    [self segLevel:nil];
 }
 
 - (void)requestGetVocabulary:(NSArray *)listVoca andLevel:(NSString *)level {
@@ -84,7 +85,6 @@
     self.listSearch = [[NSMutableArray alloc] init];
     [self initSearchController];
     [Utilities removeBlankFooterTableView:self.tbvVocabulary];
-    [self segLevel:nil];
     
 }
 
@@ -171,6 +171,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     DetailGrammarController *detailGrammar = InitStoryBoardWithIdentifier(kDetailGrammarStoryBoardID);
+    detailGrammar.title = [self.segLevel titleForSegmentAtIndex:self.segLevel.selectedSegmentIndex];
     Vocabulary *wordAtIndex = nil;
     if ([Utilities isSearchController:self.searchController]) {
         
