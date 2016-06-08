@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIView *subView;
 @property (weak, nonatomic) IBOutlet UITextView *tvNote;
 @property (weak, nonatomic) IBOutlet UIButton *btnSave;
-@property (strong, nonatomic) Note *aNote;
+
 @end
 
 @implementation NoteController
@@ -36,6 +36,12 @@
     [Utilities borderView:self.subView];
     self.tvNote.text = kEmpty;
     
+    if (self.aNote && ![self.aNote.noteMessage isEqualToString:kAddNote]) {
+        self.tvNote.text = self.aNote.noteMessage;
+    } else {
+        self.tvNote.text = kEmpty;
+    }
+    
     // Tap gesture
     UITapGestureRecognizer *singleFingerTap =
     [[UITapGestureRecognizer alloc] initWithTarget:self
@@ -53,10 +59,15 @@
     [self handleSingleTap:nil];
     
     if (self.tvNote.text.length > 0) {
-        Note *aNote = [Note new];
-        aNote.noteMessage = self.tvNote.text;
-        aNote.nameRelate = self.nameRelate;
-        [aNote commit];
+
+        if (!self.aNote) {
+            self.aNote = [Note new];
+        }
+        
+        self.aNote.noteMessage = self.tvNote.text;
+        self.aNote.nameRelate = self.nameRelate;
+        [self.aNote commit];
+        
         
         [Utilities showiToastMessage:kNoteSuccess];
         [self btnDelete:nil];

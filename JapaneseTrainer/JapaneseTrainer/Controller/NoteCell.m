@@ -13,6 +13,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -26,8 +27,12 @@
     
     if ([self.aNote.noteMessage isEqualToString:kAddNote]) {
         [self.btnAdd setImage:[UIImage imageNamed:kAddImage] forState:UIControlStateNormal];
+        self.csLeadingLbNote.constant = -self.btnEdit.frame.size.width;
+        self.btnEdit.hidden = YES;
     } else {
         [self.btnAdd setImage:[UIImage imageNamed:kTrashImage] forState:UIControlStateNormal];
+        self.csLeadingLbNote.constant = kLeadingConstantNote;
+        self.btnEdit.hidden = NO;
     }
 }
 
@@ -42,6 +47,16 @@
     } else {
         if ([self.delegate respondsToSelector:@selector(removeNote:)]) {
             [self.delegate removeNote:self.aNote];
+        }
+    }
+}
+
+- (IBAction)btnEdit:(id)sender {
+    
+    if (![self.aNote.noteMessage isEqualToString:kAddNote]) {
+        
+        if ([self.delegate respondsToSelector:@selector(editNote:)]) {
+            [self.delegate editNote:self.aNote];
         }
     }
 }

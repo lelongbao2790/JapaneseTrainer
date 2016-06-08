@@ -12,6 +12,7 @@
 @interface NoteController : UIViewController
 
 @property (strong, nonatomic) NSString *nameRelate;
+@property (strong, nonatomic) Note *aNote;
 @property (weak, nonatomic) id<NoteControllerDelegate> delegate;
 
 @end

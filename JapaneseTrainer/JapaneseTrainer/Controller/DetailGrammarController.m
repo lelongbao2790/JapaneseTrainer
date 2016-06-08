@@ -425,4 +425,18 @@
     [self reloadSectionDU:kSectionNote withRowAnimation:UITableViewRowAnimationNone];
 }
 
+- (void)editNote:(Note *)noteEdit {
+    NoteController *noteController = InitStoryBoardWithIdentifier(kNoteControllerStoryBoarID);
+    noteController.aNote = noteEdit;
+    noteController.delegate = self;
+    
+    if (self.aGrammar) {
+        noteController.nameRelate = self.aGrammar.name;
+    } else if (self.aVocabulary) {
+        noteController.nameRelate = self.aVocabulary.nameHiragana;
+    }
+    
+    [self.tabBarController presentViewController:noteController animated:YES completion:nil];
+}
+
 @end

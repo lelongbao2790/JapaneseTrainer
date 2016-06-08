@@ -51,6 +51,7 @@ typedef NS_ENUM(NSInteger, DetailGrammarTag) {
     kConstantBetweenTwoTextMeaning = 23,
     kConstantBetweenTwoTextExample = 10,
     kWidthImage = 30,
+    kLeadingConstantNote = 10,
 };
 
 

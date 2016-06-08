@@ -13,6 +13,15 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+    if ( kDeviceIpad ) {
+        /* do something specifically for iPad. */
+        self.lbTitle.font = [UIFont systemFontOfSize:40];
+    } else {
+        /* do something specifically for iPhone or iPod touch. */
+        self.lbTitle.font = [UIFont systemFontOfSize:30];
+    }
+    
 }
 
 - (void)setInformationCell:(BOOL)isHidden atIndexPath:(NSIndexPath *)indexPath andList:(NSArray *)list {

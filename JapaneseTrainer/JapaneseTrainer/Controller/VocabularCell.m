@@ -44,18 +44,15 @@
         [kanjiString setColorForText:self.aVocabulary.nameKanji withColor:kBrownColor];
         self.lbKanji.attributedText = kanjiString;
         
-        // Show meaning html
-        NSString *english = [NSString stringWithFormat:@"Meaning: %@", [self.aVocabulary.nameEnglish stringByAppendingString:kHTMLFontSize18]];
-        
-        NSMutableAttributedString *englishHtml = [[NSMutableAttributedString alloc] initWithData:[english dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
-        [englishHtml addAttribute:NSForegroundColorAttributeName value:[UIColor darkGrayColor] range:NSMakeRange(0, englishHtml.length)];
-        self.lbEnglish.attributedText = englishHtml;
-        
     } else {
         self.lbKanji.text = self.aVocabulary.nameHiragana;
-        self.lbEnglish.text = [NSString stringWithFormat:@"Meaning: %@", self.aVocabulary.nameEnglish];
         self.lbHiragana.text = [NSString stringWithFormat:@"Kanji: %@", self.aVocabulary.nameKanji];
     }
+    
+    NSString *english = [NSString stringWithFormat:@"Meaning: %@", [self.aVocabulary.nameEnglish stringByAppendingString:kHTMLFontSize17]];
+    NSMutableAttributedString *englishHtml = [[NSMutableAttributedString alloc] initWithData:[english dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
+    [englishHtml addAttribute:NSForegroundColorAttributeName value:[UIColor darkGrayColor] range:NSMakeRange(0, englishHtml.length)];
+    self.lbEnglish.attributedText = englishHtml;
     
 }
 - (IBAction)btnSound:(id)sender {

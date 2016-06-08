@@ -16,6 +16,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnAdd;
 @property (strong, nonatomic) Note *aNote;
 @property (weak, nonatomic) id<NoteCellDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UIButton *btnEdit;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *csLeadingLbNote;
 
 - (void)loadInformation;
 
@@ -26,5 +28,5 @@
 
 - (void)addNote;
 - (void)removeNote:(Note *)noteRemove;
-
+- (void)editNote:(Note *)noteEdit;
 @end

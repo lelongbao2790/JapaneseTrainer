@@ -65,7 +65,7 @@
     switch (self.btnSegLevel.selectedSegmentIndex) {
             
         case kSegLevelN1: {
-            [self requestGetVocabulary:listObjects andLevel:kVocabularyLevelN2];
+            [self requestGetVocabulary:listObjects andLevel:kVocabularyLevelN1];
         }
             break;
             
@@ -101,7 +101,7 @@
     NSArray *listVocabularyLocal = [[NSArray alloc] init];
     listVocabularyLocal = [[DataAccess shared] listGrammarByLevel:self.btnSegLevel.selectedSegmentIndex];
     if (listVocabularyLocal.count > 0) {
-        self.listGrammar = [listVocabularyLocal mutableCopy];
+        [self.listGrammar addObjectsFromArray:listVocabularyLocal];
         [self.tbvGrammar reloadData];
     } else {
         for (NSDictionary *dictVoca in listVoca) {
@@ -131,6 +131,7 @@
     if(!cell) { cell = [[GrammarCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kIdentifierGrammar];}
     Grammar *aGrammar = self.listGrammar[indexPath.row];
     cell.lbNameGrammar.text = aGrammar.name;
+    NSLog(@"%@", cell.lbNameGrammar.text);
     
     return cell;
 }
@@ -174,7 +175,7 @@
         NSLog(@"%@",newGrammar.name);
     }
     
-    self.listGrammar = [newTutorials mutableCopy];
+    [self.listGrammar addObjectsFromArray:newTutorials];
     [self.tbvGrammar reloadData];
 }
 
