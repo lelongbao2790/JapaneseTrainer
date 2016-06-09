@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self config];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,7 +34,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [DataManager shared].getListGrammarDelegate = self;
-    [self btnGrammar:nil];
+    [self config];
 }
 
 # pragma mark Helper Method
@@ -43,13 +43,10 @@
     
     self.listGrammar = [[NSMutableArray alloc] init];
     [Utilities removeBlankFooterTableView:self.tbvGrammar];
-    
+    [self btnGrammar:nil];
 }
 
 - (IBAction)btnGrammar:(id)sender {
-    
-    [self.listGrammar removeAllObjects];
-    [self.tbvGrammar reloadData];
     
     NSDictionary *dTmp = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:kNamePlist ofType:kPlist]];
     NSArray *listTmp = [dTmp valueForKey:kObjects];
@@ -100,9 +97,11 @@
     [self.tbvGrammar reloadData];
     
     NSArray *listVocabularyLocal = [[NSArray alloc] init];
-    listVocabularyLocal = [[DataAccess shared] listGrammarByLevel:self.btnSegLevel.selectedSegmentIndex];
+    listVocabularyLocal = [[DataAccess shared] listGrammarByLevel:self.btnSegLevel.selectedSegmentIndex + 1];
     if (listVocabularyLocal.count > 0) {
-        [self.listGrammar addObjectsFromArray:listVocabularyLocal];
+        
+        self.listGrammar = [listVocabularyLocal mutableCopy];
+        NSLog(@"%d",(int)self.listGrammar.count);
         [self.tbvGrammar reloadData];
     } else {
         for (NSDictionary *dictVoca in listVoca) {
@@ -132,8 +131,6 @@
     if(!cell) { cell = [[GrammarCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kIdentifierGrammar];}
     Grammar *aGrammar = self.listGrammar[indexPath.row];
     cell.lbNameGrammar.text = aGrammar.name;
-    NSLog(@"%@", cell.lbNameGrammar.text);
-    
     return cell;
 }
 
@@ -165,12 +162,12 @@
     // Parse Data from HTML
     TFHpple *tutorialsParser = [TFHpple hppleWithHTMLData:response];
     NSArray *grammarNode = [tutorialsParser searchWithXPathQuery:kQueryListGrammar];
-    NSMutableArray *newTutorials = [[NSMutableArray alloc] initWithCapacity:0];
+    NSMutableArray *newTutorials = [[NSMutableArray alloc] init];
     for (TFHppleElement *element in grammarNode) {
         Grammar *newGrammar = [Grammar new];
         newGrammar.name = [Utilities removeAlphabeFromJapaneseString:[[element firstChild] content]];
         newGrammar.href = [element objectForKey:kHref];
-        newGrammar.level = self.btnSegLevel.selectedSegmentIndex;
+        newGrammar.level = self.btnSegLevel.selectedSegmentIndex + 1;
         [newGrammar commit];
         [newTutorials addObject:newGrammar];
         NSLog(@"%@",newGrammar.name);

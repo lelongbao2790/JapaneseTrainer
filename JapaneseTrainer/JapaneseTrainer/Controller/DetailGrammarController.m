@@ -324,7 +324,7 @@
     // Parse Data from HTML
     TFHpple *tutorialsParser = [TFHpple hppleWithHTMLData:response];
     NSArray *searchNode = [tutorialsParser searchWithXPathQuery:kQuerySearch];
-    NSMutableArray *listWordSearch = [[NSMutableArray alloc] initWithCapacity:0];
+    NSMutableArray *listWordSearch = [[NSMutableArray alloc] init];
     for (TFHppleElement *element in searchNode) {
         
         Vocabulary *newVoca = [Vocabulary new];

@@ -9,7 +9,7 @@
 #import "AlphabetController.h"
 #import "CustomWritingLayout.h"
 
-@interface AlphabetController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, KanjiDelegate>
+@interface AlphabetController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, KanjiDelegate, KanjiControllerDelegate>
 @property (strong, nonatomic) NSMutableArray *listWriting;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segWriting;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionWriting;
@@ -24,7 +24,6 @@
     // Do any additional setup after loading the view.
     
     [self config];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -128,7 +127,7 @@
     [self.collectionWriting reloadData];
     
     NSArray *listKanjiLocal = [[NSArray alloc] init];
-    listKanjiLocal = [[DataAccess shared] listKanjiByLevel:self.btnSegLevel.selectedSegmentIndex];
+    listKanjiLocal = [[DataAccess shared] listKanjiByLevel:self.btnSegLevel.selectedSegmentIndex + 1];
     if (listKanjiLocal.count > 0) {
         self.listWriting = [listKanjiLocal mutableCopy];
         [self.collectionWriting reloadData];
@@ -162,6 +161,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
     KanjiController *kanjiController = InitStoryBoardWithIdentifier(kKanjiController);
+    kanjiController.delegate = self;
     
     if (self.btnSegLevel.hidden) {
         NSDictionary *dictCell = self.listWriting[indexPath.row];
@@ -181,7 +181,7 @@
     // Parse Data from HTML
     TFHpple *tutorialsParser = [TFHpple hppleWithHTMLData:response];
     NSArray *kanjiNode = [tutorialsParser searchWithXPathQuery:kQueryListVocabulary];
-    NSMutableArray *newListKanji = [[NSMutableArray alloc] initWithCapacity:0];
+    NSMutableArray *newListKanji = [[NSMutableArray alloc] init];
     
     for (int i = 0; i < kanjiNode.count - 4; i = i+4) {
         NSLog(@"%d",i);
@@ -194,7 +194,7 @@
         newKanji.onyomi = [Utilities convertString:[[element2 firstChild] content]];
         newKanji.kunyomi = [Utilities convertString:[[element3 firstChild] content]];
         newKanji.englishMeaning = [Utilities convertString:[[element4 firstChild] content]];
-        newKanji.level = self.btnSegLevel.selectedSegmentIndex;
+        newKanji.level = self.btnSegLevel.selectedSegmentIndex + 1;
         [newKanji commit];
         [newListKanji addObject:newKanji];
         NSLog(@"%@",newKanji.kanjiWord);
@@ -209,5 +209,8 @@
     ProgressBarDismissLoading(kEmpty);
 }
 
-
+# pragma mark  Kanji Controller Delegate
+- (void)dismissController:(UIViewController *)controller {
+    [controller dismissViewControllerAnimated:YES completion:nil];
+}
 @end

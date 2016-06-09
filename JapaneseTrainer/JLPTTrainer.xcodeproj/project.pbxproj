@@ -1020,6 +1020,7 @@
 				TargetAttributes = {
 					D3CCA39D1CF2ACAC0022D752 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = E439DA4538;
 					};
 					D3CCA3B91CF2ACAC0022D752 = {
 						CreatedOnToolsVersion = 7.3;
@@ -1321,6 +1322,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1345,6 +1347,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1368,6 +1371,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1385,6 +1389,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1395,6 +1400,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1410,8 +1417,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JapaneseTrainer",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LongBao.JLPTTrainer;
+				PRODUCT_BUNDLE_IDENTIFIER = JLPTTrainer;
 				PRODUCT_NAME = JLPTTrainer;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1419,6 +1427,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1434,8 +1444,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JapaneseTrainer",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LongBao.JLPTTrainer;
+				PRODUCT_BUNDLE_IDENTIFIER = JLPTTrainer;
 				PRODUCT_NAME = JLPTTrainer;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

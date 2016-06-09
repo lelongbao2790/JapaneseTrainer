@@ -118,7 +118,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="95"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owc-i4-9fL">
-                                        <rect key="frame" x="8" y="14" width="524" height="30"/>
+                                        <rect key="frame" x="8" y="14" width="522" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Sne-It-kgU"/>
                                         </constraints>
@@ -133,7 +133,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WH-gc-2Ch">
-                                        <rect key="frame" x="546" y="8" width="40" height="40"/>
+                                        <rect key="frame" x="544" y="8" width="40" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="x0t-L7-8tQ"/>
@@ -149,7 +149,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Owc-i4-9fL" firstAttribute="top" secondItem="7uV-85-lRz" secondAttribute="top" constant="14" id="59y-ui-mLu"/>
-                                    <constraint firstAttribute="trailing" secondItem="3WH-gc-2Ch" secondAttribute="trailing" constant="14" id="8E3-FN-Oje"/>
+                                    <constraint firstAttribute="trailing" secondItem="3WH-gc-2Ch" secondAttribute="trailing" constant="16" id="8E3-FN-Oje"/>
                                     <constraint firstAttribute="trailing" secondItem="FLV-Th-iz5" secondAttribute="trailing" constant="14" id="Fjy-D9-hj3"/>
                                     <constraint firstItem="FLV-Th-iz5" firstAttribute="top" secondItem="Owc-i4-9fL" secondAttribute="bottom" constant="10" id="Nar-D5-wgM"/>
                                     <constraint firstItem="Owc-i4-9fL" firstAttribute="leading" secondItem="7uV-85-lRz" secondAttribute="leading" constant="8" id="YpN-kR-Gz7"/>

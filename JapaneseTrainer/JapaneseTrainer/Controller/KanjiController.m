@@ -108,7 +108,9 @@
 }
 
 - (IBAction)btnDelete:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    if ([self.delegate respondsToSelector:@selector(dismissController:)]) {
+        [self.delegate dismissController:self];
+    }
 }
 
 - (void)setInformation {

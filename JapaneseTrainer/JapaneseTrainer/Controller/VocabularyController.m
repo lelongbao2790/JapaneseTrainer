@@ -42,7 +42,7 @@
     [self.tbvVocabulary reloadData];
     
     NSArray *listVocabularyLocal = [[NSArray alloc] init];
-    listVocabularyLocal = [[DataAccess shared] listVocabularyByLevel:self.segLevel.selectedSegmentIndex];
+    listVocabularyLocal = [[DataAccess shared] listVocabularyByLevel:self.segLevel.selectedSegmentIndex + 1];
     if (listVocabularyLocal.count > 0) {
         self.listVocabulary = [listVocabularyLocal mutableCopy];
         [self.tbvVocabulary reloadData];
@@ -211,7 +211,7 @@
         newVoca.nameEnglish = [Utilities removeAlphabeFromJapaneseString:[[element3 firstChild] content]];
         newVoca.nameKanji = [Utilities removeAlphabeFromJapaneseString:[[element1 firstChild] content]];
         newVoca.href = [element1 objectForKey:kHref];
-        newVoca.level = self.segLevel.selectedSegmentIndex;
+        newVoca.level = self.segLevel.selectedSegmentIndex + 1;
         [newVoca commit];
         [newTutorials addObject:newVoca];
         NSLog(@"%@",newVoca.nameHiragana);
@@ -234,7 +234,7 @@
     // Parse Data from HTML
     TFHpple *tutorialsParser = [TFHpple hppleWithHTMLData:response];
     NSArray *searchNode = [tutorialsParser searchWithXPathQuery:kQuerySearch];
-    NSMutableArray *listWordSearch = [[NSMutableArray alloc] initWithCapacity:0];
+    NSMutableArray *listWordSearch = [[NSMutableArray alloc] init];
     for (TFHppleElement *element in searchNode) {
         
         Vocabulary *newVoca = [Vocabulary new];

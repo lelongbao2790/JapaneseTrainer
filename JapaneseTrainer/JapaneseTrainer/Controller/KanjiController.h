@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@protocol KanjiControllerDelegate;
 @interface KanjiController : UIViewController
-
+@property (weak, nonatomic) id<KanjiControllerDelegate> delegate;
 @property (strong, nonatomic) Kanji *word;
 
+@end
+
+@protocol KanjiControllerDelegate<NSObject>
+- (void)dismissController:(UIViewController *)controller;
 @end
