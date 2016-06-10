@@ -52,7 +52,6 @@
 
 - (void)config {
     self.listExampleKanji = [[NSMutableArray alloc] init];
-    self.lbKanji.text = self.word.kanjiWord;
     
     // Kanji
     self.btnSeg.hidden = NO;
@@ -108,12 +107,11 @@
 }
 
 - (IBAction)btnDelete:(id)sender {
-    if ([self.delegate respondsToSelector:@selector(dismissController:)]) {
-        [self.delegate dismissController:self];
-    }
+    [Utilities hideDialogController:self withTag:kTagWritingController];
 }
 
 - (void)setInformation {
+    self.lbKanji.text = self.word.kanjiWord;
     [self requestMeaningKanji];
     
     // Set button bookmark

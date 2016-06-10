@@ -60,6 +60,7 @@ typedef NS_ENUM(NSInteger, BookMarkTag) {
     kSectionVoca = 0,
     kSectionGrammar = 2,
     kSectionKanji = 1,
+    kTagWritingController = 100,
 };
 
 #endif /* Enumeration_h */

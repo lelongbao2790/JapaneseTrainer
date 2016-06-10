@@ -46,4 +46,14 @@
 + (void)showiToastMessage:(nonnull NSString *)message;
 
 + (void) reloadSectionDU:(NSInteger)section withRowAnimation:(UITableViewRowAnimation)rowAnimation tableView:(UITableView *)tableView;
+
+/*
+ * Show dialog
+ */
++ (void)showDialogController:(nonnull UIViewController *)dialog withTag:(NSInteger)tag;
+
+/*
+ * Hide dialog
+ */
++ (void)hideDialogController:(nonnull UIViewController *)dialog withTag:(NSInteger)tag;
 @end

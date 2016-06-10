@@ -9,7 +9,7 @@
 #import "AlphabetController.h"
 #import "CustomWritingLayout.h"
 
-@interface AlphabetController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, KanjiDelegate, KanjiControllerDelegate>
+@interface AlphabetController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, KanjiDelegate>
 @property (strong, nonatomic) NSMutableArray *listWriting;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segWriting;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionWriting;
@@ -161,7 +161,6 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
     KanjiController *kanjiController = InitStoryBoardWithIdentifier(kKanjiController);
-    kanjiController.delegate = self;
     
     if (self.btnSegLevel.hidden) {
         NSDictionary *dictCell = self.listWriting[indexPath.row];
@@ -169,7 +168,7 @@
     }
     else {
         kanjiController.word = self.listWriting[indexPath.row];
-        [self.tabBarController presentViewController:kanjiController animated:YES completion:nil];
+        [Utilities showDialogController:kanjiController withTag:kTagWritingController];
     }
     
 }
@@ -207,10 +206,5 @@
 
 - (void)getKanjiAPIFail:(NSString *)resultMessage {
     ProgressBarDismissLoading(kEmpty);
-}
-
-# pragma mark  Kanji Controller Delegate
-- (void)dismissController:(UIViewController *)controller {
-    [controller dismissViewControllerAnimated:YES completion:nil];
 }
 @end

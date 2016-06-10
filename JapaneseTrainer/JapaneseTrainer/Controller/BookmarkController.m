@@ -145,7 +145,7 @@
             Kanji *aKanji = self.listBookMarkKanji[indexPath.row];
             KanjiController *kanjiController = InitStoryBoardWithIdentifier(kKanjiController);
             kanjiController.word = aKanji;
-            [self.tabBarController presentViewController:kanjiController animated:YES completion:nil];
+            [Utilities showDialogController:kanjiController withTag:kTagWritingController];
         }
             break;
             

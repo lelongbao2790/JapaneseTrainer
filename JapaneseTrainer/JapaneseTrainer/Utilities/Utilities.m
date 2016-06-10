@@ -139,4 +139,23 @@
     [tableView reloadSections:sectionToReload withRowAnimation:rowAnimation];
 }
 
+/*
+ * Show dialog
+ */
++ (void)showDialogController:(nonnull UIViewController *)dialog withTag:(NSInteger)tag {
+    dialog.view.tag = tag;
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    
+    [window addSubview:dialog.view];
+    
+}
+
+/*
+ * Hide dialog
+ */
++ (void)hideDialogController:(nonnull UIViewController *)dialog withTag:(NSInteger)tag {
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    [[window viewWithTag:tag] removeFromSuperview];
+}
+
 @end
