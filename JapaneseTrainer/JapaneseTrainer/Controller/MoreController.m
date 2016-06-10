@@ -45,6 +45,12 @@
 }
 
 - (IBAction)btnRateapp:(id)sender {
+    
+    NSString * appId = kAppID;
+    NSString * theUrl = [NSString  stringWithFormat:kItune,appId];
+    if ([[UIDevice currentDevice].systemVersion integerValue] > 6)
+        theUrl = [NSString stringWithFormat:kItune7,appId];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:theUrl]];
 }
 
 //*****************************************************************************
