@@ -2,6 +2,33 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>More</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Feedback</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>History</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Setting</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Rate app</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
 	<key>Hiragana</key>
 	<array>
 		<dict>

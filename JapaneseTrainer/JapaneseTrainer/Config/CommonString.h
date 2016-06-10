@@ -96,6 +96,11 @@ static NSString *kUnknownCharater2 = @"'";
 
 // Regex
 static NSString *kRegExAZ = @"()";
+static NSString *kFeedbackTitle = @"Feedback JLPT Trainer";
+static NSString *kEmailAuthor = @"lelongbao2790@gmail.com";
+static NSString *kMessageAlert = @"Do you want to attach screenshot image for feedback.";
+static NSString *kOK = @"YES";
+static NSString *kCancel = @"NO";
 
 // Search Parse
 static NSString *kW = @"w";

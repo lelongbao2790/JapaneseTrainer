@@ -11,5 +11,6 @@
 @interface GrammarCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *lbNameGrammar;
 @property (weak, nonatomic) IBOutlet UIImageView *imgArrow;
+@property (weak, nonatomic) IBOutlet UILabel *lbNumberCell;
 
 @end

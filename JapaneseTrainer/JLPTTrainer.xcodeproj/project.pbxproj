@@ -26,6 +26,14 @@
 		D321D6091D06ACD2002B187D /* NoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = D321D6081D06ACD2002B187D /* NoteController.m */; };
 		D321D60C1D06AE40002B187D /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = D321D60B1D06AE40002B187D /* Note.m */; };
 		D321D60E1D06BC94002B187D /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = D321D60D1D06BC94002B187D /* trash.png */; };
+		D337318B1D0A8BCE002AD32D /* logo_ipadpro.png in Resources */ = {isa = PBXBuildFile; fileRef = D337318A1D0A8BCE002AD32D /* logo_ipadpro.png */; };
+		D33731901D0A9141002AD32D /* feedback.png in Resources */ = {isa = PBXBuildFile; fileRef = D337318C1D0A9141002AD32D /* feedback.png */; };
+		D33731911D0A9141002AD32D /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = D337318D1D0A9141002AD32D /* history.png */; };
+		D33731921D0A9141002AD32D /* rate.png in Resources */ = {isa = PBXBuildFile; fileRef = D337318E1D0A9141002AD32D /* rate.png */; };
+		D33731931D0A9141002AD32D /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = D337318F1D0A9141002AD32D /* setting.png */; };
+		D33731951D0A9E12002AD32D /* imgLeftGrammar.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731941D0A9E12002AD32D /* imgLeftGrammar.png */; };
+		D33731991D0AA49D002AD32D /* MoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33731981D0AA49D002AD32D /* MoreController.m */; };
+		D337319B1D0AB119002AD32D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D337319A1D0AB119002AD32D /* CoreData.framework */; };
 		D35391331D01465200025CB3 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D353912C1D01465200025CB3 /* GTMNSString+HTML.m */; };
 		D35391341D01465200025CB3 /* NSMutableAttributedString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D353912E1D01465200025CB3 /* NSMutableAttributedString+Color.m */; };
 		D35391351D01465200025CB3 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D35391301D01465200025CB3 /* NSString+HTML.m */; };
@@ -227,6 +235,15 @@
 		D321D60A1D06AE40002B187D /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = Modal/Note.h; sourceTree = "<group>"; };
 		D321D60B1D06AE40002B187D /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = Modal/Note.m; sourceTree = "<group>"; };
 		D321D60D1D06BC94002B187D /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trash.png; path = Resource/trash.png; sourceTree = "<group>"; };
+		D337318A1D0A8BCE002AD32D /* logo_ipadpro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_ipadpro.png; sourceTree = "<group>"; };
+		D337318C1D0A9141002AD32D /* feedback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = feedback.png; path = Resource/feedback.png; sourceTree = "<group>"; };
+		D337318D1D0A9141002AD32D /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = history.png; path = Resource/history.png; sourceTree = "<group>"; };
+		D337318E1D0A9141002AD32D /* rate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rate.png; path = Resource/rate.png; sourceTree = "<group>"; };
+		D337318F1D0A9141002AD32D /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting.png; path = Resource/setting.png; sourceTree = "<group>"; };
+		D33731941D0A9E12002AD32D /* imgLeftGrammar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imgLeftGrammar.png; path = Resource/imgLeftGrammar.png; sourceTree = "<group>"; };
+		D33731971D0AA49D002AD32D /* MoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreController.h; path = Controller/MoreController.h; sourceTree = "<group>"; };
+		D33731981D0AA49D002AD32D /* MoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreController.m; path = Controller/MoreController.m; sourceTree = "<group>"; };
+		D337319A1D0AB119002AD32D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D353912B1D01465200025CB3 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+HTML.h"; path = "ThirdLibrary/NSString_HTML/GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		D353912C1D01465200025CB3 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+HTML.m"; path = "ThirdLibrary/NSString_HTML/GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		D353912D1D01465200025CB3 /* NSMutableAttributedString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+Color.h"; path = "ThirdLibrary/NSString_HTML/NSMutableAttributedString+Color.h"; sourceTree = "<group>"; };
@@ -458,6 +475,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D337319B1D0AB119002AD32D /* CoreData.framework in Frameworks */,
 				D3FA256B1CF6EF2500CD24BF /* AudioToolbox.framework in Frameworks */,
 				D3FD92F81CF54C680039FB14 /* DBAccess.framework in Frameworks */,
 				D3FD92F21CF54A6B0039FB14 /* libxml2.2.dylib in Frameworks */,
@@ -488,6 +506,15 @@
 				D321D6081D06ACD2002B187D /* NoteController.m */,
 			);
 			name = Note;
+			sourceTree = "<group>";
+		};
+		D33731961D0AA47F002AD32D /* More */ = {
+			isa = PBXGroup;
+			children = (
+				D33731971D0AA49D002AD32D /* MoreController.h */,
+				D33731981D0AA49D002AD32D /* MoreController.m */,
+			);
+			name = More;
 			sourceTree = "<group>";
 		};
 		D35391281D01366900025CB3 /* hiragana */ = {
@@ -609,6 +636,7 @@
 		D3CCA3951CF2ACAC0022D752 = {
 			isa = PBXGroup;
 			children = (
+				D337319A1D0AB119002AD32D /* CoreData.framework */,
 				D3FA256A1CF6EF2500CD24BF /* AudioToolbox.framework */,
 				D3FD92F01CF549AF0039FB14 /* libxml2.2.tbd */,
 				D3CCA3A01CF2ACAC0022D752 /* JapaneseTrainer */,
@@ -715,6 +743,7 @@
 		D3CCA3F81CF2ADC80022D752 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D33731961D0AA47F002AD32D /* More */,
 				D3B849D81D07EF2D00A2D967 /* Bookmark */,
 				D321D6061D06ACB3002B187D /* Note */,
 				D3CCA4051CF2ADEF0022D752 /* Alphabet */,
@@ -859,6 +888,12 @@
 		D3F6657C1CF2E2F4001A7F71 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D33731941D0A9E12002AD32D /* imgLeftGrammar.png */,
+				D337318C1D0A9141002AD32D /* feedback.png */,
+				D337318D1D0A9141002AD32D /* history.png */,
+				D337318E1D0A9141002AD32D /* rate.png */,
+				D337318F1D0A9141002AD32D /* setting.png */,
+				D337318A1D0A8BCE002AD32D /* logo_ipadpro.png */,
 				D3B849DC1D07F19E00A2D967 /* blue_bookmark.png */,
 				D3B849DD1D07F19E00A2D967 /* orange_bookmark.png */,
 				D3B849DE1D07F19E00A2D967 /* red_bookmark.png */,
@@ -1063,6 +1098,7 @@
 				D35391C71D015A0A00025CB3 /* katakana_a.jpg in Resources */,
 				D353916E1D01491700025CB3 /* hiragana_e.jpg in Resources */,
 				D35391EC1D015A0A00025CB3 /* katakana_to.jpg in Resources */,
+				D33731901D0A9141002AD32D /* feedback.png in Resources */,
 				D35391391D01467F00025CB3 /* delete_icon.png in Resources */,
 				D35391E21D015A0A00025CB3 /* katakana_ri.jpg in Resources */,
 				D321D60E1D06BC94002B187D /* trash.png in Resources */,
@@ -1092,6 +1128,7 @@
 				D35391911D01491700025CB3 /* hiragana_te.jpg in Resources */,
 				D35391ED1D015A0A00025CB3 /* katakana_tsu.jpg in Resources */,
 				D353918A1D01491700025CB3 /* hiragana_ru.jpg in Resources */,
+				D337318B1D0A8BCE002AD32D /* logo_ipadpro.png in Resources */,
 				D35391D31D015A0A00025CB3 /* katakana_ku.jpg in Resources */,
 				D35391981D01491700025CB3 /* hiragana_yo.jpg in Resources */,
 				D321D5EB1D057647002B187D /* delete_icon_blue.png in Resources */,
@@ -1103,6 +1140,7 @@
 				D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */,
 				D353917D1D01491700025CB3 /* hiragana_mo.jpg in Resources */,
 				D35391EF1D015A0A00025CB3 /* katakana_wa.jpg in Resources */,
+				D33731911D0A9141002AD32D /* history.png in Resources */,
 				D3B849DF1D07F19E00A2D967 /* blue_bookmark.png in Resources */,
 				D35391DE1D015A0A00025CB3 /* katakana_nu.jpg in Resources */,
 				D353916F1D01491700025CB3 /* hiragana_ha.jpg in Resources */,
@@ -1112,6 +1150,7 @@
 				D353917A1D01491700025CB3 /* hiragana_ma.jpg in Resources */,
 				D3B849D31D07CA3A00A2D967 /* bm_heart.png in Resources */,
 				D321D5DE1D055892002B187D /* hiragana_icon.png in Resources */,
+				D33731951D0A9E12002AD32D /* imgLeftGrammar.png in Resources */,
 				D35391801D01491700025CB3 /* hiragana_na.jpg in Resources */,
 				D353918D1D01491700025CB3 /* hiragana_shi.jpg in Resources */,
 				D321D5E71D0571CC002B187D /* jp_icon.png in Resources */,
@@ -1125,6 +1164,7 @@
 				D353918E1D01491700025CB3 /* hiragana_so.jpg in Resources */,
 				D35391DC1D015A0A00025CB3 /* katakana_ni.jpg in Resources */,
 				D321D5E01D055CDD002B187D /* arrow_right.png in Resources */,
+				D33731921D0A9141002AD32D /* rate.png in Resources */,
 				D35391DA1D015A0A00025CB3 /* katakana_na.jpg in Resources */,
 				D35391E81D015A0A00025CB3 /* katakana_so.jpg in Resources */,
 				D353917C1D01491700025CB3 /* hiragana_mi.jpg in Resources */,
@@ -1157,6 +1197,7 @@
 				D3CCA3AF1CF2ACAC0022D752 /* Main.storyboard in Resources */,
 				D353916C1D01491700025CB3 /* hiragana_a.jpg in Resources */,
 				D35391D81D015A0A00025CB3 /* katakana_mu.jpg in Resources */,
+				D33731931D0A9141002AD32D /* setting.png in Resources */,
 				D35391EE1D015A0A00025CB3 /* katakana_u.jpg in Resources */,
 				D35391731D01491700025CB3 /* hiragana_hu.jpg in Resources */,
 				D35391881D01491700025CB3 /* hiragana_ri.jpg in Resources */,
@@ -1219,6 +1260,7 @@
 				D3CCA47A1CF2AF5F0022D752 /* AFHTTPSessionManager.m in Sources */,
 				D321D5FB1D068E33002B187D /* KanjiCell.m in Sources */,
 				D3FA25701CF843D100CD24BF /* WritingCell.m in Sources */,
+				D33731991D0AA49D002AD32D /* MoreController.m in Sources */,
 				D3FD92FC1CF54C860039FB14 /* Grammar.m in Sources */,
 				D3CCA4821CF2AF5F0022D752 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				D321D5F31D0578BC002B187D /* ExampleCell.m in Sources */,

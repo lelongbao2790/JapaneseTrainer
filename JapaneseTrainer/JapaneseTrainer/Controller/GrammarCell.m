@@ -13,6 +13,11 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+    self.layer.cornerRadius = 20;
+    self.layer.masksToBounds = YES;
+    self.layer.borderColor = k11132201Color.CGColor;
+    self.layer.borderWidth = 1.0;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
