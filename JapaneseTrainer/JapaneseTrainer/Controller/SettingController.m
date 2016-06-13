@@ -11,6 +11,9 @@
 @interface SettingController ()
 @property (weak, nonatomic) IBOutlet UISlider *slideVolumn;
 @property (weak, nonatomic) IBOutlet UILabel *lbNameExample;
+@property (weak, nonatomic) IBOutlet UIView *subView;
+@property (weak, nonatomic) IBOutlet UILabel *lbSpeedText;
+@property (weak, nonatomic) IBOutlet UIButton *btnSave;
 
 @end
 
@@ -19,6 +22,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [Utilities borderView:self.subView];
+    [Utilities borderView:self.btnSave];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    self.slideVolumn.value = [Sound shared].speedValue;
+    self.lbSpeedText.text = [NSString stringWithFormat:@"%0.2f",self.slideVolumn.value];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,7 +41,12 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)btnSlideVolume:(id)sender {
+- (IBAction)btnSlideVolume:(UISlider *)sender {
+    
+    [Sound shared].speedValue = sender.value;
+    [self.slideVolumn setValue:sender.value];
+    
+    self.lbSpeedText.text = [NSString stringWithFormat:@"%0.2f",sender.value];
 }
 
 - (IBAction)btnSave:(id)sender {
