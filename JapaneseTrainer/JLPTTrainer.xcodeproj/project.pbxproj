@@ -40,24 +40,6 @@
 		D33731BD1D0E4E59002AD32D /* home_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731BA1D0E4E59002AD32D /* home_icon.png */; };
 		D33731BE1D0E4E59002AD32D /* home_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731BB1D0E4E59002AD32D /* home_nav.png */; };
 		D33731BF1D0E4E59002AD32D /* start_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731BC1D0E4E59002AD32D /* start_icon.png */; };
-		D33731D61D0E5544002AD32D /* AmobiAdView.java in Sources */ = {isa = PBXBuildFile; fileRef = D33731C11D0E5544002AD32D /* AmobiAdView.java */; };
-		D33731D71D0E5544002AD32D /* ajax_handler.js in Resources */ = {isa = PBXBuildFile; fileRef = D33731C31D0E5544002AD32D /* ajax_handler.js */; };
-		D33731D81D0E5544002AD32D /* amb_back.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731C41D0E5544002AD32D /* amb_back.png */; };
-		D33731D91D0E5544002AD32D /* amb_close.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731C51D0E5544002AD32D /* amb_close.png */; };
-		D33731DA1D0E5544002AD32D /* amb_close_click.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731C61D0E5544002AD32D /* amb_close_click.png */; };
-		D33731DB1D0E5544002AD32D /* amb_comment.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731C71D0E5544002AD32D /* amb_comment.png */; };
-		D33731DC1D0E5544002AD32D /* amb_mute.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731C81D0E5544002AD32D /* amb_mute.png */; };
-		D33731DD1D0E5544002AD32D /* amb_next.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731C91D0E5544002AD32D /* amb_next.png */; };
-		D33731DE1D0E5544002AD32D /* amb_refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731CA1D0E5544002AD32D /* amb_refresh.png */; };
-		D33731DF1D0E5544002AD32D /* amb_unmute.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731CB1D0E5544002AD32D /* amb_unmute.png */; };
-		D33731E01D0E5544002AD32D /* amb_upload.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731CC1D0E5544002AD32D /* amb_upload.png */; };
-		D33731E11D0E5544002AD32D /* Amobi_close.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731CD1D0E5544002AD32D /* Amobi_close.png */; };
-		D33731E21D0E5544002AD32D /* AmobiInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = D33731CF1D0E5544002AD32D /* AmobiInfo.plist */; };
-		D33731E31D0E5544002AD32D /* AmobiStringView.plist in Resources */ = {isa = PBXBuildFile; fileRef = D33731D01D0E5544002AD32D /* AmobiStringView.plist */; };
-		D33731E41D0E5544002AD32D /* btn_action_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731D21D0E5544002AD32D /* btn_action_normal.png */; };
-		D33731E51D0E5544002AD32D /* btn_close_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731D31D0E5544002AD32D /* btn_close_normal.png */; };
-		D33731E61D0E5544002AD32D /* AmobiVideoAd.java in Sources */ = {isa = PBXBuildFile; fileRef = D33731D41D0E5544002AD32D /* AmobiVideoAd.java */; };
-		D33731E71D0E5544002AD32D /* libAmobiSDKV2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33731D51D0E5544002AD32D /* libAmobiSDKV2.3.a */; };
 		D33731E91D0E6DCE002AD32D /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731E81D0E6DCE002AD32D /* background.png */; };
 		D33731EC1D0E7725002AD32D /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33731EB1D0E7725002AD32D /* SettingController.m */; };
 		D35391331D01465200025CB3 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D353912C1D01465200025CB3 /* GTMNSString+HTML.m */; };
@@ -199,14 +181,8 @@
 		D3CCA4981CF2AF9A0022D752 /* GrammarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA4971CF2AF9A0022D752 /* GrammarController.m */; };
 		D3CCA49E1CF2AFB50022D752 /* VocabularyController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA49D1CF2AFB50022D752 /* VocabularyController.m */; };
 		D3CCA4AE1CF2AFD10022D752 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA4AD1CF2AFD10022D752 /* AppDelegate.m */; };
-		D3F0D7E51D0E7B500097AD7D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D7E41D0E7B500097AD7D /* SystemConfiguration.framework */; };
-		D3F0D7E71D0E7B600097AD7D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D7E61D0E7B600097AD7D /* CFNetwork.framework */; };
-		D3F0D7E91D0E7B6C0097AD7D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D7E81D0E7B6C0097AD7D /* libz.tbd */; };
-		D3F0D7EB1D0E7B760097AD7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D7EA1D0E7B760097AD7D /* CoreGraphics.framework */; };
-		D3F0D7ED1D0E7B830097AD7D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D7EC1D0E7B830097AD7D /* AdSupport.framework */; };
 		D3F0D7EF1D0E7B880097AD7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D7EE1D0E7B880097AD7D /* UIKit.framework */; };
 		D3F0D7F11D0E7B8F0097AD7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D7F01D0E7B8F0097AD7D /* Foundation.framework */; };
-		D3F0D7F31D0E7B990097AD7D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D7F21D0E7B990097AD7D /* MediaPlayer.framework */; };
 		D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */; };
 		D3FA25691CF6EE1300CD24BF /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25681CF6EE1300CD24BF /* Sound.m */; };
 		D3FA256B1CF6EF2500CD24BF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FA256A1CF6EF2500CD24BF /* AudioToolbox.framework */; };
@@ -288,26 +264,6 @@
 		D33731BA1D0E4E59002AD32D /* home_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_icon.png; path = Resource/home_icon.png; sourceTree = "<group>"; };
 		D33731BB1D0E4E59002AD32D /* home_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_nav.png; path = Resource/home_nav.png; sourceTree = "<group>"; };
 		D33731BC1D0E4E59002AD32D /* start_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start_icon.png; path = Resource/start_icon.png; sourceTree = "<group>"; };
-		D33731C11D0E5544002AD32D /* AmobiAdView.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = AmobiAdView.java; sourceTree = "<group>"; };
-		D33731C31D0E5544002AD32D /* ajax_handler.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ajax_handler.js; sourceTree = "<group>"; };
-		D33731C41D0E5544002AD32D /* amb_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_back.png; sourceTree = "<group>"; };
-		D33731C51D0E5544002AD32D /* amb_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_close.png; sourceTree = "<group>"; };
-		D33731C61D0E5544002AD32D /* amb_close_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_close_click.png; sourceTree = "<group>"; };
-		D33731C71D0E5544002AD32D /* amb_comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_comment.png; sourceTree = "<group>"; };
-		D33731C81D0E5544002AD32D /* amb_mute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_mute.png; sourceTree = "<group>"; };
-		D33731C91D0E5544002AD32D /* amb_next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_next.png; sourceTree = "<group>"; };
-		D33731CA1D0E5544002AD32D /* amb_refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_refresh.png; sourceTree = "<group>"; };
-		D33731CB1D0E5544002AD32D /* amb_unmute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_unmute.png; sourceTree = "<group>"; };
-		D33731CC1D0E5544002AD32D /* amb_upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_upload.png; sourceTree = "<group>"; };
-		D33731CD1D0E5544002AD32D /* Amobi_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amobi_close.png; sourceTree = "<group>"; };
-		D33731CE1D0E5544002AD32D /* AmobiAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmobiAdView.h; sourceTree = "<group>"; };
-		D33731CF1D0E5544002AD32D /* AmobiInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AmobiInfo.plist; sourceTree = "<group>"; };
-		D33731D01D0E5544002AD32D /* AmobiStringView.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AmobiStringView.plist; sourceTree = "<group>"; };
-		D33731D11D0E5544002AD32D /* AmobiVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmobiVideoAd.h; sourceTree = "<group>"; };
-		D33731D21D0E5544002AD32D /* btn_action_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_action_normal.png; sourceTree = "<group>"; };
-		D33731D31D0E5544002AD32D /* btn_close_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_close_normal.png; sourceTree = "<group>"; };
-		D33731D41D0E5544002AD32D /* AmobiVideoAd.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = AmobiVideoAd.java; sourceTree = "<group>"; };
-		D33731D51D0E5544002AD32D /* libAmobiSDKV2.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAmobiSDKV2.3.a; sourceTree = "<group>"; };
 		D33731E81D0E6DCE002AD32D /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		D33731EA1D0E7725002AD32D /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingController.h; path = Controller/SettingController.h; sourceTree = "<group>"; };
 		D33731EB1D0E7725002AD32D /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingController.m; path = Controller/SettingController.m; sourceTree = "<group>"; };
@@ -506,14 +462,8 @@
 		D3CCA4AB1CF2AFC30022D752 /* StoryBoardID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryBoardID.h; path = Config/StoryBoardID.h; sourceTree = "<group>"; };
 		D3CCA4AC1CF2AFD10022D752 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppDelegate/AppDelegate.h; sourceTree = "<group>"; };
 		D3CCA4AD1CF2AFD10022D752 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppDelegate/AppDelegate.m; sourceTree = "<group>"; };
-		D3F0D7E41D0E7B500097AD7D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		D3F0D7E61D0E7B600097AD7D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		D3F0D7E81D0E7B6C0097AD7D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		D3F0D7EA1D0E7B760097AD7D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D3F0D7EC1D0E7B830097AD7D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		D3F0D7EE1D0E7B880097AD7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3F0D7F01D0E7B8F0097AD7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D3F0D7F21D0E7B990097AD7D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = listcontent.plist; path = Resource/listcontent.plist; sourceTree = "<group>"; };
 		D3FA25671CF6EE1300CD24BF /* Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sound.h; path = Modal/Sound.h; sourceTree = "<group>"; };
 		D3FA25681CF6EE1300CD24BF /* Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sound.m; path = Modal/Sound.m; sourceTree = "<group>"; };
@@ -550,15 +500,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D33731E71D0E5544002AD32D /* libAmobiSDKV2.3.a in Frameworks */,
-				D3F0D7F31D0E7B990097AD7D /* MediaPlayer.framework in Frameworks */,
 				D3F0D7F11D0E7B8F0097AD7D /* Foundation.framework in Frameworks */,
 				D3F0D7EF1D0E7B880097AD7D /* UIKit.framework in Frameworks */,
-				D3F0D7ED1D0E7B830097AD7D /* AdSupport.framework in Frameworks */,
-				D3F0D7EB1D0E7B760097AD7D /* CoreGraphics.framework in Frameworks */,
-				D3F0D7E91D0E7B6C0097AD7D /* libz.tbd in Frameworks */,
-				D3F0D7E71D0E7B600097AD7D /* CFNetwork.framework in Frameworks */,
-				D3F0D7E51D0E7B500097AD7D /* SystemConfiguration.framework in Frameworks */,
 				D3FA256B1CF6EF2500CD24BF /* AudioToolbox.framework in Frameworks */,
 				D3FD92F81CF54C680039FB14 /* DBAccess.framework in Frameworks */,
 				D3FD92F21CF54A6B0039FB14 /* libxml2.2.dylib in Frameworks */,
@@ -638,42 +581,6 @@
 			);
 			name = Home;
 			path = ../../../JLPTTrainerPro/JapaneseTrainer;
-			sourceTree = "<group>";
-		};
-		D33731C01D0E5544002AD32D /* Amobi SDK iOS v2.3 20150506 */ = {
-			isa = PBXGroup;
-			children = (
-				D33731C11D0E5544002AD32D /* AmobiAdView.java */,
-				D33731C21D0E5544002AD32D /* AmobiSDKV2.3 */,
-				D33731D41D0E5544002AD32D /* AmobiVideoAd.java */,
-				D33731D51D0E5544002AD32D /* libAmobiSDKV2.3.a */,
-			);
-			name = "Amobi SDK iOS v2.3 20150506";
-			path = "../Amobi SDK iOS v2.3 20150506";
-			sourceTree = "<group>";
-		};
-		D33731C21D0E5544002AD32D /* AmobiSDKV2.3 */ = {
-			isa = PBXGroup;
-			children = (
-				D33731C31D0E5544002AD32D /* ajax_handler.js */,
-				D33731C41D0E5544002AD32D /* amb_back.png */,
-				D33731C51D0E5544002AD32D /* amb_close.png */,
-				D33731C61D0E5544002AD32D /* amb_close_click.png */,
-				D33731C71D0E5544002AD32D /* amb_comment.png */,
-				D33731C81D0E5544002AD32D /* amb_mute.png */,
-				D33731C91D0E5544002AD32D /* amb_next.png */,
-				D33731CA1D0E5544002AD32D /* amb_refresh.png */,
-				D33731CB1D0E5544002AD32D /* amb_unmute.png */,
-				D33731CC1D0E5544002AD32D /* amb_upload.png */,
-				D33731CD1D0E5544002AD32D /* Amobi_close.png */,
-				D33731CE1D0E5544002AD32D /* AmobiAdView.h */,
-				D33731CF1D0E5544002AD32D /* AmobiInfo.plist */,
-				D33731D01D0E5544002AD32D /* AmobiStringView.plist */,
-				D33731D11D0E5544002AD32D /* AmobiVideoAd.h */,
-				D33731D21D0E5544002AD32D /* btn_action_normal.png */,
-				D33731D31D0E5544002AD32D /* btn_close_normal.png */,
-			);
-			path = AmobiSDKV2.3;
 			sourceTree = "<group>";
 		};
 		D35391281D01366900025CB3 /* hiragana */ = {
@@ -1038,14 +945,8 @@
 		D3F0D7F41D0E7BA90097AD7D /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				D3F0D7F21D0E7B990097AD7D /* MediaPlayer.framework */,
 				D3F0D7F01D0E7B8F0097AD7D /* Foundation.framework */,
 				D3F0D7EE1D0E7B880097AD7D /* UIKit.framework */,
-				D3F0D7EC1D0E7B830097AD7D /* AdSupport.framework */,
-				D3F0D7EA1D0E7B760097AD7D /* CoreGraphics.framework */,
-				D3F0D7E81D0E7B6C0097AD7D /* libz.tbd */,
-				D3F0D7E61D0E7B600097AD7D /* CFNetwork.framework */,
-				D3F0D7E41D0E7B500097AD7D /* SystemConfiguration.framework */,
 				D3FA256A1CF6EF2500CD24BF /* AudioToolbox.framework */,
 				D3FD92F01CF549AF0039FB14 /* libxml2.2.tbd */,
 			);
@@ -1056,7 +957,6 @@
 		D3F665751CF2B24C001A7F71 /* ThirdLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				D33731C01D0E5544002AD32D /* Amobi SDK iOS v2.3 20150506 */,
 				D3FA25541CF6C70700CD24BF /* NSString_HTML */,
 				D3FD92F91CF54C6B0039FB14 /* DBAccess */,
 				D3FD92E71CF542C30039FB14 /* TFHpple */,
@@ -1286,14 +1186,11 @@
 				D35391EC1D015A0A00025CB3 /* katakana_to.jpg in Resources */,
 				D33731901D0A9141002AD32D /* feedback.png in Resources */,
 				D35391391D01467F00025CB3 /* delete_icon.png in Resources */,
-				D33731DE1D0E5544002AD32D /* amb_refresh.png in Resources */,
 				D35391E21D015A0A00025CB3 /* katakana_ri.jpg in Resources */,
-				D33731D81D0E5544002AD32D /* amb_back.png in Resources */,
 				D321D60E1D06BC94002B187D /* trash.png in Resources */,
 				D3B849D51D07D17E00A2D967 /* bm_heart_selected_nav.png in Resources */,
 				D35391D11D015A0A00025CB3 /* katakana_ki.jpg in Resources */,
 				D353917B1D01491700025CB3 /* hiragana_me.jpg in Resources */,
-				D33731DC1D0E5544002AD32D /* amb_mute.png in Resources */,
 				D35391871D01491700025CB3 /* hiragana_re.jpg in Resources */,
 				D35391CD1D015A0A00025CB3 /* katakana_hu.jpg in Resources */,
 				D35391741D01491700025CB3 /* hiragana_i.jpg in Resources */,
@@ -1304,7 +1201,6 @@
 				D35391791D01491700025CB3 /* hiragana_ku.jpg in Resources */,
 				D35391EA1D015A0A00025CB3 /* katakana_ta.jpg in Resources */,
 				D35391851D01491700025CB3 /* hiragana_o.jpg in Resources */,
-				D33731E41D0E5544002AD32D /* btn_action_normal.png in Resources */,
 				D35391F11D015A0A00025CB3 /* katakana_ya.jpg in Resources */,
 				D35391751D01491700025CB3 /* hiragana_ka.jpg in Resources */,
 				D3CCA3B41CF2ACAC0022D752 /* LaunchScreen.storyboard in Resources */,
@@ -1314,21 +1210,17 @@
 				D35391831D01491700025CB3 /* hiragana_no.jpg in Resources */,
 				D35391EB1D015A0A00025CB3 /* katakana_te.jpg in Resources */,
 				D3CCA3B11CF2ACAC0022D752 /* Assets.xcassets in Resources */,
-				D33731E21D0E5544002AD32D /* AmobiInfo.plist in Resources */,
 				D3B849C81D07BDE900A2D967 /* bm_heart_selected.png in Resources */,
 				D35391911D01491700025CB3 /* hiragana_te.jpg in Resources */,
 				D35391ED1D015A0A00025CB3 /* katakana_tsu.jpg in Resources */,
 				D353918A1D01491700025CB3 /* hiragana_ru.jpg in Resources */,
-				D33731D91D0E5544002AD32D /* amb_close.png in Resources */,
 				D337318B1D0A8BCE002AD32D /* logo_ipadpro.png in Resources */,
 				D35391D31D015A0A00025CB3 /* katakana_ku.jpg in Resources */,
 				D35391981D01491700025CB3 /* hiragana_yo.jpg in Resources */,
 				D321D5EB1D057647002B187D /* delete_icon_blue.png in Resources */,
 				D35391CE1D015A0A00025CB3 /* katakana_i.jpg in Resources */,
 				D35391761D01491700025CB3 /* hiragana_ke.jpg in Resources */,
-				D33731DD1D0E5544002AD32D /* amb_next.png in Resources */,
 				D321D5ED1D0577D9002B187D /* edit_icon.png in Resources */,
-				D33731E01D0E5544002AD32D /* amb_upload.png in Resources */,
 				D3B849E01D07F19E00A2D967 /* orange_bookmark.png in Resources */,
 				D35391D41D015A0A00025CB3 /* katakana_ma.jpg in Resources */,
 				D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */,
@@ -1361,7 +1253,6 @@
 				D321D5E01D055CDD002B187D /* arrow_right.png in Resources */,
 				D33731921D0A9141002AD32D /* rate.png in Resources */,
 				D35391DA1D015A0A00025CB3 /* katakana_na.jpg in Resources */,
-				D33731DA1D0E5544002AD32D /* amb_close_click.png in Resources */,
 				D35391E81D015A0A00025CB3 /* katakana_so.jpg in Resources */,
 				D353917C1D01491700025CB3 /* hiragana_mi.jpg in Resources */,
 				D35391861D01491700025CB3 /* hiragana_ra.jpg in Resources */,
@@ -1379,12 +1270,10 @@
 				D35391711D01491700025CB3 /* hiragana_hi.jpg in Resources */,
 				D35391961D01491700025CB3 /* hiragana_wo.jpg in Resources */,
 				D35391C91D015A0A00025CB3 /* katakana_e.jpg in Resources */,
-				D33731DB1D0E5544002AD32D /* amb_comment.png in Resources */,
 				D353917E1D01491700025CB3 /* hiragana_mu.jpg in Resources */,
 				D35391901D01491700025CB3 /* hiragana_ta.jpg in Resources */,
 				D35391DF1D015A0A00025CB3 /* katakana_o.jpg in Resources */,
 				D35391991D01491700025CB3 /* hiragana_yu.jpg in Resources */,
-				D33731E11D0E5544002AD32D /* Amobi_close.png in Resources */,
 				D35391E51D015A0A00025CB3 /* katakana_sa.jpg in Resources */,
 				D321D5DD1D055892002B187D /* hiragana_icon_white.png in Resources */,
 				D35391E71D015A0A00025CB3 /* katakana_shi.jpg in Resources */,
@@ -1403,7 +1292,6 @@
 				D35391881D01491700025CB3 /* hiragana_ri.jpg in Resources */,
 				D35391891D01491700025CB3 /* hiragana_ro.jpg in Resources */,
 				D35391CF1D015A0A00025CB3 /* katakana_ka.jpg in Resources */,
-				D33731E51D0E5544002AD32D /* btn_close_normal.png in Resources */,
 				D35391781D01491700025CB3 /* hiragana_ko.jpg in Resources */,
 				D35391921D01491700025CB3 /* hiragana_to.jpg in Resources */,
 				D353918B1D01491700025CB3 /* hiragana_sa.jpg in Resources */,
@@ -1412,11 +1300,8 @@
 				D35391CB1D015A0A00025CB3 /* katakana_hi.jpg in Resources */,
 				D35391F51D016A5000025CB3 /* delete_icon_white.png in Resources */,
 				D35391811D01491700025CB3 /* hiragana_ne.jpg in Resources */,
-				D33731E31D0E5544002AD32D /* AmobiStringView.plist in Resources */,
-				D33731DF1D0E5544002AD32D /* amb_unmute.png in Resources */,
 				D35391D51D015A0A00025CB3 /* katakana_me.jpg in Resources */,
 				D35391D61D015A0A00025CB3 /* katakana_mi.jpg in Resources */,
-				D33731D71D0E5544002AD32D /* ajax_handler.js in Resources */,
 				D35391DB1D015A0A00025CB3 /* katakana_ne.jpg in Resources */,
 				D33731BF1D0E4E59002AD32D /* start_icon.png in Resources */,
 			);
@@ -1456,7 +1341,6 @@
 				D35391351D01465200025CB3 /* NSString+HTML.m in Sources */,
 				D3FD930C1CF599920039FB14 /* Vocabulary.m in Sources */,
 				D3B849E41D07F56200A2D967 /* BookMarkCell.m in Sources */,
-				D33731E61D0E5544002AD32D /* AmobiVideoAd.java in Sources */,
 				D35391341D01465200025CB3 /* NSMutableAttributedString+Color.m in Sources */,
 				D3FD93001CF54EF40039FB14 /* Utilities.m in Sources */,
 				D3FD92E51CF542B80039FB14 /* TFHppleElement.m in Sources */,
@@ -1470,7 +1354,6 @@
 				D33731991D0AA49D002AD32D /* MoreController.m in Sources */,
 				D3FD92FC1CF54C860039FB14 /* Grammar.m in Sources */,
 				D3CCA4821CF2AF5F0022D752 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				D33731D61D0E5544002AD32D /* AmobiAdView.java in Sources */,
 				D321D5F31D0578BC002B187D /* ExampleCell.m in Sources */,
 				D33731B81D0E4E4A002AD32D /* TabBarCustomController.m in Sources */,
 				D3CCA4911CF2AF7D0022D752 /* MBProgressHUD.m in Sources */,

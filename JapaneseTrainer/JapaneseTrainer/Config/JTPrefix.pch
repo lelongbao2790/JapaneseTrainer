@@ -42,7 +42,6 @@
 #import "HomeController.h"
 #import "NavigationCustomController.h"
 #import "SettingController.h"
-#import "AmobiAdView.h"
-#import "AmobiVideoAd.h"
+
 
 #endif /* JTPrefix_pch */

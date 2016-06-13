@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIView *subView;
 @property (weak, nonatomic) IBOutlet UILabel *lbSpeedText;
 @property (weak, nonatomic) IBOutlet UIButton *btnSave;
+@property (weak, nonatomic) IBOutlet UIButton *btnSound;
 
 @end
 
@@ -24,6 +25,7 @@
     // Do any additional setup after loading the view.
     [Utilities borderView:self.subView];
     [Utilities borderView:self.btnSave];
+    [Utilities circleButton:self.btnSound];
     
 }
 
