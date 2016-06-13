@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UrlImageVideoButtonMute</key>
+	<string>amb_mute.png</string>
+	<key>UrlImageVideoButtonUnmute</key>
+	<string>amb_unmute.png</string>
+	<key>UrlImageVIdeoButtonComment</key>
+	<string>amb_comment.png</string>
+	<key>UrlImageVideoButtonClose</key>
+	<string>amb_close.png</string>
+	<key>UrlImageFullButtonNext</key>
+	<string>amb_next.png</string>
+	<key>UrlImageFullButtonBack</key>
+	<string>amb_back.png</string>
+	<key>UrlImageFullButtonUpload</key>
+	<string>amb_upload.png</string>
+	<key>UrlImageFullButtonRefresh</key>
+	<string>amb_refresh.png</string>
+	<key>Button</key>
+	<string>Cài Đặt</string>
+	<key>UrlImageButtonClose</key>
+	<string>btn_close_normal.png</string>
+	<key>UrlImageButtonCloseCPC</key>
+	<string>Amobi_close.png</string>
+	<key>UrlImageButton</key>
+	<string>btn_action_normal.png</string>
+	<key>HeadViewAmobi</key>
+	<string>Tải game và nhận COIN miễn phí</string>
+	<key>UIAlertViewTitle</key>
+	<string>Thông Báo</string>
+	<key>UIAlertViewMessage</key>
+	<string>Bạn cần bật mạng để cài đặt wifi hoặc 3G</string>
+	<key>UIAlertViewButtonTitle</key>
+	<string>Đồng ý</string>
+	<key>UIAlertVideoMoreInfo</key>
+	<string>Tìm hiểu thêm</string>
+</dict>
+</plist>
