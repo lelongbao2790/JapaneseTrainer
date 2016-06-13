@@ -139,6 +139,8 @@
     DetailGrammarController *detailGrammar = InitStoryBoardWithIdentifier(kDetailGrammarStoryBoardID);
     detailGrammar.title = [self.btnSegLevel titleForSegmentAtIndex:self.btnSegLevel.selectedSegmentIndex];
     Grammar *aGrammar = self.listGrammar[indexPath.row];
+    aGrammar.isHistory = kValueBookMark1;
+    [aGrammar commit];
     detailGrammar.aGrammar = aGrammar;
     [self.navigationController pushViewController:detailGrammar animated:YES];
     

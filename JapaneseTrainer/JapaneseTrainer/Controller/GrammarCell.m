@@ -24,6 +24,12 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+    if (selected) {
+        [self.subView setBackgroundColor:[UIColor lightGrayColor]];
+    } else {
+        [self.subView setBackgroundColor:[UIColor whiteColor]];
+    }
+    
 }
 
 @end

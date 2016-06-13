@@ -183,6 +183,7 @@
 		D3CCA4AE1CF2AFD10022D752 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CCA4AD1CF2AFD10022D752 /* AppDelegate.m */; };
 		D3F0D7EF1D0E7B880097AD7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D7EE1D0E7B880097AD7D /* UIKit.framework */; };
 		D3F0D7F11D0E7B8F0097AD7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D7F01D0E7B8F0097AD7D /* Foundation.framework */; };
+		D3F0D7FA1D0EB9130097AD7D /* HistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D7F91D0EB9130097AD7D /* HistoryController.m */; };
 		D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */; };
 		D3FA25691CF6EE1300CD24BF /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25681CF6EE1300CD24BF /* Sound.m */; };
 		D3FA256B1CF6EF2500CD24BF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FA256A1CF6EF2500CD24BF /* AudioToolbox.framework */; };
@@ -464,6 +465,8 @@
 		D3CCA4AD1CF2AFD10022D752 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppDelegate/AppDelegate.m; sourceTree = "<group>"; };
 		D3F0D7EE1D0E7B880097AD7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3F0D7F01D0E7B8F0097AD7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D3F0D7F81D0EB9130097AD7D /* HistoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryController.h; path = Controller/HistoryController.h; sourceTree = "<group>"; };
+		D3F0D7F91D0EB9130097AD7D /* HistoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryController.m; path = Controller/HistoryController.m; sourceTree = "<group>"; };
 		D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = listcontent.plist; path = Resource/listcontent.plist; sourceTree = "<group>"; };
 		D3FA25671CF6EE1300CD24BF /* Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sound.h; path = Modal/Sound.h; sourceTree = "<group>"; };
 		D3FA25681CF6EE1300CD24BF /* Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sound.m; path = Modal/Sound.m; sourceTree = "<group>"; };
@@ -807,6 +810,7 @@
 		D3CCA3F81CF2ADC80022D752 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D3F0D7F71D0EB9000097AD7D /* History */,
 				D33731AC1D0E4E4A002AD32D /* NavCustomController */,
 				D33731AF1D0E4E4A002AD32D /* NavigationControllerCustom */,
 				D33731B21D0E4E4A002AD32D /* TabBarCustomController */,
@@ -952,6 +956,15 @@
 			);
 			name = Framework;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		D3F0D7F71D0EB9000097AD7D /* History */ = {
+			isa = PBXGroup;
+			children = (
+				D3F0D7F81D0EB9130097AD7D /* HistoryController.h */,
+				D3F0D7F91D0EB9130097AD7D /* HistoryController.m */,
+			);
+			name = History;
 			sourceTree = "<group>";
 		};
 		D3F665751CF2B24C001A7F71 /* ThirdLibrary */ = {
@@ -1348,6 +1361,7 @@
 				D3B849DB1D07EF4800A2D967 /* BookmarkController.m in Sources */,
 				D3CCA4781CF2AF5F0022D752 /* AFHTTPRequestOperation.m in Sources */,
 				D3CCA4851CF2AF5F0022D752 /* UIImageView+AFNetworking.m in Sources */,
+				D3F0D7FA1D0EB9130097AD7D /* HistoryController.m in Sources */,
 				D3CCA47A1CF2AF5F0022D752 /* AFHTTPSessionManager.m in Sources */,
 				D321D5FB1D068E33002B187D /* KanjiCell.m in Sources */,
 				D3FA25701CF843D100CD24BF /* WritingCell.m in Sources */,

@@ -174,13 +174,13 @@
     detailGrammar.title = [self.segLevel titleForSegmentAtIndex:self.segLevel.selectedSegmentIndex];
     Vocabulary *wordAtIndex = nil;
     if ([Utilities isSearchController:self.searchController]) {
-        
         wordAtIndex = self.listSearch[indexPath.row];
-        
     } else {
-        
         wordAtIndex = self.listVocabulary[indexPath.row];
     }
+    
+    wordAtIndex.isHistory = kValueBookMark1;
+    [wordAtIndex commit];
     
     detailGrammar.aVocabulary = wordAtIndex;
     
