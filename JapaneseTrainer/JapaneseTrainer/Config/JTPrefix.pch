@@ -37,5 +37,9 @@
 #import "NoteController.h"
 #import "BookmarkController.h"
 #import "BookMarkCell.h"
+#import "AppDelegate.h"
+#import "TabBarCustomController.h"
+#import "HomeController.h"
+#import "NavigationCustomController.h"
 
 #endif /* JTPrefix_pch */

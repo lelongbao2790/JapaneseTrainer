@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "69A924F26035630A04B56E10CCBF9B8AECF1E6AB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "89DEDA64689A7C18EB55C6EE787AA3C4E9764D8A" : 0,
+    "69A924F26035630A04B56E10CCBF9B8AECF1E6AB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A3B8E738-07DD-4294-8109-4BB4E8D48D45",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "89DEDA64689A7C18EB55C6EE787AA3C4E9764D8A" : "JLPTTrainerPro\/",
+    "69A924F26035630A04B56E10CCBF9B8AECF1E6AB" : "JapaneseTrainer\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JLPTTrainer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JapaneseTrainer\/JLPTTrainer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:lelongbao2790\/JapaneseTrainer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "69A924F26035630A04B56E10CCBF9B8AECF1E6AB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:lelongbao2790\/JLPTTrainerPro.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "89DEDA64689A7C18EB55C6EE787AA3C4E9764D8A"
+    }
+  ]
+}

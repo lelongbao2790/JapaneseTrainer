@@ -56,4 +56,9 @@
  * Hide dialog
  */
 + (void)hideDialogController:(nonnull UIViewController *)dialog withTag:(NSInteger)tag;
+
+/*
+ * Change root view controller
+ */
++ (void)changeRootViewToTabBar:(UITabBarController *)tabbar andView:(UINavigationController *)controller isTabbar:(BOOL)isTabbar;
 @end

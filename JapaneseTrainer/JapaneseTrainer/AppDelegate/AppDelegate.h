@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "NavigationCustomController.h"
+#import "TabBarCustomController.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) NavigationCustomController *navHomeController;
+@property (strong, nonatomic) TabBarCustomController *tabbar;
 
++ (AppDelegate *)share;
 
 @end
 

@@ -158,4 +158,36 @@
     [[window viewWithTag:tag] removeFromSuperview];
 }
 
+/*
+ * Change root view controller
+ */
++ (void)changeRootViewToTabBar:(UITabBarController *)tabbar andView:(UINavigationController *)controller isTabbar:(BOOL)isTabbar {
+    AppDelegate *app = [[UIApplication sharedApplication] delegate];
+    
+    if (isTabbar) {
+        
+        [UIView transitionWithView:tabbar.view
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight
+                        animations:^{
+                            app.window.rootViewController = tabbar;
+                        }
+                        completion:^(BOOL finished) {
+                            
+                        }];
+    } else {
+        
+        [UIView transitionWithView:controller.view
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromLeft
+                        animations:^{
+                            app.window.rootViewController = controller;
+                        }
+                        completion:^(BOOL finished) {
+                            
+                        }];
+    }
+    
+}
+
 @end
