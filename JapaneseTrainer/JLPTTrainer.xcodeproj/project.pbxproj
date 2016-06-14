@@ -33,10 +33,6 @@
 		D33731931D0A9141002AD32D /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = D337318F1D0A9141002AD32D /* setting.png */; };
 		D33731951D0A9E12002AD32D /* imgLeftGrammar.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731941D0A9E12002AD32D /* imgLeftGrammar.png */; };
 		D33731991D0AA49D002AD32D /* MoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33731981D0AA49D002AD32D /* MoreController.m */; };
-		D33731B61D0E4E4A002AD32D /* NavCustomHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33731AB1D0E4E4A002AD32D /* NavCustomHomeController.m */; };
-		D33731B71D0E4E4A002AD32D /* NavigationCustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33731AE1D0E4E4A002AD32D /* NavigationCustomController.m */; };
-		D33731B81D0E4E4A002AD32D /* TabBarCustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33731B11D0E4E4A002AD32D /* TabBarCustomController.m */; };
-		D33731B91D0E4E4A002AD32D /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33731B41D0E4E4A002AD32D /* HomeController.m */; };
 		D33731BD1D0E4E59002AD32D /* home_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731BA1D0E4E59002AD32D /* home_icon.png */; };
 		D33731BE1D0E4E59002AD32D /* home_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731BB1D0E4E59002AD32D /* home_nav.png */; };
 		D33731BF1D0E4E59002AD32D /* start_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D33731BC1D0E4E59002AD32D /* start_icon.png */; };
@@ -208,6 +204,10 @@
 		D3F0D85E1D0FD9FF0097AD7D /* btn_close_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F0D84C1D0FD9FF0097AD7D /* btn_close_normal.png */; };
 		D3F0D85F1D0FD9FF0097AD7D /* AmobiVideoAd.java in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D84D1D0FD9FF0097AD7D /* AmobiVideoAd.java */; };
 		D3F0D8601D0FD9FF0097AD7D /* libAmobiSDKV2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D84E1D0FD9FF0097AD7D /* libAmobiSDKV2.3.a */; };
+		D3F0D86F1D0FDD580097AD7D /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D8681D0FDD580097AD7D /* HomeController.m */; };
+		D3F0D8701D0FDD580097AD7D /* NavCustomHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D86A1D0FDD580097AD7D /* NavCustomHomeController.m */; };
+		D3F0D8711D0FDD580097AD7D /* NavigationCustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D86C1D0FDD580097AD7D /* NavigationCustomController.m */; };
+		D3F0D8721D0FDD580097AD7D /* TabBarCustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D86E1D0FDD580097AD7D /* TabBarCustomController.m */; };
 		D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */; };
 		D3FA25691CF6EE1300CD24BF /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25681CF6EE1300CD24BF /* Sound.m */; };
 		D3FA256B1CF6EF2500CD24BF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FA256A1CF6EF2500CD24BF /* AudioToolbox.framework */; };
@@ -278,14 +278,6 @@
 		D33731941D0A9E12002AD32D /* imgLeftGrammar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imgLeftGrammar.png; path = Resource/imgLeftGrammar.png; sourceTree = "<group>"; };
 		D33731971D0AA49D002AD32D /* MoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreController.h; path = Controller/MoreController.h; sourceTree = "<group>"; };
 		D33731981D0AA49D002AD32D /* MoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreController.m; path = Controller/MoreController.m; sourceTree = "<group>"; };
-		D33731AA1D0E4E4A002AD32D /* NavCustomHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavCustomHomeController.h; path = Controller/NavCustomHomeController.h; sourceTree = "<group>"; };
-		D33731AB1D0E4E4A002AD32D /* NavCustomHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavCustomHomeController.m; path = Controller/NavCustomHomeController.m; sourceTree = "<group>"; };
-		D33731AD1D0E4E4A002AD32D /* NavigationCustomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationCustomController.h; path = Controller/NavigationCustomController.h; sourceTree = "<group>"; };
-		D33731AE1D0E4E4A002AD32D /* NavigationCustomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationCustomController.m; path = Controller/NavigationCustomController.m; sourceTree = "<group>"; };
-		D33731B01D0E4E4A002AD32D /* TabBarCustomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarCustomController.h; path = Controller/TabBarCustomController.h; sourceTree = "<group>"; };
-		D33731B11D0E4E4A002AD32D /* TabBarCustomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarCustomController.m; path = Controller/TabBarCustomController.m; sourceTree = "<group>"; };
-		D33731B31D0E4E4A002AD32D /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeController.h; path = Controller/HomeController.h; sourceTree = "<group>"; };
-		D33731B41D0E4E4A002AD32D /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeController.m; path = Controller/HomeController.m; sourceTree = "<group>"; };
 		D33731BA1D0E4E59002AD32D /* home_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_icon.png; path = Resource/home_icon.png; sourceTree = "<group>"; };
 		D33731BB1D0E4E59002AD32D /* home_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_nav.png; path = Resource/home_nav.png; sourceTree = "<group>"; };
 		D33731BC1D0E4E59002AD32D /* start_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start_icon.png; path = Resource/start_icon.png; sourceTree = "<group>"; };
@@ -517,6 +509,14 @@
 		D3F0D84C1D0FD9FF0097AD7D /* btn_close_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_close_normal.png; sourceTree = "<group>"; };
 		D3F0D84D1D0FD9FF0097AD7D /* AmobiVideoAd.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = AmobiVideoAd.java; sourceTree = "<group>"; };
 		D3F0D84E1D0FD9FF0097AD7D /* libAmobiSDKV2.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAmobiSDKV2.3.a; sourceTree = "<group>"; };
+		D3F0D8671D0FDD580097AD7D /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		D3F0D8681D0FDD580097AD7D /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		D3F0D8691D0FDD580097AD7D /* NavCustomHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavCustomHomeController.h; sourceTree = "<group>"; };
+		D3F0D86A1D0FDD580097AD7D /* NavCustomHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavCustomHomeController.m; sourceTree = "<group>"; };
+		D3F0D86B1D0FDD580097AD7D /* NavigationCustomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationCustomController.h; sourceTree = "<group>"; };
+		D3F0D86C1D0FDD580097AD7D /* NavigationCustomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationCustomController.m; sourceTree = "<group>"; };
+		D3F0D86D1D0FDD580097AD7D /* TabBarCustomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarCustomController.h; sourceTree = "<group>"; };
+		D3F0D86E1D0FDD580097AD7D /* TabBarCustomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarCustomController.m; sourceTree = "<group>"; };
 		D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = listcontent.plist; path = Resource/listcontent.plist; sourceTree = "<group>"; };
 		D3FA25671CF6EE1300CD24BF /* Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sound.h; path = Modal/Sound.h; sourceTree = "<group>"; };
 		D3FA25681CF6EE1300CD24BF /* Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sound.m; path = Modal/Sound.m; sourceTree = "<group>"; };
@@ -601,46 +601,6 @@
 				D33731981D0AA49D002AD32D /* MoreController.m */,
 			);
 			name = More;
-			sourceTree = "<group>";
-		};
-		D33731AC1D0E4E4A002AD32D /* NavCustomController */ = {
-			isa = PBXGroup;
-			children = (
-				D33731AA1D0E4E4A002AD32D /* NavCustomHomeController.h */,
-				D33731AB1D0E4E4A002AD32D /* NavCustomHomeController.m */,
-			);
-			name = NavCustomController;
-			path = ../../../JLPTTrainerPro/JapaneseTrainer;
-			sourceTree = "<group>";
-		};
-		D33731AF1D0E4E4A002AD32D /* NavigationControllerCustom */ = {
-			isa = PBXGroup;
-			children = (
-				D33731AD1D0E4E4A002AD32D /* NavigationCustomController.h */,
-				D33731AE1D0E4E4A002AD32D /* NavigationCustomController.m */,
-			);
-			name = NavigationControllerCustom;
-			path = ../../../JLPTTrainerPro/JapaneseTrainer;
-			sourceTree = "<group>";
-		};
-		D33731B21D0E4E4A002AD32D /* TabBarCustomController */ = {
-			isa = PBXGroup;
-			children = (
-				D33731B01D0E4E4A002AD32D /* TabBarCustomController.h */,
-				D33731B11D0E4E4A002AD32D /* TabBarCustomController.m */,
-			);
-			name = TabBarCustomController;
-			path = ../../../JLPTTrainerPro/JapaneseTrainer;
-			sourceTree = "<group>";
-		};
-		D33731B51D0E4E4A002AD32D /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				D33731B31D0E4E4A002AD32D /* HomeController.h */,
-				D33731B41D0E4E4A002AD32D /* HomeController.m */,
-			);
-			name = Home;
-			path = ../../../JLPTTrainerPro/JapaneseTrainer;
 			sourceTree = "<group>";
 		};
 		D35391281D01366900025CB3 /* hiragana */ = {
@@ -866,11 +826,11 @@
 		D3CCA3F81CF2ADC80022D752 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D3F0D8731D0FDD880097AD7D /* HomeController */,
+				D3F0D8741D0FDD920097AD7D /* NavCustomHomeController */,
+				D3F0D8751D0FDD9C0097AD7D /* NavCustomController */,
+				D3F0D8761D0FDDA40097AD7D /* TabBarCustomController */,
 				D3F0D7F71D0EB9000097AD7D /* History */,
-				D33731AC1D0E4E4A002AD32D /* NavCustomController */,
-				D33731AF1D0E4E4A002AD32D /* NavigationControllerCustom */,
-				D33731B21D0E4E4A002AD32D /* TabBarCustomController */,
-				D33731B51D0E4E4A002AD32D /* Home */,
 				D33731961D0AA47F002AD32D /* More */,
 				D3B849D81D07EF2D00A2D967 /* Bookmark */,
 				D321D6061D06ACB3002B187D /* Note */,
@@ -1063,6 +1023,42 @@
 				D3F0D84C1D0FD9FF0097AD7D /* btn_close_normal.png */,
 			);
 			path = AmobiSDKV2.3;
+			sourceTree = "<group>";
+		};
+		D3F0D8731D0FDD880097AD7D /* HomeController */ = {
+			isa = PBXGroup;
+			children = (
+				D3F0D8671D0FDD580097AD7D /* HomeController.h */,
+				D3F0D8681D0FDD580097AD7D /* HomeController.m */,
+			);
+			name = HomeController;
+			sourceTree = "<group>";
+		};
+		D3F0D8741D0FDD920097AD7D /* NavCustomHomeController */ = {
+			isa = PBXGroup;
+			children = (
+				D3F0D8691D0FDD580097AD7D /* NavCustomHomeController.h */,
+				D3F0D86A1D0FDD580097AD7D /* NavCustomHomeController.m */,
+			);
+			name = NavCustomHomeController;
+			sourceTree = "<group>";
+		};
+		D3F0D8751D0FDD9C0097AD7D /* NavCustomController */ = {
+			isa = PBXGroup;
+			children = (
+				D3F0D86B1D0FDD580097AD7D /* NavigationCustomController.h */,
+				D3F0D86C1D0FDD580097AD7D /* NavigationCustomController.m */,
+			);
+			name = NavCustomController;
+			sourceTree = "<group>";
+		};
+		D3F0D8761D0FDDA40097AD7D /* TabBarCustomController */ = {
+			isa = PBXGroup;
+			children = (
+				D3F0D86D1D0FDD580097AD7D /* TabBarCustomController.h */,
+				D3F0D86E1D0FDD580097AD7D /* TabBarCustomController.m */,
+			);
+			name = TabBarCustomController;
 			sourceTree = "<group>";
 		};
 		D3F665751CF2B24C001A7F71 /* ThirdLibrary */ = {
@@ -1461,9 +1457,9 @@
 				D3775AA21CFC203D009A4FEA /* KanjiController.m in Sources */,
 				D3FD92E41CF542B80039FB14 /* TFHpple.m in Sources */,
 				D3FD93091CF5992E0039FB14 /* VocabularCell.m in Sources */,
-				D33731B91D0E4E4A002AD32D /* HomeController.m in Sources */,
 				D321D6091D06ACD2002B187D /* NoteController.m in Sources */,
 				D321D5E31D055D29002B187D /* GrammarCell.m in Sources */,
+				D3F0D8721D0FDD580097AD7D /* TabBarCustomController.m in Sources */,
 				D3F0D85F1D0FD9FF0097AD7D /* AmobiVideoAd.java in Sources */,
 				D3AC9A861CFD8123003D1D08 /* DataAccess.m in Sources */,
 				D35391351D01465200025CB3 /* NSString+HTML.m in Sources */,
@@ -1483,17 +1479,17 @@
 				D33731991D0AA49D002AD32D /* MoreController.m in Sources */,
 				D3FD92FC1CF54C860039FB14 /* Grammar.m in Sources */,
 				D3CCA4821CF2AF5F0022D752 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				D3F0D8711D0FDD580097AD7D /* NavigationCustomController.m in Sources */,
 				D321D5F31D0578BC002B187D /* ExampleCell.m in Sources */,
 				D3F0D84F1D0FD9FF0097AD7D /* AmobiAdView.java in Sources */,
-				D33731B81D0E4E4A002AD32D /* TabBarCustomController.m in Sources */,
 				D3CCA4911CF2AF7D0022D752 /* MBProgressHUD.m in Sources */,
 				D321D5F61D057C58002B187D /* NoteCell.m in Sources */,
 				D3CCA4951CF2AF8E0022D752 /* AlphabetController.m in Sources */,
-				D33731B61D0E4E4A002AD32D /* NavCustomHomeController.m in Sources */,
 				D3CCA48C1CF2AF6F0022D752 /* iToast.m in Sources */,
 				D3CCA4891CF2AF5F0022D752 /* UIWebView+AFNetworking.m in Sources */,
 				D33731EC1D0E7725002AD32D /* SettingController.m in Sources */,
 				D35391361D01465200025CB3 /* NSString+XMLEntities.m in Sources */,
+				D3F0D86F1D0FDD580097AD7D /* HomeController.m in Sources */,
 				D3775A9F1CFC1463009A4FEA /* Kanji.m in Sources */,
 				D3CCA4831CF2AF5F0022D752 /* UIAlertView+AFNetworking.m in Sources */,
 				D3CCA4791CF2AF5F0022D752 /* AFHTTPRequestOperationManager.m in Sources */,
@@ -1506,6 +1502,7 @@
 				D321D60C1D06AE40002B187D /* Note.m in Sources */,
 				D3FD92E61CF542B80039FB14 /* XPathQuery.m in Sources */,
 				D3CCA4981CF2AF9A0022D752 /* GrammarController.m in Sources */,
+				D3F0D8701D0FDD580097AD7D /* NavCustomHomeController.m in Sources */,
 				D35391331D01465200025CB3 /* GTMNSString+HTML.m in Sources */,
 				D321D5F01D0578A8002B187D /* MeaningCell.m in Sources */,
 				D3CCA4861CF2AF5F0022D752 /* UIProgressView+AFNetworking.m in Sources */,
@@ -1515,7 +1512,6 @@
 				D3CCA4841CF2AF5F0022D752 /* UIButton+AFNetworking.m in Sources */,
 				D3CCA47F1CF2AF5F0022D752 /* AFURLRequestSerialization.m in Sources */,
 				D3CCA47C1CF2AF5F0022D752 /* AFNetworkReachabilityManager.m in Sources */,
-				D33731B71D0E4E4A002AD32D /* NavigationCustomController.m in Sources */,
 				D3CCA4871CF2AF5F0022D752 /* UIRefreshControl+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

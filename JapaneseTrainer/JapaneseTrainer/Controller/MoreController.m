@@ -54,7 +54,6 @@
 }
 
 - (void)initBannerAds {
-    ProgressBarShowLoading(kLoading);
     // Init banner ads
     self.adView =   [[AmobiAdView alloc] initWithBannerSize:SizeFullScreen ];
     [self.adView setDelegate:self];
@@ -80,7 +79,6 @@
 }
 
 - (void)onPrepareError:(AmobiVideoAd *)adView {
-    ProgressBarDismissLoading(kEmpty);
     [self initBannerAds];
 }
 
