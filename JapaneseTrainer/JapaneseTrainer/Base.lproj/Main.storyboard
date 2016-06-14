@@ -1342,6 +1342,7 @@
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.41999999999999998" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="d6a-83-m5B">
                                         <rect key="frame" x="18" y="118" width="492" height="31"/>
+                                        <color key="tintColor" red="0.043137254899999998" green="0.51764705879999995" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="btnSlideVolume:" destination="Nbf-nd-mH2" eventType="valueChanged" id="HQa-9O-NII"/>
                                         </connections>
@@ -1376,11 +1377,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Db0-Kc-Yy8">
-                                        <rect key="frame" x="485" y="156" width="30" height="30"/>
+                                        <rect key="frame" x="480" y="151" width="35" height="35"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="9Oq-vN-pKD"/>
-                                            <constraint firstAttribute="width" constant="30" id="xD4-NQ-HdB"/>
+                                            <constraint firstAttribute="height" constant="35" id="9Oq-vN-pKD"/>
+                                            <constraint firstAttribute="width" constant="35" id="xD4-NQ-HdB"/>
                                         </constraints>
+                                        <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
                                         <state key="normal" image="sound_icon.png"/>
                                         <connections>
                                             <action selector="btnSound:" destination="Nbf-nd-mH2" eventType="touchUpInside" id="1ms-Yf-nq0"/>
@@ -1416,7 +1418,7 @@
                                     <constraint firstItem="4DS-px-h44" firstAttribute="top" secondItem="GFV-M5-DJV" secondAttribute="bottom" constant="14" id="PBF-al-eZ9"/>
                                     <constraint firstItem="9J5-YT-9H2" firstAttribute="top" secondItem="d6a-83-m5B" secondAttribute="bottom" constant="8" id="PmY-S7-ttM"/>
                                     <constraint firstItem="D0D-0s-ac7" firstAttribute="top" secondItem="9J5-YT-9H2" secondAttribute="bottom" constant="15" id="Uf2-HI-msi"/>
-                                    <constraint firstItem="Db0-Kc-Yy8" firstAttribute="top" secondItem="d6a-83-m5B" secondAttribute="bottom" constant="8" id="VBb-RJ-apH"/>
+                                    <constraint firstItem="Db0-Kc-Yy8" firstAttribute="top" secondItem="d6a-83-m5B" secondAttribute="bottom" constant="3" id="VBb-RJ-apH"/>
                                     <constraint firstAttribute="trailing" secondItem="Db0-Kc-Yy8" secondAttribute="trailing" constant="8" id="Xrc-e0-r7i"/>
                                     <constraint firstItem="d6a-83-m5B" firstAttribute="top" secondItem="rKA-mh-qrQ" secondAttribute="bottom" constant="15" id="YCS-mf-Ahh"/>
                                     <constraint firstAttribute="trailing" secondItem="GFV-M5-DJV" secondAttribute="trailing" constant="8" id="bTo-hO-19Z"/>
@@ -1443,6 +1445,7 @@
                     </view>
                     <connections>
                         <outlet property="btnSave" destination="PYz-mE-9Pf" id="5wQ-g2-132"/>
+                        <outlet property="btnSound" destination="Db0-Kc-Yy8" id="roZ-6R-iLf"/>
                         <outlet property="lbNameExample" destination="D0D-0s-ac7" id="zTR-3h-BMZ"/>
                         <outlet property="lbSpeedText" destination="l2F-Bs-Uo6" id="Cam-Vg-PmK"/>
                         <outlet property="slideVolumn" destination="d6a-83-m5B" id="rpg-WY-nUK"/>

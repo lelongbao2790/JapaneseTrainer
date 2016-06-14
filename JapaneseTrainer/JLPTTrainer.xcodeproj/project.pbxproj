@@ -726,7 +726,6 @@
 			isa = PBXGroup;
 			children = (
 				D3F0D7F41D0E7BA90097AD7D /* Framework */,
-				D3FD92EC1CF5492E0039FB14 /* libxml2.2.dylib */,
 				D3FD92FD1CF54ED90039FB14 /* Utilities */,
 				D3FD92F61CF54C240039FB14 /* Modal */,
 				D3CCA44D1CF2AE470022D752 /* Delegate */,
@@ -949,6 +948,7 @@
 		D3F0D7F41D0E7BA90097AD7D /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				D3FD92EC1CF5492E0039FB14 /* libxml2.2.dylib */,
 				D3F0D7F01D0E7B8F0097AD7D /* Foundation.framework */,
 				D3F0D7EE1D0E7B880097AD7D /* UIKit.framework */,
 				D3FA256A1CF6EF2500CD24BF /* AudioToolbox.framework */,
