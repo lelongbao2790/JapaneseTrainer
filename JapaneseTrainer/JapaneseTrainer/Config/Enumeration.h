@@ -63,4 +63,12 @@ typedef NS_ENUM(NSInteger, BookMarkTag) {
     kTagWritingController = 100,
 };
 
+typedef NS_ENUM(NSInteger, TypeHome) {
+    kTypeStart = 1,
+    kTypeFeedBack = 2,
+    kTypeRate = 3,
+    kTypeSetting = 4,
+    kTypeNone = 0,
+};
+
 #endif /* Enumeration_h */

@@ -11,7 +11,11 @@
  #import <CoreData/NSEntityDescription.h>
 #import <MessageUI/MessageUI.h>
 
-@interface MoreController ()
+@interface MoreController ()<AmobiBannerDelegate, AmbVideoAdDelegate>
+
+@property (strong, nonatomic) AmobiVideoAd  *videoAd;
+@property (strong, nonatomic) AmobiAdView *adView;
+
 @end
 
 @implementation MoreController
@@ -31,10 +35,74 @@
 }
 
 - (IBAction)btnHome:(id)sender {
-    
-    [Utilities changeRootViewToTabBar:nil andView:[AppDelegate share].navHomeController isTabbar:NO];
-    
+    [self initVideoAds];
 }
+
+- (void)moveToHome {
+    [Utilities changeRootViewToTabBar:nil andView:[AppDelegate share].navHomeController isTabbar:NO];
+}
+
+//*****************************************************************************
+#pragma mark -
+#pragma mark - ** Prepare Ads **
+- (void)initVideoAds {
+    ProgressBarShowLoading(kLoading);
+    // Init video ad
+    self.videoAd= [[AmobiVideoAd alloc] init];
+    [self.videoAd setDelegate:self];
+    [self.videoAd prepare];
+}
+
+- (void)initBannerAds {
+    ProgressBarShowLoading(kLoading);
+    // Init banner ads
+    self.adView =   [[AmobiAdView alloc] initWithBannerSize:SizeFullScreen ];
+    [self.adView setDelegate:self];
+    [self.view addSubview:self.adView];
+    [self.adView loadAd];
+}
+
+//*****************************************************************************
+#pragma mark -
+#pragma mark - ** Delegate Ads **
+- (void)onAdAvailable:(AmobiVideoAd *)adView {
+    ProgressBarDismissLoading(kEmpty);
+    [self.videoAd playVideo:self.tabBarController];
+}
+
+- (void)onAdStarted:(AmobiVideoAd *)adView {
+    ProgressBarDismissLoading(kEmpty);
+}
+
+- (void)onAdFinished:(AmobiVideoAd *)adView {
+    ProgressBarDismissLoading(kEmpty);
+    [self moveToHome];
+}
+
+- (void)onPrepareError:(AmobiVideoAd *)adView {
+    ProgressBarDismissLoading(kEmpty);
+    [self initBannerAds];
+}
+
+/*
+ * Banner Ads
+ */
+- (void)adViewClose:(AmobiAdView *)amobiAdView {
+    [self.adView removeFromSuperview];
+    ProgressBarDismissLoading(kEmpty);
+    [self moveToHome];
+}
+
+- (void)adViewLoadError:(AmobiAdView *)amobiAdView {
+    [self.adView removeFromSuperview];
+    ProgressBarDismissLoading(kEmpty);
+    [self moveToHome];
+}
+
+- (void)adViewLoadSuccess:(AmobiAdView *)amobiAdView {
+    ProgressBarDismissLoading(kEmpty);
+}
+
 
 
 @end

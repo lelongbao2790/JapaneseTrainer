@@ -184,6 +184,30 @@
 		D3F0D7EF1D0E7B880097AD7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D7EE1D0E7B880097AD7D /* UIKit.framework */; };
 		D3F0D7F11D0E7B8F0097AD7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D7F01D0E7B8F0097AD7D /* Foundation.framework */; };
 		D3F0D7FA1D0EB9130097AD7D /* HistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D7F91D0EB9130097AD7D /* HistoryController.m */; };
+		D3F0D8061D0FB9B00097AD7D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D8051D0FB9B00097AD7D /* SystemConfiguration.framework */; };
+		D3F0D8081D0FB9BA0097AD7D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D8071D0FB9BA0097AD7D /* CFNetwork.framework */; };
+		D3F0D80A1D0FBA0A0097AD7D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D8091D0FBA0A0097AD7D /* libz.tbd */; };
+		D3F0D80C1D0FBA160097AD7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D80B1D0FBA160097AD7D /* CoreGraphics.framework */; };
+		D3F0D80E1D0FBA200097AD7D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D80D1D0FBA200097AD7D /* AdSupport.framework */; };
+		D3F0D8101D0FBA290097AD7D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D80F1D0FBA290097AD7D /* MediaPlayer.framework */; };
+		D3F0D8271D0FBB5D0097AD7D /* AmobiAdView.java in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D8121D0FBB5D0097AD7D /* AmobiAdView.java */; };
+		D3F0D8281D0FBB5D0097AD7D /* ajax_handler.js in Resources */ = {isa = PBXBuildFile; fileRef = D3F0D8141D0FBB5D0097AD7D /* ajax_handler.js */; };
+		D3F0D8291D0FBB5D0097AD7D /* amb_back.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F0D8151D0FBB5D0097AD7D /* amb_back.png */; };
+		D3F0D82A1D0FBB5D0097AD7D /* amb_close.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F0D8161D0FBB5D0097AD7D /* amb_close.png */; };
+		D3F0D82B1D0FBB5D0097AD7D /* amb_close_click.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F0D8171D0FBB5D0097AD7D /* amb_close_click.png */; };
+		D3F0D82C1D0FBB5D0097AD7D /* amb_comment.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F0D8181D0FBB5D0097AD7D /* amb_comment.png */; };
+		D3F0D82D1D0FBB5D0097AD7D /* amb_mute.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F0D8191D0FBB5D0097AD7D /* amb_mute.png */; };
+		D3F0D82E1D0FBB5D0097AD7D /* amb_next.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F0D81A1D0FBB5D0097AD7D /* amb_next.png */; };
+		D3F0D82F1D0FBB5D0097AD7D /* amb_refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F0D81B1D0FBB5D0097AD7D /* amb_refresh.png */; };
+		D3F0D8301D0FBB5D0097AD7D /* amb_unmute.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F0D81C1D0FBB5D0097AD7D /* amb_unmute.png */; };
+		D3F0D8311D0FBB5D0097AD7D /* amb_upload.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F0D81D1D0FBB5D0097AD7D /* amb_upload.png */; };
+		D3F0D8321D0FBB5D0097AD7D /* Amobi_close.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F0D81E1D0FBB5D0097AD7D /* Amobi_close.png */; };
+		D3F0D8331D0FBB5D0097AD7D /* AmobiInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3F0D8201D0FBB5D0097AD7D /* AmobiInfo.plist */; };
+		D3F0D8341D0FBB5D0097AD7D /* AmobiStringView.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3F0D8211D0FBB5D0097AD7D /* AmobiStringView.plist */; };
+		D3F0D8351D0FBB5D0097AD7D /* btn_action_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F0D8231D0FBB5D0097AD7D /* btn_action_normal.png */; };
+		D3F0D8361D0FBB5D0097AD7D /* btn_close_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F0D8241D0FBB5D0097AD7D /* btn_close_normal.png */; };
+		D3F0D8371D0FBB5D0097AD7D /* AmobiVideoAd.java in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D8251D0FBB5D0097AD7D /* AmobiVideoAd.java */; };
+		D3F0D8381D0FBB5D0097AD7D /* libAmobiSDKV2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0D8261D0FBB5D0097AD7D /* libAmobiSDKV2.3.a */; };
 		D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */; };
 		D3FA25691CF6EE1300CD24BF /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FA25681CF6EE1300CD24BF /* Sound.m */; };
 		D3FA256B1CF6EF2500CD24BF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FA256A1CF6EF2500CD24BF /* AudioToolbox.framework */; };
@@ -467,6 +491,32 @@
 		D3F0D7F01D0E7B8F0097AD7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3F0D7F81D0EB9130097AD7D /* HistoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryController.h; path = Controller/HistoryController.h; sourceTree = "<group>"; };
 		D3F0D7F91D0EB9130097AD7D /* HistoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryController.m; path = Controller/HistoryController.m; sourceTree = "<group>"; };
+		D3F0D8051D0FB9B00097AD7D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D3F0D8071D0FB9BA0097AD7D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D3F0D8091D0FBA0A0097AD7D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D3F0D80B1D0FBA160097AD7D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D3F0D80D1D0FBA200097AD7D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D3F0D80F1D0FBA290097AD7D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		D3F0D8121D0FBB5D0097AD7D /* AmobiAdView.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = AmobiAdView.java; sourceTree = "<group>"; };
+		D3F0D8141D0FBB5D0097AD7D /* ajax_handler.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ajax_handler.js; sourceTree = "<group>"; };
+		D3F0D8151D0FBB5D0097AD7D /* amb_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_back.png; sourceTree = "<group>"; };
+		D3F0D8161D0FBB5D0097AD7D /* amb_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_close.png; sourceTree = "<group>"; };
+		D3F0D8171D0FBB5D0097AD7D /* amb_close_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_close_click.png; sourceTree = "<group>"; };
+		D3F0D8181D0FBB5D0097AD7D /* amb_comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_comment.png; sourceTree = "<group>"; };
+		D3F0D8191D0FBB5D0097AD7D /* amb_mute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_mute.png; sourceTree = "<group>"; };
+		D3F0D81A1D0FBB5D0097AD7D /* amb_next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_next.png; sourceTree = "<group>"; };
+		D3F0D81B1D0FBB5D0097AD7D /* amb_refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_refresh.png; sourceTree = "<group>"; };
+		D3F0D81C1D0FBB5D0097AD7D /* amb_unmute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_unmute.png; sourceTree = "<group>"; };
+		D3F0D81D1D0FBB5D0097AD7D /* amb_upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_upload.png; sourceTree = "<group>"; };
+		D3F0D81E1D0FBB5D0097AD7D /* Amobi_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amobi_close.png; sourceTree = "<group>"; };
+		D3F0D81F1D0FBB5D0097AD7D /* AmobiAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmobiAdView.h; sourceTree = "<group>"; };
+		D3F0D8201D0FBB5D0097AD7D /* AmobiInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AmobiInfo.plist; sourceTree = "<group>"; };
+		D3F0D8211D0FBB5D0097AD7D /* AmobiStringView.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AmobiStringView.plist; sourceTree = "<group>"; };
+		D3F0D8221D0FBB5D0097AD7D /* AmobiVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmobiVideoAd.h; sourceTree = "<group>"; };
+		D3F0D8231D0FBB5D0097AD7D /* btn_action_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_action_normal.png; sourceTree = "<group>"; };
+		D3F0D8241D0FBB5D0097AD7D /* btn_close_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_close_normal.png; sourceTree = "<group>"; };
+		D3F0D8251D0FBB5D0097AD7D /* AmobiVideoAd.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = AmobiVideoAd.java; sourceTree = "<group>"; };
+		D3F0D8261D0FBB5D0097AD7D /* libAmobiSDKV2.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAmobiSDKV2.3.a; sourceTree = "<group>"; };
 		D3F6657A1CF2E2F0001A7F71 /* listcontent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = listcontent.plist; path = Resource/listcontent.plist; sourceTree = "<group>"; };
 		D3FA25671CF6EE1300CD24BF /* Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sound.h; path = Modal/Sound.h; sourceTree = "<group>"; };
 		D3FA25681CF6EE1300CD24BF /* Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sound.m; path = Modal/Sound.m; sourceTree = "<group>"; };
@@ -503,6 +553,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F0D8101D0FBA290097AD7D /* MediaPlayer.framework in Frameworks */,
+				D3F0D80E1D0FBA200097AD7D /* AdSupport.framework in Frameworks */,
+				D3F0D8381D0FBB5D0097AD7D /* libAmobiSDKV2.3.a in Frameworks */,
+				D3F0D80C1D0FBA160097AD7D /* CoreGraphics.framework in Frameworks */,
+				D3F0D80A1D0FBA0A0097AD7D /* libz.tbd in Frameworks */,
+				D3F0D8081D0FB9BA0097AD7D /* CFNetwork.framework in Frameworks */,
+				D3F0D8061D0FB9B00097AD7D /* SystemConfiguration.framework in Frameworks */,
 				D3F0D7F11D0E7B8F0097AD7D /* Foundation.framework in Frameworks */,
 				D3F0D7EF1D0E7B880097AD7D /* UIKit.framework in Frameworks */,
 				D3FA256B1CF6EF2500CD24BF /* AudioToolbox.framework in Frameworks */,
@@ -948,6 +1005,12 @@
 		D3F0D7F41D0E7BA90097AD7D /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				D3F0D80F1D0FBA290097AD7D /* MediaPlayer.framework */,
+				D3F0D80D1D0FBA200097AD7D /* AdSupport.framework */,
+				D3F0D80B1D0FBA160097AD7D /* CoreGraphics.framework */,
+				D3F0D8091D0FBA0A0097AD7D /* libz.tbd */,
+				D3F0D8071D0FB9BA0097AD7D /* CFNetwork.framework */,
+				D3F0D8051D0FB9B00097AD7D /* SystemConfiguration.framework */,
 				D3FD92EC1CF5492E0039FB14 /* libxml2.2.dylib */,
 				D3F0D7F01D0E7B8F0097AD7D /* Foundation.framework */,
 				D3F0D7EE1D0E7B880097AD7D /* UIKit.framework */,
@@ -967,9 +1030,45 @@
 			name = History;
 			sourceTree = "<group>";
 		};
+		D3F0D8111D0FBB5D0097AD7D /* Amobi SDK iOS v2.3 20150506 */ = {
+			isa = PBXGroup;
+			children = (
+				D3F0D8121D0FBB5D0097AD7D /* AmobiAdView.java */,
+				D3F0D8131D0FBB5D0097AD7D /* AmobiSDKV2.3 */,
+				D3F0D8251D0FBB5D0097AD7D /* AmobiVideoAd.java */,
+				D3F0D8261D0FBB5D0097AD7D /* libAmobiSDKV2.3.a */,
+			);
+			path = "Amobi SDK iOS v2.3 20150506";
+			sourceTree = "<group>";
+		};
+		D3F0D8131D0FBB5D0097AD7D /* AmobiSDKV2.3 */ = {
+			isa = PBXGroup;
+			children = (
+				D3F0D8141D0FBB5D0097AD7D /* ajax_handler.js */,
+				D3F0D8151D0FBB5D0097AD7D /* amb_back.png */,
+				D3F0D8161D0FBB5D0097AD7D /* amb_close.png */,
+				D3F0D8171D0FBB5D0097AD7D /* amb_close_click.png */,
+				D3F0D8181D0FBB5D0097AD7D /* amb_comment.png */,
+				D3F0D8191D0FBB5D0097AD7D /* amb_mute.png */,
+				D3F0D81A1D0FBB5D0097AD7D /* amb_next.png */,
+				D3F0D81B1D0FBB5D0097AD7D /* amb_refresh.png */,
+				D3F0D81C1D0FBB5D0097AD7D /* amb_unmute.png */,
+				D3F0D81D1D0FBB5D0097AD7D /* amb_upload.png */,
+				D3F0D81E1D0FBB5D0097AD7D /* Amobi_close.png */,
+				D3F0D81F1D0FBB5D0097AD7D /* AmobiAdView.h */,
+				D3F0D8201D0FBB5D0097AD7D /* AmobiInfo.plist */,
+				D3F0D8211D0FBB5D0097AD7D /* AmobiStringView.plist */,
+				D3F0D8221D0FBB5D0097AD7D /* AmobiVideoAd.h */,
+				D3F0D8231D0FBB5D0097AD7D /* btn_action_normal.png */,
+				D3F0D8241D0FBB5D0097AD7D /* btn_close_normal.png */,
+			);
+			path = AmobiSDKV2.3;
+			sourceTree = "<group>";
+		};
 		D3F665751CF2B24C001A7F71 /* ThirdLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				D3F0D8111D0FBB5D0097AD7D /* Amobi SDK iOS v2.3 20150506 */,
 				D3FA25541CF6C70700CD24BF /* NSString_HTML */,
 				D3FD92F91CF54C6B0039FB14 /* DBAccess */,
 				D3FD92E71CF542C30039FB14 /* TFHpple */,
@@ -1196,6 +1295,7 @@
 				D35391E61D015A0A00025CB3 /* katakana_se.jpg in Resources */,
 				D35391C71D015A0A00025CB3 /* katakana_a.jpg in Resources */,
 				D353916E1D01491700025CB3 /* hiragana_e.jpg in Resources */,
+				D3F0D8321D0FBB5D0097AD7D /* Amobi_close.png in Resources */,
 				D35391EC1D015A0A00025CB3 /* katakana_to.jpg in Resources */,
 				D33731901D0A9141002AD32D /* feedback.png in Resources */,
 				D35391391D01467F00025CB3 /* delete_icon.png in Resources */,
@@ -1212,6 +1312,7 @@
 				D35391F01D015A0A00025CB3 /* katakana_wo.jpg in Resources */,
 				D35391701D01491700025CB3 /* hiragana_he.jpg in Resources */,
 				D35391791D01491700025CB3 /* hiragana_ku.jpg in Resources */,
+				D3F0D82D1D0FBB5D0097AD7D /* amb_mute.png in Resources */,
 				D35391EA1D015A0A00025CB3 /* katakana_ta.jpg in Resources */,
 				D35391851D01491700025CB3 /* hiragana_o.jpg in Resources */,
 				D35391F11D015A0A00025CB3 /* katakana_ya.jpg in Resources */,
@@ -1219,9 +1320,11 @@
 				D3CCA3B41CF2ACAC0022D752 /* LaunchScreen.storyboard in Resources */,
 				D35391771D01491700025CB3 /* hiragana_ki.jpg in Resources */,
 				D321D6051D06A97A002B187D /* add.png in Resources */,
+				D3F0D8311D0FBB5D0097AD7D /* amb_upload.png in Resources */,
 				D35391941D01491700025CB3 /* hiragana_u.jpg in Resources */,
 				D35391831D01491700025CB3 /* hiragana_no.jpg in Resources */,
 				D35391EB1D015A0A00025CB3 /* katakana_te.jpg in Resources */,
+				D3F0D8291D0FBB5D0097AD7D /* amb_back.png in Resources */,
 				D3CCA3B11CF2ACAC0022D752 /* Assets.xcassets in Resources */,
 				D3B849C81D07BDE900A2D967 /* bm_heart_selected.png in Resources */,
 				D35391911D01491700025CB3 /* hiragana_te.jpg in Resources */,
@@ -1234,25 +1337,30 @@
 				D35391CE1D015A0A00025CB3 /* katakana_i.jpg in Resources */,
 				D35391761D01491700025CB3 /* hiragana_ke.jpg in Resources */,
 				D321D5ED1D0577D9002B187D /* edit_icon.png in Resources */,
+				D3F0D8341D0FBB5D0097AD7D /* AmobiStringView.plist in Resources */,
 				D3B849E01D07F19E00A2D967 /* orange_bookmark.png in Resources */,
 				D35391D41D015A0A00025CB3 /* katakana_ma.jpg in Resources */,
 				D3F6657B1CF2E2F0001A7F71 /* listcontent.plist in Resources */,
+				D3F0D8361D0FBB5D0097AD7D /* btn_close_normal.png in Resources */,
 				D353917D1D01491700025CB3 /* hiragana_mo.jpg in Resources */,
 				D35391EF1D015A0A00025CB3 /* katakana_wa.jpg in Resources */,
 				D33731BE1D0E4E59002AD32D /* home_nav.png in Resources */,
 				D33731911D0A9141002AD32D /* history.png in Resources */,
 				D3B849DF1D07F19E00A2D967 /* blue_bookmark.png in Resources */,
 				D35391DE1D015A0A00025CB3 /* katakana_nu.jpg in Resources */,
+				D3F0D8351D0FBB5D0097AD7D /* btn_action_normal.png in Resources */,
 				D353916F1D01491700025CB3 /* hiragana_ha.jpg in Resources */,
 				D35391E31D015A0A00025CB3 /* katakana_ro.jpg in Resources */,
 				D35391E11D015A0A00025CB3 /* katakana_re.jpg in Resources */,
 				D353918C1D01491700025CB3 /* hiragana_se.jpg in Resources */,
 				D353917A1D01491700025CB3 /* hiragana_ma.jpg in Resources */,
+				D3F0D8331D0FBB5D0097AD7D /* AmobiInfo.plist in Resources */,
 				D3B849D31D07CA3A00A2D967 /* bm_heart.png in Resources */,
 				D321D5DE1D055892002B187D /* hiragana_icon.png in Resources */,
 				D33731951D0A9E12002AD32D /* imgLeftGrammar.png in Resources */,
 				D35391801D01491700025CB3 /* hiragana_na.jpg in Resources */,
 				D353918D1D01491700025CB3 /* hiragana_shi.jpg in Resources */,
+				D3F0D82F1D0FBB5D0097AD7D /* amb_refresh.png in Resources */,
 				D321D5E71D0571CC002B187D /* jp_icon.png in Resources */,
 				D353913A1D01467F00025CB3 /* sound_icon.png in Resources */,
 				D353916D1D01491700025CB3 /* hiragana_chi.jpg in Resources */,
@@ -1263,10 +1371,12 @@
 				D35391821D01491700025CB3 /* hiragana_ni.jpg in Resources */,
 				D353918E1D01491700025CB3 /* hiragana_so.jpg in Resources */,
 				D35391DC1D015A0A00025CB3 /* katakana_ni.jpg in Resources */,
+				D3F0D82E1D0FBB5D0097AD7D /* amb_next.png in Resources */,
 				D321D5E01D055CDD002B187D /* arrow_right.png in Resources */,
 				D33731921D0A9141002AD32D /* rate.png in Resources */,
 				D35391DA1D015A0A00025CB3 /* katakana_na.jpg in Resources */,
 				D35391E81D015A0A00025CB3 /* katakana_so.jpg in Resources */,
+				D3F0D82A1D0FBB5D0097AD7D /* amb_close.png in Resources */,
 				D353917C1D01491700025CB3 /* hiragana_mi.jpg in Resources */,
 				D35391861D01491700025CB3 /* hiragana_ra.jpg in Resources */,
 				D35391CA1D015A0A00025CB3 /* katakana_ha1.jpg in Resources */,
@@ -1278,6 +1388,7 @@
 				D353917F1D01491700025CB3 /* hiragana_n.jpg in Resources */,
 				D3B849E11D07F19E00A2D967 /* red_bookmark.png in Resources */,
 				D35391971D01491700025CB3 /* hiragana_ya.jpg in Resources */,
+				D3F0D8281D0FBB5D0097AD7D /* ajax_handler.js in Resources */,
 				D321D5D81D0528E6002B187D /* bookmark.png in Resources */,
 				D33731E91D0E6DCE002AD32D /* background.png in Resources */,
 				D35391711D01491700025CB3 /* hiragana_hi.jpg in Resources */,
@@ -1290,6 +1401,7 @@
 				D35391E51D015A0A00025CB3 /* katakana_sa.jpg in Resources */,
 				D321D5DD1D055892002B187D /* hiragana_icon_white.png in Resources */,
 				D35391E71D015A0A00025CB3 /* katakana_shi.jpg in Resources */,
+				D3F0D8301D0FBB5D0097AD7D /* amb_unmute.png in Resources */,
 				D321D5DA1D053F0B002B187D /* sound_icon_white.png in Resources */,
 				D35391E01D015A0A00025CB3 /* katakana_ra.jpg in Resources */,
 				D35391C81D015A0A00025CB3 /* katakana_chi.jpg in Resources */,
@@ -1306,6 +1418,8 @@
 				D35391891D01491700025CB3 /* hiragana_ro.jpg in Resources */,
 				D35391CF1D015A0A00025CB3 /* katakana_ka.jpg in Resources */,
 				D35391781D01491700025CB3 /* hiragana_ko.jpg in Resources */,
+				D3F0D82B1D0FBB5D0097AD7D /* amb_close_click.png in Resources */,
+				D3F0D82C1D0FBB5D0097AD7D /* amb_comment.png in Resources */,
 				D35391921D01491700025CB3 /* hiragana_to.jpg in Resources */,
 				D353918B1D01491700025CB3 /* hiragana_sa.jpg in Resources */,
 				D35391D01D015A0A00025CB3 /* katakana_ke.jpg in Resources */,
@@ -1350,6 +1464,7 @@
 				D33731B91D0E4E4A002AD32D /* HomeController.m in Sources */,
 				D321D6091D06ACD2002B187D /* NoteController.m in Sources */,
 				D321D5E31D055D29002B187D /* GrammarCell.m in Sources */,
+				D3F0D8371D0FBB5D0097AD7D /* AmobiVideoAd.java in Sources */,
 				D3AC9A861CFD8123003D1D08 /* DataAccess.m in Sources */,
 				D35391351D01465200025CB3 /* NSString+HTML.m in Sources */,
 				D3FD930C1CF599920039FB14 /* Vocabulary.m in Sources */,
@@ -1369,6 +1484,7 @@
 				D3FD92FC1CF54C860039FB14 /* Grammar.m in Sources */,
 				D3CCA4821CF2AF5F0022D752 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				D321D5F31D0578BC002B187D /* ExampleCell.m in Sources */,
+				D3F0D8271D0FBB5D0097AD7D /* AmobiAdView.java in Sources */,
 				D33731B81D0E4E4A002AD32D /* TabBarCustomController.m in Sources */,
 				D3CCA4911CF2AF7D0022D752 /* MBProgressHUD.m in Sources */,
 				D321D5F61D057C58002B187D /* NoteCell.m in Sources */,
@@ -1572,6 +1688,11 @@
 					iOS,
 					v2.3,
 					20150506,
+					"$(PROJECT_DIR)/JapaneseTrainer/Amobi",
+					SDK,
+					iOS,
+					v2.3,
+					20150506,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = JLPTTrainer;
 				PRODUCT_NAME = JLPTTrainer;
@@ -1600,6 +1721,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JapaneseTrainer",
 					"$(PROJECT_DIR)/Amobi",
+					SDK,
+					iOS,
+					v2.3,
+					20150506,
+					"$(PROJECT_DIR)/JapaneseTrainer/Amobi",
 					SDK,
 					iOS,
 					v2.3,
