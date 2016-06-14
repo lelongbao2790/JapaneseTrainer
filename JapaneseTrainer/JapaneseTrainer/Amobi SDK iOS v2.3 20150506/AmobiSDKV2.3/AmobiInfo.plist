@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ProductInfo</key>
+	<dict>
+		<key>WidgetCode</key>
+		<string>851956555f84b05dec18d5084947ed6d</string>
+		<key>SMSCodeLv1</key>
+		<string></string>
+		<key>ADdistributorID</key>
+		<string></string>
+		<key>DeviceType</key>
+		<string>2</string>
+	</dict>
+</dict>
+</plist>
